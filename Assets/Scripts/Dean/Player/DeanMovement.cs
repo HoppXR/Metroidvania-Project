@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class DeanMovement : MonoBehaviour
 {
     public float moveSpeed = 15f; 
 
