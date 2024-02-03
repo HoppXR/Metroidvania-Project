@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     
     private Vector2 forceToApply;
     private Vector2 playerInput;
-    private Vector2 mousePosition;
 
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
@@ -24,11 +23,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashCooldown;
     private bool isDashing;
     private bool canDash;
+    private bool canMove;
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
+        canMove = true;
         canDash = true;
     }
 
@@ -37,6 +38,12 @@ public class PlayerMovement : MonoBehaviour
         //Prevents any input when dashing
         if (isDashing)
         {
+            return;
+        }
+
+        if (!canMove)
+        {
+            rb.velocity = Vector2.zero;
             return;
         }
         
@@ -49,7 +56,6 @@ public class PlayerMovement : MonoBehaviour
         }
         
         playerInput = new Vector2(moveX, moveY).normalized;
-        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
     
     void FixedUpdate()
@@ -76,7 +82,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.collider.CompareTag("ApplyDamage"))
         {
-            forceToApply += new Vector2(-knockback, 0);
+            Vector2 collisionNormal = collision.contacts[0].normal;
+            forceToApply += collisionNormal * knockback;
             //Destroy(collision.gameObject);
         }
     }
@@ -92,5 +99,15 @@ public class PlayerMovement : MonoBehaviour
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+    }
+
+    public bool CanMoveFalse()
+    {
+        return canMove = false;
+    }
+
+    public bool canMoveTrue()
+    {
+        return canMove = true;
     }
 }

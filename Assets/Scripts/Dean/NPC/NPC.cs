@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
+    private PlayerMovement thePlayer;
+    
     [SerializeField] GameObject promptText;
 
     public GameObject dialoguePanel;
@@ -18,11 +20,17 @@ public class NPC : MonoBehaviour
     public float wordSpeed;
     public bool playerIsClose;
 
-    // Update is called once per frame
+    void Start()
+    {
+        thePlayer = FindObjectOfType<PlayerMovement>();
+    }
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose && !isTyping)
         {
+            thePlayer.CanMoveFalse();
+            
             if (dialoguePanel.activeInHierarchy)
             {
                 zeroText();
@@ -67,6 +75,8 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
+
+        thePlayer.canMoveTrue();
     }
 
     IEnumerator Typing()
