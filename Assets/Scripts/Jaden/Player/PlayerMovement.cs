@@ -1,30 +1,65 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private float knockBack;
-    [SerializeField, Range(0,1)] private float forceDamping;
     
     private Vector2 forceToApply;
     private Vector2 playerInput;
+    private Vector2 mousePosition;
+
+    [Header("Movement Settings")]
+    [SerializeField] private float moveSpeed;
+    
+    [Header("Knockback Settings")]
+    [SerializeField] private float knockback;
+    [SerializeField, Range(0,1)] private float forceDamping;
+
+    [Header("Dash Settings")] 
+    [SerializeField] private float dashSpeed;
+    [SerializeField] private float dashDuration;
+    [SerializeField] private float dashCooldown;
+    private bool isDashing;
+    private bool canDash;
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        canDash = true;
     }
 
     void Update()
     {
-        playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        //Prevents any input when dashing
+        if (isDashing)
+        {
+            return;
+        }
+        
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetKeyDown(KeyCode.Space) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+        
+        playerInput = new Vector2(moveX, moveY).normalized;
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
     
     void FixedUpdate()
     {
+        //Prevents any input when dashing
+        if (isDashing)
+        {
+            return;
+        }
+        
         Vector2 moveForce = playerInput * moveSpeed;
         
         moveForce += forceToApply;
@@ -41,8 +76,21 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.collider.CompareTag("ApplyDamage"))
         {
-            forceToApply += new Vector2(-knockBack, 0);
+            forceToApply += new Vector2(-knockback, 0);
             //Destroy(collision.gameObject);
         }
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        
+        rb.velocity = new Vector2(playerInput.x * dashSpeed, playerInput.y * dashSpeed);
+        yield return new WaitForSeconds(dashDuration);
+        isDashing = false;
+
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 }
