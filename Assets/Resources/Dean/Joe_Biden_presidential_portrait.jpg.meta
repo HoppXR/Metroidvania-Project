@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Joe_Biden_presidential_portrait_0: -5375203337158144163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -176,7 +176,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TempMCCharacter_0: -2032568686339721475
+      TempMCCharacter_1: -7077089273492500897
+      TempMCCharacter_2: -2205833496523282414
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
