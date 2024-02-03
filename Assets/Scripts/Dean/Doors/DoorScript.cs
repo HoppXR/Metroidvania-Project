@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
+    [SerializeField] Transform posToGo;
+    [SerializeField] GameObject keyTxt;
+
     bool playerDetected;
     GameObject playerGO;
 
@@ -20,7 +23,8 @@ public class DoorScript : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-
+                playerGO.transform.position = posToGo.position;
+                playerDetected = false;
             }
         }
     }
@@ -30,6 +34,17 @@ public class DoorScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerDetected = true;
+            playerGO = collision.gameObject;
+            keyTxt.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerDetected = false;
+            keyTxt.SetActive(false);
         }
     }
 }

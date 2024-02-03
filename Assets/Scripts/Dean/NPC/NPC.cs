@@ -5,10 +5,13 @@ using UnityEngine;
 using UnityEngine.UI;
 public class NPC : MonoBehaviour
 {
+    [SerializeField] GameObject promptText;
+
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
     public string[] dialogue;
     private int index;
+    private bool isTyping;
 
     public GameObject contButton;
     public float wordSpeed;
@@ -17,7 +20,7 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose && !isTyping)
         {
             if (dialoguePanel.activeInHierarchy)
             {
@@ -30,14 +33,17 @@ public class NPC : MonoBehaviour
             }
         }
 
-        if (dialogueText.text == dialogue[index])
+        if (Input.GetKeyDown(KeyCode.Space) && dialoguePanel.activeInHierarchy && !isTyping)
         {
-            contButton.SetActive(true);
+            NextLine();
         }
     }
 
     public void NextLine()
     {
+        if (isTyping) 
+            return;
+
         contButton.SetActive(false);
 
         if (index < dialogue.Length - 1)
@@ -61,11 +67,14 @@ public class NPC : MonoBehaviour
 
     IEnumerator Typing()
     {
+        isTyping = true;
         foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
         }
+        isTyping = false;
+        contButton.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -73,6 +82,7 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            promptText.SetActive(true);
         }
     }
 
@@ -81,6 +91,7 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
+            promptText.SetActive(false);
         }
     }
 }
