@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class NPC : MonoBehaviour
 {
     [SerializeField] GameObject promptText;
@@ -25,10 +26,12 @@ public class NPC : MonoBehaviour
             if (dialoguePanel.activeInHierarchy)
             {
                 zeroText();
+                promptText.SetActive(true); 
             }
             else
             {
                 dialoguePanel.SetActive(true);
+                promptText.SetActive(false); 
                 StartCoroutine(Typing());
             }
         }
@@ -41,7 +44,7 @@ public class NPC : MonoBehaviour
 
     public void NextLine()
     {
-        if (isTyping) 
+        if (isTyping)
             return;
 
         contButton.SetActive(false);
@@ -55,6 +58,7 @@ public class NPC : MonoBehaviour
         else
         {
             zeroText();
+            promptText.SetActive(true); 
         }
     }
 
@@ -82,7 +86,8 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
-            promptText.SetActive(true);
+            if (!dialoguePanel.activeInHierarchy)
+                promptText.SetActive(true);
         }
     }
 
