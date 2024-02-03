@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DeanMovement : MonoBehaviour
 {
-    public float moveSpeed = 15f; 
+    //public float moveSpeed = 15f; 
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -18,11 +18,11 @@ public class DeanMovement : MonoBehaviour
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
         float moveVertical = Input.GetAxisRaw("Vertical");
 
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+        //Vector2 movement = new Vector2(moveHorizontal, moveVertical);
 
-        movement.Normalize();
+        //movement.Normalize();
 
-        rb.velocity = movement * moveSpeed;
+        //rb.velocity = movement * moveSpeed;
 
         if (moveHorizontal < 0)
         {
