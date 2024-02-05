@@ -76,7 +76,7 @@ public class NPC : MonoBehaviour
         index = 0;
         dialoguePanel.SetActive(false);
 
-        thePlayer.canMoveTrue();
+        thePlayer.CanMoveTrue();
     }
 
     IEnumerator Typing()

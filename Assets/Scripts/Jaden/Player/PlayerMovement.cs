@@ -5,10 +5,10 @@ using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D rb;
+    Rigidbody2D _rb;
     
-    private Vector2 forceToApply;
-    private Vector2 playerInput;
+    private Vector2 _forceToApply;
+    private Vector2 _playerInput;
 
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
@@ -21,61 +21,61 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashDuration;
     [SerializeField] private float dashCooldown;
-    private bool isDashing;
-    private bool canDash;
-    private bool canMove;
+    private bool _isDashing;
+    private bool _canDash;
+    private bool _canMove;
     
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
 
-        canMove = true;
-        canDash = true;
+        _canMove = true;
+        _canDash = true;
     }
 
     void Update()
     {
         //Prevents any input when dashing
-        if (isDashing)
+        if (_isDashing)
         {
             return;
         }
 
-        if (!canMove)
+        if (!_canMove)
         {
-            rb.velocity = Vector2.zero;
+            _rb.velocity = Vector2.zero;
             return;
         }
         
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.Space) && canDash)
+        if (Input.GetKeyDown(KeyCode.Space) && _canDash)
         {
             StartCoroutine(Dash());
         }
         
-        playerInput = new Vector2(moveX, moveY).normalized;
+        _playerInput = new Vector2(moveX, moveY).normalized;
     }
     
     void FixedUpdate()
     {
         //Prevents any input when dashing
-        if (isDashing)
+        if (_isDashing)
         {
             return;
         }
         
-        Vector2 moveForce = playerInput * moveSpeed;
+        Vector2 moveForce = _playerInput * moveSpeed;
         
-        moveForce += forceToApply;
-        forceToApply *= forceDamping;
+        moveForce += _forceToApply;
+        _forceToApply *= forceDamping;
 
-        if (Mathf.Abs(forceToApply.x) <= 0.01f && Mathf.Abs(forceToApply.y) <= 0.01f)
+        if (Mathf.Abs(_forceToApply.x) <= 0.01f && Mathf.Abs(_forceToApply.y) <= 0.01f)
         {
-            forceToApply = Vector2.zero;
+            _forceToApply = Vector2.zero;
         }
-        rb.velocity = moveForce;
+        _rb.velocity = moveForce;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -83,31 +83,41 @@ public class PlayerMovement : MonoBehaviour
         if (collision.collider.CompareTag("ApplyDamage"))
         {
             Vector2 collisionNormal = collision.contacts[0].normal;
-            forceToApply += collisionNormal * knockback;
+            _forceToApply += collisionNormal * knockback;
             //Destroy(collision.gameObject);
         }
     }
 
     private IEnumerator Dash()
     {
-        canDash = false;
-        isDashing = true;
+        _canDash = false;
+        _isDashing = true;
         
-        rb.velocity = new Vector2(playerInput.x * dashSpeed, playerInput.y * dashSpeed);
+        _rb.velocity = new Vector2(_playerInput.x * dashSpeed, _playerInput.y * dashSpeed);
         yield return new WaitForSeconds(dashDuration);
-        isDashing = false;
+        _isDashing = false;
 
         yield return new WaitForSeconds(dashCooldown);
-        canDash = true;
+        _canDash = true;
     }
 
     public bool CanMoveFalse()
     {
-        return canMove = false;
+        return _canMove = false;
     }
 
-    public bool canMoveTrue()
+    public bool CanMoveTrue()
     {
-        return canMove = true;
+        return _canMove = true;
+    }
+
+    public bool CanDashTrue()
+    {
+        return _canDash = true;
+    }
+
+    public bool CanDashFalse()
+    {
+        return _canDash = false;
     }
 }
