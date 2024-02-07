@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DoorScript : MonoBehaviour
 {
     [SerializeField] Transform posToGo;
     [SerializeField] GameObject keyTxt;
+    [SerializeField] Image fadeImage;
+    [SerializeField] float fadeDuration = 1.0f;
+    [SerializeField] float teleportDelay = 2.0f;
 
     bool playerDetected;
     GameObject playerGO;
@@ -14,6 +18,7 @@ public class DoorScript : MonoBehaviour
     void Start()
     {
         playerDetected = false;
+        fadeImage.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,10 +28,40 @@ public class DoorScript : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                playerGO.transform.position = posToGo.position;
-                playerDetected = false;
+                StartCoroutine(Transition());
             }
         }
+    }
+
+    IEnumerator Transition()
+    {
+        fadeImage.gameObject.SetActive(true);
+        fadeImage.color = new Color(0, 0, 0, 0); // Start with transparent
+
+        float elapsedTime = 0;
+        while (elapsedTime < fadeDuration)
+        {
+            fadeImage.color = Color.Lerp(Color.clear, Color.black, elapsedTime / fadeDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(teleportDelay);
+
+        Vector3 startPos = playerGO.transform.position;
+        Vector3 targetPos = posToGo.position;
+
+        playerGO.transform.position = targetPos;
+
+        elapsedTime = 0;
+        while (elapsedTime < fadeDuration)
+        {
+            fadeImage.color = Color.Lerp(Color.black, Color.clear, elapsedTime / fadeDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        fadeImage.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

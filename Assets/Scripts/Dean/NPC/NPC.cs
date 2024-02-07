@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +6,7 @@ using UnityEngine.UI;
 public class NPC : MonoBehaviour
 {
     private PlayerMovement thePlayer;
-    
+
     [SerializeField] GameObject promptText;
 
     public GameObject dialoguePanel;
@@ -16,31 +15,38 @@ public class NPC : MonoBehaviour
     private int index;
     private bool isTyping;
 
-    public GameObject contButton;
+    public Animator contButtonAnimator; // Reference to the Animator component of the continue button
     public float wordSpeed;
     public bool playerIsClose;
+    private Coroutine typingCoroutine;
 
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerMovement>();
     }
-    
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose && !isTyping)
         {
             thePlayer.CanMoveFalse();
-            
+
             if (dialoguePanel.activeInHierarchy)
             {
-                zeroText();
-                promptText.SetActive(true); 
+                ZeroText();
+                promptText.SetActive(true);
             }
             else
             {
                 dialoguePanel.SetActive(true);
-                promptText.SetActive(false); 
-                StartCoroutine(Typing());
+                promptText.SetActive(false);
+
+                index = 0;
+
+                typingCoroutine = StartCoroutine(Typing());
+
+                // Enable the animation object
+                contButtonAnimator.gameObject.SetActive(true);
             }
         }
 
@@ -55,28 +61,34 @@ public class NPC : MonoBehaviour
         if (isTyping)
             return;
 
-        contButton.SetActive(false);
+        // Disable the animation object
+        contButtonAnimator.gameObject.SetActive(false);
 
         if (index < dialogue.Length - 1)
         {
             index++;
             dialogueText.text = "";
-            StartCoroutine(Typing());
+            typingCoroutine = StartCoroutine(Typing());
         }
         else
         {
-            zeroText();
-            promptText.SetActive(true); 
+            ZeroText();
+            promptText.SetActive(true);
         }
     }
 
-    public void zeroText()
+    public void ZeroText()
     {
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
-
         thePlayer.CanMoveTrue();
+        isTyping = false;
+
+        if (typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+
+        typingCoroutine = null;
     }
 
     IEnumerator Typing()
@@ -88,7 +100,8 @@ public class NPC : MonoBehaviour
             yield return new WaitForSeconds(wordSpeed);
         }
         isTyping = false;
-        contButton.SetActive(true);
+        // Enable the animation object
+        contButtonAnimator.gameObject.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -107,6 +120,10 @@ public class NPC : MonoBehaviour
         {
             playerIsClose = false;
             promptText.SetActive(false);
+            if (dialoguePanel.activeInHierarchy)
+            {
+                ZeroText();
+            }
         }
     }
 }
