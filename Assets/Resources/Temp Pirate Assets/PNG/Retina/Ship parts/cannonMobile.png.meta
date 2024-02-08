@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cannonMobile_0: 1558050931053780594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

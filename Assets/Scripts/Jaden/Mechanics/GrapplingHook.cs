@@ -32,7 +32,7 @@ public class GrapplingHook : MonoBehaviour
 
     private void Update() 
     {
-        if (Input.GetMouseButtonDown(0) && !_isGrappling && _canGrapple) 
+        if (Input.GetMouseButtonDown(1) && !_isGrappling && _canGrapple) 
         {
             StartGrapple();
         }
@@ -47,7 +47,6 @@ public class GrapplingHook : MonoBehaviour
 
             if (Vector2.Distance(transform.position, _target) < 1.2f || Input.GetKeyDown(KeyCode.Space))
             {
-                _thePlayer.CanDashTrue();
                 _thePlayer.CanMoveTrue();
                 
                 retracting = false;
@@ -65,7 +64,6 @@ public class GrapplingHook : MonoBehaviour
 
         if (hit.collider != null)
         {
-            _thePlayer.CanDashFalse();
             _thePlayer.CanMoveFalse();
             
             _isGrappling = true;

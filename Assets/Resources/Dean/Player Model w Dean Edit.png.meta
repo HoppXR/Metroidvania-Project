@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Player Model w Dean Edit_0: -2243299536286506837
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

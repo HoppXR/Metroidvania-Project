@@ -40,12 +40,6 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-
-        if (!_canMove)
-        {
-            _rb.velocity = Vector2.zero;
-            return;
-        }
         
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
@@ -62,6 +56,11 @@ public class PlayerMovement : MonoBehaviour
     {
         //Prevents any input when dashing
         if (_isDashing)
+        {
+            return;
+        }
+
+        if (!_canMove)
         {
             return;
         }
@@ -93,6 +92,8 @@ public class PlayerMovement : MonoBehaviour
         _canDash = false;
         _isDashing = true;
         
+        //Play dash animation
+        
         _rb.velocity = new Vector2(_playerInput.x * dashSpeed, _playerInput.y * dashSpeed);
         yield return new WaitForSeconds(dashDuration);
         _isDashing = false;
@@ -101,23 +102,14 @@ public class PlayerMovement : MonoBehaviour
         _canDash = true;
     }
 
-    public bool CanMoveFalse()
+    public void CanMoveFalse()
     {
-        return _canMove = false;
+        _canMove = false;
+        _rb.velocity = Vector2.zero;
     }
 
-    public bool CanMoveTrue()
+    public void CanMoveTrue()
     {
-        return _canMove = true;
-    }
-
-    public bool CanDashTrue()
-    {
-        return _canDash = true;
-    }
-
-    public bool CanDashFalse()
-    {
-        return _canDash = false;
+        _canMove = true;
     }
 }

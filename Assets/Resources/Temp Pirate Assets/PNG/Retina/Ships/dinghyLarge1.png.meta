@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dinghyLarge1_0: 7690825350585491318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
