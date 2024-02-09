@@ -8,6 +8,8 @@ public class NPC : MonoBehaviour
     private PlayerMovement thePlayer;
 
     [SerializeField] GameObject promptText;
+    [SerializeField] GameObject particleEffect; 
+    [SerializeField] bool shouldDestroyAfterDialogue = false; 
 
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -15,7 +17,7 @@ public class NPC : MonoBehaviour
     private int index;
     private bool isTyping;
 
-    public Animator contButtonAnimator; // Reference to the Animator component of the continue button
+    public Animator contButtonAnimator;
     public float wordSpeed;
     public bool playerIsClose;
     private Coroutine typingCoroutine;
@@ -45,7 +47,6 @@ public class NPC : MonoBehaviour
 
                 typingCoroutine = StartCoroutine(Typing());
 
-                // Enable the animation object
                 contButtonAnimator.gameObject.SetActive(true);
             }
         }
@@ -61,7 +62,6 @@ public class NPC : MonoBehaviour
         if (isTyping)
             return;
 
-        // Disable the animation object
         contButtonAnimator.gameObject.SetActive(false);
 
         if (index < dialogue.Length - 1)
@@ -74,6 +74,11 @@ public class NPC : MonoBehaviour
         {
             ZeroText();
             promptText.SetActive(true);
+
+            if (shouldDestroyAfterDialogue)
+            {
+                DestroyNPC();
+            }
         }
     }
 
@@ -100,7 +105,6 @@ public class NPC : MonoBehaviour
             yield return new WaitForSeconds(wordSpeed);
         }
         isTyping = false;
-        // Enable the animation object
         contButtonAnimator.gameObject.SetActive(true);
     }
 
@@ -125,5 +129,17 @@ public class NPC : MonoBehaviour
                 ZeroText();
             }
         }
+    }
+
+    void DestroyNPC()
+    {
+        if (particleEffect != null)
+        {
+            GameObject particleInstance = Instantiate(particleEffect, transform.position, Quaternion.identity);
+
+            Destroy(particleInstance, 2f);
+        }
+
+        Destroy(gameObject);
     }
 }
