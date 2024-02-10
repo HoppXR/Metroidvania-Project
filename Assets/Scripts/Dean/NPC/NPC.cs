@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
-    private PlayerMovement thePlayer;
+    private PlayerMovement _thePlayer;
 
     [SerializeField] GameObject promptText;
     [SerializeField] GameObject particleEffect; 
@@ -24,14 +24,15 @@ public class NPC : MonoBehaviour
 
     void Start()
     {
-        thePlayer = FindObjectOfType<PlayerMovement>();
+        _thePlayer = FindFirstObjectByType<PlayerMovement>();
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose && !isTyping)
         {
-            thePlayer.CanMoveFalse();
+            _thePlayer.CanMoveFalse();
+            _thePlayer.GrappleHook.CanGrappleFalse();
 
             if (dialoguePanel.activeInHierarchy)
             {
@@ -87,8 +88,10 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
-        thePlayer.CanMoveTrue();
         isTyping = false;
+        
+        _thePlayer.CanMoveTrue();
+        _thePlayer.GrappleHook.CanGrappleTrue();
 
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);

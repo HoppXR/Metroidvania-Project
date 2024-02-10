@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Player Model Will Edit-1.png_0: 1083908439740868608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

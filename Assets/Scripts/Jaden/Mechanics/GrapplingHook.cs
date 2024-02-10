@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GrapplingHook : MonoBehaviour 
 {
-    private LineRenderer _line;
-    
     private PlayerMovement _thePlayer;
+    
+    private LineRenderer _line;
 
     [Header("Grapple Settings")]
     [SerializeField] private LayerMask grappleMask;
@@ -23,7 +23,7 @@ public class GrapplingHook : MonoBehaviour
 
     private void Start() 
     {
-        _thePlayer = FindObjectOfType<PlayerMovement>();
+        _thePlayer = FindFirstObjectByType<PlayerMovement>();
         
         _line = GetComponent<LineRenderer>();
 
@@ -64,8 +64,6 @@ public class GrapplingHook : MonoBehaviour
 
         if (hit.collider != null)
         {
-            _thePlayer.CanMoveFalse();
-            
             _isGrappling = true;
             _target = hit.point;
             _line.enabled = true;
@@ -94,6 +92,19 @@ public class GrapplingHook : MonoBehaviour
         }
         
         _line.SetPosition(1, _target);
+        
+        _thePlayer.CanMoveFalse();
+        
         retracting = true;
+    }
+
+    public void CanGrappleTrue()
+    {
+        _canGrapple = true;
+    }
+
+    public void CanGrappleFalse()
+    {
+        _canGrapple = false;
     }
 }

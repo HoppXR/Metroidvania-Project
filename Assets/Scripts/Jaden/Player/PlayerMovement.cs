@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
+    internal GrapplingHook GrappleHook;
+    
     Rigidbody2D _rb;
     
     private Vector2 _forceToApply;
@@ -27,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     
     void Start()
     {
+        GrappleHook = FindFirstObjectByType<GrapplingHook>();
+        
         _rb = GetComponent<Rigidbody2D>();
 
         _canMove = true;

@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stock-photo-white-mental-hospital-room-interior-d-rendering-276804251_0: 4018671533717203246
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
