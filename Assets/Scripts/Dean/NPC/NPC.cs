@@ -8,8 +8,8 @@ public class NPC : MonoBehaviour
     private PlayerMovement _thePlayer;
 
     [SerializeField] GameObject promptText;
-    [SerializeField] GameObject particleEffect; 
-    [SerializeField] bool shouldDestroyAfterDialogue = false; 
+    [SerializeField] GameObject particleEffect;
+    [SerializeField] bool shouldDestroyAfterDialogue = false;
 
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -21,6 +21,9 @@ public class NPC : MonoBehaviour
     public float wordSpeed;
     public bool playerIsClose;
     private Coroutine typingCoroutine;
+
+    [SerializeField] GameObject tintPrefab;
+    private GameObject tintInstance;
 
     void Start()
     {
@@ -49,6 +52,22 @@ public class NPC : MonoBehaviour
                 typingCoroutine = StartCoroutine(Typing());
 
                 contButtonAnimator.gameObject.SetActive(true);
+
+                if (tintPrefab != null)
+                {
+                    tintInstance = Instantiate(tintPrefab, dialoguePanel.transform);
+
+                    Canvas canvas = dialoguePanel.GetComponent<Canvas>();
+                    if (canvas != null)
+                    {
+                        Canvas tintCanvas = tintInstance.GetComponent<Canvas>();
+                        if (tintCanvas != null)
+                        {
+                            tintCanvas.overrideSorting = true;
+                            tintCanvas.sortingOrder = canvas.sortingOrder + 1;
+                        }
+                    }
+                }
             }
         }
 
@@ -80,6 +99,11 @@ public class NPC : MonoBehaviour
             {
                 DestroyNPC();
             }
+
+            if (tintInstance != null)
+            {
+                Destroy(tintInstance);
+            }
         }
     }
 
@@ -89,7 +113,7 @@ public class NPC : MonoBehaviour
         index = 0;
         dialoguePanel.SetActive(false);
         isTyping = false;
-        
+
         _thePlayer.CanMoveTrue();
         _thePlayer.GrappleHook.CanGrappleTrue();
 

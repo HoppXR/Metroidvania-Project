@@ -1628,6 +1628,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptText: {fileID: 774293994}
+  particleEffect: {fileID: 0}
+  shouldDestroyAfterDialogue: 0
   dialoguePanel: {fileID: 1655489455}
   dialogueText: {fileID: 1818263601}
   dialogue:
@@ -1638,6 +1640,8 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 1126714138}
   wordSpeed: 0.03
   playerIsClose: 0
+  tintPrefab: {fileID: 0}
+  animatedSprite: {fileID: 0}
 --- !u!58 &237581530
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3628,7 +3632,7 @@ Transform:
   m_GameObject: {fileID: 487308986}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.6651, y: 31.03, z: -0.5970646}
+  m_LocalPosition: {x: -23.6651, y: 30.46, z: -0.5970646}
   m_LocalScale: {x: 25.906864, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4456,6 +4460,90 @@ MonoBehaviour:
   target: {fileID: 480373501}
   smoothSpeed: 0.1
   offset: {x: 0, y: 0, z: 0}
+--- !u!1 &529172003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 529172005}
+  - component: {fileID: 529172004}
+  m_Layer: 0
+  m_Name: TempStima_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &529172004
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529172003}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1001985697705515575, guid: faa50d5e74976df40acd5d45a9825166, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 18.27, y: 18.36}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &529172005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529172003}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6807375, y: 174.66881, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &547623439
 GameObject:
   m_ObjectHideFlags: 0
@@ -5553,7 +5641,7 @@ Transform:
   m_GameObject: {fileID: 694457349}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.38, y: 2.52, z: -0.5970646}
+  m_LocalPosition: {x: -15.38, y: 2.74, z: -0.5970646}
   m_LocalScale: {x: 1.4116069, y: 2.1259298, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6187,7 +6275,7 @@ Transform:
   m_GameObject: {fileID: 793539695}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.18, y: 2.96, z: -0.5970646}
+  m_LocalPosition: {x: -23.18, y: 3.19, z: -0.5970646}
   m_LocalScale: {x: 27.386295, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8841,7 +8929,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -3710160855738069225, guid: f6609395f8d8e7c4797df3cfc2dff0ec, type: 3}
   m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8862,7 +8950,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -23.69, y: 16.459475, z: -0.5970646}
-  m_LocalScale: {x: 23.974802, y: 25.917503, z: 1.7955}
+  m_LocalScale: {x: 3.6317031, y: 3.9259834, z: 0.27198234}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 838402420}
@@ -11963,6 +12051,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptText: {fileID: 1048183468}
+  particleEffect: {fileID: 0}
+  shouldDestroyAfterDialogue: 0
   dialoguePanel: {fileID: 2062957406}
   dialogueText: {fileID: 1122919302}
   dialogue:
@@ -11970,6 +12060,8 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 2030145031}
   wordSpeed: 0.03
   playerIsClose: 0
+  tintPrefab: {fileID: 0}
+  animatedSprite: {fileID: 0}
 --- !u!61 &1598080591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13067,7 +13159,7 @@ Transform:
   m_GameObject: {fileID: 1762330925}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.48, y: 2.48, z: -0.5970646}
+  m_LocalPosition: {x: -32.48, y: 2.81, z: -0.5970646}
   m_LocalScale: {x: 1.4116069, y: 2.1259298, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16574,6 +16666,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptText: {fileID: 1029613106}
+  particleEffect: {fileID: 0}
+  shouldDestroyAfterDialogue: 0
   dialoguePanel: {fileID: 1911629383}
   dialogueText: {fileID: 305576948}
   dialogue:
@@ -16581,6 +16675,8 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 1405906584}
   wordSpeed: 0.03
   playerIsClose: 0
+  tintPrefab: {fileID: 0}
+  animatedSprite: {fileID: 0}
 --- !u!58 &2102646793
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17214,3 +17310,4 @@ SceneRoots:
   - {fileID: 37457652}
   - {fileID: 66534070}
   - {fileID: 1777191192}
+  - {fileID: 529172005}

@@ -102,9 +102,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 513
-        width: 255
-        height: 255
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,10 +122,10 @@ TextureImporter:
       name: NPCSprite1_1
       rect:
         serializedVersion: 2
-        x: 255
-        y: 513
-        width: 255
-        height: 255
+        x: 256
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,10 +143,10 @@ TextureImporter:
       name: NPCSprite1_2
       rect:
         serializedVersion: 2
-        x: 510
-        y: 513
-        width: 255
-        height: 255
+        x: 512
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: NPCSprite1_3
       rect:
         serializedVersion: 2
-        x: 765
-        y: 513
-        width: 255
-        height: 255
+        x: 768
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: NPCSprite1_4
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 513
-        width: 255
-        height: 255
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: NPCSprite1_5
       rect:
         serializedVersion: 2
-        x: 1275
-        y: 513
-        width: 255
-        height: 255
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: NPCSprite1_6
       rect:
         serializedVersion: 2
-        x: 1530
-        y: 513
-        width: 255
-        height: 255
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,9 +249,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 258
-        width: 255
-        height: 255
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: NPCSprite1_8
       rect:
         serializedVersion: 2
-        x: 255
-        y: 258
-        width: 255
-        height: 255
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: NPCSprite1_9
       rect:
         serializedVersion: 2
-        x: 510
-        y: 258
-        width: 255
-        height: 255
+        x: 512
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,10 +311,10 @@ TextureImporter:
       name: NPCSprite1_10
       rect:
         serializedVersion: 2
-        x: 765
-        y: 258
-        width: 255
-        height: 255
+        x: 768
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +332,10 @@ TextureImporter:
       name: NPCSprite1_11
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 258
-        width: 255
-        height: 255
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +353,10 @@ TextureImporter:
       name: NPCSprite1_12
       rect:
         serializedVersion: 2
-        x: 1275
-        y: 258
-        width: 255
-        height: 255
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +374,10 @@ TextureImporter:
       name: NPCSprite1_13
       rect:
         serializedVersion: 2
-        x: 1530
-        y: 258
-        width: 255
-        height: 255
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,9 +396,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3
-        width: 255
-        height: 255
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,10 +416,10 @@ TextureImporter:
       name: NPCSprite1_15
       rect:
         serializedVersion: 2
-        x: 255
-        y: 3
-        width: 255
-        height: 255
+        x: 256
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +437,10 @@ TextureImporter:
       name: NPCSprite1_16
       rect:
         serializedVersion: 2
-        x: 510
-        y: 3
-        width: 255
-        height: 255
+        x: 512
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +458,10 @@ TextureImporter:
       name: NPCSprite1_17
       rect:
         serializedVersion: 2
-        x: 765
-        y: 3
-        width: 255
-        height: 255
+        x: 768
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
       name: NPCSprite1_18
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 3
-        width: 255
-        height: 255
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,10 +500,10 @@ TextureImporter:
       name: NPCSprite1_19
       rect:
         serializedVersion: 2
-        x: 1275
-        y: 3
-        width: 255
-        height: 255
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,10 +521,10 @@ TextureImporter:
       name: NPCSprite1_20
       rect:
         serializedVersion: 2
-        x: 1530
-        y: 3
-        width: 255
-        height: 255
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
