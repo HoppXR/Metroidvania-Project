@@ -22,6 +22,9 @@ public class NPC : MonoBehaviour
     public bool playerIsClose;
     private Coroutine typingCoroutine;
 
+    public AudioSource typingSound;
+    public AudioClip typingClip;
+
     [SerializeField] GameObject tintPrefab;
     private GameObject tintInstance;
 
@@ -129,6 +132,10 @@ public class NPC : MonoBehaviour
         foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
+            if (typingSound != null && typingClip != null)
+            {
+                typingSound.PlayOneShot(typingClip); 
+            }
             yield return new WaitForSeconds(wordSpeed);
         }
         isTyping = false;
