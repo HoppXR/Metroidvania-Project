@@ -110,10 +110,14 @@ public class PlayerMovement : MonoBehaviour
     {
         _canMove = false;
         _rb.velocity = Vector2.zero;
+        
+        _canDash = false;
     }
 
     public void CanMoveTrue()
     {
         _canMove = true;
+        
+        _canDash = true;
     }
 }
