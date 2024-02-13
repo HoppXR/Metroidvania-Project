@@ -7,6 +7,8 @@ public class NPC : MonoBehaviour
 {
     private PlayerMovement _thePlayer;
 
+    [SerializeField] private bool stopMovement;
+ 
     [SerializeField] GameObject promptText;
     [SerializeField] GameObject particleEffect;
     [SerializeField] bool shouldDestroyAfterDialogue = false;
@@ -25,9 +27,6 @@ public class NPC : MonoBehaviour
     public AudioSource typingSound;
     public AudioClip typingClip;
 
-    [SerializeField] GameObject tintPrefab;
-    private GameObject tintInstance;
-
     void Start()
     {
         _thePlayer = FindFirstObjectByType<PlayerMovement>();
@@ -37,8 +36,11 @@ public class NPC : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose && !isTyping)
         {
-            _thePlayer.CanMoveFalse();
-            _thePlayer.GrappleHook.CanGrappleFalse();
+            if (stopMovement)
+            {
+                _thePlayer.CanMoveFalse();
+                _thePlayer.GrappleHook.CanGrappleFalse();
+            }
 
             if (dialoguePanel.activeInHierarchy)
             {
@@ -55,22 +57,6 @@ public class NPC : MonoBehaviour
                 typingCoroutine = StartCoroutine(Typing());
 
                 contButtonAnimator.gameObject.SetActive(true);
-
-                if (tintPrefab != null)
-                {
-                    tintInstance = Instantiate(tintPrefab, dialoguePanel.transform);
-
-                    Canvas canvas = dialoguePanel.GetComponent<Canvas>();
-                    if (canvas != null)
-                    {
-                        Canvas tintCanvas = tintInstance.GetComponent<Canvas>();
-                        if (tintCanvas != null)
-                        {
-                            tintCanvas.overrideSorting = true;
-                            tintCanvas.sortingOrder = canvas.sortingOrder + 1;
-                        }
-                    }
-                }
             }
         }
 
@@ -80,7 +66,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    public void NextLine()
+    private void NextLine()
     {
         if (isTyping)
             return;
@@ -100,17 +86,12 @@ public class NPC : MonoBehaviour
 
             if (shouldDestroyAfterDialogue)
             {
-                DestroyNPC();
-            }
-
-            if (tintInstance != null)
-            {
-                Destroy(tintInstance);
+                DestroyNpc();
             }
         }
     }
 
-    public void ZeroText()
+    private void ZeroText()
     {
         dialogueText.text = "";
         index = 0;
@@ -165,7 +146,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    void DestroyNPC()
+    private void DestroyNpc()
     {
         if (particleEffect != null)
         {
