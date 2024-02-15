@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     internal GrapplingHook GrappleHook;
     
     Rigidbody2D _rb;
+    public Animator animator;
     
     private Vector2 _forceToApply;
     private Vector2 _playerInput;
@@ -47,6 +48,10 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
+        
+        animator.SetFloat("Horizontal", moveX);
+        animator.SetFloat("Vertical", moveY);
+        animator.SetFloat("Speed", _playerInput.sqrMagnitude);
 
         if (Input.GetKeyDown(KeyCode.Space) && _canDash)
         {
