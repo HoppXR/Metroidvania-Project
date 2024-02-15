@@ -7,6 +7,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private int _maxHealth;
     private int currentHealth;
     private EnemyAI enemyAI;
+    private NPC npc;
     private bool chase = false;
     private Rigidbody2D rb;
 
@@ -21,6 +22,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (!chase)
         {
+            npc.enabled = false;
             enemyAI.enabled = true;
             chase = true;
             rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
