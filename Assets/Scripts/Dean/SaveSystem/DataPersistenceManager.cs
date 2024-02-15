@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+
 public class DataPersistenceManager : MonoBehaviour
 {
     [Header("File Storage Config")]
@@ -12,8 +13,8 @@ public class DataPersistenceManager : MonoBehaviour
     private GameData gameData;
 
     private List<IDataPersistence> dataPersistenceObjects;
-    public static DataPersistenceManager instance {  get; private set; }
 
+    public static DataPersistenceManager instance { get; private set; }
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class DataPersistenceManager : MonoBehaviour
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         LoadGame();
     }
+
     private void Awake()
     {
         if (instance != null)
@@ -61,15 +63,16 @@ public class DataPersistenceManager : MonoBehaviour
         dataHandler.Save(gameData);
     }
 
-    private void OnApplicationQuit()
+    // Method to handle manual save trigger
+    public void ManualSave()
     {
         SaveGame();
+        Debug.Log("Game saved manually.");
     }
 
     private List<IDataPersistence> FindAllDataPersistenceObjects()
     {
         IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>().OfType<IDataPersistence>();
-
 
         return new List<IDataPersistence>(dataPersistenceObjects);
     }

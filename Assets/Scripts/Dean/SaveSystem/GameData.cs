@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameData 
 {
-    public int deathCount;
     public Vector3 playerPosition;
 
 
@@ -12,7 +11,6 @@ public class GameData
     // the game starts with when there's no data to load
     public GameData()
     {
-        this.deathCount = 0;
         playerPosition = Vector3.zero;
     }
 }

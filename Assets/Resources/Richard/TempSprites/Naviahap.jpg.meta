@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Naviahap_0: 3912889558210701616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
