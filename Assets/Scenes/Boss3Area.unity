@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 28975402}
   - component: {fileID: 28975401}
   - component: {fileID: 28975405}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NPC2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 1.1768068}
+  m_Offset: {x: 0, y: 0.4840269}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -384,7 +384,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.21, y: 2.426387}
+  m_Size: {x: 2.21, y: 1.4919465}
   m_EdgeRadius: 0
 --- !u!58 &28975403
 CircleCollider2D:
@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 38025912}
   - component: {fileID: 38025911}
   - component: {fileID: 38025910}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: NPCCanvas2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 245498435}
   - component: {fileID: 245498437}
   - component: {fileID: 245498436}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2195,7 +2195,7 @@ GameObject:
   - component: {fileID: 542407436}
   - component: {fileID: 542407435}
   - component: {fileID: 542407434}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: NPCCanvas1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2429,7 +2429,7 @@ GameObject:
   - component: {fileID: 645634943}
   - component: {fileID: 645634942}
   - component: {fileID: 645634941}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: NPCSpriteAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2526,7 +2526,7 @@ GameObject:
   - component: {fileID: 718291685}
   - component: {fileID: 718291684}
   - component: {fileID: 718291683}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2812,7 +2812,7 @@ GameObject:
   - component: {fileID: 758578072}
   - component: {fileID: 758578071}
   - component: {fileID: 758578070}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialoguePointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2967,7 +2967,7 @@ GameObject:
   - component: {fileID: 767946916}
   - component: {fileID: 767946915}
   - component: {fileID: 767946914}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialoguePointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3188,7 +3188,7 @@ GameObject:
   - component: {fileID: 890542535}
   - component: {fileID: 890542537}
   - component: {fileID: 890542536}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: PromptText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3322,7 +3322,7 @@ GameObject:
   - component: {fileID: 951231072}
   - component: {fileID: 951231074}
   - component: {fileID: 951231073}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: PromptText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3456,7 +3456,7 @@ GameObject:
   - component: {fileID: 1001979596}
   - component: {fileID: 1001979598}
   - component: {fileID: 1001979597}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Dialogue Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3880,7 +3880,7 @@ GameObject:
   - component: {fileID: 1131094486}
   - component: {fileID: 1131094488}
   - component: {fileID: 1131094487}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Dialogue Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3961,7 +3961,7 @@ GameObject:
   - component: {fileID: 1142965843}
   - component: {fileID: 1142965842}
   - component: {fileID: 1142965841}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: NPCCanvas1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4079,8 +4079,8 @@ Transform:
   m_GameObject: {fileID: 1246476972}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.0356, y: 39.39, z: 0}
-  m_LocalScale: {x: 51.891045, y: 1.2990255, z: 10.667}
+  m_LocalPosition: {x: 20.4189, y: 37.82, z: 0}
+  m_LocalScale: {x: 47.122257, y: 1.2990255, z: 10.667}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 279022806}
@@ -4416,7 +4416,7 @@ GameObject:
   - component: {fileID: 1269892046}
   - component: {fileID: 1269892045}
   - component: {fileID: 1269892049}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NPC5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4523,7 +4523,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 1.1768068}
+  m_Offset: {x: 0, y: 0.43569845}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4533,7 +4533,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.21, y: 2.426387}
+  m_Size: {x: 2.21, y: 1.5241612}
   m_EdgeRadius: 0
 --- !u!58 &1269892047
 CircleCollider2D:
@@ -4992,7 +4992,7 @@ GameObject:
   - component: {fileID: 1321330148}
   - component: {fileID: 1321330147}
   - component: {fileID: 1321330146}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialogueTint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5071,7 +5071,7 @@ GameObject:
   - component: {fileID: 1335425304}
   - component: {fileID: 1335425309}
   - component: {fileID: 1335425310}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NPC1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5112,7 +5112,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 1.1768068}
+  m_Offset: {x: 0, y: 0.5162506}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5122,7 +5122,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.21, y: 2.426387}
+  m_Size: {x: 2.21, y: 1.6852703}
   m_EdgeRadius: 0
 --- !u!114 &1335425305
 MonoBehaviour:
@@ -5383,7 +5383,7 @@ GameObject:
   - component: {fileID: 1345294791}
   - component: {fileID: 1345294790}
   - component: {fileID: 1345294789}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialogueTint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5474,7 +5474,7 @@ Transform:
   m_GameObject: {fileID: 1347223585}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -7.3599997, y: 26.6883, z: 0}
+  m_LocalPosition: {x: -2.43, y: 25.38, z: 0}
   m_LocalScale: {x: 26.485191, y: 1.2990254, z: 10.667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5720,7 +5720,7 @@ GameObject:
   - component: {fileID: 1367179723}
   - component: {fileID: 1367179725}
   - component: {fileID: 1367179724}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: PromptText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5855,7 +5855,7 @@ GameObject:
   - component: {fileID: 1368222724}
   - component: {fileID: 1368222723}
   - component: {fileID: 1368222722}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: NPCSpriteAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5952,7 +5952,7 @@ GameObject:
   - component: {fileID: 1398682955}
   - component: {fileID: 1398682957}
   - component: {fileID: 1398682956}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6086,7 +6086,7 @@ GameObject:
   - component: {fileID: 1408671540}
   - component: {fileID: 1408671539}
   - component: {fileID: 1408671538}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6364,7 +6364,7 @@ GameObject:
   - component: {fileID: 1419374036}
   - component: {fileID: 1419374035}
   - component: {fileID: 1419374034}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialogueTint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6441,7 +6441,7 @@ GameObject:
   - component: {fileID: 1445837990}
   - component: {fileID: 1445837989}
   - component: {fileID: 1445837988}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialoguePointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6725,7 +6725,7 @@ GameObject:
   - component: {fileID: 1503365930}
   - component: {fileID: 1503365932}
   - component: {fileID: 1503365931}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7206,6 +7206,7 @@ GameObject:
   - component: {fileID: 1548736773}
   - component: {fileID: 1548736774}
   - component: {fileID: 1548736775}
+  - component: {fileID: 1548736776}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -7266,7 +7267,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.013717651, y: -0.122131586}
+  m_Offset: {x: 0.76283574, y: 0.21947956}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7276,7 +7277,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.60437, y: 5.9029965}
+  m_Size: {x: 14.833471, y: 11.596611}
   m_EdgeRadius: 0
 --- !u!70 &1548736768
 CapsuleCollider2D:
@@ -7312,8 +7313,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00075251324, y: -0.089911744}
-  m_Size: {x: 2.2498105, y: 2.8766072}
+  m_Offset: {x: 0.054305505, y: 0.10936381}
+  m_Size: {x: 5.677356, y: 10.021254}
   m_Direction: 0
 --- !u!50 &1548736769
 Rigidbody2D:
@@ -7382,7 +7383,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1000
+  m_SortingOrder: 25
   m_Sprite: {fileID: 4944230376442633554, guid: 1e5f6f94e3cb6ab41978ae53f737e0d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7469,7 +7470,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 25
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -7572,6 +7573,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1548736776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548736765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330f5940ad1c18346a37034ec0a0491c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyRenderer: {fileID: 1548736771}
+  MySortingLayer: 25
+  MySortingOrderInLayer: 25
 --- !u!1 &1551684929
 GameObject:
   m_ObjectHideFlags: 0
@@ -7583,7 +7599,7 @@ GameObject:
   - component: {fileID: 1551684930}
   - component: {fileID: 1551684932}
   - component: {fileID: 1551684931}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Dialogue Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7738,7 +7754,7 @@ GameObject:
   - component: {fileID: 1581154007}
   - component: {fileID: 1581154009}
   - component: {fileID: 1581154008}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7872,7 +7888,7 @@ GameObject:
   - component: {fileID: 1674315327}
   - component: {fileID: 1674315326}
   - component: {fileID: 1674315325}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8113,7 +8129,7 @@ GameObject:
   - component: {fileID: 1756191536}
   - component: {fileID: 1756191538}
   - component: {fileID: 1756191537}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Dialogue Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8327,7 +8343,7 @@ GameObject:
   - component: {fileID: 1776782228}
   - component: {fileID: 1776782230}
   - component: {fileID: 1776782229}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: PromptText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8461,7 +8477,7 @@ GameObject:
   - component: {fileID: 1790312904}
   - component: {fileID: 1790312903}
   - component: {fileID: 1790312902}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8596,7 +8612,7 @@ GameObject:
   - component: {fileID: 1800500604}
   - component: {fileID: 1800500603}
   - component: {fileID: 1800500602}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: NPCCanvas1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8699,7 +8715,7 @@ GameObject:
   - component: {fileID: 1804701821}
   - component: {fileID: 1804701820}
   - component: {fileID: 1804701819}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: NPCSpriteAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8797,7 +8813,7 @@ GameObject:
   - component: {fileID: 1804718503}
   - component: {fileID: 1804718502}
   - component: {fileID: 1804718501}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: NPCSpriteAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8894,7 +8910,7 @@ GameObject:
   - component: {fileID: 1807893018}
   - component: {fileID: 1807893020}
   - component: {fileID: 1807893019}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: PromptText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9030,7 +9046,7 @@ GameObject:
   - component: {fileID: 1828403875}
   - component: {fileID: 1828403874}
   - component: {fileID: 1828403873}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialoguePointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9183,7 +9199,7 @@ GameObject:
   - component: {fileID: 1848183172}
   - component: {fileID: 1848183171}
   - component: {fileID: 1848183170}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialogueTint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9604,7 +9620,7 @@ GameObject:
   - component: {fileID: 1937412042}
   - component: {fileID: 1937412041}
   - component: {fileID: 1937412045}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NPC3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9709,7 +9725,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 1.1768068}
+  m_Offset: {x: 0, y: 0.45180637}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0.01, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9719,7 +9735,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.21, y: 2.426387}
+  m_Size: {x: 2.21, y: 1.5563935}
   m_EdgeRadius: 0
 --- !u!58 &1937412043
 CircleCollider2D:
@@ -10051,7 +10067,7 @@ GameObject:
   - component: {fileID: 2050992722}
   - component: {fileID: 2050992721}
   - component: {fileID: 2050992720}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: NPCCanvas1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10737,7 +10753,7 @@ GameObject:
   - component: {fileID: 2090375237}
   - component: {fileID: 2090375236}
   - component: {fileID: 2090375240}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NPC4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10842,7 +10858,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 1.1768068}
+  m_Offset: {x: 0, y: 0.4679191}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10852,7 +10868,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.21, y: 2.426387}
+  m_Size: {x: 2.21, y: 1.7174969}
   m_EdgeRadius: 0
 --- !u!58 &2090375238
 CircleCollider2D:
@@ -11210,7 +11226,7 @@ GameObject:
   - component: {fileID: 6127592775814707940}
   - component: {fileID: 9195071901166590685}
   - component: {fileID: 7000580363543242134}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialogueTint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11277,7 +11293,7 @@ GameObject:
   - component: {fileID: 8236920275312859232}
   - component: {fileID: 6115257350987387187}
   - component: {fileID: 7134849785840499455}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11396,7 +11412,7 @@ GameObject:
   - component: {fileID: 8308574817432292012}
   - component: {fileID: 79902065340757545}
   - component: {fileID: 1758777863868029086}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: NPCSpriteAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11596,7 +11612,7 @@ GameObject:
   - component: {fileID: 7895881249212833147}
   - component: {fileID: 8104452054883810373}
   - component: {fileID: 6643481873556368539}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialoguePointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11733,7 +11749,7 @@ GameObject:
   - component: {fileID: 2923723606958339968}
   - component: {fileID: 4366201198916712371}
   - component: {fileID: 1144068220889479364}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Dialogue Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11803,7 +11819,7 @@ GameObject:
   - component: {fileID: 3378913631178460697}
   - component: {fileID: 1529845927946429086}
   - component: {fileID: 6706134982280645874}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}

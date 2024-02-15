@@ -491,7 +491,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -4693140857260169723, guid: 728f89f14f8dfc345992996e38855f8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1365,7 +1365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbbe4dd3f3120a44ae44c6d20801c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopMovement: 0
+  stopMovement: 1
   promptText: {fileID: 774293994}
   particleEffect: {fileID: 0}
   shouldDestroyAfterDialogue: 0
@@ -2966,7 +2966,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -38.38, y: 18.68, z: 0}
-  m_LocalScale: {x: 0.23864773, y: 0.22447804, z: 0.23864773}
+  m_LocalScale: {x: 0.1795848, y: 0.16892196, z: 0.1795848}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3005,8 +3005,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00075251324, y: -0.089911744}
-  m_Size: {x: 2.2498105, y: 2.8766072}
+  m_Offset: {x: -0.053911917, y: 0.026320022}
+  m_Size: {x: 5.7484446, y: 9.888921}
   m_Direction: 0
 --- !u!61 &480373503
 BoxCollider2D:
@@ -3042,7 +3042,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.013717651, y: -0.122131586}
+  m_Offset: {x: 0.095620155, y: 0.31374335}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3052,7 +3052,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.60437, y: 5.9029965}
+  m_Size: {x: 10.726982, y: 13.051399}
   m_EdgeRadius: 0
 --- !u!114 &480373504
 MonoBehaviour:
@@ -3113,7 +3113,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 1829738127541482a895692670703544, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3802,7 +3802,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1001985697705515575, guid: faa50d5e74976df40acd5d45a9825166, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4870,7 +4870,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.2264151, g: 0.04200782, b: 0.04200782, a: 1}
   m_FlipX: 0
@@ -6715,7 +6715,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8992564196494140692, guid: 728f89f14f8dfc345992996e38855f8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8784,7 +8784,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8801494585396759129, guid: fbd4acf58c4186043ad99edcd39d2d7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8906,7 +8906,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -4030218682350969340, guid: 728f89f14f8dfc345992996e38855f8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9257,7 +9257,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8801494585396759129, guid: fbd4acf58c4186043ad99edcd39d2d7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10891,7 +10891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbbe4dd3f3120a44ae44c6d20801c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopMovement: 0
+  stopMovement: 1
   promptText: {fileID: 1048183468}
   particleEffect: {fileID: 0}
   shouldDestroyAfterDialogue: 0
@@ -13710,7 +13710,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3750353907026023858, guid: 728f89f14f8dfc345992996e38855f8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14523,7 +14523,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3118102174315901086, guid: 728f89f14f8dfc345992996e38855f8d, type: 3}
   m_Color: {r: 0.5188679, g: 0.5041913, b: 0.43402156, a: 1}
   m_FlipX: 0
@@ -15114,7 +15114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbbe4dd3f3120a44ae44c6d20801c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopMovement: 0
+  stopMovement: 1
   promptText: {fileID: 1029613106}
   particleEffect: {fileID: 0}
   shouldDestroyAfterDialogue: 0
