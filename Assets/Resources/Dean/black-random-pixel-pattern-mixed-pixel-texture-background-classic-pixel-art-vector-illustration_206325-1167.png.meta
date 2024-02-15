@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      black-random-pixel-pattern-mixed-pixel-texture-background-classic-pixel-art-vector-illustration_206325-1167_0: 8614813539152890488
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

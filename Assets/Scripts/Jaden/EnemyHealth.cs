@@ -38,8 +38,13 @@ public class EnemyHealth : MonoBehaviour
         Debug.Log("Enemy died");
 
         // Play die animation
-
-        GetComponent<Collider2D>().enabled = false;
+        enemyAI.enabled = false;
+        Destroy(gameObject);
+    
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider != null)
+            collider.enabled = false;
+        
         enabled = false;
     }
 }

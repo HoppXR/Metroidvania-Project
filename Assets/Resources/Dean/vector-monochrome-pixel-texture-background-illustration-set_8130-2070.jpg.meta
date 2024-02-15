@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vector-monochrome-pixel-texture-background-illustration-set_8130-2070_0: 6251334397918283859
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
