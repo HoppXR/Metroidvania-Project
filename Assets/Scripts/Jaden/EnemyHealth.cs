@@ -8,11 +8,13 @@ public class EnemyHealth : MonoBehaviour
     private int currentHealth;
     private EnemyAI enemyAI;
     private bool chase = false;
+    private Rigidbody2D rb;
 
     void Start()
     {
         currentHealth = _maxHealth;
         enemyAI = GetComponent<EnemyAI>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void TakeDamage(int damage)
@@ -21,6 +23,8 @@ public class EnemyHealth : MonoBehaviour
         {
             enemyAI.enabled = true;
             chase = true;
+            rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+            rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
         }
 
         currentHealth -= damage;
