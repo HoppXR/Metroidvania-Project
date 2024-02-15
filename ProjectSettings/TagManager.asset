@@ -15,8 +15,8 @@ TagManager:
   - Grappleable
   - Enemy
   - Wall
-  - 
-  - 
+  - Player
+  - NPC
   - 
   - 
   - 
