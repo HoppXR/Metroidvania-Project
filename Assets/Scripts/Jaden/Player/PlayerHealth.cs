@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,5 +37,10 @@ public class PlayerHealth : MonoBehaviour
     {
         GameManager.gameManager._playerHealth.HealUnit(healing);
         healthBar.SetHealth(GameManager.gameManager._playerHealth.Health);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        
     }
 }
