@@ -1525,6 +1525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 100
+  TalkECanavs: {fileID: 762595600}
 --- !u!50 &237581535
 Rigidbody2D:
   serializedVersion: 4
@@ -11324,6 +11325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 100
+  TalkECanavs: {fileID: 389949944}
 --- !u!50 &1598080594
 Rigidbody2D:
   serializedVersion: 4
@@ -15715,6 +15717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 100
+  TalkECanavs: {fileID: 1418342984}
 --- !u!50 &2102646798
 Rigidbody2D:
   serializedVersion: 4
