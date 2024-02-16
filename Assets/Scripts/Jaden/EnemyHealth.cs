@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
     private int currentHealth;
     private EnemyAI enemyAI;
     private NPC npc;
+    public GameObject TalkECanavs;
     private bool chase = false;
     private Rigidbody2D rb;
 
@@ -15,6 +16,7 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth = _maxHealth;
         enemyAI = GetComponent<EnemyAI>();
+        npc = GetComponent<NPC>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -22,11 +24,12 @@ public class EnemyHealth : MonoBehaviour
     {
         if (!chase)
         {
-            npc.enabled = false;
             enemyAI.enabled = true;
             chase = true;
+            TalkECanavs.SetActive(false);
             rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
             rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+            npc.enabled = false;
         }
 
         currentHealth -= damage;
