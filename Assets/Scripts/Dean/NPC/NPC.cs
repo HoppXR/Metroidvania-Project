@@ -42,7 +42,7 @@ public class NPC : MonoBehaviour
             {
                 _thePlayer.CanMoveFalse();
                 _thePlayer.GrappleHook.CanGrappleFalse();
-                _combat.CannotAttack();
+                //_combat.CannotAttack();
             }
 
             if (dialoguePanel.activeInHierarchy)
@@ -103,7 +103,7 @@ public class NPC : MonoBehaviour
 
         _thePlayer.CanMoveTrue();
         _thePlayer.GrappleHook.CanGrappleTrue();
-        _combat.CanAttack();
+        //_combat.CanAttack();
 
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
