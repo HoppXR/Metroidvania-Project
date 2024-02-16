@@ -1914,7 +1914,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   TalkECanavs: {fileID: 1649864806}
-  Blood: {fileID: 276194354013034377, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
 --- !u!50 &237581535
 Rigidbody2D:
   serializedVersion: 4
@@ -11344,7 +11343,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   TalkECanavs: {fileID: 951832817}
-  Blood: {fileID: 276194354013034377, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
 --- !u!50 &1598080594
 Rigidbody2D:
   serializedVersion: 4
@@ -16031,7 +16029,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   TalkECanavs: {fileID: 2028861793}
-  Blood: {fileID: 276194354013034377, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
 --- !u!50 &2102646798
 Rigidbody2D:
   serializedVersion: 4

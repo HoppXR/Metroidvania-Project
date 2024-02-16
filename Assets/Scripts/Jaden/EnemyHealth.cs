@@ -6,14 +6,10 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int _maxHealth;
     private int currentHealth;
-    
     private EnemyAI enemyAI;
     private NPC npc;
     public GameObject TalkECanavs;
     private bool chase = false;
-
-    public GameObject Blood;
-    
     private Rigidbody2D rb;
 
     void Start()
@@ -39,7 +35,6 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= damage;
 
         // Play hurt animation
-        Instantiate(Blood, transform.position, Quaternion.identity);
 
         if (currentHealth <= 0)
         {
