@@ -62,7 +62,7 @@ public class GrapplingHook : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxDistance, grappleMask);
 
-        if (hit.collider != null)
+        if (hit.collider == null)
         {
             _isGrappling = true;
             _target = hit.point;
