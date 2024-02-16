@@ -14,6 +14,8 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private float attackRange;
     private float _nextAttackTime;
 
+    private bool canAttack;
+
     void Update()
     {
         if (Time.time >= _nextAttackTime)
@@ -28,15 +30,18 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
-        // play attack animation
-        
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-        
-        foreach(Collider2D enemy in hitEnemies)
+        if (canAttack)
         {
-            enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+            // play attack animation
+        
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        
+            foreach(Collider2D enemy in hitEnemies)
+            {
+                enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
             
-            Debug.Log("We hit " + enemy.name);
+                Debug.Log("We hit " + enemy.name);
+            }
         }
     }
 
@@ -46,5 +51,15 @@ public class PlayerCombat : MonoBehaviour
             return;
         
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+    public void CanAttack()
+    {
+        canAttack = true;
+    }
+
+    public void CannotAttack()
+    {
+        canAttack = false;
     }
 }

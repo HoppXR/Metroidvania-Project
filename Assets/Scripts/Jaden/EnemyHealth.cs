@@ -12,16 +12,17 @@ public class EnemyHealth : MonoBehaviour
     public GameObject TalkECanavs;
     private bool chase = false;
 
-    public GameObject Blood;
+    [SerializeField] private GameObject Blood;
     
     private Rigidbody2D rb;
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+        
         currentHealth = _maxHealth;
         enemyAI = GetComponent<EnemyAI>();
         npc = GetComponent<NPC>();
-        rb = GetComponent<Rigidbody2D>();
     }
 
     public void TakeDamage(int damage)
@@ -35,7 +36,7 @@ public class EnemyHealth : MonoBehaviour
             rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
             npc.enabled = false;
         }
-
+        
         currentHealth -= damage;
 
         // Play hurt animation
