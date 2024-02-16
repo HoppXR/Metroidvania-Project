@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1778817553}
-  smoothSpeed: 0
+  smoothSpeed: 0.1
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &740987689
 GameObject:
@@ -672,6 +672,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 100
+  TalkECanavs: {fileID: 0}
+  Blood: {fileID: 0}
 --- !u!1 &772660506
 GameObject:
   m_ObjectHideFlags: 0
