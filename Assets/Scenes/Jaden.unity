@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1778817553}
-  smoothSpeed: 0
+  smoothSpeed: 0.1
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &740987689
 GameObject:
@@ -1194,8 +1194,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.25294715, y: -0.19616148}
-  m_Size: {x: 3.402989, y: 5.933354}
+  m_Offset: {x: -0.2795648, y: 0.17646554}
+  m_Size: {x: 8.566521, y: 10.617793}
   m_Direction: 0
 --- !u!212 &1778817552
 SpriteRenderer:
@@ -1259,7 +1259,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.3, y: -2.05, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.143935, y: 0.143935, z: 0.143935}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 779682312}
