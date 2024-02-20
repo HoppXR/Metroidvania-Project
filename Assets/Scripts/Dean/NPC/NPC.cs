@@ -28,6 +28,8 @@ public class NPC : MonoBehaviour
     public AudioSource typingSound;
     public AudioClip typingClip;
 
+    public PlayerDialogue playerDialogue;
+
     void Start()
     {
         _thePlayer = FindFirstObjectByType<PlayerMovement>();
@@ -85,7 +87,11 @@ public class NPC : MonoBehaviour
         else
         {
             ZeroText();
-            promptText.SetActive(true);
+
+            if (playerDialogue != null && playerDialogue.gameObject.activeInHierarchy && playerDialogue.enabled)
+            {
+                playerDialogue.StartDialogue();
+            }
 
             if (shouldDestroyAfterDialogue)
             {
