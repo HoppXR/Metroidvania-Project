@@ -1322,8 +1322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 480373501}
-  speed: 1600
-  nextWaypointDistance: 3
+  speed: 1000
+  nextWaypointDistance: 1.7
 --- !u!114 &87768355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3543,8 +3543,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 480373501}
-  speed: 1600
-  nextWaypointDistance: 3
+  speed: 1000
+  nextWaypointDistance: 1.7
 --- !u!114 &237581537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17161,8 +17161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 480373501}
-  speed: 1600
-  nextWaypointDistance: 3
+  speed: 1000
+  nextWaypointDistance: 1.7
 --- !u!114 &1177427679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22546,8 +22546,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 480373501}
-  speed: 1600
-  nextWaypointDistance: 3
+  speed: 1000
+  nextWaypointDistance: 1.7
 --- !u!114 &1598080596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25996,8 +25996,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 480373501}
-  speed: 1600
-  nextWaypointDistance: 3
+  speed: 1000
+  nextWaypointDistance: 1.7
 --- !u!114 &1794316250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26401,8 +26401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 480373501}
-  speed: 1600
-  nextWaypointDistance: 3
+  speed: 1000
+  nextWaypointDistance: 1.7
 --- !u!114 &1794787990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31246,8 +31246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 480373501}
-  speed: 1600
-  nextWaypointDistance: 3
+  speed: 1000
+  nextWaypointDistance: 1.7
 --- !u!114 &2102646800
 MonoBehaviour:
   m_ObjectHideFlags: 0
