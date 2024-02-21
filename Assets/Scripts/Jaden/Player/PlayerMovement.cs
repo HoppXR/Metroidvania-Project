@@ -40,8 +40,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     void Update()
     {
-        //Prevents any input when dashing
-        if (_isDashing)
+        if (_isDashing || !_canMove)
         {
             return;
         }
@@ -63,13 +62,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     
     void FixedUpdate()
     {
-        //Prevents any input when dashing
-        if (_isDashing)
-        {
-            return;
-        }
-
-        if (!_canMove)
+        if (_isDashing || !_canMove)
         {
             return;
         }

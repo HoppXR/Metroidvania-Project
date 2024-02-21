@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class NPC : MonoBehaviour
 {
     private PlayerMovement _thePlayer;
-    private PlayerCombat _combat;
 
     [SerializeField] private bool stopMovement;
  
@@ -33,7 +32,6 @@ public class NPC : MonoBehaviour
     void Start()
     {
         _thePlayer = FindFirstObjectByType<PlayerMovement>();
-        _combat = FindFirstObjectByType <PlayerCombat>();
     }
 
     void Update()
@@ -44,7 +42,6 @@ public class NPC : MonoBehaviour
             {
                 _thePlayer.CanMoveFalse();
                 _thePlayer.GrappleHook.CanGrappleFalse();
-                //_combat.CannotAttack();
             }
 
             if (dialoguePanel.activeInHierarchy)
@@ -109,7 +106,6 @@ public class NPC : MonoBehaviour
 
         _thePlayer.CanMoveTrue();
         _thePlayer.GrappleHook.CanGrappleTrue();
-        //_combat.CanAttack();
 
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);

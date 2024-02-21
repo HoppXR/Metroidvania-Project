@@ -21,13 +21,11 @@ public class PlayerDialogue : MonoBehaviour
     public AudioClip typingClip;
 
     private PlayerMovement _thePlayer;
-    private PlayerCombat _combat;
 
     private void Start()
     {
         dialoguePanel.SetActive(false);
         _thePlayer = FindFirstObjectByType<PlayerMovement>();
-        _combat = FindFirstObjectByType<PlayerCombat>();
     }
 
     private void Update()
@@ -36,7 +34,6 @@ public class PlayerDialogue : MonoBehaviour
         {
             _thePlayer.CanMoveFalse();
             _thePlayer.GrappleHook.CanGrappleFalse();
-            //_combat.CannotAttack();
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && dialoguePanel.activeInHierarchy && !isTyping)
@@ -50,7 +47,6 @@ public class PlayerDialogue : MonoBehaviour
         {
             _thePlayer.CanMoveFalse();
             _thePlayer.GrappleHook.CanGrappleFalse();
-            //_combat.CannotAttack();
         }
         dialoguePanel.SetActive(true);
         index = 0;
@@ -86,7 +82,6 @@ public class PlayerDialogue : MonoBehaviour
 
         _thePlayer.CanMoveTrue();
         _thePlayer.GrappleHook.CanGrappleTrue();
-        //_combat.CanAttack();
 
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
