@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e3cf385e0f790f543901cbe69a457c9d
+guid: ad80fcb7f02ad4347a895071a8e0282d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6454823642696807875
-    second: OLDPIRATENPC_0
+      213: -6836265981710612977
+    second: AvesPortrait_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OLDPIRATENPC_0
+      name: AvesPortrait_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 0
-        width: 234
-        height: 249
+        x: 0
+        y: 167
+        width: 1024
+        height: 1026
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3a8349981cdb66a0800000000000000
-      internalID: -6454823642696807875
+      spriteID: f064d0a4f44b021a0800000000000000
+      internalID: -6836265981710612977
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      OLDPIRATENPC_0: -6454823642696807875
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
