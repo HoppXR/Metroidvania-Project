@@ -9,7 +9,7 @@ public class GroundComboState : MeleeBaseState
         base.OnEnter(stateMachine);
 
         attackIndex = 2;
-        duration = 0.5f;
+        duration = 0.25f;
         animator.SetTrigger("Attack" + attackIndex);
         Debug.Log("Player Attack " + attackIndex);
     }

@@ -7,6 +7,7 @@ public class ComboCharacter : MonoBehaviour
     private StateMachine meleeStateMachine;
 
     [SerializeField] public Collider2D hitbox;
+    [SerializeField] public GameObject hitEffect;
     
     void Start()
     {
