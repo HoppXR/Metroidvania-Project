@@ -6,8 +6,22 @@ public class PirateAttacks : MonoBehaviour
 {
     public GameObject GhostShip;
     [SerializeField] private int travelSpeed = 4;
+    public Transform boss;
+    
+    public GameObject SpinAttackIndicators;
+    private PolygonCollider2D polygonCollider2D;
     
     public BossCannonAttack[] BossCannonAttack;
+    
+    public Vector3 teleportDestination;
+    public Vector3 returnDestination;
+    public GameObject Gooners;
+    private int goonerCount;
+
+    void Start()
+    {
+        polygonCollider2D = GetComponent<PolygonCollider2D>();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
@@ -15,10 +29,21 @@ public class PirateAttacks : MonoBehaviour
             {
                 BossCannonAttack.ShootCannon();
             }
-        
-        if (Input.GetKeyDown(KeyCode.O))
 
+        if (Input.GetKeyDown(KeyCode.O))
+        {
             SpawnSummonShip();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            StartCoroutine(SpinAttackCoroutine());
+        }
+        
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            GoonsAttack();
+        }
 
     }
 
@@ -38,6 +63,63 @@ public class PirateAttacks : MonoBehaviour
         float timeToReachPlayer = Vector2.Distance(player.transform.position, Ghostship.transform.position) / travelSpeed;
 
         // Destroy after reaching the player
-        Destroy(Ghostship, timeToReachPlayer+0.5f);
+        Destroy(Ghostship, timeToReachPlayer+0.2f);
+    }
+
+
+    IEnumerator SpinAttackCoroutine()
+    {
+            GameObject spinAttack = Instantiate(SpinAttackIndicators, boss.position, Quaternion.identity);
+            Destroy(spinAttack, 1f);
+            yield return new WaitForSeconds(1f);
+            polygonCollider2D.enabled = true;
+            yield return new WaitForSeconds(1f);
+            polygonCollider2D.enabled = false;
+            yield return new WaitForSeconds(1f);
+    }
+    
+    
+    void GoonsAttack()
+    {
+        // Teleport the boss to the specified destination
+        boss.position = teleportDestination;
+
+        // Define the spawn area
+        float minX = -14.4f;
+        float maxX = 13.71f;
+        float minY = -7.1f;
+        float maxY = 6.62f;
+
+        // Spawn four minions
+        for (int i = 0; i < 4; i++)
+        {
+            // Generate a random position within the spawn area
+            Vector2 spawnPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+
+            // Instantiate the minion prefab at the random position
+            GameObject gooner = Instantiate(Gooners, spawnPosition, Quaternion.identity);
+            Destroy(gooner,2f);
+            
+            // Assign PirateAttacks script to PirateGooners script
+            PirateGooners goons = Gooners.GetComponent<PirateGooners>();
+            goons.pirateAttacks = this;
+
+            // Increase the minion count
+            goonerCount++;
+        }
+    }
+
+    void CheckGoonerCount()
+    {
+        if (goonerCount <= 0)
+        {
+            boss.position = returnDestination;
+        }
+    }
+    
+    public void MinionDestroyed()
+    {
+        goonerCount--;
+        CheckGoonerCount();
     }
 }
