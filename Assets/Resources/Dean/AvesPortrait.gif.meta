@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AvesPortrait_0: -6836265981710612977
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

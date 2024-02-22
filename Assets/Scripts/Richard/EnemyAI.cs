@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
 
     public float speed = 1000f;
 
-    public float nextWaypointDistance = 1.3f;
+    public float nextWaypointDistance = 1f;
 
     private Path path;
 
@@ -26,7 +26,7 @@ public class EnemyAI : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         
-        InvokeRepeating("UpdatePath", 0f, 0.2f);
+        InvokeRepeating("UpdatePath", 0f, 0.1f);
     }
 
     void UpdatePath()

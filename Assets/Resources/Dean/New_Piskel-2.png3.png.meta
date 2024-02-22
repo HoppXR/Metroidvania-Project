@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      New_Piskel-2.png3_0: -1473030071864361628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
