@@ -2394,7 +2394,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 72b4f3fb78145da4f8db0082ffa234ac, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.058
+  m_Volume: 0.032
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6094,7 +6094,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 765300161}
   dialogueText: {fileID: 1708861300}
   dialogue:
-  - Hi! I'm Aves! So glad you can join us!
+  - Welcome, big shot!
+  - I'm Aves!
+  - So glad you could make it!
   - And help us with our.. issue.
   - Don't worry, you'll be handsomely compensated!
   contButtonAnimator: {fileID: 1976107231}
