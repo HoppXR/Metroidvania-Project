@@ -1530,8 +1530,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d482a8c99a82bda40a5a51ac4440996e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meleeStateMachine: {fileID: 0}
   hitbox: {fileID: 779682313}
-  hitEffect: {fileID: 0}
+  hitEffect: {fileID: 779682311}
 --- !u!114 &1778817561
 MonoBehaviour:
   m_ObjectHideFlags: 0
