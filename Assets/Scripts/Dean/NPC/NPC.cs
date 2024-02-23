@@ -67,8 +67,7 @@ public class NPC : MonoBehaviour
             NextLine();
         }
     }
-
-    private void NextLine()
+    public void NextLine()
     {
         if (isTyping)
             return;

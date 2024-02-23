@@ -21,7 +21,7 @@ public class PlayerDialogue : MonoBehaviour
     public AudioClip typingClip;
 
     private PlayerMovement _thePlayer;
-
+    public NPCResponse npcResponse;
     private void Start()
     {
         dialoguePanel.SetActive(false);
@@ -30,12 +30,6 @@ public class PlayerDialogue : MonoBehaviour
 
     private void Update()
     {
-        if (stopMovement)
-        {
-            _thePlayer.CanMoveFalse();
-            _thePlayer.GrappleHook.CanGrappleFalse();
-        }
-
         if (Input.GetKeyDown(KeyCode.Space) && dialoguePanel.activeInHierarchy && !isTyping)
         {
             NextLine();
@@ -54,6 +48,7 @@ public class PlayerDialogue : MonoBehaviour
         contButtonAnimator.gameObject.SetActive(true);
     }
 
+
     private void NextLine()
     {
         if (isTyping)
@@ -70,6 +65,11 @@ public class PlayerDialogue : MonoBehaviour
         else
         {
             ZeroText();
+
+            if (npcResponse != null && npcResponse.gameObject.activeInHierarchy && npcResponse.enabled)
+            {
+                npcResponse.StartResponse();
+            }
         }
     }
 
