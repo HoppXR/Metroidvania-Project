@@ -1131,8 +1131,6 @@ GameObject:
   - component: {fileID: 1778817550}
   - component: {fileID: 1778817549}
   - component: {fileID: 1778817554}
-  - component: {fileID: 1778817561}
-  - component: {fileID: 1778817560}
   - component: {fileID: 1778817548}
   - component: {fileID: 1778817558}
   - component: {fileID: 1778817555}
@@ -1475,7 +1473,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
@@ -1518,34 +1516,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1778817560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778817547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d482a8c99a82bda40a5a51ac4440996e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meleeStateMachine: {fileID: 0}
-  hitbox: {fileID: 779682313}
-  hitEffect: {fileID: 779682311}
---- !u!114 &1778817561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778817547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5996475af1c2b04a9daaa6f3c6ffca8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customName: Combat
 --- !u!1 &2011845246
 GameObject:
   m_ObjectHideFlags: 0

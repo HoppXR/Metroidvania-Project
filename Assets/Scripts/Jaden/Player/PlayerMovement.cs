@@ -1,17 +1,19 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
     internal GrapplingHook GrappleHook;
+
+    private InputManager _input = null;
+    private Vector2 _moveVector = Vector2.zero;
     
     Rigidbody2D _rb;
     public Animator animator;
     
     private Vector2 _forceToApply;
-    private Vector2 _playerInput;
 
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
@@ -27,7 +29,12 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     private bool _isDashing;
     private bool _canDash;
     private bool _canMove;
-    
+
+    private void Awake()
+    {
+        _input = new InputManager();
+    }
+
     void Start()
     {
         GrappleHook = FindFirstObjectByType<GrapplingHook>();
@@ -40,24 +47,24 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     void Update()
     {
-        if (_isDashing || !_canMove)
-        {
-            return;
-        }
-        
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         
         animator.SetFloat("Horizontal", moveX);
         animator.SetFloat("Vertical", moveY);
-        animator.SetFloat("Speed", _playerInput.sqrMagnitude);
+        animator.SetFloat("Speed", _moveVector.sqrMagnitude);
+        
+        if (_isDashing || !_canMove)
+        {
+            return;
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && _canDash)
         {
             StartCoroutine(Dash());
         }
         
-        _playerInput = new Vector2(moveX, moveY).normalized;
+        _moveVector = new Vector2(moveX, moveY).normalized;
     }
     
     void FixedUpdate()
@@ -67,7 +74,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
             return;
         }
         
-        Vector2 moveForce = _playerInput * moveSpeed;
+        Vector2 moveForce = _moveVector * moveSpeed;
         
         moveForce += _forceToApply;
         _forceToApply *= forceDamping;
@@ -96,7 +103,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         
         //Play dash animation
         
-        _rb.velocity = new Vector2(_playerInput.x * dashSpeed, _playerInput.y * dashSpeed);
+        _rb.velocity = new Vector2(_moveVector.x * dashSpeed, _moveVector.y * dashSpeed);
         yield return new WaitForSeconds(dashDuration);
         _isDashing = false;
 
@@ -117,6 +124,30 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         _canMove = true;
         
         _canDash = true;
+    }
+
+    private void OnEnable()
+    {
+        _input.Enable();
+        _input.Player.Movement.performed += OnMovementPerformed;
+        _input.Player.Movement.canceled += OnMovementCancelled;
+    }
+
+    private void OnDisable()
+    {
+        _input.Disable();
+        _input.Player.Movement.performed -= OnMovementPerformed;
+        _input.Player.Movement.canceled -= OnMovementCancelled;
+    }
+
+    private void OnMovementPerformed(InputAction.CallbackContext value)
+    {
+        _moveVector = value.ReadValue<Vector2>();
+    }
+
+    private void OnMovementCancelled(InputAction.CallbackContext value)
+    {
+        _moveVector = Vector2.zero;
     }
 
     public void LoadData(GameData data)
