@@ -11,6 +11,7 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private string[] dialogue;
     [SerializeField] private float wordSpeed = 0.05f;
     [SerializeField] private bool shouldDestroyAfterDialogue = false;
+    [SerializeField] GameObject particleEffect;
 
     private int index;
     private bool isTyping;
@@ -84,6 +85,13 @@ public class TriggerDialogue : MonoBehaviour
 
             if (shouldDestroyAfterDialogue)
             {
+                if (particleEffect != null)
+                {
+                    GameObject particleInstance = Instantiate(particleEffect, transform.position, Quaternion.identity);
+
+                    Destroy(particleInstance, 2f);
+                }
+
                 Destroy(gameObject);
             }
         }
