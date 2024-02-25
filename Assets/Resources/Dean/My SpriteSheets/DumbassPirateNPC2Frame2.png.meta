@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 67afc84c94d74d44c8ff3656e018873d
+guid: 04fe51c044ce43049b4788986621b281
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3475516352327305388
-    second: McSprite_0
+      213: -4125945021553390654
+    second: DumbassPirateNPC2Frame2_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: McSprite_0
+      name: DumbassPirateNPC2Frame2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 47
         y: 0
-        width: 1024
-        height: 1017
+        width: 178
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca8c78755b38b3030800000000000000
-      internalID: 3475516352327305388
+      spriteID: 2cbc483fcd2bdb6c0800000000000000
+      internalID: -4125945021553390654
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      McSprite_0: 3475516352327305388
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
