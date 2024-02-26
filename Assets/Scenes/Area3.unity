@@ -4559,7 +4559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13f57d8f03c2e124b811831d17bf2c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: data.json
+  fileName: Area3Data.json
 --- !u!4 &1107070013
 Transform:
   m_ObjectHideFlags: 0
