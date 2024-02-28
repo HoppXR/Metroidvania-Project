@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Piratecaptain1_0: -5405757353381017758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

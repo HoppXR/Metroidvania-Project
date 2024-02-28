@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DumbassPirateNPC2Frame1_0: 1881121155602304648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

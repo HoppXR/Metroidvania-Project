@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GhoulNPC2_0: -9087875707548166153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

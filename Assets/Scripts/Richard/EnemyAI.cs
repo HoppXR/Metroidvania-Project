@@ -1,31 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using System.Collections;
 
 public class EnemyAI : MonoBehaviour
 {
     public Transform target;
-
+    public float originalSpeed = 1000f;
     public float speed = 1000f;
-
     public float nextWaypointDistance = 1f;
 
     private Path path;
-
     private int currentWaypoint = 0;
-
     private bool reachedEndOfPath = false;
-
     private Seeker seeker;
+    public Rigidbody2D rb;
+    private EnemyMeleeAttacks enemyMeleeAttack;
+    private bool isAttacking = false;
+    private float attackCooldown = 0f;
+    private float attackCooldownDuration = 2f;
 
-    private Rigidbody2D rb;
-    // Start is called before the first frame update
+    // New variable to track player's in-range status
+    private bool playerInRange = false;
+
     void Start()
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-        
+        enemyMeleeAttack = GetComponentInChildren<EnemyMeleeAttacks>();
+        originalSpeed = speed;
+        rb.constraints |= RigidbodyConstraints2D.FreezeRotation;
         InvokeRepeating("UpdatePath", 0f, 0.1f);
     }
 
@@ -44,14 +47,6 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            //player take damage
-        }
-    }
-    
     void FixedUpdate()
     {
         if (path == null)
@@ -76,5 +71,54 @@ public class EnemyAI : MonoBehaviour
         {
             currentWaypoint++;
         }
+    }
+    
+    private void OnEnable()
+    {
+        EnemyInRangeToAttack.OnPlayerInRange += HandlePlayerInRange;
+    }
+    
+    private void OnDisable()
+    {
+        EnemyInRangeToAttack.OnPlayerInRange -= HandlePlayerInRange;
+    }
+
+    private void HandlePlayerInRange(bool inRange)
+    {
+        // Update playerInRange status
+        playerInRange = inRange;
+
+        if (inRange)
+        {
+            speed = 0;
+            if (!isAttacking)
+            {
+                StartCoroutine(AttackRoutine());
+                isAttacking = true;
+            }
+        }
+        else
+        {
+            speed = originalSpeed;
+        }
+    }
+
+    private IEnumerator AttackRoutine()
+    {
+        yield return new WaitForSeconds(2f);
+        while (true)
+        {
+            if (Time.time >= attackCooldown && playerInRange)
+            {
+                Attack();
+                attackCooldown = Time.time + attackCooldownDuration;
+            }
+            yield return null; 
+        }
+    }
+
+    private void Attack()
+    {
+        enemyMeleeAttack.ActivateMeleeAttack();
     }
 }
