@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
     internal GrapplingHook GrappleHook;
 
-    private InputManager _input = null;
-    private Vector2 _moveVector = Vector2.zero;
+    private InputReader _input;
+    private Vector2 _moveVector;
     
     Rigidbody2D _rb;
     public Animator animator;
@@ -32,58 +32,32 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     private void Awake()
     {
-        _input = new InputManager();
+        GrappleHook = FindFirstObjectByType<GrapplingHook>();
+        
+        _rb = GetComponent<Rigidbody2D>();
+        
+        InputReader.Init(this);
+        InputReader.SetPlayerControls();
     }
 
     void Start()
     {
-        GrappleHook = FindFirstObjectByType<GrapplingHook>();
-        
-        _rb = GetComponent<Rigidbody2D>();
-
         _canMove = true;
         _canDash = true;
     }
 
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-        
-        animator.SetFloat("Horizontal", moveX);
-        animator.SetFloat("Vertical", moveY);
+        animator.SetFloat("Horizontal", _moveVector.x);
+        animator.SetFloat("Vertical", _moveVector.y);
         animator.SetFloat("Speed", _moveVector.sqrMagnitude);
         
         if (_isDashing || !_canMove)
         {
             return;
         }
-
-        if (Input.GetKeyDown(KeyCode.Space) && _canDash)
-        {
-            StartCoroutine(Dash());
-        }
         
-        _moveVector = new Vector2(moveX, moveY).normalized;
-    }
-    
-    void FixedUpdate()
-    {
-        if (_isDashing || !_canMove)
-        {
-            return;
-        }
-        
-        Vector2 moveForce = _moveVector * moveSpeed;
-        
-        moveForce += _forceToApply;
-        _forceToApply *= forceDamping;
-
-        if (Mathf.Abs(_forceToApply.x) <= 0.01f && Mathf.Abs(_forceToApply.y) <= 0.01f)
-        {
-            _forceToApply = Vector2.zero;
-        }
-        _rb.velocity = moveForce;
+        Move();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -96,19 +70,47 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         }
     }
 
+    public void SetMovementDirection(Vector2 dir)
+    {
+        _moveVector = dir;
+    }
+
+    private void Move()
+    {
+        Vector2 moveForce = moveSpeed * _moveVector.normalized;
+
+        moveForce += _forceToApply;
+        _forceToApply *= forceDamping;
+
+        if (Mathf.Abs(_forceToApply.x) <= 0.01f && Mathf.Abs(_forceToApply.y) <= 0.01f)
+        {
+            _forceToApply = Vector2.zero;
+        }
+        
+        _rb.velocity = moveForce;
+    }
+
+    public void PlayerDash()
+    {
+        StartCoroutine(Dash());
+    }
+    
     private IEnumerator Dash()
     {
-        _canDash = false;
-        _isDashing = true;
-        
-        //Play dash animation
-        
-        _rb.velocity = new Vector2(_moveVector.x * dashSpeed, _moveVector.y * dashSpeed);
-        yield return new WaitForSeconds(dashDuration);
-        _isDashing = false;
+        if (_canDash)
+        {
+            _canDash = false;
+            _isDashing = true;
 
-        yield return new WaitForSeconds(dashCooldown);
-        _canDash = true;
+            //Play dash animation
+        
+            _rb.velocity = new Vector2(_moveVector.x * dashSpeed, _moveVector.y * dashSpeed);
+            yield return new WaitForSeconds(dashDuration);
+            _isDashing = false;
+
+            yield return new WaitForSeconds(dashCooldown);
+            _canDash = true;
+        }
     }
 
     public void CanMoveFalse()
@@ -124,30 +126,6 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         _canMove = true;
         
         _canDash = true;
-    }
-
-    private void OnEnable()
-    {
-        _input.Enable();
-        _input.Player.Movement.performed += OnMovementPerformed;
-        _input.Player.Movement.canceled += OnMovementCancelled;
-    }
-
-    private void OnDisable()
-    {
-        _input.Disable();
-        _input.Player.Movement.performed -= OnMovementPerformed;
-        _input.Player.Movement.canceled -= OnMovementCancelled;
-    }
-
-    private void OnMovementPerformed(InputAction.CallbackContext value)
-    {
-        _moveVector = value.ReadValue<Vector2>();
-    }
-
-    private void OnMovementCancelled(InputAction.CallbackContext value)
-    {
-        _moveVector = Vector2.zero;
     }
 
     public void LoadData(GameData data)

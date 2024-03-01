@@ -32,11 +32,6 @@ public class GrapplingHook : MonoBehaviour
 
     private void Update() 
     {
-        if (Input.GetMouseButtonDown(1) && !_isGrappling && _canGrapple) 
-        {
-            StartGrapple();
-        }
-        
         if (retracting)
         {
             Vector2 grapplePos = Vector2.Lerp(transform.position, _target, grappleSpeed * Time.deltaTime);
@@ -56,20 +51,23 @@ public class GrapplingHook : MonoBehaviour
         }
     }
 
-    private void StartGrapple() 
+    public void StartGrapple() 
     {
-        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxDistance, grappleMask);
-
-        if (hit.collider != null)
+        if (!_isGrappling && _canGrapple)
         {
-            _isGrappling = true;
-            _target = hit.point;
-            _line.enabled = true;
-            _line.positionCount = 2;
+            Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 
-            StartCoroutine(Grapple());
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxDistance, grappleMask);
+
+            if (hit.collider != null)
+            {
+                _isGrappling = true;
+                _target = hit.point;
+                _line.enabled = true;
+                _line.positionCount = 2;
+
+                StartCoroutine(Grapple());
+            }
         }
     }
 
@@ -79,13 +77,11 @@ public class GrapplingHook : MonoBehaviour
         float time = 5;
 
         _line.SetPosition(0, transform.position);
-        _line.SetPosition(1, transform.position); 
-
-        Vector2 newPos;
+        _line.SetPosition(1, transform.position);
 
         for (; t < time; t += grappleShootSpeed * Time.deltaTime)
         {
-            newPos = Vector2.Lerp(transform.position, _target, t / time);
+            var newPos = Vector2.Lerp(transform.position, _target, t / time);
             _line.SetPosition(0, transform.position);
             _line.SetPosition(1, newPos);
             yield return null;
