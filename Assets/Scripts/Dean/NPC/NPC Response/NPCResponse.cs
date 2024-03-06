@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class NPCResponse : MonoBehaviour
 {
     [SerializeField] private bool stopMovement;
+    [SerializeField] private bool destroyOnDialogueEnd;
 
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -71,6 +72,11 @@ public class NPCResponse : MonoBehaviour
             {
                 playerResponse.StartResponse();
             }
+        }
+
+        if (destroyOnDialogueEnd) 
+        {
+            Destroy(gameObject); 
         }
     }
 

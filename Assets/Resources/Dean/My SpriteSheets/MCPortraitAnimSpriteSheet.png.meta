@@ -53,7 +53,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -102,9 +102,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 1023
-        height: 1023
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,10 +122,10 @@ TextureImporter:
       name: MCPortraitAnimSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 1
-        width: 1023
-        height: 1023
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,10 +143,10 @@ TextureImporter:
       name: MCPortraitAnimSpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 2046
-        y: 1
-        width: 1023
-        height: 1023
+        x: 2048
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: MCPortraitAnimSpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 3069
-        y: 1
-        width: 1023
-        height: 1023
+        x: 3072
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: MCPortraitAnimSpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 4092
-        y: 1
-        width: 1023
-        height: 1023
+        x: 4096
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: MCPortraitAnimSpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 5115
-        y: 1
-        width: 1023
-        height: 1023
+        x: 5120
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: MCPortraitAnimSpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 6138
-        y: 1
-        width: 1023
-        height: 1023
+        x: 6144
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
