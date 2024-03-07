@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerIdleScript : StateMachineBehaviour
+public class AttackTransition1 : StateMachineBehaviour
 {
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -15,7 +15,7 @@ public class PlayerIdleScript : StateMachineBehaviour
     {
         if (PlayerCombat.instance.isAttacking)
         {
-            PlayerCombat.instance.animator.SetTrigger("Attack1");
+            PlayerCombat.instance.animator.SetTrigger("Attack2");
         }
     }
 

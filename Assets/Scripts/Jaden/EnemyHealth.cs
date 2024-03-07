@@ -50,11 +50,14 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        enemyAI.enabled = false;
+        Destroy(gameObject);
+        
+        /////////////////// TEMP ///////////////////
+        
         Debug.Log("Enemy died");
 
         // Play die animation
-        enemyAI.enabled = false;
-        Destroy(gameObject);
     
         Collider2D collider = GetComponent<Collider2D>();
         if (collider != null)

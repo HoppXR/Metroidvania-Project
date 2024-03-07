@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     internal PlayerCombat Combat;
     internal GrapplingHook GrappleHook;
     private InputReader _input;
-    Rigidbody2D _rb;
+    private Rigidbody2D _rb;
     public Animator animator;
 
     [Header("Movement Settings")]
@@ -53,22 +53,12 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     void Update()
     {
-        animator.SetFloat(Horizontal, _moveVector.x);
-        animator.SetFloat(Vertical, _moveVector.y);
-        animator.SetFloat(Speed, _moveVector.sqrMagnitude);
-        
         if (_isDashing || !_canMove)
         {
             return;
         }
         
         Move();
-
-        if (_moveVector.x == 1 || _moveVector.x == -1 || _moveVector.y == 1 || _moveVector.y == -1)
-        {
-            animator.SetFloat(LastHorizontal, _moveVector.x);
-            animator.SetFloat(LastVertical, _moveVector.y);
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -99,6 +89,16 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         }
         
         _rb.velocity = moveForce;
+        
+        animator.SetFloat(Horizontal, _moveVector.x);
+        animator.SetFloat(Vertical, _moveVector.y);
+        animator.SetFloat(Speed, _moveVector.sqrMagnitude);
+        
+        if (_moveVector.x == 1 || _moveVector.x == -1 || _moveVector.y == 1 || _moveVector.y == -1)
+        {
+            animator.SetFloat(LastHorizontal, _moveVector.x);
+            animator.SetFloat(LastVertical, _moveVector.y);
+        }
     }
 
     public void PlayerDash()

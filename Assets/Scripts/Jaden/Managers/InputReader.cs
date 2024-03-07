@@ -35,7 +35,7 @@ public class InputReader : MonoBehaviour
 
         _input.Player.Attack.performed += ctx =>
         {
-            //myPlayer.Combat.Attack();
+            myPlayer.Combat.Attack();
         };
     }
 
