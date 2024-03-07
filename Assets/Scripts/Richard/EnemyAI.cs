@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindWithTag("Player")?.transform; // Null check added here
+        player = GameObject.FindWithTag("Player")?.transform;
         if (player == null)
         {
             Debug.LogError("Player transform not found.");
@@ -40,7 +40,7 @@ public class EnemyAI : MonoBehaviour
 
     void UpdatePath()
     {
-        if (seeker != null && seeker.IsDone()) // Null check added here
+        if (seeker != null && seeker.IsDone())
             seeker.StartPath(rb.position, player.position, OnPathComplete);
     }
 
@@ -150,6 +150,11 @@ public class EnemyAI : MonoBehaviour
     void OnEnable()
     {
         collidersToUse[1].enabled = true;
+    }
+    
+    void OnDisable()
+    {
+        collidersToUse[1].enabled = false;
     }
 
 }
