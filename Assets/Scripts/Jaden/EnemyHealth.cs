@@ -4,54 +4,66 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] private int _maxHealth;
-    private int currentHealth;
+    private Rigidbody2D _rb;
+    private EnemyAI _enemyAI;
+    private NPC _npc;
     
-    private EnemyAI enemyAI;
-    private NPC npc;
+    private float _currentHealth;
+    [SerializeField] private float maxHealth;
+    [SerializeField] private GameObject blood;
+    
     public GameObject TalkECanavs;
     private bool chase = false;
 
-    [SerializeField] private GameObject Blood;
-    
-    private Rigidbody2D rb;
-
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
+        _enemyAI = GetComponent<EnemyAI>();
+        _npc = GetComponent<NPC>();
         
-        currentHealth = _maxHealth;
-        enemyAI = GetComponent<EnemyAI>();
-        npc = GetComponent<NPC>();
+        _currentHealth = maxHealth;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
+        /*
         if (!chase)
         {
-            enemyAI.enabled = true;
+            _enemyAI.enabled = true;
             chase = true;
             TalkECanavs.SetActive(false);
-            rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-            rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
-            npc.enabled = false;
+            _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+            _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+            _npc.enabled = false;
+        }*/
+        
+        if (_currentHealth >= damage)
+        {
+            _currentHealth -= damage;
+        }
+        else if (_currentHealth <= damage)
+        {
+            _currentHealth = 0;
         }
         
-        currentHealth -= damage;
+        // TEMP
+        Debug.Log(_currentHealth);
 
         // Play hurt animation
-        Instantiate(Blood, transform.position, Quaternion.identity);
+        Instantiate(blood, transform.position, Quaternion.identity);
 
-        if (currentHealth <= 0)
+        if (_currentHealth <= 0)
         {
             Die();
         }
     }
 
-    void Die()
+    private void Die()
     {
-        enemyAI.enabled = false;
+        /*
+        _enemyAI.enabled = false;
         Destroy(gameObject);
+        */
         
         /////////////////// TEMP ///////////////////
         

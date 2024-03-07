@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
-    private Vector2 _moveVector;
+    public Vector2 _moveVector;
     private bool _canMove;
     
     [Header("Knockback Settings")]

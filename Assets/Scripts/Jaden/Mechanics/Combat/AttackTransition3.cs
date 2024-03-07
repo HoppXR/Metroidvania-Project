@@ -13,16 +13,16 @@ public class AttackTransition3 : StateMachineBehaviour
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (PlayerCombat.instance.isAttacking)
+        if (PlayerCombat.Instance.isAttacking)
         {
-            PlayerCombat.instance.animator.SetTrigger("Attack1");
+            PlayerCombat.Instance.animator.SetTrigger("Attack1");
         }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        PlayerCombat.instance.isAttacking = false;
+        PlayerCombat.Instance.isAttacking = false;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
