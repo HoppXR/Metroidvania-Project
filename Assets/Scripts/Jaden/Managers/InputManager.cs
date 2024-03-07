@@ -53,6 +53,15 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""fbd69046-5a08-4e43-92b3-1783a9b59441"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -264,6 +273,28 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
                     ""action"": ""Grapple"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8a2af5c1-b1b7-4080-b57c-5be3cc0deda5"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""41cc878d-67fc-4278-8b5b-191be02bb846"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -303,6 +334,7 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_Grapple = m_Player.FindAction("Grapple", throwIfNotFound: true);
+        m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Newaction = m_UI.FindAction("New action", throwIfNotFound: true);
@@ -370,6 +402,7 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Dash;
     private readonly InputAction m_Player_Grapple;
+    private readonly InputAction m_Player_Attack;
     public struct PlayerActions
     {
         private @InputManager m_Wrapper;
@@ -377,6 +410,7 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Dash => m_Wrapper.m_Player_Dash;
         public InputAction @Grapple => m_Wrapper.m_Player_Grapple;
+        public InputAction @Attack => m_Wrapper.m_Player_Attack;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -395,6 +429,9 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
             @Grapple.started += instance.OnGrapple;
             @Grapple.performed += instance.OnGrapple;
             @Grapple.canceled += instance.OnGrapple;
+            @Attack.started += instance.OnAttack;
+            @Attack.performed += instance.OnAttack;
+            @Attack.canceled += instance.OnAttack;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -408,6 +445,9 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
             @Grapple.started -= instance.OnGrapple;
             @Grapple.performed -= instance.OnGrapple;
             @Grapple.canceled -= instance.OnGrapple;
+            @Attack.started -= instance.OnAttack;
+            @Attack.performed -= instance.OnAttack;
+            @Attack.canceled -= instance.OnAttack;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -476,6 +516,7 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnGrapple(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

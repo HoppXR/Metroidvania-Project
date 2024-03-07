@@ -5,22 +5,21 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
+    internal PlayerCombat Combat;
     internal GrapplingHook GrappleHook;
-
     private InputReader _input;
-    private Vector2 _moveVector;
-    
     Rigidbody2D _rb;
     public Animator animator;
-    
-    private Vector2 _forceToApply;
 
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
+    private Vector2 _moveVector;
+    private bool _canMove;
     
     [Header("Knockback Settings")]
     [SerializeField] private float knockback;
     [SerializeField, Range(0,1)] private float forceDamping;
+    private Vector2 _forceToApply;
 
     [Header("Dash Settings")] 
     [SerializeField] private float dashSpeed;
@@ -28,11 +27,17 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     [SerializeField] private float dashCooldown;
     private bool _isDashing;
     private bool _canDash;
-    private bool _canMove;
+    
+    private static readonly int Horizontal = Animator.StringToHash("Horizontal");
+    private static readonly int Vertical = Animator.StringToHash("Vertical");
+    private static readonly int LastHorizontal = Animator.StringToHash("LastHorizontal");
+    private static readonly int LastVertical = Animator.StringToHash("LastVertical");
+    private static readonly int Speed = Animator.StringToHash("Speed");
 
     private void Awake()
     {
         GrappleHook = FindFirstObjectByType<GrapplingHook>();
+        Combat = FindFirstObjectByType<PlayerCombat>();
         
         _rb = GetComponent<Rigidbody2D>();
         
@@ -48,9 +53,9 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     void Update()
     {
-        animator.SetFloat("Horizontal", _moveVector.x);
-        animator.SetFloat("Vertical", _moveVector.y);
-        animator.SetFloat("Speed", _moveVector.sqrMagnitude);
+        animator.SetFloat(Horizontal, _moveVector.x);
+        animator.SetFloat(Vertical, _moveVector.y);
+        animator.SetFloat(Speed, _moveVector.sqrMagnitude);
         
         if (_isDashing || !_canMove)
         {
@@ -58,6 +63,12 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         }
         
         Move();
+
+        if (_moveVector.x == 1 || _moveVector.x == -1 || _moveVector.y == 1 || _moveVector.y == -1)
+        {
+            animator.SetFloat(LastHorizontal, _moveVector.x);
+            animator.SetFloat(LastVertical, _moveVector.y);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -92,25 +103,25 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     public void PlayerDash()
     {
-        StartCoroutine(Dash());
+        if (_canDash)
+        {
+            StartCoroutine(Dash());
+        }
     }
     
     private IEnumerator Dash()
     {
-        if (_canDash)
-        {
-            _canDash = false;
-            _isDashing = true;
+        _canDash = false;
+        _isDashing = true;
 
-            //Play dash animation
+        //Play dash animation
         
-            _rb.velocity = new Vector2(_moveVector.x * dashSpeed, _moveVector.y * dashSpeed);
-            yield return new WaitForSeconds(dashDuration);
-            _isDashing = false;
+        _rb.velocity = new Vector2(_moveVector.x * dashSpeed, _moveVector.y * dashSpeed);
+        yield return new WaitForSeconds(dashDuration);
+        _isDashing = false;
 
-            yield return new WaitForSeconds(dashCooldown);
-            _canDash = true;
-        }
+        yield return new WaitForSeconds(dashCooldown);
+        _canDash = true;
     }
 
     public void CanMoveFalse()

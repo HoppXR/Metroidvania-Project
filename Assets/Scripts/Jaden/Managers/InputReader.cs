@@ -32,6 +32,11 @@ public class InputReader : MonoBehaviour
         {
             myPlayer.GrappleHook.StartGrapple();
         };
+
+        _input.Player.Attack.performed += ctx =>
+        {
+            //myPlayer.Combat.Attack();
+        };
     }
 
     public static void SetPlayerControls()

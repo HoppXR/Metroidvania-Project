@@ -103,7 +103,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -117,7 +117,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -141,7 +141,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -167,12 +167,12 @@ TextureImporter:
       name: back_idle_0
       rect:
         serializedVersion: 2
-        x: 19
+        x: 0
         y: 1979
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,12 +188,12 @@ TextureImporter:
       name: back_idle_1
       rect:
         serializedVersion: 2
-        x: 339
+        x: 320
         y: 1979
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: back_idle_2
       rect:
         serializedVersion: 2
-        x: 659
+        x: 640
         y: 1979
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,12 +230,12 @@ TextureImporter:
       name: back_idle_3
       rect:
         serializedVersion: 2
-        x: 979
+        x: 960
         y: 1979
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,12 +251,12 @@ TextureImporter:
       name: back_idle_4
       rect:
         serializedVersion: 2
-        x: 1299
+        x: 1280
         y: 1979
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,12 +272,12 @@ TextureImporter:
       name: back_idle_5
       rect:
         serializedVersion: 2
-        x: 1619
+        x: 1600
         y: 1979
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,12 +293,12 @@ TextureImporter:
       name: back_idle_6
       rect:
         serializedVersion: 2
-        x: 19
+        x: 0
         y: 1649
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,12 +314,12 @@ TextureImporter:
       name: back_idle_7
       rect:
         serializedVersion: 2
-        x: 339
+        x: 320
         y: 1649
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,12 +335,12 @@ TextureImporter:
       name: back_idle_8
       rect:
         serializedVersion: 2
-        x: 659
+        x: 640
         y: 1649
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -356,12 +356,12 @@ TextureImporter:
       name: back_idle_9
       rect:
         serializedVersion: 2
-        x: 979
+        x: 960
         y: 1649
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,12 +377,12 @@ TextureImporter:
       name: back_idle_10
       rect:
         serializedVersion: 2
-        x: 1299
+        x: 1280
         y: 1649
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -398,12 +398,12 @@ TextureImporter:
       name: back_idle_11
       rect:
         serializedVersion: 2
-        x: 1619
+        x: 1600
         y: 1649
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,12 +419,12 @@ TextureImporter:
       name: back_idle_12
       rect:
         serializedVersion: 2
-        x: 19
+        x: 0
         y: 1319
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -440,12 +440,12 @@ TextureImporter:
       name: back_idle_13
       rect:
         serializedVersion: 2
-        x: 339
+        x: 320
         y: 1319
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -461,12 +461,12 @@ TextureImporter:
       name: back_idle_14
       rect:
         serializedVersion: 2
-        x: 659
+        x: 640
         y: 1319
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -482,12 +482,12 @@ TextureImporter:
       name: back_idle_15
       rect:
         serializedVersion: 2
-        x: 979
+        x: 960
         y: 1319
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -503,12 +503,12 @@ TextureImporter:
       name: back_idle_16
       rect:
         serializedVersion: 2
-        x: 1299
+        x: 1280
         y: 1319
-        width: 282
-        height: 322
+        width: 320
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -524,12 +524,12 @@ TextureImporter:
       name: back_idle_17
       rect:
         serializedVersion: 2
-        x: 1619
-        y: 329
-        width: 282
-        height: 1312
+        x: 1600
+        y: 1321
+        width: 320
+        height: 328
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -545,12 +545,12 @@ TextureImporter:
       name: back_idle_18
       rect:
         serializedVersion: 2
-        x: 19
-        y: 0
-        width: 282
-        height: 1311
+        x: 0
+        y: 991
+        width: 320
+        height: 328
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -566,12 +566,12 @@ TextureImporter:
       name: back_idle_19
       rect:
         serializedVersion: 2
-        x: 339
-        y: 0
-        width: 282
-        height: 1311
+        x: 320
+        y: 991
+        width: 320
+        height: 328
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -587,12 +587,12 @@ TextureImporter:
       name: back_idle_20
       rect:
         serializedVersion: 2
-        x: 659
-        y: 0
-        width: 282
-        height: 1311
+        x: 640
+        y: 991
+        width: 320
+        height: 328
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -608,12 +608,12 @@ TextureImporter:
       name: back_idle_21
       rect:
         serializedVersion: 2
-        x: 979
-        y: 0
-        width: 282
-        height: 1311
+        x: 960
+        y: 991
+        width: 320
+        height: 328
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -629,12 +629,12 @@ TextureImporter:
       name: back_idle_22
       rect:
         serializedVersion: 2
-        x: 1299
-        y: 329
-        width: 282
-        height: 982
+        x: 1280
+        y: 991
+        width: 320
+        height: 328
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -646,10 +646,367 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: back_idle_23
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 991
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c149abe7f63b55447838eccddc8cc18b
+      internalID: -1357594515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 661
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc78c999da449674485f7dd9d5552099
+      internalID: -1225590153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_25
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 661
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fd7480b934b5b459528fd154bef625
+      internalID: -1278440844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_26
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 661
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439b67382f2159c4684ae824684e535e
+      internalID: 387663486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_27
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 661
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cea2aaa908ac4d4ba0927e32316bd9e
+      internalID: 654714495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_28
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 661
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8752703bc2e01fe488a7189a4808e21f
+      internalID: 1175397304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_29
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 661
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e5fba7fdc33af48917575e88a38d39
+      internalID: -65789975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 331
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ea432dfb5ac5a439a6366c8bcb3f09
+      internalID: -1456127107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_31
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 331
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05651113f78c46b45a19fb26722d3ffa
+      internalID: -416319255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 331
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c92e86d5c050d459711dda368692a0
+      internalID: -500068238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_33
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 331
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9a9c514296a9f4fa37f22a1368d72e
+      internalID: 1811810990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_34
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 331
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b92d9cd24749424292dc1527760532d
+      internalID: 1931411127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_35
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 331
+        width: 320
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718849ada56998f4584e7489e537dddc
+      internalID: -2143966330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 320
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f56dfe4a2eb5e4b93dbefed408d5e1
+      internalID: -923864340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41bef8330b8570419771b495e6f638b
+      internalID: 1670967692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_38
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 320
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651fba654baa1724492dc7f6d2edddb6
+      internalID: 1311033555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_idle_39
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 320
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78bb3433fdadf64990a1a2da0dbf512
+      internalID: 1748938466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 594912d2cd2b15e44a60365a89145ea9
     internalID: 0
     vertices: []
     indices: 
@@ -673,8 +1030,27 @@ TextureImporter:
       back_idle_20: -9190882446080634325
       back_idle_21: 6164597663150543616
       back_idle_22: 6432877304211816564
+      back_idle_23: -1357594515
+      back_idle_24: -1225590153
+      back_idle_25: -1278440844
+      back_idle_26: 387663486
+      back_idle_27: 654714495
+      back_idle_28: 1175397304
+      back_idle_29: -65789975
       back_idle_3: 3984251033763852492
+      back_idle_30: -1456127107
+      back_idle_31: -416319255
+      back_idle_32: -500068238
+      back_idle_33: 1811810990
+      back_idle_34: 1931411127
+      back_idle_35: -2143966330
+      back_idle_36: -923864340
+      back_idle_37: 1670967692
+      back_idle_38: 1311033555
+      back_idle_39: 1748938466
       back_idle_4: -1359568452125053358
+      back_idle_40: 1190216687
+      back_idle_41: -49136474
       back_idle_5: 1049148417540650249
       back_idle_6: 1370275542548617694
       back_idle_7: 6866963262527397581
