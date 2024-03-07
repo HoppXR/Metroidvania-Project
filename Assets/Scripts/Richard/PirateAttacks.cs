@@ -37,7 +37,7 @@ public class PirateAttacks : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.I))
         {
-            StartCoroutine(SpinAttackCoroutine());
+            StartCoroutine(SpinAttackCoroutine(gameObject));
         }
         
         if (Input.GetKeyDown(KeyCode.U))
@@ -61,28 +61,29 @@ public class PirateAttacks : MonoBehaviour
 
         // Calculate the time it takes to reach the player based on distance and speed
         float timeToReachPlayer = Vector2.Distance(player.transform.position, Ghostship.transform.position) / travelSpeed;
-
-        // Destroy after reaching the player
-        Destroy(Ghostship, timeToReachPlayer+0.2f);
+        Destroy(Ghostship, timeToReachPlayer+5f);
     }
 
 
-    IEnumerator SpinAttackCoroutine()
+    IEnumerator SpinAttackCoroutine(GameObject parent)
     {
-            GameObject spinAttack = Instantiate(SpinAttackIndicators, boss.position, Quaternion.identity);
-            Destroy(spinAttack, 1f);
-            yield return new WaitForSeconds(1f);
-            polygonCollider2D.enabled = true;
-            yield return new WaitForSeconds(1f);
-            polygonCollider2D.enabled = false;
-            yield return new WaitForSeconds(1f);
+        GameObject spinAttack = Instantiate(SpinAttackIndicators, boss.position, Quaternion.identity);
+        spinAttack.transform.parent = parent.transform;
+        Destroy(spinAttack, 1f);
+        yield return new WaitForSeconds(1f);
+        polygonCollider2D.enabled = true;
+        yield return new WaitForSeconds(1f);
+        polygonCollider2D.enabled = false;
+        yield return new WaitForSeconds(1f);
     }
     
     
     void GoonsAttack()
     {
-        // Teleport the boss to the specified destination
         boss.position = teleportDestination;
+        
+        Rigidbody2D bossRb = boss.GetComponent<Rigidbody2D>();
+        bossRb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
 
         // Define the spawn area
         float minX = -14.4f;
@@ -93,18 +94,12 @@ public class PirateAttacks : MonoBehaviour
         // Spawn four minions
         for (int i = 0; i < 4; i++)
         {
-            // Generate a random position within the spawn area
             Vector2 spawnPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-
-            // Instantiate the minion prefab at the random position
             GameObject gooner = Instantiate(Gooners, spawnPosition, Quaternion.identity);
-            Destroy(gooner,2f);
-            
-            // Assign PirateAttacks script to PirateGooners script
+            Destroy(gooner, 2f);
             PirateGooners goons = Gooners.GetComponent<PirateGooners>();
             goons.pirateAttacks = this;
-
-            // Increase the minion count
+            
             goonerCount++;
         }
     }
@@ -113,9 +108,13 @@ public class PirateAttacks : MonoBehaviour
     {
         if (goonerCount <= 0)
         {
+            Rigidbody2D bossRb = boss.GetComponent<Rigidbody2D>();
+
             boss.position = returnDestination;
+            bossRb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
     }
+
     
     public void MinionDestroyed()
     {

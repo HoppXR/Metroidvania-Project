@@ -4,38 +4,44 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Transform target;
-    public float originalSpeed = 1000f;
+    public CircleCollider2D[] collidersToUse;
+    private Transform player;
     public float speed = 1000f;
     public float nextWaypointDistance = 1f;
-
     private Path path;
     private int currentWaypoint = 0;
-    private bool reachedEndOfPath = false;
+    private bool reachedEndOfPath;
     private Seeker seeker;
     public Rigidbody2D rb;
-    private EnemyMeleeAttacks enemyMeleeAttack;
     private bool isAttacking = false;
-    private float attackCooldown = 0f;
-    private float attackCooldownDuration = 2f;
-
-    // New variable to track player's in-range status
-    private bool playerInRange = false;
+    private bool colliderActivated = false;
+    private float attackDelay = 2f;
+    private float lastEnterTime = 0f;
 
     void Start()
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-        enemyMeleeAttack = GetComponentInChildren<EnemyMeleeAttacks>();
-        originalSpeed = speed;
-        rb.constraints |= RigidbodyConstraints2D.FreezeRotation;
+        player = GameObject.FindWithTag("Player")?.transform; // Null check added here
+        if (player == null)
+        {
+            Debug.LogError("Player transform not found.");
+            return;
+        }
+
+        if (collidersToUse == null || collidersToUse.Length < 1)
+        {
+            Debug.LogError("Colliders to use not assigned or empty.");
+            return;
+        }
+
         InvokeRepeating("UpdatePath", 0f, 0.1f);
     }
 
     void UpdatePath()
     {
-        if (seeker.IsDone())
-            seeker.StartPath(rb.position, target.position, OnPathComplete);
+        if (seeker != null && seeker.IsDone()) // Null check added here
+            seeker.StartPath(rb.position, player.position, OnPathComplete);
     }
 
     void OnPathComplete(Path p)
@@ -73,52 +79,77 @@ public class EnemyAI : MonoBehaviour
         }
     }
     
-    private void OnEnable()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        EnemyInRangeToAttack.OnPlayerInRange += HandlePlayerInRange;
+        if (other.CompareTag("Player") && !colliderActivated)
+        {
+            lastEnterTime = Time.time; 
+            colliderActivated = true; 
+            StartCoroutine(ActivateCollider());
+        }
     }
     
-    private void OnDisable()
+    private IEnumerator ActivateCollider()
     {
-        EnemyInRangeToAttack.OnPlayerInRange -= HandlePlayerInRange;
-    }
-
-    private void HandlePlayerInRange(bool inRange)
-    {
-        // Update playerInRange status
-        playerInRange = inRange;
-
-        if (inRange)
+        yield return new WaitForSeconds(attackDelay);
+        
+        if (colliderActivated && collidersToUse != null && collidersToUse.Length > 0) // Null check added here
         {
-            speed = 0;
-            if (!isAttacking)
+            collidersToUse[0].enabled = true;
+
+            // Calculate the direction to the player
+            if (player != null) // Null check added here
             {
-                StartCoroutine(AttackRoutine());
-                isAttacking = true;
+                Vector2 directionToPlayer = player.position - transform.position;
+                directionToPlayer.Normalize();
+                collidersToUse[0].offset = directionToPlayer * 1f;
+            }
+
+            StartCoroutine(DeactivateCollider());
+        }
+    }
+    
+    private IEnumerator DeactivateCollider()
+    {
+        yield return new WaitForSeconds(0.3f);
+        if (collidersToUse != null && collidersToUse.Length > 0)
+        {
+            collidersToUse[0].enabled = false;
+            colliderActivated = false;
+        }
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (collidersToUse != null && collidersToUse.Length >= 2)
+            {
+                collidersToUse[0].enabled = false;
+                colliderActivated = false;
             }
         }
-        else
-        {
-            speed = originalSpeed;
-        }
     }
-
-    private IEnumerator AttackRoutine()
+    
+    void Update()
     {
-        yield return new WaitForSeconds(2f);
-        while (true)
+        if (!enabled)
+            return;
+        if (Time.time - lastEnterTime > attackDelay && !isAttacking)
         {
-            if (Time.time >= attackCooldown && playerInRange)
-            {
-                Attack();
-                attackCooldown = Time.time + attackCooldownDuration;
-            }
-            yield return null; 
+            Attack();
         }
     }
-
+    
     private void Attack()
     {
-        enemyMeleeAttack.ActivateMeleeAttack();
+        isAttacking = true;
+        lastEnterTime = Time.time;
     }
+
+    void OnEnable()
+    {
+        collidersToUse[1].enabled = true;
+    }
+
 }
