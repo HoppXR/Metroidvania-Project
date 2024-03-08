@@ -96,7 +96,7 @@ public class PirateAttacks : MonoBehaviour
         {
             Vector2 spawnPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
             GameObject gooner = Instantiate(Gooners, spawnPosition, Quaternion.identity);
-            Destroy(gooner, 2f);
+            Destroy(gooner, 6f);
             PirateGooners goons = Gooners.GetComponent<PirateGooners>();
             goons.pirateAttacks = this;
             
@@ -106,14 +106,18 @@ public class PirateAttacks : MonoBehaviour
 
     void CheckGoonerCount()
     {
-        if (goonerCount <= 0)
+        if (boss != null && goonerCount <= 0)
         {
             Rigidbody2D bossRb = boss.GetComponent<Rigidbody2D>();
 
             boss.position = returnDestination;
-            bossRb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            if (bossRb != null)
+            {
+                bossRb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            }
         }
     }
+
 
     
     public void MinionDestroyed()

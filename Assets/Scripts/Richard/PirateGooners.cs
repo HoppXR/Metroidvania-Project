@@ -9,6 +9,13 @@ public class PirateGooners : MonoBehaviour
 
     private void OnDestroy()
     {
-        pirateAttacks.MinionDestroyed();
+        if (pirateAttacks != null)
+        {
+            pirateAttacks.MinionDestroyed();
+        }
+        else
+        {
+            Debug.LogWarning("PirateAttacks reference is null in PirateGooners script!");
+        }
     }
 }

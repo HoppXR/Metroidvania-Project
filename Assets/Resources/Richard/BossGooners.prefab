@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 8511079065562314520}
   - component: {fileID: 2037574997744274473}
   m_Layer: 7
-  m_Name: NPCWithAttackEnabled
+  m_Name: BossGooners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -4,7 +4,9 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour
 {
-    public CircleCollider2D[] collidersToUse;
+    public BoxCollider2D detectionCollider;
+    public CircleCollider2D attackCollider;
+    public CircleCollider2D textCollider;
     private Transform player;
     public float speed = 1000f;
     public float nextWaypointDistance = 1f;
@@ -15,8 +17,9 @@ public class EnemyAI : MonoBehaviour
     public Rigidbody2D rb;
     private bool isAttacking = false;
     private bool colliderActivated = false;
-    private float attackDelay = 2f;
+    [SerializeField] private float attackDelay = 2f;
     private float lastEnterTime = 0f;
+    private float triggerEnterTime = 0f;
 
     void Start()
     {
@@ -29,7 +32,7 @@ public class EnemyAI : MonoBehaviour
             return;
         }
 
-        if (collidersToUse == null || collidersToUse.Length < 1)
+        if (detectionCollider == null || attackCollider == null)
         {
             Debug.LogError("Colliders to use not assigned or empty.");
             return;
@@ -81,80 +84,64 @@ public class EnemyAI : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !colliderActivated)
+        if (other.CompareTag("Player"))
         {
-            lastEnterTime = Time.time; 
-            colliderActivated = true; 
-            StartCoroutine(ActivateCollider());
+            lastEnterTime = Time.time;
+            colliderActivated = true;
         }
     }
     
-    private IEnumerator ActivateCollider()
+    private void OnTriggerStay2D(Collider2D other)
     {
-        yield return new WaitForSeconds(attackDelay);
-        
-        if (colliderActivated && collidersToUse != null && collidersToUse.Length > 0) // Null check added here
+        if (other.CompareTag("Player") && Time.time - lastEnterTime >= attackDelay && !isAttacking)
         {
-            collidersToUse[0].enabled = true;
-
-            // Calculate the direction to the player
-            if (player != null) // Null check added here
-            {
-                Vector2 directionToPlayer = player.position - transform.position;
-                directionToPlayer.Normalize();
-                collidersToUse[0].offset = directionToPlayer * 1f;
-            }
-
-            StartCoroutine(DeactivateCollider());
+            ActivateAttack();
         }
     }
-    
-    private IEnumerator DeactivateCollider()
-    {
-        yield return new WaitForSeconds(0.3f);
-        if (collidersToUse != null && collidersToUse.Length > 0)
-        {
-            collidersToUse[0].enabled = false;
-            colliderActivated = false;
-        }
-    }
-    
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            if (collidersToUse != null && collidersToUse.Length >= 2)
+            colliderActivated = false;
+            if (isAttacking)
             {
-                collidersToUse[0].enabled = false;
-                colliderActivated = false;
+                StartCoroutine(DeactivateAttack());
             }
         }
     }
-    
-    void Update()
-    {
-        if (!enabled)
-            return;
-        if (Time.time - lastEnterTime > attackDelay && !isAttacking)
-        {
-            Attack();
-        }
-    }
-    
-    private void Attack()
+
+    private void ActivateAttack()
     {
         isAttacking = true;
-        lastEnterTime = Time.time;
+        attackCollider.enabled = true;
+        if (player != null)
+        {
+            Vector2 directionToPlayer = player.position - transform.position;
+            directionToPlayer.Normalize();
+            attackCollider.offset = directionToPlayer * 1f;
+        }
+        StartCoroutine(DeactivateAttack());
     }
 
+    private IEnumerator DeactivateAttack()
+    {
+        yield return new WaitForSeconds(0.3f);
+        attackCollider.enabled = false;
+        isAttacking = false;
+    }
+    
     void OnEnable()
     {
-        collidersToUse[1].enabled = true;
+        detectionCollider.enabled = true;
+        if (textCollider != null)
+        {
+            textCollider.enabled = false;
+        }
     }
     
     void OnDisable()
     {
-        collidersToUse[1].enabled = false;
+        detectionCollider.enabled = false;
     }
-
 }
