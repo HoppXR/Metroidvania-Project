@@ -20,6 +20,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float attackDelay = 2f;
     private float lastEnterTime = 0f;
     private float triggerEnterTime = 0f;
+    [SerializeField] private float attackRange = 1f;
 
     void Start()
     {
@@ -28,13 +29,11 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.FindWithTag("Player")?.transform;
         if (player == null)
         {
-            Debug.LogError("Player transform not found.");
             return;
         }
 
         if (detectionCollider == null || attackCollider == null)
         {
-            Debug.LogError("Colliders to use not assigned or empty.");
             return;
         }
 
@@ -119,7 +118,7 @@ public class EnemyAI : MonoBehaviour
         {
             Vector2 directionToPlayer = player.position - transform.position;
             directionToPlayer.Normalize();
-            attackCollider.offset = directionToPlayer * 1f;
+            attackCollider.offset = directionToPlayer * attackRange;
         }
         StartCoroutine(DeactivateAttack());
     }
@@ -133,7 +132,8 @@ public class EnemyAI : MonoBehaviour
     
     void OnEnable()
     {
-        detectionCollider.enabled = true;
+            detectionCollider.enabled = true;
+
         if (textCollider != null)
         {
             textCollider.enabled = false;

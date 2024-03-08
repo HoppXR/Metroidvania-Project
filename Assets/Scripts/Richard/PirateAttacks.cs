@@ -21,37 +21,43 @@ public class PirateAttacks : MonoBehaviour
     void Start()
     {
         polygonCollider2D = GetComponent<PolygonCollider2D>();
+        StartCoroutine(RandomAttackRoutine());
     }
-    void Update()
+    private IEnumerator RandomAttackRoutine()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-            foreach (var BossCannonAttack in BossCannonAttack)
+        while (true)
+        {
+            yield return new WaitForSeconds(10f);
+
+            int randomNumber = Random.Range(1, 14);
+
+            if (randomNumber >= 1 && randomNumber <= 4)
             {
-                BossCannonAttack.ShootCannon();
+                foreach (var BossCannonAttack in BossCannonAttack)
+                {
+                    BossCannonAttack.ShootCannon();
+                }
             }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            SpawnSummonShip();
+            else if (randomNumber >= 5 && randomNumber <= 8)
+            {
+                SpawnSummonShip();
+            }
+            else if (randomNumber >= 9 && randomNumber <= 12)
+            {
+                StartCoroutine(SpinAttackCoroutine(gameObject));
+            }
+            else // randomNumber is 13
+            {
+                GoonsAttack();
+            }
         }
-        
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            StartCoroutine(SpinAttackCoroutine(gameObject));
-        }
-        
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            GoonsAttack();
-        }
-
     }
-
+    
     void SpawnSummonShip()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-        Vector2 spawnPosition = new Vector2(Random.Range(-12, 12), 13);
+        Vector2 spawnPosition = new Vector2(Random.Range(-30, 30), 193);
         GameObject Ghostship = Instantiate(GhostShip, spawnPosition, Quaternion.identity);
 
         Vector3 directionToPlayer = (player.transform.position - Ghostship.transform.position).normalized;
@@ -86,17 +92,17 @@ public class PirateAttacks : MonoBehaviour
         bossRb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
 
         // Define the spawn area
-        float minX = -14.4f;
-        float maxX = 13.71f;
+        float minX = -13.4f;
+        float maxX = 16.9f;
         float minY = -7.1f;
-        float maxY = 6.62f;
+        float maxY = 166.3f;
 
         // Spawn four minions
         for (int i = 0; i < 4; i++)
         {
             Vector2 spawnPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
             GameObject gooner = Instantiate(Gooners, spawnPosition, Quaternion.identity);
-            Destroy(gooner, 6f);
+            Destroy(gooner, 8f);
             PirateGooners goons = Gooners.GetComponent<PirateGooners>();
             goons.pirateAttacks = this;
             
@@ -117,8 +123,6 @@ public class PirateAttacks : MonoBehaviour
             }
         }
     }
-
-
     
     public void MinionDestroyed()
     {
