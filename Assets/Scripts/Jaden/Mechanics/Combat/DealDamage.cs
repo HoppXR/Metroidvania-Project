@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class DealDamage : MonoBehaviour
 {
-    private PlayerCombat _playerCombat;
-
     [SerializeField] private float damage;
 
     private void OnTriggerEnter2D(Collider2D other)
