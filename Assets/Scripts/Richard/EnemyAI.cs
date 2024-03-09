@@ -16,12 +16,15 @@ public class EnemyAI : MonoBehaviour
     private bool reachedEndOfPath;
     private Seeker seeker;
     public Rigidbody2D rb;
+    public PlayerHealth _playerHealth;
     private bool isAttacking = false;
     private bool colliderActivated = false;
     [SerializeField] private float attackDelay = 2f;
     private float lastEnterTime = 0f;
     private float triggerEnterTime = 0f;
     [SerializeField] private float attackRange = 1f;
+    [SerializeField] int damage = 10;
+    
 
     void Start()
     {
@@ -89,6 +92,12 @@ public class EnemyAI : MonoBehaviour
             lastEnterTime = Time.time;
             colliderActivated = true;
         }
+        if (other == detectionCollider)
+        {
+            Debug.Log("player Hit");
+            //_playerHealth = other.GetComponent<PlayerHealth>();
+            //_playerHealth.TakeDamage(damage);
+        }
     }
     
     private void OnTriggerStay2D(Collider2D other)
@@ -145,6 +154,8 @@ public class EnemyAI : MonoBehaviour
     {
         detectionCollider.enabled = false;
     }
+    
+    
 
     private void OnCollisionEnter2D(Collision2D other)
     {

@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         GameManager.gameManager._playerHealth.TakeDamage(damage);
         healthBar.SetHealth(GameManager.gameManager._playerHealth.Health);
