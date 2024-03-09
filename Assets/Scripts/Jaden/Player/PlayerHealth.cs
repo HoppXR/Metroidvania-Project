@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private HealthBar healthBar;
-
+    
     void Start()
     {
         healthBar.SetHealth(GameManager.gameManager._playerHealth.Health);
