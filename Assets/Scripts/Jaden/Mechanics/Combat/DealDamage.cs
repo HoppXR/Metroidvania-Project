@@ -13,8 +13,12 @@ public class DealDamage : MonoBehaviour
         {
             var eHealth = other.gameObject.GetComponent<EnemyHealth>();
             eHealth.TakeDamage(damage);
-            
-            Debug.Log("Hit Enemy");
+        }
+
+        if (other.CompareTag("Boss"))
+        {
+            var bHealth = other.gameObject.GetComponent<BossHealth>();
+            bHealth.TakeDamage(damage);
         }
     }
 }

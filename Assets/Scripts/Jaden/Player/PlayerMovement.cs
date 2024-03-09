@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
-    public Vector2 _moveVector;
+    private Vector2 _moveVector;
     private bool _canMove;
     
     [Header("Knockback Settings")]
@@ -53,6 +53,19 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     void Update()
     {
+        animator.SetFloat(Horizontal, _moveVector.x);
+        animator.SetFloat(Vertical, _moveVector.y);
+        animator.SetFloat(Speed, _moveVector.sqrMagnitude);
+        
+        if (_moveVector.x == 1 || _moveVector.x == -1 || _moveVector.y == 1 || _moveVector.y == -1)
+        {
+            animator.SetFloat(LastHorizontal, _moveVector.x);
+            animator.SetFloat(LastVertical, _moveVector.y);
+        }
+    }
+
+    private void FixedUpdate()
+    {
         if (_isDashing || !_canMove)
         {
             return;
@@ -89,16 +102,6 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         }
         
         _rb.velocity = moveForce;
-        
-        animator.SetFloat(Horizontal, _moveVector.x);
-        animator.SetFloat(Vertical, _moveVector.y);
-        animator.SetFloat(Speed, _moveVector.sqrMagnitude);
-        
-        if (_moveVector.x == 1 || _moveVector.x == -1 || _moveVector.y == 1 || _moveVector.y == -1)
-        {
-            animator.SetFloat(LastHorizontal, _moveVector.x);
-            animator.SetFloat(LastVertical, _moveVector.y);
-        }
     }
 
     public void PlayerDash()

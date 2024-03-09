@@ -6,7 +6,7 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour
 {
     public BoxCollider2D detectionCollider;
-    public CircleCollider2D attackCollider;
+    public GameObject attackHitbox;
     public CircleCollider2D textCollider;
     private Transform player;
     public float speed = 1000f;
@@ -16,15 +16,19 @@ public class EnemyAI : MonoBehaviour
     private bool reachedEndOfPath;
     private Seeker seeker;
     public Rigidbody2D rb;
-    public PlayerHealth _playerHealth;
+    private PlayerHealth _playerHealth;
     private bool isAttacking = false;
     private bool colliderActivated = false;
     [SerializeField] private float attackDelay = 2f;
     private float lastEnterTime = 0f;
     private float triggerEnterTime = 0f;
-    [SerializeField] private float attackRange = 1f;
+    [SerializeField] private float attackRange = 1.5f;
     [SerializeField] int damage = 10;
-    
+
+    private void Awake()
+    {
+        _playerHealth = FindFirstObjectByType<PlayerHealth>();
+    }
 
     void Start()
     {
@@ -36,7 +40,7 @@ public class EnemyAI : MonoBehaviour
             return;
         }
 
-        if (detectionCollider == null || attackCollider == null)
+        if (detectionCollider == null || attackHitbox == null)
         {
             return;
         }
@@ -92,12 +96,6 @@ public class EnemyAI : MonoBehaviour
             lastEnterTime = Time.time;
             colliderActivated = true;
         }
-        if (other == detectionCollider)
-        {
-            Debug.Log("player Hit");
-            //_playerHealth = other.GetComponent<PlayerHealth>();
-            //_playerHealth.TakeDamage(damage);
-        }
     }
     
     private void OnTriggerStay2D(Collider2D other)
@@ -123,12 +121,12 @@ public class EnemyAI : MonoBehaviour
     private void ActivateAttack()
     {
         isAttacking = true;
-        attackCollider.enabled = true;
+        attackHitbox.SetActive(true);
         if (player != null)
         {
             Vector2 directionToPlayer = player.position - transform.position;
             directionToPlayer.Normalize();
-            attackCollider.offset = directionToPlayer * attackRange;
+            attackHitbox.transform.localPosition = directionToPlayer * attackRange;
         }
         StartCoroutine(DeactivateAttack());
     }
@@ -136,7 +134,7 @@ public class EnemyAI : MonoBehaviour
     private IEnumerator DeactivateAttack()
     {
         yield return new WaitForSeconds(0.3f);
-        attackCollider.enabled = false;
+        attackHitbox.SetActive(false);
         isAttacking = false;
     }
     
@@ -154,8 +152,6 @@ public class EnemyAI : MonoBehaviour
     {
         detectionCollider.enabled = false;
     }
-    
-    
 
     private void OnCollisionEnter2D(Collision2D other)
     {

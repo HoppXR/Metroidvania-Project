@@ -26,7 +26,6 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        /*
         if (!chase)
         {
             _enemyAI.enabled = true;
@@ -35,7 +34,7 @@ public class EnemyHealth : MonoBehaviour
             _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
             _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
             _npc.enabled = false;
-        }*/
+        }
         
         if (_currentHealth >= damage)
         {
@@ -51,6 +50,7 @@ public class EnemyHealth : MonoBehaviour
 
         // Play hurt animation
         Instantiate(blood, transform.position, Quaternion.identity);
+        Destroy(blood, 1f);
 
         if (_currentHealth <= 0)
         {
@@ -60,14 +60,8 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
-        /*
         _enemyAI.enabled = false;
         Destroy(gameObject);
-        */
-        
-        /////////////////// TEMP ///////////////////
-        
-        Debug.Log("Enemy died");
 
         // Play die animation
     

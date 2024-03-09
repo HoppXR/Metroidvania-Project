@@ -7,24 +7,9 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private HealthBar healthBar;
     
-    void Start()
+    void FixedUpdate()
     {
         healthBar.SetHealth(GameManager.gameManager._playerHealth.Health);
-    }
-    
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            TakeDamage(20);
-            Debug.Log(GameManager.gameManager._playerHealth.Health);
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            Heal(10);
-            Debug.Log(GameManager.gameManager._playerHealth.Health);
-        }
     }
 
     public void TakeDamage(int damage)
