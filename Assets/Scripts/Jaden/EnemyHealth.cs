@@ -50,7 +50,6 @@ public class EnemyHealth : MonoBehaviour
 
         // Play hurt animation
         Instantiate(blood, transform.position, Quaternion.identity);
-        Destroy(blood, 1f);
 
         if (_currentHealth <= 0)
         {
