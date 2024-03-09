@@ -94,6 +94,7 @@ public class TriggerDialogue : MonoBehaviour
 
                 Destroy(gameObject);
             }
+            
         }
     }
 

@@ -102,7 +102,7 @@ public class PirateAttacks : MonoBehaviour
         {
             Vector2 spawnPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
             GameObject gooner = Instantiate(Gooners, spawnPosition, Quaternion.identity);
-            Destroy(gooner, 8f);
+            //Destroy(gooner, 8f);
             PirateGooners goons = Gooners.GetComponent<PirateGooners>();
             goons.pirateAttacks = this;
             

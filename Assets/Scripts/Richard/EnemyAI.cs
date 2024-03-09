@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Pathfinding;
 using System.Collections;
@@ -144,4 +145,15 @@ public class EnemyAI : MonoBehaviour
     {
         detectionCollider.enabled = false;
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        rb.constraints &= ~(RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY);
+    }
+
 }

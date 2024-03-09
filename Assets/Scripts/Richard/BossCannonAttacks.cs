@@ -35,6 +35,8 @@ public class BossCannonAttack : MonoBehaviour
             Vector3 directionToPlayer = (player.transform.position - bullet.transform.position).normalized;
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
             bulletRb.velocity = directionToPlayer * shootingSpeed;
+            Destroy(bullet, 10f);
+            
         }
     }
 }
