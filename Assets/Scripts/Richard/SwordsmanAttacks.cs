@@ -5,24 +5,26 @@ using UnityEngine;
 public class SwordsmanAttacks : MonoBehaviour
 {
     public GameObject attackHitbox;
-    public GameObject bigHitBoxAttack;
+    public GameObject bigHitBoxAttackIndicator;
     public GameObject bigHitBoxAttackHitbox;
-    
+
+
+    public Transform boss;
     private Transform player;
     public Rigidbody2D rb;
     public GameObject swordProjectile;
     [SerializeField] private float attackRange = 1.5f;
-    
+
     [SerializeField] private float lungeDuration;
     [SerializeField] private float lungeSpeed;
     [SerializeField] private float dashDuration;
     [SerializeField] private float dashSpeed;
-    
-    
+
+
     [SerializeField] private float swordProjectileSpeed;
-    
-    
-    
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,17 +39,19 @@ public class SwordsmanAttacks : MonoBehaviour
         {
             StartCoroutine(DoubleSlash());
         }
+
         if (Input.GetKeyDown(KeyCode.O))
         {
             StartCoroutine(SlashThenRanged());
         }
+
         if (Input.GetKeyDown(KeyCode.I))
         {
-            StartCoroutine(SlashThenRanged());
+            StartCoroutine(TripleDashAttack(gameObject));
         }
     }
 
-    IEnumerator DoubleSlash()//lunge forward a bit and attack x2
+    IEnumerator DoubleSlash() //lunge forward a bit and attack x2
     {
         StartCoroutine(SmallLunge());
         yield return new WaitForSeconds(0.2f);
@@ -66,16 +70,44 @@ public class SwordsmanAttacks : MonoBehaviour
         yield return new WaitForSeconds(1f);
         ShootSword();
         yield return new WaitForSeconds(0.5f);
-        
+
     }
 
-    void TripleDashAttack()//Dashes like eye of chthulu and release a attack at the end x3
+    IEnumerator TripleDashAttack(GameObject parent) //Dashes like eye of chthulu and release a attack at the end x3
     {
+        StartCoroutine(Dash());
+        yield return new WaitForSeconds(0.2f);
+        GameObject spinAttack = Instantiate(bigHitBoxAttackIndicator, boss.position, Quaternion.identity);
+        spinAttack.transform.parent = parent.transform;
+        Destroy(spinAttack, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        BigHitBoxAttack();
         
+        yield return new WaitForSeconds(0.5f);
+        
+        StartCoroutine(Dash());
+        yield return new WaitForSeconds(0.2f);
+        GameObject spinAttack2 = Instantiate(bigHitBoxAttackIndicator, boss.position, Quaternion.identity);
+        spinAttack2.transform.parent = parent.transform;
+        Destroy(spinAttack2, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        BigHitBoxAttack();
+        
+        yield return new WaitForSeconds(0.5f);
+        
+        StartCoroutine(Dash());
+        yield return new WaitForSeconds(0.2f);
+        GameObject spinAttack3 = Instantiate(bigHitBoxAttackIndicator, boss.position, Quaternion.identity);
+        spinAttack3.transform.parent = parent.transform;
+        Destroy(spinAttack3, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        BigHitBoxAttack();
+        
+        yield return new WaitForSeconds(3f);
     }
 
 
-    private IEnumerator SmallLunge()
+private IEnumerator SmallLunge()
     {
         if (player != null)
         {
@@ -143,14 +175,13 @@ public class SwordsmanAttacks : MonoBehaviour
 
     void BigHitBoxAttack()
     {
-        
+        bigHitBoxAttackHitbox.SetActive(true);
+        StartCoroutine(DeactivateBigHitBoxAttack());
     }
 
     private IEnumerator DeactivateBigHitBoxAttack()
     {
-        
         yield return new WaitForSeconds(0.4f);
+        bigHitBoxAttackHitbox.SetActive(false);
     }
-    
-    
 }
