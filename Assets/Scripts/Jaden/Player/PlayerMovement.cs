@@ -127,6 +127,16 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         _canDash = true;
     }
 
+    public void SlowDown()
+    {
+        moveSpeed *= 0.5f;
+    }
+
+    public void SpeedUp()
+    {
+        moveSpeed *= 2;
+    }
+
     public void CanMoveFalse()
     {
         _canMove = false;

@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pixel_art_study___tiles__1_by_misfitoki_deqc368-fullview_0: -1292411062276497595
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

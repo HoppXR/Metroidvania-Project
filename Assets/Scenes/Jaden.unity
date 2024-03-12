@@ -1101,6 +1101,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 155683522}
+    - target: {fileID: 3056683815524447384, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1144,6 +1148,10 @@ PrefabInstance:
     - target: {fileID: 6064511518451364509, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566214721864805022, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: lungeForce
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

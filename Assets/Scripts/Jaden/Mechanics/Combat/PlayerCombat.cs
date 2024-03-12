@@ -7,8 +7,9 @@ public class PlayerCombat : MonoBehaviour
 {
     public Animator animator;
     public static PlayerCombat Instance;
+    private PlayerMovement _player;
     
-    [HideInInspector] public bool isAttacking = false;
+    public bool isAttacking = false;
 
     private void Awake()
     {
@@ -18,13 +19,27 @@ public class PlayerCombat : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        _player = GetComponent<PlayerMovement>();
     }
 
     public void Attack()
     {
-        if (!isAttacking)
+        if (isAttacking)
         {
-            isAttacking = true;
+            return;
         }
+        
+        StartCoroutine(PerformAttack());
+    }
+
+    private IEnumerator PerformAttack()
+    {
+        isAttacking = true;
+        _player.SlowDown();
+        
+        yield return new WaitForSeconds(0.5f);
+        
+        isAttacking = false;
+        _player.SpeedUp();
     }
 }
