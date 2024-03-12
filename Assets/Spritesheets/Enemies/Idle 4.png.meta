@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 74eadf367ac9b8943a9fb2a35c31823d
+guid: 4342be4eff3960d478b57bee0d21bd6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4145106988583579453
-    second: megacorp logo gdw 2_0
+      213: -4092872763467548194
+    second: Idle 4_0
+  - first:
+      213: -1737605438827595793
+    second: Idle 4_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,13 +101,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: megacorp logo gdw 2_0
+      name: Idle 4_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 320
-        height: 320
+        x: 4
+        y: 1
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +115,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c09c75d72f9976c0800000000000000
-      internalID: -4145106988583579453
+      spriteID: ed935a618e13337c0800000000000000
+      internalID: -4092872763467548194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 4_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7f4e24f09c2e7e0800000000000000
+      internalID: -1737605438827595793
       vertices: []
       indices: 
       edges: []
@@ -121,7 +145,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b02297cdf346c494184c44b86c65a59b
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +153,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      megacorp logo gdw 2_0: -4145106988583579453
+      Idle 4_0: -4092872763467548194
+      Idle 4_1: -1737605438827595793
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

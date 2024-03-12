@@ -5,6 +5,15 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour
 {
+    private Animator _animator;
+    private static readonly int Attack = Animator.StringToHash("Attack");
+    private static readonly int Horizontal = Animator.StringToHash("Horizontal");
+    private static readonly int Vertical = Animator.StringToHash("Vertical");
+    private static readonly int Speed = Animator.StringToHash("Speed");
+    private static readonly int LastHorizontal = Animator.StringToHash("LastHorizontal");
+    private static readonly int LastVertical = Animator.StringToHash("LastVertical");
+    private bool _canMove;
+    
     public BoxCollider2D detectionCollider;
     public GameObject attackHitbox;
     public CircleCollider2D textCollider;
@@ -12,6 +21,7 @@ public class EnemyAI : MonoBehaviour
     public float speed = 1000f;
     public float nextWaypointDistance = 1f;
     private Path path;
+    private Vector2 direction;
     private int currentWaypoint = 0;
     private bool reachedEndOfPath;
     private Seeker seeker;
@@ -35,6 +45,9 @@ public class EnemyAI : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
+
+        _animator = GetComponent<Animator>();
+        
         if (player == null)
         {
             return;
@@ -63,6 +76,19 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        _animator.SetFloat(Horizontal, direction.x);
+        _animator.SetFloat(Vertical, direction.y);
+        _animator.SetFloat(Speed, direction.sqrMagnitude);
+        
+        if (direction.x == 1 || direction.x == -1 || direction.y == 1 || direction.y == -1)
+        {
+            _animator.SetFloat(LastHorizontal, direction.x);
+            _animator.SetFloat(LastVertical, direction.y);
+        }
+    }
+    
     void FixedUpdate()
     {
         if (path == null)
@@ -77,12 +103,16 @@ public class EnemyAI : MonoBehaviour
         {
             reachedEndOfPath = false;
         }
+        
+        if (!_canMove)
+            return;
 
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+        direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * (speed * Time.deltaTime);
         rb.AddForce(force);
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
+        
         if (distance < nextWaypointDistance)
         {
             currentWaypoint++;
@@ -110,6 +140,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            _canMove = true;
             colliderActivated = false;
             if (isAttacking)
             {
@@ -120,13 +151,18 @@ public class EnemyAI : MonoBehaviour
 
     private void ActivateAttack()
     {
+        _canMove = false;
+        
         isAttacking = true;
         attackHitbox.SetActive(true);
+        
         if (player != null)
         {
             Vector2 directionToPlayer = player.position - transform.position;
             directionToPlayer.Normalize();
             attackHitbox.transform.localPosition = directionToPlayer * attackRange;
+            
+            _animator.SetTrigger(Attack);
         }
         StartCoroutine(DeactivateAttack());
     }
