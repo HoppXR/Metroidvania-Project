@@ -2747,6 +2747,74 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &532478627
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6088888506581351955, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_Name
+      value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+--- !u!114 &532478628 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4778942412304763656, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+  m_PrefabInstance: {fileID: 532478627}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c684694bdd730fd46bb72c8ee2bf16bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &547951209
 GameObject:
   m_ObjectHideFlags: 0
@@ -3845,6 +3913,9 @@ MonoBehaviour:
   sceneToLoad: Area1
   interactRange: 1.5
   interactionUI: {fileID: 331627747}
+  transition: {fileID: 0}
+  levelLoader: {fileID: 532478628}
+  transitionTime: 1
 --- !u!1 &701582266
 GameObject:
   m_ObjectHideFlags: 0
@@ -6117,6 +6188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopMovement: 1
+  destroyOnDialogueEnd: 0
   dialoguePanel: {fileID: 1931379005}
   dialogueText: {fileID: 633956301}
   dialogue:
@@ -7371,6 +7443,9 @@ MonoBehaviour:
   sceneToLoad: 
   interactRange: 1.5
   interactionUI: {fileID: 331627747}
+  transition: {fileID: 0}
+  levelLoader: {fileID: 532478628}
+  transitionTime: 1
 --- !u!61 &1421866268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8229,13 +8304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf6d48bbdc99b2409452b0aecc64674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPoint: {fileID: 1873948111}
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 128
-  attackDamage: 5
-  attackRate: 1
-  attackRange: 2
+  animator: {fileID: 0}
+  isAttacking: 0
 --- !u!114 &1553067143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10386,6 +10456,9 @@ MonoBehaviour:
   sceneToLoad: Area3
   interactRange: 1.5
   interactionUI: {fileID: 331627747}
+  transition: {fileID: 0}
+  levelLoader: {fileID: 532478628}
+  transitionTime: 1
 --- !u!1 &2036954408
 GameObject:
   m_ObjectHideFlags: 0
@@ -10744,3 +10817,4 @@ SceneRoots:
   - {fileID: 1911581479}
   - {fileID: 444690916}
   - {fileID: 1664897526}
+  - {fileID: 532478627}

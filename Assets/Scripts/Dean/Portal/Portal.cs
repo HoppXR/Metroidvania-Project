@@ -1,24 +1,29 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Portal : MonoBehaviour
 {
     public string sceneToLoad; 
     public float interactRange = 1.5f; 
     public GameObject interactionUI;
+    public LevelLoader levelLoader;
+    public float transitionTime = 1f;
 
     private bool playerInRange = false;
 
     private void Start()
     {
         interactionUI.SetActive(false); 
+        
     }
 
     private void Update()
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            EnterPortal();
+            StartCoroutine(EnterPortal());
         }
     }
 
@@ -40,8 +45,13 @@ public class Portal : MonoBehaviour
         }
     }
 
-    private void EnterPortal()
+   
+    IEnumerator EnterPortal()
     {
-        SceneManager.LoadScene(sceneToLoad); 
+        levelLoader.transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
