@@ -20,6 +20,8 @@ public class NPCResponse4 : MonoBehaviour
     public AudioSource typingSound;
     public AudioClip typingClip;
 
+    public BoxCollider2D triggerCollider; 
+
     private PlayerMovement _thePlayer;
 
     private void Start()
@@ -65,6 +67,7 @@ public class NPCResponse4 : MonoBehaviour
         else
         {
             ZeroText();
+            DisableCollider(); 
         }
     }
 
@@ -98,5 +101,13 @@ public class NPCResponse4 : MonoBehaviour
         }
         isTyping = false;
         contButtonAnimator.gameObject.SetActive(true);
+    }
+
+    private void DisableCollider()
+    {
+        if (triggerCollider != null)
+        {
+            triggerCollider.enabled = false; 
+        }
     }
 }
