@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      boat-1.png_0: -4565570767260146494
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

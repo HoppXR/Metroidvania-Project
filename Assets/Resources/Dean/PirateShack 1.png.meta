@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PirateShack 1_0: 151726606988807644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

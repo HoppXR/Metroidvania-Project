@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AteralbusIdle_0: -3825556982761329418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
