@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -11,6 +13,10 @@ public class EnemyHealth : MonoBehaviour
     private float _currentHealth;
     [SerializeField] private float maxHealth;
     [SerializeField] private GameObject blood;
+
+    public Slider healthSlider;
+    public Slider easeHealthSlider;
+    private float lerpSpeed = 0.05f;
     
     public GameObject TalkECanavs;
     private bool chase = false;
@@ -24,16 +30,26 @@ public class EnemyHealth : MonoBehaviour
         _currentHealth = maxHealth;
     }
 
+    private void Update()
+    {
+        if (healthSlider.value != easeHealthSlider.value)
+        {
+            easeHealthSlider.value = Mathf.Lerp(easeHealthSlider.value, _currentHealth, lerpSpeed);
+        }
+    }
+
     public void TakeDamage(float damage)
     {
         if (!chase)
         {
+            _npc.enabled = false;
+            TalkECanavs.SetActive(false);
+            
             _enemyAI.enabled = true;
             chase = true;
-            TalkECanavs.SetActive(false);
+
             _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
             _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
-            _npc.enabled = false;
         }
         
         if (_currentHealth >= damage)
@@ -45,10 +61,11 @@ public class EnemyHealth : MonoBehaviour
             _currentHealth = 0;
         }
         
-        // TEMP
-        Debug.Log(_currentHealth);
+        // Updates Health bar UI
+        healthSlider.value = _currentHealth;
 
-        // Play hurt animation
+        // TODO: Play hurt animation
+        
         Instantiate(blood, transform.position, Quaternion.identity);
 
         if (_currentHealth <= 0)
