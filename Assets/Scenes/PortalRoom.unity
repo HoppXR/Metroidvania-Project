@@ -2755,6 +2755,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4778942412304763656, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: transitionTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6088888506581351955, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
       propertyPath: m_Name
       value: LevelLoader
@@ -3913,7 +3917,6 @@ MonoBehaviour:
   sceneToLoad: Area1
   interactRange: 1.5
   interactionUI: {fileID: 331627747}
-  transition: {fileID: 0}
   levelLoader: {fileID: 532478628}
   transitionTime: 1
 --- !u!1 &701582266
@@ -7443,7 +7446,6 @@ MonoBehaviour:
   sceneToLoad: 
   interactRange: 1.5
   interactionUI: {fileID: 331627747}
-  transition: {fileID: 0}
   levelLoader: {fileID: 532478628}
   transitionTime: 1
 --- !u!61 &1421866268
@@ -10456,7 +10458,6 @@ MonoBehaviour:
   sceneToLoad: Area3
   interactRange: 1.5
   interactionUI: {fileID: 331627747}
-  transition: {fileID: 0}
   levelLoader: {fileID: 532478628}
   transitionTime: 1
 --- !u!1 &2036954408

@@ -326,7 +326,7 @@ MonoBehaviour:
   sceneToLoad: 
   interactRange: 1.5
   interactionUI: {fileID: 0}
-  transition: {fileID: 4667188376248004373}
+  levelLoader: {fileID: 0}
   transitionTime: 1
 --- !u!114 &4778942412304763656
 MonoBehaviour:
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 4667188376248004373}
-  transitionTime: 1
+  transitionTime: 10
 --- !u!1 &7807303356514932897
 GameObject:
   m_ObjectHideFlags: 0
