@@ -770,7 +770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4778942412304763656, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
       propertyPath: transitionTime
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4817798871355093282, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
       propertyPath: transitionTime
@@ -819,6 +819,10 @@ PrefabInstance:
     - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292599504944665331, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.2425537
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
