@@ -9,7 +9,7 @@ public class PirateAttacks : MonoBehaviour
     public Transform boss;
     
     public GameObject SpinAttackIndicators;
-    private PolygonCollider2D polygonCollider2D;
+    public GameObject spinAttackHitbox;
     
     public BossCannonAttack[] BossCannonAttack;
     
@@ -20,7 +20,6 @@ public class PirateAttacks : MonoBehaviour
 
     void Start()
     {
-        polygonCollider2D = GetComponent<PolygonCollider2D>();
         StartCoroutine(RandomAttackRoutine());
     }
     private IEnumerator RandomAttackRoutine()
@@ -77,9 +76,9 @@ public class PirateAttacks : MonoBehaviour
         spinAttack.transform.parent = parent.transform;
         Destroy(spinAttack, 1f);
         yield return new WaitForSeconds(1f);
-        polygonCollider2D.enabled = true;
+        spinAttackHitbox.SetActive(true);
         yield return new WaitForSeconds(1f);
-        polygonCollider2D.enabled = false;
+        spinAttackHitbox.SetActive(true);
         yield return new WaitForSeconds(1f);
     }
     

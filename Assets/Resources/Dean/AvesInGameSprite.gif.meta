@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AvesInGameSprite_0: 606459867559844674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
