@@ -1511,6 +1511,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 62258936253316409, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
   m_PrefabInstance: {fileID: 755781864413258693}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &119010710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7160957121077936977, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+  m_PrefabInstance: {fileID: 8270256636872884509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &133129054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2709,6 +2714,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &205515712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 1816785254386463393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &211716478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,9 +2861,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 3819483641311653332, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1074316871}
     - target: {fileID: 4811753676255712319, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_Name
       value: NPC5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackRange
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6281315000882658727, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3036,6 +3054,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &233422244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 1943887148}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &254829626
 GameObject:
   m_ObjectHideFlags: 0
@@ -4064,6 +4087,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2302629316599155696, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265169486075772040, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1972611214}
     - target: {fileID: 5702533663606769859, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
       propertyPath: m_Name
       value: NPC2
@@ -5062,6 +5093,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &355697115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 1112773121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &357668183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5070,9 +5106,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 3819483641311653332, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1042691988}
     - target: {fileID: 4811753676255712319, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_Name
       value: NPC5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackRange
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6281315000882658727, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5119,6 +5163,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+--- !u!1 &358403791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 549118186}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &363336724
 GameObject:
   m_ObjectHideFlags: 0
@@ -6924,6 +6973,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &459975344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7160957121077936977, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+  m_PrefabInstance: {fileID: 657744754}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &468169775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 1467833226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &475892111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 1651234998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &476183251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 1958020723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &477603883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 532255372}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &480707624
 GameObject:
   m_ObjectHideFlags: 0
@@ -8028,6 +8102,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8295835363038462444, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1309207479}
+    - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8153,6 +8235,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -30.937622
@@ -8193,6 +8279,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 477603883}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -8614,6 +8704,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.192612
@@ -8654,6 +8748,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 358403791}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -8679,6 +8777,14 @@ PrefabInstance:
     - target: {fileID: 1787406858089333213, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_Name
       value: OldManNPC4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781204115637750365, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1349941992}
+    - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: attackRange
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7406946378967002824, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9324,6 +9430,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &586143549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3779808275181352879, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+  m_PrefabInstance: {fileID: 1979714597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &589609336
 GameObject:
   m_ObjectHideFlags: 0
@@ -10377,9 +10488,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 3819483641311653332, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 459975344}
     - target: {fileID: 4811753676255712319, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_Name
       value: NPC5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackRange
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6281315000882658727, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11533,6 +11652,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &711066455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 1939019673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &713780567
 GameObject:
   m_ObjectHideFlags: 0
@@ -13244,6 +13368,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.949371
@@ -13284,6 +13412,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1016615262}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -16402,6 +16534,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015529709}
   m_CullTransparentMesh: 1
+--- !u!1 &1016615262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 816750080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1020143980
 GameObject:
   m_ObjectHideFlags: 0
@@ -17359,6 +17496,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1042691988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7160957121077936977, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+  m_PrefabInstance: {fileID: 357668183}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1055177828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6281315000882658727, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
@@ -17633,6 +17775,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1074316871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7160957121077936977, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+  m_PrefabInstance: {fileID: 216417479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1082566141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3658132504505882828, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
+  m_PrefabInstance: {fileID: 755781864413258693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1084296890
 GameObject:
   m_ObjectHideFlags: 0
@@ -18374,6 +18526,11 @@ Transform:
   - {fileID: 951784898}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1107374860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5660113571530054941, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+  m_PrefabInstance: {fileID: 1500959481}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1112773121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18382,6 +18539,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39.720627
@@ -18422,6 +18583,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 355697115}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -20633,6 +20798,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.390625
@@ -20673,6 +20842,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 2058954830}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -21158,6 +21331,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1309207479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3779808275181352879, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+  m_PrefabInstance: {fileID: 528964231}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1332842025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21282,6 +21460,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 881280071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1349941992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5660113571530054941, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+  m_PrefabInstance: {fileID: 559777671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1353146182
 GameObject:
   m_ObjectHideFlags: 0
@@ -21357,6 +21540,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353146182}
   m_CullTransparentMesh: 1
+--- !u!1 &1369247770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 1542299129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1377998521
 GameObject:
   m_ObjectHideFlags: 0
@@ -21488,6 +21676,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1378173649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3779808275181352879, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+  m_PrefabInstance: {fileID: 965502270808020810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1381380035
 GameObject:
   m_ObjectHideFlags: 0
@@ -22898,6 +23091,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.669373
@@ -22938,6 +23135,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 468169775}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -24056,6 +24257,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: OldManNPC4
       objectReference: {fileID: 0}
+    - target: {fileID: 4781204115637750365, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1107374860}
+    - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7406946378967002824, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_LocalPosition.x
       value: -101.71063
@@ -24514,6 +24723,14 @@ PrefabInstance:
     - target: {fileID: 1787406858089333213, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_Name
       value: OldManNPC4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781204115637750365, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1751108249}
+    - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: attackRange
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7406946378967002824, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25009,6 +25226,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.4193726
@@ -25049,6 +25270,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1369247770}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1 (1)
@@ -26354,6 +26579,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -62.790634
@@ -26394,6 +26623,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 475892111}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -27614,6 +27847,11 @@ PolygonCollider2D:
       - {x: 16.023266, y: 0.7109382}
       - {x: 13.37939, y: 5.870756}
   m_UseDelaunayMesh: 0
+--- !u!1 &1737540375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2663635219914791120, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
+  m_PrefabInstance: {fileID: 576989059788980446}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1744340291
 GameObject:
   m_ObjectHideFlags: 0
@@ -27745,6 +27983,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1751108249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5660113571530054941, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+  m_PrefabInstance: {fileID: 1518175704}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1758887578
 GameObject:
   m_ObjectHideFlags: 0
@@ -29501,6 +29744,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1889966560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5660113571530054941, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+  m_PrefabInstance: {fileID: 8963551698878362108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1900355122
 GameObject:
   m_ObjectHideFlags: 0
@@ -30008,6 +30256,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.419373
@@ -30048,6 +30300,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 711066455}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -30070,6 +30326,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.519371
@@ -30110,6 +30370,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 233422244}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -30347,6 +30611,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.38063
@@ -30387,6 +30655,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 476183251}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -31205,6 +31477,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1972611214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2663635219914791120, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
+  m_PrefabInstance: {fileID: 296783203}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1979714597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31256,6 +31533,14 @@ PrefabInstance:
     - target: {fileID: 7334225228085694216, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295835363038462444, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 586143549}
+    - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: attackRange
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31868,6 +32153,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2058954830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2099606727966713974, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+  m_PrefabInstance: {fileID: 1263179574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2076731425
 GameObject:
   m_ObjectHideFlags: 0
@@ -32991,6 +33281,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2302629316599155696, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265169486075772040, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1737540375}
     - target: {fileID: 5702533663606769859, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
       propertyPath: m_Name
       value: NPC2
@@ -33088,6 +33386,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 890351981357569823, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949890629976768931, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1082566141}
     - target: {fileID: 8156099195470480949, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
       propertyPath: m_Name
       value: NPC4
@@ -33149,6 +33455,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8295835363038462444, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1378173649}
+    - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33162,6 +33476,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackRange
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3391430782454725994, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -93.41
@@ -33202,6 +33520,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4320071207486992156, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 205515712}
     - target: {fileID: 5264866983457836690, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -33219,9 +33541,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 3819483641311653332, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 119010710}
     - target: {fileID: 4811753676255712319, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_Name
       value: NPC5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackRange
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 5872953815119596867, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_FlipX
@@ -33283,6 +33613,14 @@ PrefabInstance:
     - target: {fileID: 1787406858089333213, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_Name
       value: OldManNPC4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781204115637750365, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: TalkECanavs
+      value: 
+      objectReference: {fileID: 1889966560}
+    - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: attackRange
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7406946378967002824, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_LocalPosition.x

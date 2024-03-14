@@ -34,6 +34,7 @@ public class EnemyAI : MonoBehaviour
     private float triggerEnterTime = 0f;
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] int damage = 10;
+    private NPC _npc;
 
     private void Awake()
     {
@@ -42,6 +43,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
+        _npc = GetComponent<NPC>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
@@ -182,6 +184,11 @@ public class EnemyAI : MonoBehaviour
         {
             textCollider.enabled = false;
         }
+
+        if (_npc != null)
+        {
+            _npc.enabled = false;
+        }
     }
     
     void OnDisable()
@@ -191,12 +198,17 @@ public class EnemyAI : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.CompareTag("Player"))
+        {
             rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY |RigidbodyConstraints2D.FreezeRotation;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
-
+        if (other.gameObject.CompareTag("Player"))
+        {
             rb.constraints &= ~(RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY);
+        }
     }
 }
