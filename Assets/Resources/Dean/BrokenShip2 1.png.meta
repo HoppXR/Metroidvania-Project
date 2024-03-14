@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 34e1ae830df6bfa45b99617f0060dd6e
+guid: 414cb98cd43f92748a23ac713d18a90d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5143407261689991824
-    second: image-removebg-preview (23)_0
+      213: -4700129620366913960
+    second: BrokenShip2_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,22 +98,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image-removebg-preview (23)_0
+      name: BrokenShip2_0
       rect:
         serializedVersion: 2
-        x: 77
-        y: 30
-        width: 299
-        height: 448
+        x: 0
+        y: 103
+        width: 1400
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07dadcfa852fe98b0800000000000000
-      internalID: -5143407261689991824
+      spriteID: 85e0dbb3309c5ceb0800000000000000
+      internalID: -4700129620366913960
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9fcba001a4844da4db2be87f8da6c576
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      image-removebg-preview (23)_0: -5143407261689991824
+      BrokenShip2_0: -4700129620366913960
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
