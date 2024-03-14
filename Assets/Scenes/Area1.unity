@@ -18363,6 +18363,7 @@ GameObject:
   - component: {fileID: 1215755345}
   - component: {fileID: 1215755344}
   - component: {fileID: 1215755343}
+  - component: {fileID: 1215755355}
   m_Layer: 7
   m_Name: LATISMA
   m_TagString: Boss
@@ -18749,6 +18750,28 @@ MonoBehaviour:
   maxHealth: 100
   blood: {fileID: 276194354013034377, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
   TalkECanavs: {fileID: 0}
+--- !u!95 &1215755355
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215755342}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29da1bbbd254c3b4185e127176e53ad9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1230143863
 GameObject:
   m_ObjectHideFlags: 0
@@ -30366,6 +30389,10 @@ PrefabInstance:
     - target: {fileID: 4811753676255712319, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_Name
       value: NPC5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5872953815119596867, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6281315000882658727, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_LocalPosition.x
