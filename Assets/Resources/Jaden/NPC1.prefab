@@ -965,6 +965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   blood: {fileID: 276194354013034377, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
+  healthBar: {fileID: 3026280251553724960}
   healthSlider: {fileID: 2903744803018107995}
   easeHealthSlider: {fileID: 3685853310534513896}
   TalkECanavs: {fileID: 8444866271231807443}
@@ -1570,6 +1571,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4256631488201689481, guid: 7b1e6a83bcc1ba04dbc3bf89d960287e, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8616386490343221760, guid: 7b1e6a83bcc1ba04dbc3bf89d960287e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1594,6 +1599,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3026280251553724960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4103882680230636767, guid: 7b1e6a83bcc1ba04dbc3bf89d960287e, type: 3}
+  m_PrefabInstance: {fileID: 1228473721126508287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3685853310534513896 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2461958651716215319, guid: 7b1e6a83bcc1ba04dbc3bf89d960287e, type: 3}

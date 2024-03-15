@@ -80,7 +80,6 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         {
             Vector2 collisionNormal = collision.contacts[0].normal;
             _forceToApply += collisionNormal * knockback;
-            //Destroy(collision.gameObject);
         }
     }
 

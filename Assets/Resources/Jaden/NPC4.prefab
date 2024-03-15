@@ -1291,6 +1291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   blood: {fileID: 276194354013034377, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
+  healthBar: {fileID: 7852723004755724533}
   healthSlider: {fileID: 7875059267305512590}
   easeHealthSlider: {fileID: 8512700651002136125}
   TalkECanavs: {fileID: 1319546838973088015}
@@ -1583,6 +1584,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b1e6a83bcc1ba04dbc3bf89d960287e, type: 3}
+--- !u!1 &7852723004755724533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4103882680230636767, guid: 7b1e6a83bcc1ba04dbc3bf89d960287e, type: 3}
+  m_PrefabInstance: {fileID: 6055532227885179946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7875059267305512590 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4125375136325057188, guid: 7b1e6a83bcc1ba04dbc3bf89d960287e, type: 3}

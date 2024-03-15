@@ -14,8 +14,9 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private float maxHealth;
     [SerializeField] private GameObject blood;
 
-    public Slider healthSlider;
-    public Slider easeHealthSlider;
+    [SerializeField] private GameObject healthBar;
+    [SerializeField] private Slider healthSlider;
+    [SerializeField] private Slider easeHealthSlider;
     private float lerpSpeed = 0.05f;
     
     public GameObject TalkECanavs;
@@ -40,10 +41,15 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        healthBar.SetActive(true);
+        
         if (!chase)
         {
-            _npc.enabled = false;
-            TalkECanavs.SetActive(false);
+            if (_npc != null)
+            {
+                _npc.enabled = false;
+                TalkECanavs.SetActive(false);
+            }
             
             _enemyAI.enabled = true;
             chase = true;
