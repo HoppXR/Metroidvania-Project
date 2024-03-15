@@ -17,7 +17,13 @@ public class DealDamage : MonoBehaviour
 
         if (other.CompareTag("Boss"))
         {
-            var bHealth = other.gameObject.GetComponent<BossHealth>();
+            var bHealth = other.gameObject.GetComponent<BossHealthLastima>();
+            bHealth.TakeDamage(damage);
+            
+        }
+        if (other.CompareTag("Boss3"))
+        {
+            var bHealth = other.gameObject.GetComponent<BossHealthATERALBUS>();
             bHealth.TakeDamage(damage);
         }
     }

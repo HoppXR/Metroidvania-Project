@@ -30,10 +30,36 @@ public class SwordsmanAttacks : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
+        StartCoroutine(RandomAttackRoutine());
     }
+    
+    private IEnumerator RandomAttackRoutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1.2f);
 
-    // Update is called once per frame
-    void Update()
+            int randomNumber = Random.Range(1, 3);
+
+            if (randomNumber == 1)
+            {
+                StartCoroutine(TripleDashAttack(gameObject));
+                yield return new WaitForSeconds(2f);
+            }
+            else if (randomNumber == 2)
+            {
+                StartCoroutine(SlashThenRanged());
+                yield return new WaitForSeconds(1f);
+            }
+            else if (randomNumber == 3)
+            {
+                StartCoroutine(DoubleSlash());
+                yield return new WaitForSeconds(1f);
+            }
+        }
+    }
+    
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
@@ -49,7 +75,7 @@ public class SwordsmanAttacks : MonoBehaviour
         {
             StartCoroutine(TripleDashAttack(gameObject));
         }
-    }
+    }*/
 
     IEnumerator DoubleSlash() //lunge forward a bit and attack x2
     {

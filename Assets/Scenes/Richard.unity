@@ -1854,6 +1854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5500
   blood: {fileID: 0}
+  healthBar: {fileID: 0}
   healthSlider: {fileID: 0}
   easeHealthSlider: {fileID: 0}
   TalkECanavs: {fileID: 0}
@@ -2099,7 +2100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1656782000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3245,6 +3246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 0
   blood: {fileID: 0}
+  healthBar: {fileID: 0}
   healthSlider: {fileID: 0}
   easeHealthSlider: {fileID: 0}
   TalkECanavs: {fileID: 0}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BossHealth : MonoBehaviour
+public class BossHealthLastima : MonoBehaviour
 {
     private Rigidbody2D _rb;
     private EnemyAI _enemyAI;
