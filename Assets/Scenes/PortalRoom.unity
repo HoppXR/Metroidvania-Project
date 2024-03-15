@@ -7385,7 +7385,7 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 1356900709}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
+  typingClip: {fileID: 8300000, guid: 0b6581a49fbbce648b2cd1d56e579ff4, type: 3}
   npcResponse: {fileID: 1086457504}
 --- !u!212 &1086457502
 SpriteRenderer:
@@ -7510,7 +7510,7 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 569217892}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
+  typingClip: {fileID: 8300000, guid: 0b6581a49fbbce648b2cd1d56e579ff4, type: 3}
   playerResponse: {fileID: 1086457505}
 --- !u!114 &1086457505
 MonoBehaviour:
@@ -7532,7 +7532,7 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 354660351}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
+  typingClip: {fileID: 8300000, guid: 0b6581a49fbbce648b2cd1d56e579ff4, type: 3}
   NPCResponse2: {fileID: 1086457506}
 --- !u!114 &1086457506
 MonoBehaviour:
@@ -7555,7 +7555,7 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 692901618}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
+  typingClip: {fileID: 8300000, guid: 0b6581a49fbbce648b2cd1d56e579ff4, type: 3}
   boxCollider2D: {fileID: 0}
   PlayerResponse2: {fileID: 1086457507}
 --- !u!114 &1086457507
@@ -7578,7 +7578,7 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 229202295}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
+  typingClip: {fileID: 8300000, guid: 0b6581a49fbbce648b2cd1d56e579ff4, type: 3}
   NPCResponse3: {fileID: 1086457508}
 --- !u!114 &1086457508
 MonoBehaviour:
@@ -7602,7 +7602,7 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 93507813}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
+  typingClip: {fileID: 8300000, guid: 0b6581a49fbbce648b2cd1d56e579ff4, type: 3}
   PlayerResponse4: {fileID: 1086457509}
 --- !u!114 &1086457509
 MonoBehaviour:
@@ -7625,7 +7625,7 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 1719453935}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
+  typingClip: {fileID: 8300000, guid: 0b6581a49fbbce648b2cd1d56e579ff4, type: 3}
   NPCResponse4: {fileID: 1086457510}
 --- !u!114 &1086457510
 MonoBehaviour:
@@ -7648,7 +7648,7 @@ MonoBehaviour:
   contButtonAnimator: {fileID: 16408054}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
+  typingClip: {fileID: 8300000, guid: 0b6581a49fbbce648b2cd1d56e579ff4, type: 3}
   triggerCollider: {fileID: 1086457503}
 --- !u!114 &1086457511
 MonoBehaviour:
@@ -7677,7 +7677,7 @@ MonoBehaviour:
   particleEffect: {fileID: 0}
   contButtonAnimator: {fileID: 1976107231}
   typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
+  typingClip: {fileID: 8300000, guid: 0b6581a49fbbce648b2cd1d56e579ff4, type: 3}
   playerDialogue: {fileID: 1086457501}
 --- !u!95 &1086457512
 Animator:

@@ -14,8 +14,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Area1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/Area2.unity
+    guid: ec348f87dc9e6c445a30430d3bbe0822
+  - enabled: 1
     path: Assets/Scenes/Area3.unity
     guid: 7b81eddf31cb7784b8c02ce0fc084c39
+  - enabled: 1
+    path: Assets/Scenes/PortalRoom 2.unity
+    guid: 55b0589e50197de4db65b12051277b52
+  - enabled: 1
+    path: Assets/Scenes/PortalRoom3.unity
+    guid: e8b9b924f428bc2469dba08cb21d997c
+  - enabled: 1
+    path: Assets/Scenes/PortalRoom4.unity
+    guid: cc8e09c0b62236e4cb887d976d1a98cf
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

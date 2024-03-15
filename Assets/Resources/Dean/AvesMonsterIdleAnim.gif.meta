@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AvesMonsterIdleAnim_0: 2501398036650251557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
