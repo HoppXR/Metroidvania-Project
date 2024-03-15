@@ -50,12 +50,14 @@ public class EnemyHealth : MonoBehaviour
                 _npc.enabled = false;
                 TalkECanavs.SetActive(false);
             }
-            
-            _enemyAI.enabled = true;
-            chase = true;
 
-            _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-            _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+            if (_enemyAI != null)
+            {
+                _enemyAI.enabled = true;
+                chase = true;
+                _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+                _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+            }
         }
         
         if (_currentHealth >= damage)
