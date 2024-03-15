@@ -20,6 +20,8 @@ public class NPCResponse2 : MonoBehaviour
     public AudioSource typingSound;
     public AudioClip typingClip;
 
+    public BoxCollider2D boxCollider2D; // Reference to Box Collider 2D component
+
     private PlayerMovement _thePlayer;
     public PlayerResponse2 PlayerResponse2;
 
@@ -87,6 +89,11 @@ public class NPCResponse2 : MonoBehaviour
             StopCoroutine(typingCoroutine);
 
         typingCoroutine = null;
+
+        if (boxCollider2D != null) // Disable Box Collider 2D if it exists
+        {
+            boxCollider2D.enabled = false;
+        }
     }
 
     IEnumerator Typing()

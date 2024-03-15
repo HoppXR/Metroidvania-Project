@@ -2819,9 +2819,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 72b4f3fb78145da4f8db0082ffa234ac, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1e3a9e5a99b9fb04786a1a11fc1c265e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.032
+  m_Volume: 0.219
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7594,8 +7594,8 @@ MonoBehaviour:
   dialoguePanel: {fileID: 2050350297}
   dialogueText: {fileID: 494056172}
   dialogue:
-  - Quite the place you've got here.
-  - I don't remember agreeing to something so high and mighty.
+  - Right, thanks.
+  - Why did Ioko talk ill of YOU specifically this time?
   contButtonAnimator: {fileID: 1356900709}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
@@ -7716,11 +7716,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1931379005}
   dialogueText: {fileID: 633956301}
   dialogue:
-  - This? it's nothing fancy.
-  - Just a professional workforce maintaining a profound appearance?
-  - Your work is straightforward.
-  - There are bad guys across thousands, maybe MILLIONS of universes!
-  - They.. like to mess with our establishment.
+  - Oh, she's not too fond of me.
+  - Tried to ask me to make her some FIREPOWER.
+  - I declined, and she tried to bite my head off.
   contButtonAnimator: {fileID: 569217892}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
@@ -7742,7 +7740,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 715525224}
   dialogueText: {fileID: 474592358}
   dialogue:
-  - What if I don't want to do it?
+  - Why did you say fire like that.
   contButtonAnimator: {fileID: 354660351}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
@@ -7764,12 +7762,12 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1444581195}
   dialogueText: {fileID: 720156411}
   dialogue:
-  - You've already consented.
-  - And girl, trust me you can't go back even if you wanted to!
+  - ..
   contButtonAnimator: {fileID: 692901618}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
+  boxCollider2D: {fileID: 0}
   PlayerResponse2: {fileID: 1086457507}
 --- !u!114 &1086457507
 MonoBehaviour:
@@ -7787,7 +7785,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 414273119}
   dialogueText: {fileID: 31409345}
   dialogue:
-  - ...
+  - ..
   contButtonAnimator: {fileID: 229202295}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
@@ -7809,9 +7807,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 955301447}
   dialogueText: {fileID: 398991070}
   dialogue:
-  - Butttt let's not worry about that!
-  - Working together we can eradicate this mess, okay?
-  - I'll even help you along the way!
+  - Who's next? Ateralbus..?
+  - Oh.. being honest, he's incredibly difficult.
+  - You might have a hard time against him.
   contButtonAnimator: {fileID: 93507813}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
@@ -7833,8 +7831,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1410552620}
   dialogueText: {fileID: 1380261368}
   dialogue:
-  - Right..
-  - What's my task?
+  - What's so special about him?
   contButtonAnimator: {fileID: 1719453935}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
@@ -7856,8 +7853,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 2109956125}
   dialogueText: {fileID: 1518556483}
   dialogue:
-  - Just walk up ahead into the Deity Management room!
-  - And remember, don't die!
+  - He's.. completely deranged.
+  - Do your best. Do not listen to the echoes of that place.
+  - Best of luck.
   contButtonAnimator: {fileID: 16408054}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
@@ -7879,12 +7877,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 765300161}
   dialogueText: {fileID: 1708861300}
   dialogue:
-  - Welcome, otherworlder!
-  - I'm Aves!
-  - Welcome to the Excidium!
-  - So glad you could make it!
-  - And help us with our.. issue.
-  - Don't worry, you'll be handsomely compensated!
+  - Look at you!
+  - Took her down like it was NOTHING!
+  - You're a born natural! I'm so proud!
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 0
   particleEffect: {fileID: 0}
