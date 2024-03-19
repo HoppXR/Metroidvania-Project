@@ -17,6 +17,11 @@ public class PirateAttacks : MonoBehaviour
     public Vector3 returnDestination;
     public GameObject Gooners;
     private int goonerCount;
+    
+    [SerializeField] float minX = -12.9f;
+    [SerializeField] float maxX = 14f;
+    [SerializeField] float minY = 160f;
+    [SerializeField] float maxY = 176f;
 
     void Start()
     {
@@ -51,7 +56,14 @@ public class PirateAttacks : MonoBehaviour
             }
         }
     }
-    
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GoonsAttack();
+        }
+    }
     void SpawnSummonShip()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -74,11 +86,11 @@ public class PirateAttacks : MonoBehaviour
     {
         GameObject spinAttack = Instantiate(SpinAttackIndicators, boss.position, Quaternion.identity);
         spinAttack.transform.parent = parent.transform;
-        Destroy(spinAttack, 1f);
-        yield return new WaitForSeconds(1f);
+        Destroy(spinAttack, 2f);
+        yield return new WaitForSeconds(2f);
         spinAttackHitbox.SetActive(true);
         yield return new WaitForSeconds(1f);
-        spinAttackHitbox.SetActive(true);
+        spinAttackHitbox.SetActive(false);
         yield return new WaitForSeconds(1f);
     }
     
@@ -89,12 +101,7 @@ public class PirateAttacks : MonoBehaviour
         
         Rigidbody2D bossRb = boss.GetComponent<Rigidbody2D>();
         bossRb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
-
-        // Define the spawn area
-        float minX = -13.4f;
-        float maxX = 16.9f;
-        float minY = -7.1f;
-        float maxY = 166.3f;
+        
 
         // Spawn four minions
         for (int i = 0; i < 4; i++)

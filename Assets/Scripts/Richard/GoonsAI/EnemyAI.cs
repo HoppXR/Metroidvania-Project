@@ -35,6 +35,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] int damage = 10;
     private NPC _npc;
+    public bool startMoving;
 
     private void Awake()
     {
@@ -47,6 +48,7 @@ public class EnemyAI : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
+
 
         _animator = GetComponent<Animator>();
         
@@ -61,6 +63,11 @@ public class EnemyAI : MonoBehaviour
         }
 
         InvokeRepeating("UpdatePath", 0f, 0.1f);
+        
+        if (!startMoving)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY |RigidbodyConstraints2D.FreezeRotation;
+        }
     }
 
     void UpdatePath()
