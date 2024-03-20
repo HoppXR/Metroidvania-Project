@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PirateAttacks : MonoBehaviour
 {
+    private Animator _animator;
+    
     public GameObject GhostShip;
     [SerializeField] private int travelSpeed = 4;
     public Transform boss;
@@ -25,6 +27,8 @@ public class PirateAttacks : MonoBehaviour
 
     void Start()
     {
+        _animator = GetComponent<Animator>();
+        
         StartCoroutine(RandomAttackRoutine());
     }
     private IEnumerator RandomAttackRoutine()
@@ -56,19 +60,15 @@ public class PirateAttacks : MonoBehaviour
             }
         }
     }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            GoonsAttack();
-        }
-    }
+    
     void SpawnSummonShip()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         Vector2 spawnPosition = new Vector2(Random.Range(-30, 30), 193);
+        
+        _animator.SetTrigger("ShipCall");
+        
         GameObject Ghostship = Instantiate(GhostShip, spawnPosition, Quaternion.identity);
 
         Vector3 directionToPlayer = (player.transform.position - Ghostship.transform.position).normalized;
@@ -102,6 +102,7 @@ public class PirateAttacks : MonoBehaviour
         Rigidbody2D bossRb = boss.GetComponent<Rigidbody2D>();
         bossRb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         
+        _animator.SetTrigger("CallMinions");
 
         // Spawn four minions
         for (int i = 0; i < 4; i++)

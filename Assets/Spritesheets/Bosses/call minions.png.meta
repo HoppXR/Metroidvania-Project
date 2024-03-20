@@ -70,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,10 +105,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,9 +134,9 @@ TextureImporter:
       name: call minions_0
       rect:
         serializedVersion: 2
-        x: 260
+        x: 0
         y: 9482
-        width: 482
+        width: 742
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -155,9 +155,9 @@ TextureImporter:
       name: call minions_1
       rect:
         serializedVersion: 2
-        x: 260
+        x: 0
         y: 8620
-        width: 482
+        width: 742
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -177,7 +177,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 6896
+        y: 7758
         width: 742
         height: 862
       alignment: 0
@@ -197,9 +197,9 @@ TextureImporter:
       name: call minions_3
       rect:
         serializedVersion: 2
-        x: 260
-        y: 7758
-        width: 482
+        x: 0
+        y: 6896
+        width: 742
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -218,9 +218,9 @@ TextureImporter:
       name: call minions_4
       rect:
         serializedVersion: 2
-        x: 160
+        x: 0
         y: 6034
-        width: 582
+        width: 742
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -239,9 +239,9 @@ TextureImporter:
       name: call minions_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 0
         y: 5172
-        width: 582
+        width: 742
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -260,9 +260,9 @@ TextureImporter:
       name: call minions_6
       rect:
         serializedVersion: 2
-        x: 110
+        x: 0
         y: 4310
-        width: 632
+        width: 742
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -281,9 +281,9 @@ TextureImporter:
       name: call minions_7
       rect:
         serializedVersion: 2
-        x: 110
+        x: 0
         y: 3448
-        width: 632
+        width: 742
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -302,9 +302,9 @@ TextureImporter:
       name: call minions_8
       rect:
         serializedVersion: 2
-        x: 110
+        x: 0
         y: 2586
-        width: 632
+        width: 742
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -323,9 +323,9 @@ TextureImporter:
       name: call minions_9
       rect:
         serializedVersion: 2
-        x: 160
+        x: 0
         y: 1724
-        width: 582
+        width: 742
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -345,7 +345,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 862
         width: 742
         height: 862
       alignment: 0
@@ -365,9 +365,9 @@ TextureImporter:
       name: call minions_11
       rect:
         serializedVersion: 2
-        x: 160
-        y: 862
-        width: 582
+        x: 0
+        y: 0
+        width: 742
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -385,14 +385,26 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e130fd1d896f3da4393048bf1745b031
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      call minions_0: 1739655983905304792
+      call minions_1: 5057734455758876246
+      call minions_10: 4622400621413591307
+      call minions_11: -3273463122418409737
+      call minions_2: 6972590515091045624
+      call minions_3: -3118504604564571002
+      call minions_4: 256548711789620037
+      call minions_5: 4425410444994422418
+      call minions_6: -3570024671284091616
+      call minions_7: -4058968336094186000
+      call minions_8: 1094044597279514453
+      call minions_9: -9199087686155440000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

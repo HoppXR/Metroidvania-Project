@@ -87,14 +87,14 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        _animator.SetFloat(Horizontal, direction.x);
-        _animator.SetFloat(Vertical, direction.y);
-        _animator.SetFloat(Speed, direction.sqrMagnitude);
+        _animator.SetFloat(Horizontal, rb.velocity.x);
+        _animator.SetFloat(Vertical, rb.velocity.y);
+        _animator.SetFloat(Speed, rb.velocity.sqrMagnitude);
         
-        if (direction.x == 1 || direction.x == -1 || direction.y == 1 || direction.y == -1)
+        if (rb.velocity.x > 1 || rb.velocity.x < -1 || rb.velocity.y > 1 || rb.velocity.y < -1)
         {
-            _animator.SetFloat(LastHorizontal, direction.x);
-            _animator.SetFloat(LastVertical, direction.y);
+            _animator.SetFloat(LastHorizontal, rb.velocity.x);
+            _animator.SetFloat(LastVertical, rb.velocity.y);
         }
     }
     

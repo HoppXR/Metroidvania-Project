@@ -116,9 +116,9 @@ TextureImporter:
       name: walk left_0
       rect:
         serializedVersion: 2
-        x: 60
+        x: 0
         y: 4310
-        width: 482
+        width: 552
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,9 +137,9 @@ TextureImporter:
       name: walk left_1
       rect:
         serializedVersion: 2
-        x: 60
+        x: 0
         y: 3448
-        width: 432
+        width: 552
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -179,10 +179,10 @@ TextureImporter:
       name: walk left_3
       rect:
         serializedVersion: 2
-        x: 60
-        y: 1734
-        width: 472
-        height: 842
+        x: 0
+        y: 1724
+        width: 552
+        height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,9 +200,9 @@ TextureImporter:
       name: walk left_4
       rect:
         serializedVersion: 2
-        x: 60
+        x: 0
         y: 862
-        width: 432
+        width: 552
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,9 +221,9 @@ TextureImporter:
       name: walk left_5
       rect:
         serializedVersion: 2
-        x: 60
+        x: 0
         y: 0
-        width: 482
+        width: 552
         height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -241,7 +241,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ca426d108f202a34f84fc0a67cecc202
     internalID: 0
     vertices: []
     indices: 
