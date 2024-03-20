@@ -54,9 +54,9 @@ public class EnemyHealth : MonoBehaviour
             if (_enemyAI != null)
             {
                 _enemyAI.enabled = true;
+                _enemyAI.rb.constraints &= ~(RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY);
+                _enemyAI.canMove = true;
                 chase = true;
-                _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-                _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
             }
         }
         

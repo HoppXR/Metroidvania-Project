@@ -684,6 +684,7 @@ MonoBehaviour:
   attackDelay: 2
   attackRange: 1
   damage: 10
+  startMoving: 0
 --- !u!50 &4339619155453269460
 Rigidbody2D:
   serializedVersion: 4
@@ -1324,9 +1325,9 @@ Transform:
   m_GameObject: {fileID: 8187329348109604705}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.210625, y: -19.285849, z: 0}
-  m_LocalScale: {x: 0.7586074, y: 0.7586074, z: 0.7586074}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7334225228085694216}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

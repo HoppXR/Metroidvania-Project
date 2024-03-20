@@ -162,7 +162,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -43.227566, y: -1.794168, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 62258936253316409}
@@ -1250,6 +1250,7 @@ MonoBehaviour:
   attackDelay: 2
   attackRange: 1
   damage: 10
+  startMoving: 0
 --- !u!50 &5302099467805269242
 Rigidbody2D:
   serializedVersion: 4

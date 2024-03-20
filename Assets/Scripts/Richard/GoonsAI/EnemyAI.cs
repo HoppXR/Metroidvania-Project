@@ -12,7 +12,7 @@ public class EnemyAI : MonoBehaviour
     private static readonly int Speed = Animator.StringToHash("Speed");
     private static readonly int LastHorizontal = Animator.StringToHash("LastHorizontal");
     private static readonly int LastVertical = Animator.StringToHash("LastVertical");
-    private bool _canMove;
+    [HideInInspector] public bool canMove;
     
     public BoxCollider2D detectionCollider;
     public GameObject attackHitbox;
@@ -48,8 +48,7 @@ public class EnemyAI : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
-
-
+        
         _animator = GetComponent<Animator>();
         
         if (player == null)
@@ -63,11 +62,6 @@ public class EnemyAI : MonoBehaviour
         }
 
         InvokeRepeating("UpdatePath", 0f, 0.1f);
-        
-        if (!startMoving)
-        {
-            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY |RigidbodyConstraints2D.FreezeRotation;
-        }
     }
 
     void UpdatePath()
@@ -113,7 +107,7 @@ public class EnemyAI : MonoBehaviour
             reachedEndOfPath = false;
         }
         
-        if (!_canMove)
+        if (!canMove)
             return;
 
         direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
@@ -149,7 +143,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            _canMove = true;
+            canMove = true;
             colliderActivated = false;
             if (isAttacking)
             {
@@ -160,7 +154,7 @@ public class EnemyAI : MonoBehaviour
 
     private void ActivateAttack()
     {
-        _canMove = false;
+        canMove = false;
         
         isAttacking = true;
         attackHitbox.SetActive(true);
@@ -185,7 +179,9 @@ public class EnemyAI : MonoBehaviour
     
     void OnEnable()
     {
-            detectionCollider.enabled = true;
+        canMove = true;
+        
+        detectionCollider.enabled = true;
 
         if (textCollider != null)
         {

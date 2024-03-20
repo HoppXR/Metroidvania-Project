@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
     internal PlayerCombat Combat;
@@ -10,6 +11,9 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     private InputReader _input;
     private Rigidbody2D _rb;
     public Animator animator;
+    private CharacterController _controller;
+    
+    [SerializeField] private bool isGamepad;
 
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
@@ -40,7 +44,8 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         Combat = FindFirstObjectByType<PlayerCombat>();
         
         _rb = GetComponent<Rigidbody2D>();
-        
+
+        _controller = GetComponent<CharacterController>();
         InputReader.Init(this);
         InputReader.SetPlayerControls();
     }
@@ -53,15 +58,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     void Update()
     {
-        animator.SetFloat(Horizontal, _moveVector.x);
-        animator.SetFloat(Vertical, _moveVector.y);
-        animator.SetFloat(Speed, _moveVector.sqrMagnitude);
-        
-        if (_moveVector.x == 1 || _moveVector.x == -1 || _moveVector.y == 1 || _moveVector.y == -1)
-        {
-            animator.SetFloat(LastHorizontal, _moveVector.x);
-            animator.SetFloat(LastVertical, _moveVector.y);
-        }
+        HandleAnimation();
     }
 
     private void FixedUpdate()
@@ -124,6 +121,19 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
         yield return new WaitForSeconds(dashCooldown);
         _canDash = true;
+    }
+
+    private void HandleAnimation()
+    {
+        animator.SetFloat(Horizontal, _moveVector.x);
+        animator.SetFloat(Vertical, _moveVector.y);
+        animator.SetFloat(Speed, _moveVector.sqrMagnitude);
+        
+        if (_moveVector.x == 1 || _moveVector.x == -1 || _moveVector.y == 1 || _moveVector.y == -1)
+        {
+            animator.SetFloat(LastHorizontal, _moveVector.x);
+            animator.SetFloat(LastVertical, _moveVector.y);
+        }
     }
 
     public void SlowDown()

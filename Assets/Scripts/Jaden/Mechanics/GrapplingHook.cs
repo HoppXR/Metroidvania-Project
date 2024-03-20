@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GrapplingHook : MonoBehaviour 
 {
     private PlayerMovement _thePlayer;
+    private InputManager _input;
     
     private LineRenderer _line;
+
+    [SerializeField] private bool isGamepad;
 
     [Header("Grapple Settings")]
     [SerializeField] private LayerMask grappleMask;
@@ -20,6 +24,7 @@ public class GrapplingHook : MonoBehaviour
     [HideInInspector] public bool retracting = false;
 
     private Vector2 _target;
+    private Vector2 _direction;
 
     private void Start() 
     {
@@ -40,7 +45,7 @@ public class GrapplingHook : MonoBehaviour
 
             _line.SetPosition(0, transform.position);
 
-            if (Vector2.Distance(transform.position, _target) < 1.2f || Input.GetKeyDown(KeyCode.Space))
+            if (Vector2.Distance(transform.position, _target) < 1.2f)
             {
                 _thePlayer.CanMoveTrue();
                 
@@ -55,9 +60,9 @@ public class GrapplingHook : MonoBehaviour
     {
         if (!_isGrappling && _canGrapple)
         {
-            Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxDistance, grappleMask);
+            HandleInput();
+            
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, _direction, maxDistance, grappleMask);
 
             if (hit.collider != null)
             {
@@ -92,6 +97,16 @@ public class GrapplingHook : MonoBehaviour
         _thePlayer.CanMoveFalse();
         
         retracting = true;
+    }
+
+    private void HandleInput()
+    {
+        _direction = _input.Player.Aim.ReadValue<Vector2>();
+    }
+
+    public void OnDeviceChange(PlayerInput pi)
+    {
+        isGamepad = pi.currentControlScheme.Equals("Gamepad") ? true : false;
     }
 
     public void CanGrappleTrue()

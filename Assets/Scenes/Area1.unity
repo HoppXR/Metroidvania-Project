@@ -18685,6 +18685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC1
       objectReference: {fileID: 0}
+    - target: {fileID: 8958167192571125271, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20406,6 +20410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 391bf3e927131fc4da7574c7fa181e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canMove: 0
   detectionCollider: {fileID: 1215755343}
   attackHitbox: {fileID: 363336724}
   textCollider: {fileID: 0}
