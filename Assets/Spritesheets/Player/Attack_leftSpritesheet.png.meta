@@ -309,7 +309,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -591,7 +591,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 599
+        y: 600
         width: 300
         height: 300
       alignment: 0
@@ -612,7 +612,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 300
-        y: 599
+        y: 600
         width: 300
         height: 300
       alignment: 0
@@ -696,7 +696,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 299
+        y: 300
         width: 300
         height: 300
       alignment: 0
@@ -716,8 +716,8 @@ TextureImporter:
       name: Attack_leftSpritesheet_18
       rect:
         serializedVersion: 2
-        x: 298
-        y: 299
+        x: 300
+        y: 300
         width: 300
         height: 300
       alignment: 0
@@ -737,8 +737,8 @@ TextureImporter:
       name: Attack_leftSpritesheet_19
       rect:
         serializedVersion: 2
-        x: 598
-        y: 301
+        x: 600
+        y: 300
         width: 300
         height: 300
       alignment: 0
@@ -758,8 +758,8 @@ TextureImporter:
       name: Attack_leftSpritesheet_20
       rect:
         serializedVersion: 2
-        x: 899
-        y: 301
+        x: 900
+        y: 300
         width: 300
         height: 300
       alignment: 0
@@ -780,7 +780,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1200
-        y: 301
+        y: 300
         width: 300
         height: 300
       alignment: 0
@@ -801,7 +801,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1500
-        y: 301
+        y: 300
         width: 300
         height: 300
       alignment: 0
@@ -822,7 +822,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1800
-        y: 301
+        y: 300
         width: 300
         height: 300
       alignment: 0
