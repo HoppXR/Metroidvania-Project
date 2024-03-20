@@ -250,7 +250,7 @@ MonoBehaviour:
   attackDelay: 2
   attackRange: 1
   damage: 10
-  moveOnSpawn: 1
+  startMoving: 1
 --- !u!50 &703237865565111549
 Rigidbody2D:
   serializedVersion: 4

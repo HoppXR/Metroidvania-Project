@@ -331,6 +331,7 @@ MonoBehaviour:
   attackDelay: 2
   attackRange: 1.5
   damage: 10
+  startMoving: 1
 --- !u!114 &5983159918525429020
 MonoBehaviour:
   m_ObjectHideFlags: 0
