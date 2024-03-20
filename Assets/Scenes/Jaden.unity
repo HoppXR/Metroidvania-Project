@@ -468,7 +468,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
@@ -488,7 +488,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 86
   orthographic: 1
   orthographic size: 7.5
   m_Depth: -1
@@ -1213,6 +1213,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 9.375
       objectReference: {fileID: 0}
+    - target: {fileID: 1217843685661436142, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_TagString
+      value: MyWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 1424697871573043076, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 0
@@ -1225,16 +1229,32 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 9.375
       objectReference: {fileID: 0}
+    - target: {fileID: 2844896284579443137, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_TagString
+      value: MyWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 3056683815524447384, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3357803721581157658, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_Size.x
+      value: 9.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 3357803721581157658, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_Size.y
       value: 9.375
       objectReference: {fileID: 0}
+    - target: {fileID: 4314855992062400157, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_TagString
+      value: MyWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 4871073442496007468, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_Size.y
+      value: 9.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5189722574651292759, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
       value: 9.375
       objectReference: {fileID: 0}
     - target: {fileID: 5189722574651292759, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}

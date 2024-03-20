@@ -9,6 +9,7 @@ TagManager:
   - PlayerDamage
   - Boss
   - Boss3
+  - MyWeapon
   layers:
   - Default
   - TransparentFX
