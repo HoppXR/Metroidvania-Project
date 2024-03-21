@@ -25,7 +25,7 @@ public class InputReader : MonoBehaviour
 
         _input.Player.Aim.performed += ctx =>
         {
-            myPlayer.GrappleHook.HandleAim(ctx.ReadValue<Vector2>());
+            myPlayer.GrappleHook.GetAim(ctx.ReadValue<Vector2>());
         };
 
         _input.Player.Dash.performed += ctx =>

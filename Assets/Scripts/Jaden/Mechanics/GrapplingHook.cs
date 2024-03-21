@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(PlayerInput))]
 public class GrapplingHook : MonoBehaviour 
 {
     private PlayerMovement _thePlayer;
-    private InputReader _input;
+    private PlayerInput _playerInput;
     
     private LineRenderer _line;
 
@@ -24,19 +25,24 @@ public class GrapplingHook : MonoBehaviour
     [HideInInspector] public bool retracting = false;
 
     private Vector2 _target;
-    private Vector2 _direction;
+    private Vector2 _aim;
+    private Vector2 _aimDirection;
+    private Vector2 _aimInput;
 
     private void Start()
     {
         _thePlayer = FindFirstObjectByType<PlayerMovement>();
+        _playerInput = GetComponent<PlayerInput>();
         
         _line = GetComponent<LineRenderer>();
 
         _canGrapple = true;
     }
 
-    private void Update() 
+    private void Update()
     {
+        HandleAim();
+        
         if (retracting)
         {
             Vector2 grapplePos = Vector2.Lerp(transform.position, _target, grappleSpeed * Time.deltaTime);
@@ -60,7 +66,7 @@ public class GrapplingHook : MonoBehaviour
     {
         if (!_isGrappling && _canGrapple)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, _direction, maxDistance, grappleMask);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, _aimDirection, maxDistance, grappleMask);
 
             if (hit.collider != null)
             {
@@ -97,14 +103,30 @@ public class GrapplingHook : MonoBehaviour
         retracting = true;
     }
 
-    public void HandleAim(Vector2 dir)
+    public void GetAim(Vector2 dir)
     {
-        _direction = dir;
+        _aim = dir;
+    }
+
+    private void HandleAim()
+    {
+        if (isGamepad)
+        {
+            _aimInput = Gamepad.current.rightStick.ReadValue();
+        
+            _aimInput.Normalize();
+
+            _aimDirection = new Vector2(_aimInput.x, _aimInput.y);
+        }
+        else
+        {
+            _aimDirection = Camera.main.ScreenToWorldPoint(_aim) - transform.position;
+        }
     }
     
     public void OnDeviceChange(PlayerInput pi)
     {
-        isGamepad = pi.currentControlScheme.Equals("Gamepad") ? true : false;
+        isGamepad = pi.currentControlScheme.Equals("Controller") ? true : false;
     }
 
     public void CanGrappleTrue()

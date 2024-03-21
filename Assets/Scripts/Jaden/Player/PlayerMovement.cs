@@ -8,11 +8,9 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
     internal PlayerCombat Combat;
     internal GrapplingHook GrappleHook;
-    private InputReader _input;
+    internal InputReader Input;
     private Rigidbody2D _rb;
     public Animator animator;
-    
-    [SerializeField] private bool isGamepad;
 
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed;
@@ -154,6 +152,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         
         _canDash = false;
         Combat.canAttack = false;
+        GrappleHook.CanGrappleFalse();
     }
 
     public void CanMoveTrue()
@@ -162,6 +161,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         
         _canDash = true;
         Combat.canAttack = true;
+        GrappleHook.CanGrappleTrue();
     }
 
     public void LoadData(GameData data)
