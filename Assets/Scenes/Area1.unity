@@ -21557,6 +21557,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 9.375
       objectReference: {fileID: 0}
+    - target: {fileID: 1217843685661436142, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_TagString
+      value: MyWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 1482447490749728038, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: damage
       value: 2
@@ -21577,9 +21581,17 @@ PrefabInstance:
       propertyPath: grappleMask.m_Bits
       value: 448
       objectReference: {fileID: 0}
+    - target: {fileID: 2844896284579443137, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_TagString
+      value: MyWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 3357803721581157658, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_Size.y
       value: 9.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314855992062400157, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_TagString
+      value: MyWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 4871073442496007468, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_Size.y

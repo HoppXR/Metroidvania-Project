@@ -6,6 +6,11 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private HealthBar healthBar;
+
+    void Start()
+    {
+        GameManager.gameManager._playerHealth.Health = GameManager.gameManager._playerHealth.MaxHealth;
+    }
     
     void FixedUpdate()
     {
@@ -22,10 +27,5 @@ public class PlayerHealth : MonoBehaviour
     {
         GameManager.gameManager._playerHealth.HealUnit(healing);
         healthBar.SetHealth(GameManager.gameManager._playerHealth.Health);
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        
     }
 }

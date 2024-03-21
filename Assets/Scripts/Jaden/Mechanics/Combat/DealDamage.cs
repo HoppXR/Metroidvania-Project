@@ -12,6 +12,8 @@ public class DealDamage : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             var eHealth = other.gameObject.GetComponent<EnemyHealth>();
+            var eAI = other.gameObject.GetComponent<EnemyAI>();
+            eAI.rb.constraints &= ~(RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY);
             eHealth.TakeDamage(damage);
         }
 

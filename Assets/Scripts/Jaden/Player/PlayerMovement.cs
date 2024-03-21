@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     private InputReader _input;
     private Rigidbody2D _rb;
     public Animator animator;
-    private CharacterController _controller;
     
     [SerializeField] private bool isGamepad;
 
@@ -44,8 +43,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         Combat = FindFirstObjectByType<PlayerCombat>();
         
         _rb = GetComponent<Rigidbody2D>();
-
-        _controller = GetComponent<CharacterController>();
+        
         InputReader.Init(this);
         InputReader.SetPlayerControls();
     }
@@ -122,12 +120,15 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         yield return new WaitForSeconds(dashCooldown);
         _canDash = true;
     }
-
+    
     private void HandleAnimation()
     {
-        animator.SetFloat(Horizontal, _moveVector.x);
-        animator.SetFloat(Vertical, _moveVector.y);
-        animator.SetFloat(Speed, _moveVector.sqrMagnitude);
+        animator.SetFloat(Horizontal, _rb.velocity.x);
+        animator.SetFloat(Vertical, _rb.velocity.y);
+        animator.SetFloat(Speed, _rb.velocity.sqrMagnitude);
+
+        if (!_canMove)
+            return;
         
         if (_moveVector.x == 1 || _moveVector.x == -1 || _moveVector.y == 1 || _moveVector.y == -1)
         {
@@ -152,6 +153,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         _rb.velocity = Vector2.zero;
         
         _canDash = false;
+        Combat.canAttack = false;
     }
 
     public void CanMoveTrue()
@@ -159,6 +161,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         _canMove = true;
         
         _canDash = true;
+        Combat.canAttack = true;
     }
 
     public void LoadData(GameData data)

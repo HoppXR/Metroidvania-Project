@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class GrapplingHook : MonoBehaviour 
 {
     private PlayerMovement _thePlayer;
-    private InputManager _input;
+    private InputReader _input;
     
     private LineRenderer _line;
 
@@ -26,7 +26,7 @@ public class GrapplingHook : MonoBehaviour
     private Vector2 _target;
     private Vector2 _direction;
 
-    private void Start() 
+    private void Start()
     {
         _thePlayer = FindFirstObjectByType<PlayerMovement>();
         
@@ -60,8 +60,6 @@ public class GrapplingHook : MonoBehaviour
     {
         if (!_isGrappling && _canGrapple)
         {
-            HandleInput();
-            
             RaycastHit2D hit = Physics2D.Raycast(transform.position, _direction, maxDistance, grappleMask);
 
             if (hit.collider != null)
@@ -99,11 +97,11 @@ public class GrapplingHook : MonoBehaviour
         retracting = true;
     }
 
-    private void HandleInput()
+    public void HandleAim(Vector2 dir)
     {
-        _direction = _input.Player.Aim.ReadValue<Vector2>();
+        _direction = dir;
     }
-
+    
     public void OnDeviceChange(PlayerInput pi)
     {
         isGamepad = pi.currentControlScheme.Equals("Gamepad") ? true : false;

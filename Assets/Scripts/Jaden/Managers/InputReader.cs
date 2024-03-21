@@ -23,6 +23,11 @@ public class InputReader : MonoBehaviour
             myPlayer.SetMovementDirection(Vector2.zero);
         };
 
+        _input.Player.Aim.performed += ctx =>
+        {
+            myPlayer.GrappleHook.HandleAim(ctx.ReadValue<Vector2>());
+        };
+
         _input.Player.Dash.performed += ctx =>
         {
             myPlayer.PlayerDash();

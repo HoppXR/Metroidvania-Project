@@ -10,6 +10,7 @@ public class PlayerCombat : MonoBehaviour
     private PlayerMovement _player;
     
     public bool isAttacking = false;
+    public bool canAttack;
 
     private void Awake()
     {
@@ -20,11 +21,13 @@ public class PlayerCombat : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         _player = GetComponent<PlayerMovement>();
+
+        canAttack = true;
     }
 
     public void Attack()
     {
-        if (isAttacking)
+        if (isAttacking || !canAttack)
         {
             return;
         }
