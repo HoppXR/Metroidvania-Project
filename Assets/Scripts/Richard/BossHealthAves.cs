@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BossHealthLastima : MonoBehaviour
+public class BossHealthAves : MonoBehaviour
 {
     private Rigidbody2D _rb;
     private EnemyAI _enemyAI;
-    private PirateAttacks _pirateAttacks;
+    private AvesAttack _avesAttack;
+
     
     private float _currentHealth;
     [SerializeField] private float maxHealth;
@@ -24,8 +25,7 @@ public class BossHealthLastima : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _enemyAI = GetComponent<EnemyAI>();
-        _pirateAttacks = GetComponent<PirateAttacks>();
-        
+        _avesAttack = GetComponent<AvesAttack>();
         _currentHealth = maxHealth;
     }
     
@@ -44,9 +44,9 @@ public class BossHealthLastima : MonoBehaviour
         if (!chase)
         {
             _enemyAI.enabled = true;
+            _avesAttack.enabled = true;
             _enemyAI.rb.constraints &= ~(RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY);
             _enemyAI.canMove = true;
-            _pirateAttacks.enabled = true;
             chase = true;
             
         }
@@ -78,7 +78,7 @@ public class BossHealthLastima : MonoBehaviour
         healthBar.SetActive(false);
         
         _enemyAI.enabled = false;
-        _pirateAttacks.enabled = false;
+        _avesAttack.enabled = false;
         Destroy(gameObject);
 
         // Play die animation

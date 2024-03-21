@@ -15,6 +15,7 @@ public class EnemyAIATERALBUS : MonoBehaviour
     private Seeker seeker;
     public Rigidbody2D rb;
     private PlayerHealth _playerHealth;
+    [HideInInspector] public bool canMove;
 
     private void Awake()
     {
@@ -58,6 +59,8 @@ public class EnemyAIATERALBUS : MonoBehaviour
         {
             reachedEndOfPath = false;
         }
+        if (!canMove)
+            return;
 
         direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * (speed * Time.deltaTime);

@@ -8,6 +8,9 @@ public class SwordsmanAttacks : MonoBehaviour
     public GameObject bigHitBoxAttackIndicator;
     public GameObject bigHitBoxAttackHitbox;
 
+    public GameObject stompAttackIndicator;
+    public GameObject stompAttackHitbox;
+
 
     public Transform boss;
     private Transform player;
@@ -74,6 +77,11 @@ public class SwordsmanAttacks : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             StartCoroutine(TripleDashAttack(gameObject));
+        }
+        
+                if (Input.GetKeyDown(KeyCode.I))
+        {
+            StartCoroutine(StompAttack(gameObject));
         }
     }*/
 
@@ -178,6 +186,18 @@ private IEnumerator SmallLunge()
             Destroy(sword, 10f);
 
         }
+    }
+    
+    IEnumerator StompAttack (GameObject parent)
+    {
+        GameObject stompAttack = Instantiate(stompAttackIndicator, boss.position, Quaternion.identity);
+        stompAttack.transform.parent = parent.transform;
+        Destroy(stompAttack, 2f);
+        yield return new WaitForSeconds(2f);
+        stompAttackHitbox.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        stompAttackHitbox.SetActive(false);
+        yield return new WaitForSeconds(1f);
     }
 
 

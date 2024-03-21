@@ -45,10 +45,9 @@ public class BossHealthATERALBUS : MonoBehaviour
         {
             _ATERALBUSAI.enabled = true;
             _swordsManAttacks.enabled = true;
+            _ATERALBUSAI.rb.constraints &= ~(RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY);
+            _ATERALBUSAI.canMove = true;
             chase = true;
-            
-            _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-            _rb.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
         }
         
         if (_currentHealth >= damage)

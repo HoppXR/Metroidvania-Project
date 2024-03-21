@@ -35,7 +35,6 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] int damage = 10;
     private NPC _npc;
-    public bool startMoving;
 
     private void Awake()
     {
