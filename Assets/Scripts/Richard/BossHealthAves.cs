@@ -40,7 +40,7 @@ public class BossHealthAves : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthBar.SetActive(true);
-        
+        /*
         if (!chase)
         {
             _enemyAI.enabled = true;
@@ -49,7 +49,7 @@ public class BossHealthAves : MonoBehaviour
             _enemyAI.canMove = true;
             chase = true;
             
-        }
+        }*/
         
         if (_currentHealth >= damage)
         {
