@@ -10,6 +10,11 @@ public class IokoAttack : MonoBehaviour
     
     public GameObject SpinAttackIndicators;
     public GameObject spinAttackHitbox;
+    
+    public GameObject cardProjectile;
+    
+    public GameObject frontRNGIndicators;
+    public GameObject frontRNGHitbox;
 
     
     void Start()
@@ -27,17 +32,17 @@ public class IokoAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.O))
         {
-
+            StartCoroutine(LuckOfTheDraw());
         }
 
         if (Input.GetKeyDown(KeyCode.I))
         {
-
+            StartCoroutine(DieDice());
         }
 
         if (Input.GetKeyDown(KeyCode.U))
         {
-
+            
         }
     }
     
@@ -52,4 +57,44 @@ public class IokoAttack : MonoBehaviour
         spinAttackHitbox.SetActive(false);
         yield return new WaitForSeconds(1f);
     }
+
+
+    IEnumerator LuckOfTheDraw()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        int[] myArray = { 5, 10, 15, 20 };
+
+        for (int i = 0; i < 5; i++)
+        {
+            int randomIndex = Random.Range(0, myArray.Length);
+            int randomSpeed = myArray[randomIndex];
+
+            if (player != null)
+            {
+                GameObject card = Instantiate(cardProjectile, transform.position, Quaternion.identity);
+                Vector3 directionToPlayer = (player.transform.position - card.transform.position).normalized;
+                Rigidbody2D cardRb = card.GetComponent<Rigidbody2D>();
+                cardRb.velocity = directionToPlayer * randomSpeed;
+                Destroy(card, 10);
+            }
+
+            yield return new WaitForSeconds(1f);
+        }
+    }
+    
+
+    IEnumerator DieDice()
+    {
+        frontRNGIndicators.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        frontRNGIndicators.SetActive(false);
+        frontRNGHitbox.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        frontRNGHitbox.SetActive(false);
+        yield return new WaitForSeconds(1f);
+    }
+    
+    
+    
 }
