@@ -164,6 +164,16 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         GrappleHook.CanGrappleTrue();
     }
 
+    public void CanDashTrue()
+    {
+        _canDash = true;
+    }
+
+    public void CanDashFalse()
+    {
+        _canDash = false;
+    }
+
     public void LoadData(GameData data)
     {
         this.transform.position = data.playerPosition;

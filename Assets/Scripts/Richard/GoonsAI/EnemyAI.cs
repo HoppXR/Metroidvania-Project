@@ -96,6 +96,9 @@ public class EnemyAI : MonoBehaviour
         if (path == null)
             return;
 
+        if (!canMove)
+            return;
+
         if (currentWaypoint >= path.vectorPath.Count)
         {
             reachedEndOfPath = true;
@@ -105,9 +108,6 @@ public class EnemyAI : MonoBehaviour
         {
             reachedEndOfPath = false;
         }
-        
-        if (!canMove)
-            return;
 
         direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * (speed * Time.deltaTime);

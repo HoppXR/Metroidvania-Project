@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
@@ -36,37 +37,52 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose && !isTyping)
+        if (playerIsClose)
         {
-            if (stopMovement)
-            {
-                _thePlayer.CanMoveFalse();
-                _thePlayer.GrappleHook.CanGrappleFalse();
-            }
-
-            if (dialoguePanel.activeInHierarchy)
-            {
-                ZeroText();
-                promptText.SetActive(true);
-            }
-            else
-            {
-                dialoguePanel.SetActive(true);
-                promptText.SetActive(false);
-
-                index = 0;
-
-                typingCoroutine = StartCoroutine(Typing());
-
-                contButtonAnimator.gameObject.SetActive(true);
-            }
+            _thePlayer.CanDashFalse();
+        }
+        else if (!playerIsClose)
+        {
+            _thePlayer.CanDashTrue();
+        }
+        
+        if ((Input.GetKeyDown(KeyCode.E) || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) && playerIsClose && !isTyping) 
+        {
+            Interact();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && dialoguePanel.activeInHierarchy && !isTyping)
+        if ((Input.GetKeyDown(KeyCode.Space) || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) && dialoguePanel.activeInHierarchy && !isTyping)
         {
             NextLine();
         }
     }
+
+    private void Interact()
+    {
+        if (stopMovement)
+        {
+            _thePlayer.CanMoveFalse();
+            _thePlayer.GrappleHook.CanGrappleFalse();
+        }
+
+        if (dialoguePanel.activeInHierarchy)
+        {
+            ZeroText();
+            promptText.SetActive(true);
+        }
+        else
+        {
+            dialoguePanel.SetActive(true);
+            promptText.SetActive(false);
+
+            index = 0;
+
+            typingCoroutine = StartCoroutine(Typing());
+
+            contButtonAnimator.gameObject.SetActive(true);
+        }
+    }
+    
     public void NextLine()
     {
         if (isTyping)

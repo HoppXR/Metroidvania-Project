@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -21,7 +22,7 @@ public class Portal : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        if ((Input.GetKeyDown(KeyCode.E) || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) && playerInRange)
         {
             StartCoroutine(EnterPortal());
         }
