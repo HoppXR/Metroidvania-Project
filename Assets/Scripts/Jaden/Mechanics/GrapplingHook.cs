@@ -51,7 +51,7 @@ public class GrapplingHook : MonoBehaviour
 
             _line.SetPosition(0, transform.position);
 
-            if (Vector2.Distance(transform.position, _target) < 1.2f)
+            if (Vector2.Distance(transform.position, _target) < 2.5f)
             {
                 _thePlayer.CanMoveTrue();
                 

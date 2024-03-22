@@ -77,6 +77,12 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     public void SetMovementDirection(Vector2 dir)
     {
+        if (!_canMove)
+        {
+            _moveVector = Vector2.zero;
+            return;
+        }
+        
         _moveVector = dir;
     }
 

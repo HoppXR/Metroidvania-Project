@@ -521,7 +521,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 4944230376442633554, guid: 1e5f6f94e3cb6ab41978ae53f737e0d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -656,7 +656,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2515250196529354146}
-  isGamepad: 0
   moveSpeed: 12
   knockback: 10
   forceDamping: 0.5
@@ -691,7 +690,7 @@ MonoBehaviour:
   isGamepad: 0
   grappleMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   maxDistance: 10
   grappleSpeed: 7.5
   grappleShootSpeed: 30
@@ -710,6 +709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2515250196529354146}
   isAttacking: 0
+  canAttack: 0
 --- !u!120 &8691196509243121146
 LineRenderer:
   serializedVersion: 2
