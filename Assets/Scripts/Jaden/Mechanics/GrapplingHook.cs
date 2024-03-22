@@ -7,7 +7,6 @@ using UnityEngine.InputSystem;
 public class GrapplingHook : MonoBehaviour 
 {
     private PlayerMovement _thePlayer;
-    private PlayerInput _playerInput;
     
     private LineRenderer _line;
 
@@ -32,7 +31,6 @@ public class GrapplingHook : MonoBehaviour
     private void Start()
     {
         _thePlayer = FindFirstObjectByType<PlayerMovement>();
-        _playerInput = GetComponent<PlayerInput>();
         
         _line = GetComponent<LineRenderer>();
 
@@ -62,8 +60,11 @@ public class GrapplingHook : MonoBehaviour
         }
     }
 
-    public void StartGrapple() 
+    public void StartGrapple()
     {
+        if (PauseMenu.isPaused)
+            return;
+        
         if (!_isGrappling && _canGrapple)
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, _aimDirection, maxDistance, grappleMask);

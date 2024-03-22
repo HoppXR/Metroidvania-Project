@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using System;
 
 public class HealthManager
 {
     private int _currentHealth;
     private int _currentMaxHealth;
+
+    public static event Action OnPlayerDeath;
 
     public int Health
     {
@@ -39,9 +43,12 @@ public class HealthManager
 
     public void TakeDamage(int damageAmount)
     {
+        // Player dedge
         if (damageAmount > _currentHealth)
         {
             _currentHealth = 0;
+            
+            OnPlayerDeath?.Invoke();
         }
         
         if (_currentHealth > 0)

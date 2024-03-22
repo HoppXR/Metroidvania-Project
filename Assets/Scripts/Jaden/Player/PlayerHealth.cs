@@ -16,16 +16,4 @@ public class PlayerHealth : MonoBehaviour
     {
         healthBar.SetHealth(GameManager.gameManager._playerHealth.Health);
     }
-
-    public void TakeDamage(int damage)
-    {
-        GameManager.gameManager._playerHealth.TakeDamage(damage);
-        healthBar.SetHealth(GameManager.gameManager._playerHealth.Health);
-    }
-
-    private void Heal(int healing)
-    {
-        GameManager.gameManager._playerHealth.HealUnit(healing);
-        healthBar.SetHealth(GameManager.gameManager._playerHealth.Health);
-    }
 }
