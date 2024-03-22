@@ -955,7 +955,7 @@ Transform:
   m_GameObject: {fileID: 236135915}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.37, y: 13.01, z: 0}
+  m_LocalPosition: {x: -26.7, y: 13.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6108,11 +6108,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -10.1
       objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -6.6
       objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7845,6 +7845,10 @@ MonoBehaviour:
   cardProjectile: {fileID: 8425810690259999285, guid: 248b7330beb98ad4b954a007656083fb, type: 3}
   frontRNGIndicators: {fileID: 1357167382}
   frontRNGHitbox: {fileID: 825241236}
+  blackHole: {fileID: 8673082398525552735, guid: 2b431b2287a8036478548ba8622655d6, type: 3}
+  blackHoleSpawnLocation: {x: 10.7, y: -5.6, z: 0}
+  bossTeleportLocation: {x: -26.7, y: 13.9, z: 0}
+  bossReturnTeleportLocation: {x: -3.29, y: 0.22, z: 0}
 --- !u!61 &1808666358
 BoxCollider2D:
   m_ObjectHideFlags: 0

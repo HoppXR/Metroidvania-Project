@@ -122,10 +122,9 @@ public class PirateAttacks : MonoBehaviour
         if (boss != null && goonerCount <= 0)
         {
             Rigidbody2D bossRb = boss.GetComponent<Rigidbody2D>();
-
-            boss.position = returnDestination;
             if (bossRb != null)
-            {
+            { 
+                boss.position = returnDestination;
                 bossRb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
         }

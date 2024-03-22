@@ -15,7 +15,13 @@ public class IokoAttack : MonoBehaviour
     
     public GameObject frontRNGIndicators;
     public GameObject frontRNGHitbox;
-
+    
+    
+    public GameObject blackHole;
+    public Vector3 blackHoleSpawnLocation;
+    public Vector3 bossTeleportLocation;
+    public Vector3 bossReturnTeleportLocation;
+    private int blackHoleCount;
     
     void Start()
     {
@@ -42,7 +48,7 @@ public class IokoAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.U))
         {
-            
+            FinalGambit();
         }
     }
     
@@ -95,6 +101,19 @@ public class IokoAttack : MonoBehaviour
         yield return new WaitForSeconds(1f);
     }
     
-    
-    
+    void FinalGambit()
+    {
+        boss.position = bossTeleportLocation;
+        if (rb != null)
+        {
+        }
+        GameObject suck = Instantiate(blackHole, blackHoleSpawnLocation, Quaternion.identity);
+        Destroy(suck, 10);
+    }
+
+    public void TeleportBossBack()
+    {
+        Debug.Log("TP Back Called");
+        boss.position = bossReturnTeleportLocation;
+    }
 }
