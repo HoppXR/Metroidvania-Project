@@ -41,10 +41,6 @@ public class NPC : MonoBehaviour
         {
             _thePlayer.CanDashFalse();
         }
-        else if (!playerIsClose)
-        {
-            _thePlayer.CanDashTrue();
-        }
         
         if ((Input.GetKeyDown(KeyCode.E) || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) && playerIsClose && !isTyping) 
         {
@@ -158,6 +154,7 @@ public class NPC : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            _thePlayer.CanDashTrue();
             playerIsClose = false;
             promptText.SetActive(false);
             if (dialoguePanel.activeInHierarchy)

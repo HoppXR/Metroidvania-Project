@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
     internal PlayerCombat Combat;
@@ -106,6 +105,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     
     private IEnumerator Dash()
     {
+        Debug.Log("Dashing");
         _canDash = false;
         _isDashing = true;
 
@@ -117,6 +117,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
         yield return new WaitForSeconds(dashCooldown);
         _canDash = true;
+        Debug.Log("Not Dashing");
     }
     
     private void HandleAnimation()

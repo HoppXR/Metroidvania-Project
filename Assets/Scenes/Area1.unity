@@ -20420,7 +20420,6 @@ MonoBehaviour:
   attackDelay: 3
   attackRange: 4
   damage: 10
-  startMoving: 0
 --- !u!114 &1215755346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21592,6 +21591,14 @@ PrefabInstance:
     - target: {fileID: 4314855992062400157, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_TagString
       value: MyWeapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633788077054007704, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: dashCooldown
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633788077054007704, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: dashDuration
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4871073442496007468, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_Size.y
