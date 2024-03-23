@@ -2999,7 +2999,7 @@ PrefabInstance:
       objectReference: {fileID: 309340706}
     - target: {fileID: 4735266947113810515, guid: 0a6e4cc7dfbda04498afe0a71c90170e, type: 3}
       propertyPath: sceneToLoad
-      value: PortalRoom 3
+      value: PortalRoom4
       objectReference: {fileID: 0}
     - target: {fileID: 4735266947113810515, guid: 0a6e4cc7dfbda04498afe0a71c90170e, type: 3}
       propertyPath: interactionUI
@@ -10277,6 +10277,12 @@ MonoBehaviour:
   nextWaypointDistance: 1
   rb: {fileID: 1676128560}
   canMove: 0
+  detectionCollider: {fileID: 0}
+  attackHitbox: {fileID: 0}
+  textCollider: {fileID: 0}
+  attackDelay: 2
+  attackRange: 1.5
+  damage: 10
 --- !u!114 &1676128562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12557,6 +12563,10 @@ PrefabInstance:
     - target: {fileID: 6064511518451364509, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507312719302657470, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
