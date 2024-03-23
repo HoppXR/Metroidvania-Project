@@ -7,9 +7,7 @@ public class SwordsmanAttacks : MonoBehaviour
     public GameObject attackHitbox;
     public GameObject bigHitBoxAttackIndicator;
     public GameObject bigHitBoxAttackHitbox;
-
-    public GameObject stompAttackIndicator;
-    public GameObject stompAttackHitbox;
+    
 
 
     public Transform boss;
@@ -22,6 +20,8 @@ public class SwordsmanAttacks : MonoBehaviour
     [SerializeField] private float lungeSpeed;
     [SerializeField] private float dashDuration;
     [SerializeField] private float dashSpeed;
+    [SerializeField] private float smallDashDuration;
+    [SerializeField] private float smallDashSpeed;
 
 
     [SerializeField] private float swordProjectileSpeed;
@@ -33,7 +33,7 @@ public class SwordsmanAttacks : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
-        StartCoroutine(RandomAttackRoutine());
+        //StartCoroutine(RandomAttackRoutine());
     }
     
     private IEnumerator RandomAttackRoutine()
@@ -62,7 +62,7 @@ public class SwordsmanAttacks : MonoBehaviour
         }
     }
     
-    /*void Update()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
@@ -79,11 +79,11 @@ public class SwordsmanAttacks : MonoBehaviour
             StartCoroutine(TripleDashAttack(gameObject));
         }
         
-                if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.U))
         {
             StartCoroutine(StompAttack(gameObject));
         }
-    }*/
+    }
 
     IEnumerator DoubleSlash() //lunge forward a bit and attack x2
     {
@@ -111,30 +111,27 @@ public class SwordsmanAttacks : MonoBehaviour
     {
         StartCoroutine(Dash());
         yield return new WaitForSeconds(0.2f);
-        GameObject spinAttack = Instantiate(bigHitBoxAttackIndicator, boss.position, Quaternion.identity);
-        spinAttack.transform.parent = parent.transform;
-        Destroy(spinAttack, 0.5f);
+        bigHitBoxAttackIndicator.SetActive(true);
         yield return new WaitForSeconds(0.5f);
+        bigHitBoxAttackIndicator.SetActive(false);
         BigHitBoxAttack();
         
         yield return new WaitForSeconds(0.5f);
         
-        StartCoroutine(Dash());
+        StartCoroutine(SmallDash());
         yield return new WaitForSeconds(0.2f);
-        GameObject spinAttack2 = Instantiate(bigHitBoxAttackIndicator, boss.position, Quaternion.identity);
-        spinAttack2.transform.parent = parent.transform;
-        Destroy(spinAttack2, 0.5f);
+        bigHitBoxAttackIndicator.SetActive(true);
         yield return new WaitForSeconds(0.5f);
+        bigHitBoxAttackIndicator.SetActive(false);
         BigHitBoxAttack();
         
         yield return new WaitForSeconds(0.5f);
         
-        StartCoroutine(Dash());
+        StartCoroutine(SmallDash());
         yield return new WaitForSeconds(0.2f);
-        GameObject spinAttack3 = Instantiate(bigHitBoxAttackIndicator, boss.position, Quaternion.identity);
-        spinAttack3.transform.parent = parent.transform;
-        Destroy(spinAttack3, 0.5f);
+        bigHitBoxAttackIndicator.SetActive(true);
         yield return new WaitForSeconds(0.5f);
+        bigHitBoxAttackIndicator.SetActive(false);
         BigHitBoxAttack();
         
         yield return new WaitForSeconds(3f);
@@ -168,6 +165,19 @@ private IEnumerator SmallLunge()
         rb.velocity = Vector2.zero;
 
     }
+    private IEnumerator SmallDash()
+    {
+        if (player != null)
+        {
+            Vector2 directionToPlayer = (player.position - transform.position).normalized;
+            rb.velocity = directionToPlayer * smallDashSpeed;
+        }
+
+        yield return new WaitForSeconds(smallDashDuration);
+        
+        rb.velocity = Vector2.zero;
+
+    }
     
     
 
@@ -190,13 +200,10 @@ private IEnumerator SmallLunge()
     
     IEnumerator StompAttack (GameObject parent)
     {
-        GameObject stompAttack = Instantiate(stompAttackIndicator, boss.position, Quaternion.identity);
-        stompAttack.transform.parent = parent.transform;
-        Destroy(stompAttack, 2f);
+        bigHitBoxAttackIndicator.SetActive(true);
         yield return new WaitForSeconds(2f);
-        stompAttackHitbox.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        stompAttackHitbox.SetActive(false);
+        bigHitBoxAttackIndicator.SetActive(false);
+        BigHitBoxAttack();
         yield return new WaitForSeconds(1f);
     }
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BossHealthAves : MonoBehaviour
 {
     private Rigidbody2D _rb;
-    private EnemyAI _enemyAI;
+    private AvesAI _enemyAI;
     private AvesAttack _avesAttack;
 
     
@@ -24,7 +24,7 @@ public class BossHealthAves : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _enemyAI = GetComponent<EnemyAI>();
+        _enemyAI = GetComponent<AvesAI>();
         _avesAttack = GetComponent<AvesAttack>();
         _currentHealth = maxHealth;
     }
@@ -40,7 +40,7 @@ public class BossHealthAves : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthBar.SetActive(true);
-        /*
+        
         if (!chase)
         {
             _enemyAI.enabled = true;
@@ -49,7 +49,7 @@ public class BossHealthAves : MonoBehaviour
             _enemyAI.canMove = true;
             chase = true;
             
-        }*/
+        }
         
         if (_currentHealth >= damage)
         {

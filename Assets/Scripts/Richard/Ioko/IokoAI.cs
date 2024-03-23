@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class EnemyAIATERALBUS : MonoBehaviour
+public class IokoAI : MonoBehaviour
 {
+    [HideInInspector] public bool canMove;
+    
+    public BoxCollider2D detectionCollider;
+    public GameObject attackHitbox;
+    public CircleCollider2D textCollider;
     private Transform player;
     public float speed = 1000f;
     public float nextWaypointDistance = 1f;
@@ -15,12 +20,6 @@ public class EnemyAIATERALBUS : MonoBehaviour
     private Seeker seeker;
     public Rigidbody2D rb;
     private PlayerHealth _playerHealth;
-    [HideInInspector] public bool canMove;
-
-    
-    public BoxCollider2D detectionCollider;
-    public GameObject attackHitbox;
-    public CircleCollider2D textCollider;
     private bool isAttacking = false;
     private bool colliderActivated = false;
     [SerializeField] private float attackDelay = 2f;
@@ -29,8 +28,8 @@ public class EnemyAIATERALBUS : MonoBehaviour
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] int damage = 10;
     private NPC _npc;
-    
-   private void Awake()
+
+    private void Awake()
     {
         _playerHealth = FindFirstObjectByType<PlayerHealth>();
     }

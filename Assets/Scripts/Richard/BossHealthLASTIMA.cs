@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BossHealthLastima : MonoBehaviour
 {
     private Rigidbody2D _rb;
-    private EnemyAI _enemyAI;
+    private LatismaAI _enemyAI;
     private PirateAttacks _pirateAttacks;
     
     private float _currentHealth;
@@ -23,7 +23,7 @@ public class BossHealthLastima : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _enemyAI = GetComponent<EnemyAI>();
+        _enemyAI = GetComponent<LatismaAI>();
         _pirateAttacks = GetComponent<PirateAttacks>();
         
         _currentHealth = maxHealth;
