@@ -44,7 +44,7 @@ public class HealthManager
     public void TakeDamage(int damageAmount)
     {
         // Player dedge
-        if (damageAmount > _currentHealth)
+        if (damageAmount >= _currentHealth)
         {
             _currentHealth = 0;
             

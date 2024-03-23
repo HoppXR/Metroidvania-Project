@@ -47,8 +47,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     void Start()
     {
-        _canMove = true;
-        _canDash = true;
+        PlayerRevive();
     }
 
     void Update()
@@ -140,6 +139,29 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
             animator.SetFloat(LastHorizontal, _moveVector.x);
             animator.SetFloat(LastVertical, _moveVector.y);
         }
+    }
+
+    private void OnEnable()
+    {
+        HealthManager.OnPlayerDeath += PlayerDeath;
+    }
+
+    private void OnDisable()
+    {
+        HealthManager.OnPlayerDeath -= PlayerDeath;
+    }
+
+    private void PlayerDeath()
+    {
+        CanMoveFalse();
+        animator.SetTrigger("Death");
+        animator.SetBool("Dead", true);
+    }
+
+    private void PlayerRevive()
+    {
+        animator.SetBool("Dead", false);
+        CanMoveTrue();
     }
 
     public void SlowDown()
