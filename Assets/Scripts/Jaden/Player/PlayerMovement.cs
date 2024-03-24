@@ -132,7 +132,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         animator.SetFloat(Vertical, _rb.velocity.y);
         animator.SetFloat(Speed, _rb.velocity.sqrMagnitude);
 
-        if (!_canMove)
+        if (!_canMove || PauseMenu.isPaused)
             return;
         
         if (_moveVector.x == 1 || _moveVector.x == -1 || _moveVector.y == 1 || _moveVector.y == -1)

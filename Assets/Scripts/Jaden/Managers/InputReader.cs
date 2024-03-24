@@ -7,6 +7,30 @@ using UnityEngine.InputSystem;
 public class InputReader : MonoBehaviour
 {
     private static InputManager _input;
+    
+    private static PlayerInput _playerInput;
+
+    public static InputReader Instance;
+    
+    public bool MenuOpenCloseInput { get; private set; }
+
+    private InputAction _menuOpenCloseAction;
+    
+    public void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
+        _playerInput = GetComponent<PlayerInput>();
+        _menuOpenCloseAction = _playerInput.actions["MenuOpenClose"];
+    }
+
+    private void Update()
+    {
+        MenuOpenCloseInput = _menuOpenCloseAction.WasPressedThisFrame();
+    }
 
     public static void Init(PlayerMovement myPlayer)
     {

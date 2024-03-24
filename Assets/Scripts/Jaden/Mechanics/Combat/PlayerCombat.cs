@@ -27,10 +27,8 @@ public class PlayerCombat : MonoBehaviour
 
     public void Attack()
     {
-        if (isAttacking || !canAttack)
-        {
+        if (isAttacking || !canAttack || PauseMenu.isPaused)
             return;
-        }
         
         StartCoroutine(PerformAttack());
     }

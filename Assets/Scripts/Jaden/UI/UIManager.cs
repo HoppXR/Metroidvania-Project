@@ -17,12 +17,6 @@ public class UIManager : MonoBehaviour
         deathScreenCanvas.SetActive(false);
     }
     
-    void Update()
-    {
-
-    }
-
-    
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");

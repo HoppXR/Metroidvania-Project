@@ -71,6 +71,15 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MenuOpenClose"",
+                    ""type"": ""Button"",
+                    ""id"": ""f017f9d2-6651-40e9-949e-18acf977326d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -326,6 +335,28 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
                     ""action"": ""Aim"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4c4cd726-8d6c-4d36-83b6-54e8c63d0076"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KBM"",
+                    ""action"": ""MenuOpenClose"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""92b9a074-5462-46ad-8065-3d24ffa5bc9f"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
+                    ""action"": ""MenuOpenClose"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -395,6 +426,7 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
         m_Player_Grapple = m_Player.FindAction("Grapple", throwIfNotFound: true);
         m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         m_Player_Aim = m_Player.FindAction("Aim", throwIfNotFound: true);
+        m_Player_MenuOpenClose = m_Player.FindAction("MenuOpenClose", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Newaction = m_UI.FindAction("New action", throwIfNotFound: true);
@@ -464,6 +496,7 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Grapple;
     private readonly InputAction m_Player_Attack;
     private readonly InputAction m_Player_Aim;
+    private readonly InputAction m_Player_MenuOpenClose;
     public struct PlayerActions
     {
         private @InputManager m_Wrapper;
@@ -473,6 +506,7 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
         public InputAction @Grapple => m_Wrapper.m_Player_Grapple;
         public InputAction @Attack => m_Wrapper.m_Player_Attack;
         public InputAction @Aim => m_Wrapper.m_Player_Aim;
+        public InputAction @MenuOpenClose => m_Wrapper.m_Player_MenuOpenClose;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -497,6 +531,9 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
             @Aim.started += instance.OnAim;
             @Aim.performed += instance.OnAim;
             @Aim.canceled += instance.OnAim;
+            @MenuOpenClose.started += instance.OnMenuOpenClose;
+            @MenuOpenClose.performed += instance.OnMenuOpenClose;
+            @MenuOpenClose.canceled += instance.OnMenuOpenClose;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -516,6 +553,9 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
             @Aim.started -= instance.OnAim;
             @Aim.performed -= instance.OnAim;
             @Aim.canceled -= instance.OnAim;
+            @MenuOpenClose.started -= instance.OnMenuOpenClose;
+            @MenuOpenClose.performed -= instance.OnMenuOpenClose;
+            @MenuOpenClose.canceled -= instance.OnMenuOpenClose;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -604,6 +644,7 @@ public partial class @InputManager: IInputActionCollection2, IDisposable
         void OnGrapple(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnAim(InputAction.CallbackContext context);
+        void OnMenuOpenClose(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
