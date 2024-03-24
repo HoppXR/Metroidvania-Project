@@ -27,10 +27,29 @@ public class IokoAttack : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
+        StartCoroutine(RandomAttackRoutine());
     }
     
+    private IEnumerator RandomAttackRoutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(7f);
+
+            int randomNumber = Random.Range(1, 6);
+
+            if (randomNumber >= 2 && randomNumber <= 3)
+            {
+                StartCoroutine(LuckOfTheDraw());
+            }
+            else if (randomNumber >= 4 && randomNumber <= 5)
+            {
+                StartCoroutine(DieDice());
+            }
+        }
+    }
     
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
@@ -51,7 +70,7 @@ public class IokoAttack : MonoBehaviour
         {
             FinalGambit();
         }
-    }
+    }*/
     
     public IEnumerator SpinAttackCoroutine(GameObject parent)
     {

@@ -35,11 +35,11 @@ public class PirateAttacks : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(7f);
 
-            int randomNumber = Random.Range(1, 14);
+            int randomNumber = Random.Range(1, 10);
 
-            if (randomNumber >= 1 && randomNumber <= 4)
+            if (randomNumber >= 2 && randomNumber <= 4)
             {
                 foreach (var BossCannonAttack in BossCannonAttack)
                 {
@@ -50,11 +50,7 @@ public class PirateAttacks : MonoBehaviour
             {
                 SpawnSummonShip();
             }
-            else if (randomNumber >= 9 && randomNumber <= 12)
-            {
-                StartCoroutine(SpinAttackCoroutine(gameObject));
-            }
-            else // randomNumber is 13
+            else // randomNumber is 9
             {
                 GoonsAttack();
             }

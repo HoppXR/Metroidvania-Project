@@ -33,11 +33,36 @@ public class AvesAttack : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
+        StartCoroutine(RandomAttackRoutine());
 
     }
+    private IEnumerator RandomAttackRoutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(4f);
 
+            int randomNumber = Random.Range(1, 6);
+
+            if (randomNumber >= 2 && randomNumber <= 3)
+            {
+                PulsarAttack();
+                yield return new WaitForSeconds(1f);
+            }
+            else if (randomNumber >= 4 && randomNumber <= 5)
+            {
+                FireBreath();
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                StartCoroutine(MeteorAttack());
+                yield return new WaitForSeconds(1f);
+            }
+        }
+    }
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
@@ -58,7 +83,7 @@ public class AvesAttack : MonoBehaviour
         {
             StartCoroutine(MeteorAttack());
         }
-    }
+    }*/
 
     void FireBreath()
     {
