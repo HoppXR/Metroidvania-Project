@@ -15492,8 +15492,8 @@ MonoBehaviour:
   dialogueText: {fileID: 267510345}
   dialogue:
   - 'Heads up! '
-  - These are clearly BAD GUYS.
-  - They are GOING to try and KILL you.
+  - You're going to run into BAD guys.
+  - They will try to KILL you.
   - Left Click to retaliate!
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
