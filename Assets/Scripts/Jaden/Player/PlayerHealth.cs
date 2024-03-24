@@ -2,18 +2,38 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using static GameManager;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private HealthBar healthBar;
+    [SerializeField] private Slider healthBarSlider;
+    [SerializeField] private Image healthBarColor;
+
+    private float _lerpSpeed;
 
     void Start()
     {
-        GameManager.gameManager._playerHealth.Health = GameManager.gameManager._playerHealth.MaxHealth;
+        healthBarSlider.value = gameManager._playerHealth.Health;
     }
     
-    void FixedUpdate()
+    private void Update()
     {
-        healthBar.SetHealth(GameManager.gameManager._playerHealth.Health);
+        _lerpSpeed = 3f * Time.deltaTime;
+        
+        HealthBarFiller();
+        ColorChanger();
+    }
+
+    private void HealthBarFiller()
+    {
+        healthBarSlider.value = Mathf.Lerp(healthBarSlider.value, gameManager._playerHealth.Health, _lerpSpeed);
+    }
+
+    void ColorChanger()
+    {
+        Color healthColor = Color.Lerp(Color.red, Color.green, healthBarSlider.value / gameManager._playerHealth.MaxHealth);
+
+        healthBarColor.color = healthColor;
     }
 }
