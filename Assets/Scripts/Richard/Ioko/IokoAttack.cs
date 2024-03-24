@@ -29,6 +29,7 @@ public class IokoAttack : MonoBehaviour
         player = GameObject.FindWithTag("Player")?.transform;
     }
     
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
@@ -52,7 +53,7 @@ public class IokoAttack : MonoBehaviour
         }
     }
     
-    IEnumerator SpinAttackCoroutine(GameObject parent)
+    public IEnumerator SpinAttackCoroutine(GameObject parent)
     {
         GameObject spinAttack = Instantiate(SpinAttackIndicators, boss.position, Quaternion.identity);
         spinAttack.transform.parent = parent.transform;
@@ -106,6 +107,7 @@ public class IokoAttack : MonoBehaviour
         boss.position = bossTeleportLocation;
         if (rb != null)
         {
+            
         }
         GameObject suck = Instantiate(blackHole, blackHoleSpawnLocation, Quaternion.identity);
         Destroy(suck, 10);

@@ -98,7 +98,7 @@ public class AvesAttack : MonoBehaviour
         }
     }
 
-    IEnumerator ChargeDash()
+    public IEnumerator ChargeDash()
     {
         StartCoroutine(SmallLunge());
         yield return new WaitForSeconds(1f);

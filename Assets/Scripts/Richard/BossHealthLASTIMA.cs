@@ -19,6 +19,8 @@ public class BossHealthLastima : MonoBehaviour
     private float lerpSpeed = 0.05f;
 
     private bool chase = false;
+    
+    [SerializeField] public GameObject enablePortal;
 
     void Start()
     {
@@ -76,7 +78,7 @@ public class BossHealthLastima : MonoBehaviour
     private void Die()
     {
         healthBar.SetActive(false);
-        
+        enablePortal.SetActive(true);
         _enemyAI.enabled = false;
         _pirateAttacks.enabled = false;
         Destroy(gameObject);

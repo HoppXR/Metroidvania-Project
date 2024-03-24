@@ -21,6 +21,8 @@ public class BossHealthATERALBUS : MonoBehaviour
 
     private bool chase = false;
 
+    [SerializeField] public GameObject enablePortal;
+
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -75,7 +77,7 @@ public class BossHealthATERALBUS : MonoBehaviour
     private void Die()
     {
         healthBar.SetActive(false);
-        
+        enablePortal.SetActive(true);
         _ATERALBUSAI.enabled = false;
         _swordsManAttacks.enabled = false;
         Destroy(gameObject);

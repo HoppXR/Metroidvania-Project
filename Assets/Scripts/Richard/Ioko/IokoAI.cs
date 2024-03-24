@@ -28,6 +28,7 @@ public class IokoAI : MonoBehaviour
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] int damage = 10;
     private NPC _npc;
+    public IokoAttack iokoAttack;
 
     private void Awake()
     {
@@ -38,6 +39,7 @@ public class IokoAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        iokoAttack = GetComponent<IokoAttack>();
         player = GameObject.FindWithTag("Player")?.transform;
         
         if (player == null)
@@ -132,7 +134,7 @@ public class IokoAI : MonoBehaviour
     {
         canMove = false;
         isAttacking = true;
-
+        StartCoroutine(iokoAttack.SpinAttackCoroutine(gameObject));
         
         StartCoroutine(DeactivateAttack());
     }

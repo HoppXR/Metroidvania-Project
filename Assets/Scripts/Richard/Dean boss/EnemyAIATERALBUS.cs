@@ -29,6 +29,7 @@ public class EnemyAIATERALBUS : MonoBehaviour
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] int damage = 10;
     private NPC _npc;
+    public SwordsmanAttacks swordsmanAttacks;
     
    private void Awake()
     {
@@ -40,6 +41,7 @@ public class EnemyAIATERALBUS : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
+        swordsmanAttacks = GetComponent<SwordsmanAttacks>();
         
         if (player == null)
         {
@@ -133,7 +135,7 @@ public class EnemyAIATERALBUS : MonoBehaviour
     {
         canMove = false;
         isAttacking = true;
-
+        StartCoroutine(swordsmanAttacks.DoubleSlash());
         
         StartCoroutine(DeactivateAttack());
     }

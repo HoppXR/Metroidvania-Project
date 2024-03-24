@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BossHealthIoko : MonoBehaviour
 {
     private Rigidbody2D _rb;
-    private EnemyAI _enemyAI;
+    private IokoAI _enemyAI;
     private IokoAttack _iokoAttack;
     
     private float _currentHealth;
@@ -19,11 +19,13 @@ public class BossHealthIoko : MonoBehaviour
     private float lerpSpeed = 0.05f;
 
     private bool chase = false;
+    
+    [SerializeField] public GameObject enablePortal;
 
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _enemyAI = GetComponent<EnemyAI>();
+        _enemyAI = GetComponent<IokoAI>();
         _iokoAttack = GetComponent<IokoAttack>();
         
         _currentHealth = maxHealth;
@@ -76,6 +78,7 @@ public class BossHealthIoko : MonoBehaviour
     private void Die()
     {
         healthBar.SetActive(false);
+        enablePortal.SetActive(true);
         
         _enemyAI.enabled = false;
         _iokoAttack.enabled = false;

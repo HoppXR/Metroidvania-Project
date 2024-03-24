@@ -20,6 +20,7 @@ public class LatismaAI : MonoBehaviour
     private Seeker seeker;
     public Rigidbody2D rb;
     private PlayerHealth _playerHealth;
+    public PirateAttacks pirateAttacks;
     private bool isAttacking = false;
     private bool colliderActivated = false;
     [SerializeField] private float attackDelay = 2f;
@@ -38,6 +39,7 @@ public class LatismaAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        pirateAttacks = GetComponent<PirateAttacks>();
         player = GameObject.FindWithTag("Player")?.transform;
         
         if (player == null)
@@ -132,14 +134,14 @@ public class LatismaAI : MonoBehaviour
     {
         canMove = false;
         isAttacking = true;
-
+        StartCoroutine(pirateAttacks.SpinAttackCoroutine(gameObject));
         
         StartCoroutine(DeactivateAttack());
     }
 
     private IEnumerator DeactivateAttack()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(2f);
         isAttacking = false;
     }
     

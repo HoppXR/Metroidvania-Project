@@ -28,6 +28,7 @@ public class AvesAI : MonoBehaviour
     [SerializeField] private float attackRange = 1.5f;
     [SerializeField] int damage = 10;
     private NPC _npc;
+    public AvesAttack avesAttack;
 
     private void Awake()
     {
@@ -38,6 +39,7 @@ public class AvesAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        avesAttack = GetComponent<AvesAttack>();
         player = GameObject.FindWithTag("Player")?.transform;
         
         if (player == null)
@@ -132,7 +134,7 @@ public class AvesAI : MonoBehaviour
     {
         canMove = false;
         isAttacking = true;
-
+        StartCoroutine(avesAttack.ChargeDash());
         
         StartCoroutine(DeactivateAttack());
     }

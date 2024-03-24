@@ -82,7 +82,7 @@ public class PirateAttacks : MonoBehaviour
     }
 
 
-    IEnumerator SpinAttackCoroutine(GameObject parent)
+    public IEnumerator SpinAttackCoroutine(GameObject parent)
     {
         GameObject spinAttack = Instantiate(SpinAttackIndicators, boss.position, Quaternion.identity);
         spinAttack.transform.parent = parent.transform;

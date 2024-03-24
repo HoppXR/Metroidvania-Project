@@ -6702,8 +6702,6 @@ MonoBehaviour:
   attackHitbox: {fileID: 331177157}
   bigHitBoxAttackIndicator: {fileID: 1615244091796044760, guid: 44db575cb98ca9f40bc9c46ab97b6db1, type: 3}
   bigHitBoxAttackHitbox: {fileID: 1773325412}
-  stompAttackIndicator: {fileID: 0}
-  stompAttackHitbox: {fileID: 0}
   boss: {fileID: 1656782004}
   rb: {fileID: 1656782001}
   swordProjectile: {fileID: 7584177001108690506, guid: 9bde8f0178c465948bf1861c1e593d8d, type: 3}
@@ -6712,6 +6710,8 @@ MonoBehaviour:
   lungeSpeed: 40
   dashDuration: 0.5
   dashSpeed: 50
+  smallDashDuration: 0
+  smallDashSpeed: 0
   swordProjectileSpeed: 15
 --- !u!50 &1656782001
 Rigidbody2D:
@@ -7819,13 +7819,16 @@ GameObject:
   - component: {fileID: 1808666359}
   - component: {fileID: 1808666358}
   - component: {fileID: 1808666357}
+  - component: {fileID: 1808666363}
+  - component: {fileID: 1808666362}
+  - component: {fileID: 1808666364}
   m_Layer: 0
   m_Name: Ioko
   m_TagString: Boss2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1808666357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7992,6 +7995,102 @@ Transform:
   - {fileID: 825241237}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1808666362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808666356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cf0e394e84c7d4d82f77c48686a000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canMove: 0
+  detectionCollider: {fileID: 1808666364}
+  attackHitbox: {fileID: 800976949}
+  textCollider: {fileID: 0}
+  speed: 1000
+  nextWaypointDistance: 1
+  rb: {fileID: 0}
+  attackDelay: 2
+  attackRange: 1.5
+  damage: 10
+--- !u!114 &1808666363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808666356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!61 &1808666364
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808666356}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.10850787, y: -0.09181428}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.9547544, y: 2.3187885}
+  m_EdgeRadius: 0
 --- !u!1 &1814273678
 GameObject:
   m_ObjectHideFlags: 0

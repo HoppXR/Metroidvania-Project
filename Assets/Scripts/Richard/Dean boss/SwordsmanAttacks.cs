@@ -42,7 +42,7 @@ public class SwordsmanAttacks : MonoBehaviour
         {
             yield return new WaitForSeconds(1.2f);
 
-            int randomNumber = Random.Range(1, 3);
+            int randomNumber = Random.Range(1, 4);
 
             if (randomNumber == 1)
             {
@@ -57,6 +57,11 @@ public class SwordsmanAttacks : MonoBehaviour
             else if (randomNumber == 3)
             {
                 StartCoroutine(DoubleSlash());
+                yield return new WaitForSeconds(1f);
+            }
+            else if (randomNumber == 4)
+            {
+                StartCoroutine(TripleDashAttack(gameObject));
                 yield return new WaitForSeconds(1f);
             }
         }
@@ -81,11 +86,11 @@ public class SwordsmanAttacks : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.U))
         {
-            StartCoroutine(StompAttack(gameObject));
+            StartCoroutine(StompAttack());
         }
     }
 
-    IEnumerator DoubleSlash() //lunge forward a bit and attack x2
+    public IEnumerator DoubleSlash() //lunge forward a bit and attack x2
     {
         StartCoroutine(SmallLunge());
         yield return new WaitForSeconds(0.2f);
@@ -198,7 +203,7 @@ private IEnumerator SmallLunge()
         }
     }
     
-    IEnumerator StompAttack (GameObject parent)
+    IEnumerator StompAttack ()
     {
         bigHitBoxAttackIndicator.SetActive(true);
         yield return new WaitForSeconds(2f);
