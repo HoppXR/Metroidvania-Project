@@ -103,7 +103,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1
-        width: 1023
+        width: 1024
         height: 1023
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -122,9 +122,9 @@ TextureImporter:
       name: Ateralbus Portrait Animated_1
       rect:
         serializedVersion: 2
-        x: 1023
+        x: 1024
         y: 1
-        width: 1023
+        width: 1024
         height: 1023
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,9 +143,9 @@ TextureImporter:
       name: Ateralbus Portrait Animated_2
       rect:
         serializedVersion: 2
-        x: 2046
+        x: 2048
         y: 1
-        width: 1023
+        width: 1024
         height: 1023
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -164,9 +164,9 @@ TextureImporter:
       name: Ateralbus Portrait Animated_3
       rect:
         serializedVersion: 2
-        x: 3069
+        x: 3072
         y: 1
-        width: 1023
+        width: 1024
         height: 1023
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -185,9 +185,9 @@ TextureImporter:
       name: Ateralbus Portrait Animated_4
       rect:
         serializedVersion: 2
-        x: 4092
+        x: 4096
         y: 1
-        width: 1023
+        width: 1024
         height: 1023
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -206,9 +206,9 @@ TextureImporter:
       name: Ateralbus Portrait Animated_5
       rect:
         serializedVersion: 2
-        x: 5115
+        x: 5120
         y: 1
-        width: 1023
+        width: 1024
         height: 1023
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -227,9 +227,9 @@ TextureImporter:
       name: Ateralbus Portrait Animated_6
       rect:
         serializedVersion: 2
-        x: 6138
+        x: 6144
         y: 1
-        width: 1023
+        width: 1024
         height: 1023
       alignment: 0
       pivot: {x: 0, y: 0}
