@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     [SerializeField] private float dashCooldown;
     private bool _isDashing;
     private bool _canDash;
+
+    private Collider2D[] _colliders;
     
     private static readonly int Horizontal = Animator.StringToHash("Horizontal");
     private static readonly int Vertical = Animator.StringToHash("Vertical");
@@ -40,6 +42,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         Combat = FindFirstObjectByType<PlayerCombat>();
         
         _rb = GetComponent<Rigidbody2D>();
+        _colliders = GetComponents<Collider2D>();
         
         InputReader.Init(this);
         InputReader.SetPlayerControls();
@@ -67,7 +70,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("ApplyDamage"))
+        if (collision.collider.CompareTag("PlayerDamage"))
         {
             Vector2 collisionNormal = collision.contacts[0].normal;
             _forceToApply += collisionNormal * knockback;
@@ -110,7 +113,6 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     
     private IEnumerator Dash()
     {
-        Debug.Log("Dashing");
         _canDash = false;
         _isDashing = true;
 
@@ -122,7 +124,6 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
         yield return new WaitForSeconds(dashCooldown);
         _canDash = true;
-        Debug.Log("Not Dashing");
     }
     
     private void HandleAnimation()
@@ -154,6 +155,15 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     private void PlayerDeath()
     {
         CanMoveFalse();
+
+        foreach (Collider2D collider in _colliders)
+        {
+            if (collider != null)
+            {
+                collider.enabled = false;
+            }
+        }
+        
         animator.SetTrigger("Death");
         animator.SetBool("Dead", true);
     }
@@ -161,6 +171,15 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     private void PlayerRevive()
     {
         animator.SetBool("Dead", false);
+        
+        foreach (Collider2D collider in _colliders)
+        {
+            if (collider != null)
+            {
+                collider.enabled = true;
+            }
+        }
+        
         CanMoveTrue();
     }
 
