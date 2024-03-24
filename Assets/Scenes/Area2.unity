@@ -1344,6 +1344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1351,6 +1355,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -4401,6 +4409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -4408,6 +4420,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -7010,6 +7026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7017,6 +7037,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -9325,6 +9349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -9332,6 +9360,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -10456,6 +10488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -10463,6 +10499,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -17871,6 +17911,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -17878,6 +17922,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -18689,6 +18737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -18696,6 +18748,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -19072,6 +19128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -19079,6 +19139,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -22734,6 +22798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -22741,6 +22809,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -27196,6 +27268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -27203,6 +27279,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -29282,6 +29362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -29289,6 +29373,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -30196,6 +30284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -30203,6 +30295,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -31678,6 +31774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -31685,6 +31785,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -34433,6 +34537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -34440,6 +34548,10 @@ PrefabInstance:
     - target: {fileID: 5441800949512142598, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
