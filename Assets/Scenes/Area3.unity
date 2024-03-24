@@ -2869,7 +2869,6 @@ RectTransform:
   - {fileID: 729456678}
   - {fileID: 1396074108}
   - {fileID: 1315119019}
-  - {fileID: 1947643896}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4825,7 +4824,6 @@ Transform:
   m_Children:
   - {fileID: 2071343044}
   - {fileID: 1412100630}
-  - {fileID: 1676128557}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &645634939
@@ -15409,7 +15407,7 @@ GameObject:
   - component: {fileID: 1676128558}
   - component: {fileID: 1676128563}
   m_Layer: 0
-  m_Name: TempAterlbus
+  m_Name: Aterlbus
   m_TagString: Boss3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15423,9 +15421,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676128554}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bc3e8497c2064114bbf385b882d8902e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9763517463b554143b367c8189cec613, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -15483,7 +15481,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 13.22, y: 10.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -15498,14 +15496,14 @@ Transform:
   m_GameObject: {fileID: 1676128554}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.8700037, y: 19.180004, z: 2}
+  m_LocalPosition: {x: 50.190002, y: 90.06, z: 2}
   m_LocalScale: {x: 0.6101107, y: 0.6101107, z: 0.6101107}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 604758212}
   - {fileID: 475561294}
   - {fileID: 1582413792}
-  m_Father: {fileID: 636226790}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1676128558
 BoxCollider2D:
@@ -15543,10 +15541,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.04506421, y: -0.09408474}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0.01, w: 0}
-    pivot: {x: 0.2488534, y: 0.53165966}
-    oldSize: {x: 13.22, y: 10.82}
-    newSize: {x: 1, y: 1}
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 16, y: 16}
+    newSize: {x: 13.22, y: 10.82}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -19324,7 +19322,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 380628659}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1663856730752627439, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: healthBar
@@ -19344,11 +19342,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -960.5541
+      value: -0.55407715
       objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -539.73157
+      value: 0.26843262
       objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21758,3 +21756,5 @@ SceneRoots:
   - {fileID: 1856759357}
   - {fileID: 1136598831}
   - {fileID: 159332896}
+  - {fileID: 1676128557}
+  - {fileID: 2001732764}

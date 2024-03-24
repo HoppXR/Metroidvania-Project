@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: f7604ca0b7c2e534394d7ef5eac2c02b
+guid: ad0476cffb8084644bf418ce169735b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1352157076362738706
-    second: level_3-1.png2_0
+      213: 1715184330509551106
+    second: frame_04_delay-0.13s_0
+  - first:
+      213: 7222552676705356950
+    second: frame_04_delay-0.13s_1
+  - first:
+      213: 7286006669143291083
+    second: frame_04_delay-0.13s_2
+  - first:
+      213: -8029875156696715176
+    second: frame_04_delay-0.13s_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,10 +81,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
-    resizeAlgorithm: 1
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,22 +107,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level_3-1.png2_0
+      name: frame_04_delay-0.13s_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 18432
-        height: 22272
+        width: 1600
+        height: 1600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ee34ed69d4c2c3de0800000000000000
-      internalID: -1352157076362738706
+      spriteID: a65e2f81ca2ff35478029d4984733ddd
+      internalID: -1625480971
       vertices: []
       indices: 
       edges: []
@@ -121,7 +130,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3461805bcae03c24783a6d843b47d88a
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +138,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      level_3-1.png2_0: -1352157076362738706
+      frame_04_delay-0.13s_0: -1625480971
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

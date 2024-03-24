@@ -1,10 +1,61 @@
 fileFormatVersion: 2
-guid: f7604ca0b7c2e534394d7ef5eac2c02b
+guid: 762fc8ad698bcf54789989bfa313dd22
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1352157076362738706
-    second: level_3-1.png2_0
+      213: 8197555099646058381
+    second: frame_08_delay-0.13s_0
+  - first:
+      213: -7218143151220287325
+    second: frame_08_delay-0.13s_1
+  - first:
+      213: -8381086583366478210
+    second: frame_08_delay-0.13s_2
+  - first:
+      213: 1885595992373388555
+    second: frame_08_delay-0.13s_3
+  - first:
+      213: -7604037132664388513
+    second: frame_08_delay-0.13s_4
+  - first:
+      213: -1255856599169926907
+    second: frame_08_delay-0.13s_5
+  - first:
+      213: 2670179085573618410
+    second: frame_08_delay-0.13s_6
+  - first:
+      213: -8971204490710988786
+    second: frame_08_delay-0.13s_7
+  - first:
+      213: 2484759035569958076
+    second: frame_08_delay-0.13s_8
+  - first:
+      213: -6707547017790196020
+    second: frame_08_delay-0.13s_9
+  - first:
+      213: 1915803239146944604
+    second: frame_08_delay-0.13s_10
+  - first:
+      213: -9164536001385868589
+    second: frame_08_delay-0.13s_11
+  - first:
+      213: 695083947069875337
+    second: frame_08_delay-0.13s_12
+  - first:
+      213: 2440735387059467484
+    second: frame_08_delay-0.13s_13
+  - first:
+      213: -7148854904956211453
+    second: frame_08_delay-0.13s_14
+  - first:
+      213: 3170947982639082598
+    second: frame_08_delay-0.13s_15
+  - first:
+      213: 6453767038809375066
+    second: frame_08_delay-0.13s_16
+  - first:
+      213: 79856241323583000
+    second: frame_08_delay-0.13s_17
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +88,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,10 +123,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
-    resizeAlgorithm: 1
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,22 +149,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level_3-1.png2_0
+      name: frame_08_delay-0.13s_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 18432
-        height: 22272
+        width: 1600
+        height: 1600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ee34ed69d4c2c3de0800000000000000
-      internalID: -1352157076362738706
+      spriteID: 66b821fb23723f24aa950cc8ebdbf492
+      internalID: 1268263600
       vertices: []
       indices: 
       edges: []
@@ -121,7 +172,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e214c9f17b7ad0540b59c0e073d208b8
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +180,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      level_3-1.png2_0: -1352157076362738706
+      frame_08_delay-0.13s_0: 1268263600
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

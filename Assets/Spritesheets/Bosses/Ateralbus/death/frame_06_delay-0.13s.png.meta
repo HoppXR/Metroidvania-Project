@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: f7604ca0b7c2e534394d7ef5eac2c02b
+guid: 1a6289697cbd4a54597d6b5141d5d262
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1352157076362738706
-    second: level_3-1.png2_0
+      213: 772972323681678905
+    second: frame_06_delay-0.13s_0
+  - first:
+      213: 7833478035458299931
+    second: frame_06_delay-0.13s_1
+  - first:
+      213: 8308189147554388555
+    second: frame_06_delay-0.13s_2
+  - first:
+      213: -3932330332468778737
+    second: frame_06_delay-0.13s_3
+  - first:
+      213: 8523571448991327704
+    second: frame_06_delay-0.13s_4
+  - first:
+      213: 3788236828266777358
+    second: frame_06_delay-0.13s_5
+  - first:
+      213: -7416452097517130774
+    second: frame_06_delay-0.13s_6
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,10 +90,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
-    resizeAlgorithm: 1
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,22 +116,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level_3-1.png2_0
+      name: frame_06_delay-0.13s_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 18432
-        height: 22272
+        width: 1600
+        height: 1600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ee34ed69d4c2c3de0800000000000000
-      internalID: -1352157076362738706
+      spriteID: 7c907710ea19b3840a3c9b3bfb3e04a3
+      internalID: 951735906
       vertices: []
       indices: 
       edges: []
@@ -121,7 +139,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c0e490e9edd0dda46a0df361eb1d6605
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      level_3-1.png2_0: -1352157076362738706
+      frame_06_delay-0.13s_0: 951735906
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
