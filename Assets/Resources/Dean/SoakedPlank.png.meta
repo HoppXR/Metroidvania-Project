@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SoakedPlank_0: 1697424674710747964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

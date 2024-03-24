@@ -3277,6 +3277,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -4634,6 +4642,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1906124131663666238, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302629316599155696, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2302629316599155696, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -5819,6 +5835,14 @@ PrefabInstance:
     - target: {fileID: 4811753676255712319, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_Name
       value: NPC5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -8832,6 +8856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PirateCaptainNPC1
       objectReference: {fileID: 0}
+    - target: {fileID: 4710870399568833222, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7334225228085694216, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -81.52
@@ -8877,6 +8905,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1309207479}
     - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: attackRange
       value: 2.5
       objectReference: {fileID: 0}
@@ -8898,6 +8930,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -9379,6 +9419,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -9474,6 +9522,10 @@ PrefabInstance:
       propertyPath: 'dialogue.Array.data[1]'
       value: Wait a second..
       objectReference: {fileID: 0}
+    - target: {fileID: 513520259721699877, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1787406858089333213, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_Name
       value: OldManNPC4
@@ -9482,6 +9534,10 @@ PrefabInstance:
       propertyPath: TalkECanavs
       value: 
       objectReference: {fileID: 1349941992}
+    - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -10424,6 +10480,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -11529,6 +11593,10 @@ PrefabInstance:
     - target: {fileID: 4811753676255712319, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: m_Name
       value: NPC5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -14625,6 +14693,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -20575,6 +20651,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -23140,6 +23224,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -25777,6 +25869,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -26959,6 +27059,10 @@ PrefabInstance:
       propertyPath: 'dialogue.Array.data[2]'
       value: When I was alive..
       objectReference: {fileID: 0}
+    - target: {fileID: 513520259721699877, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1787406858089333213, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_Name
       value: OldManNPC4
@@ -26967,6 +27071,10 @@ PrefabInstance:
       propertyPath: TalkECanavs
       value: 
       objectReference: {fileID: 1107374860}
+    - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -27438,6 +27546,10 @@ PrefabInstance:
       propertyPath: 'dialogue.Array.data[1]'
       value: Are you an idiot?
       objectReference: {fileID: 0}
+    - target: {fileID: 513520259721699877, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1787406858089333213, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_Name
       value: OldManNPC4
@@ -27446,6 +27558,10 @@ PrefabInstance:
       propertyPath: TalkECanavs
       value: 
       objectReference: {fileID: 1751108249}
+    - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -28057,6 +28173,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -29775,6 +29899,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -33868,6 +34000,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -33946,6 +34086,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -34235,6 +34383,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -35172,6 +35328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PirateCaptainNPC1
       objectReference: {fileID: 0}
+    - target: {fileID: 4710870399568833222, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7334225228085694216, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.419373
@@ -35216,6 +35376,10 @@ PrefabInstance:
       propertyPath: TalkECanavs
       value: 
       objectReference: {fileID: 586143549}
+    - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -35497,6 +35661,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 890351981357569823, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890351981357569823, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
       propertyPath: attackRange
       value: 2.5
       objectReference: {fileID: 0}
@@ -35523,6 +35691,10 @@ PrefabInstance:
     - target: {fileID: 8156099195470480949, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
       propertyPath: m_Name
       value: NPC4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188410077526400922, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
+      propertyPath: damage
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37219,6 +37391,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1906124131663666238, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302629316599155696, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2302629316599155696, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -37329,6 +37509,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 890351981357569823, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890351981357569823, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
       propertyPath: attackRange
       value: 2.5
       objectReference: {fileID: 0}
@@ -37355,6 +37539,10 @@ PrefabInstance:
     - target: {fileID: 8156099195470480949, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
       propertyPath: m_Name
       value: NPC4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188410077526400922, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
+      propertyPath: damage
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37414,6 +37602,10 @@ PrefabInstance:
     - target: {fileID: 3306678237314911557, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: m_Name
       value: PirateCaptainNPC1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710870399568833222, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
+      propertyPath: damage
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4769174165110271811, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: m_Enabled
@@ -37557,6 +37749,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 214667197}
     m_Modifications:
+    - target: {fileID: 1566917895959228962, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -38720,6 +38920,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC5
       objectReference: {fileID: 0}
+    - target: {fileID: 5126452433063361331, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
       value: 2.5
@@ -38865,6 +39073,10 @@ PrefabInstance:
       propertyPath: 'dialogue.Array.data[2]'
       value: I'm old, it happens.
       objectReference: {fileID: 0}
+    - target: {fileID: 513520259721699877, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1787406858089333213, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: m_Name
       value: OldManNPC4
@@ -38873,6 +39085,10 @@ PrefabInstance:
       propertyPath: TalkECanavs
       value: 
       objectReference: {fileID: 1889966560}
+    - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackRange
       value: 2.5
