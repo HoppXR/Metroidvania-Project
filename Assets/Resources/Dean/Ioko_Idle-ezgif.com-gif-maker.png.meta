@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: c8278ea10d01f4e47ae274433b94eb57
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5586721822783416312
+    second: Ioko_Idle-ezgif.com-gif-maker_0
+  - first:
+      213: 4088495951653802819
+    second: Ioko_Idle-ezgif.com-gif-maker_1
+  - first:
+      213: -2200310147193336195
+    second: Ioko_Idle-ezgif.com-gif-maker_2
+  - first:
+      213: -6140050396505303058
+    second: Ioko_Idle-ezgif.com-gif-maker_3
+  - first:
+      213: 7330826482897895045
+    second: Ioko_Idle-ezgif.com-gif-maker_4
+  - first:
+      213: -4595868586397846530
+    second: Ioko_Idle-ezgif.com-gif-maker_5
+  - first:
+      213: 3086830405039360602
+    second: Ioko_Idle-ezgif.com-gif-maker_6
+  - first:
+      213: -1424663211284884836
+    second: Ioko_Idle-ezgif.com-gif-maker_7
+  - first:
+      213: 3902663893963547398
+    second: Ioko_Idle-ezgif.com-gif-maker_8
+  - first:
+      213: -6471807744714999183
+    second: Ioko_Idle-ezgif.com-gif-maker_9
+  - first:
+      213: 2114452944523147366
+    second: Ioko_Idle-ezgif.com-gif-maker_10
+  - first:
+      213: 7259626786688416779
+    second: Ioko_Idle-ezgif.com-gif-maker_11
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2319
+        width: 762
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80852161a1af772b0800000000000000
+      internalID: -5586721822783416312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_1
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2319
+        width: 832
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34392fff7614db830800000000000000
+      internalID: 4088495951653802819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_2
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 2319
+        width: 832
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e8ad0349de671e0800000000000000
+      internalID: -2200310147193336195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_3
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 2319
+        width: 762
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee71e4d12b82acaa0800000000000000
+      internalID: -6140050396505303058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_4
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 2319
+        width: 762
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58eb72788d35cb560800000000000000
+      internalID: 7330826482897895045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_5
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1159
+        width: 832
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef33161eed13830c0800000000000000
+      internalID: -4595868586397846530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_6
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1159
+        width: 832
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a0f3e06ef96da20800000000000000
+      internalID: 3086830405039360602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_7
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 1159
+        width: 762
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c921cc68b549a3ce0800000000000000
+      internalID: -1424663211284884836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_8
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 1159
+        width: 762
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603a075622c092630800000000000000
+      internalID: 3902663893963547398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_9
+      rect:
+        serializedVersion: 2
+        x: 3659
+        y: 1159
+        width: 832
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17af3a135258f26a0800000000000000
+      internalID: -6471807744714999183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_10
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 832
+        height: 991
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668b49c00cb085d10800000000000000
+      internalID: 2114452944523147366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Idle-ezgif.com-gif-maker_11
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 0
+        width: 762
+        height: 981
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c397e69106fb460800000000000000
+      internalID: 7259626786688416779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Ioko_Idle-ezgif.com-gif-maker_0: -5586721822783416312
+      Ioko_Idle-ezgif.com-gif-maker_1: 4088495951653802819
+      Ioko_Idle-ezgif.com-gif-maker_10: 2114452944523147366
+      Ioko_Idle-ezgif.com-gif-maker_11: 7259626786688416779
+      Ioko_Idle-ezgif.com-gif-maker_2: -2200310147193336195
+      Ioko_Idle-ezgif.com-gif-maker_3: -6140050396505303058
+      Ioko_Idle-ezgif.com-gif-maker_4: 7330826482897895045
+      Ioko_Idle-ezgif.com-gif-maker_5: -4595868586397846530
+      Ioko_Idle-ezgif.com-gif-maker_6: 3086830405039360602
+      Ioko_Idle-ezgif.com-gif-maker_7: -1424663211284884836
+      Ioko_Idle-ezgif.com-gif-maker_8: 3902663893963547398
+      Ioko_Idle-ezgif.com-gif-maker_9: -6471807744714999183
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
