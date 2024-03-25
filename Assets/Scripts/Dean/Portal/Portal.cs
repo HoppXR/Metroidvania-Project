@@ -10,14 +10,13 @@ public class Portal : MonoBehaviour
     public float interactRange = 1.5f; 
     public GameObject interactionUI;
     public LevelLoader levelLoader;
-    public float transitionTime = 1f;
+    private float _transitionTime = 1.417f;
 
     private bool playerInRange = false;
 
     private void Start()
     {
         interactionUI.SetActive(false); 
-        
     }
 
     private void Update()
@@ -45,13 +44,12 @@ public class Portal : MonoBehaviour
             interactionUI.SetActive(false); 
         }
     }
-
    
     IEnumerator EnterPortal()
     {
         levelLoader.transition.SetTrigger("Start");
 
-        yield return new WaitForSeconds(transitionTime);
+        yield return new WaitForSeconds(_transitionTime);
 
         SceneManager.LoadScene(sceneToLoad);
     }

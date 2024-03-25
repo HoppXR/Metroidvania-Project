@@ -286,7 +286,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8059224694992600379}
-  - component: {fileID: 4817798871355093282}
   - component: {fileID: 4778942412304763656}
   m_Layer: 0
   m_Name: LevelLoader
@@ -311,23 +310,6 @@ Transform:
   - {fileID: 1753496788907631299}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4817798871355093282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6088888506581351955}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90877264b2f81c24e9c31ad472396d78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: 
-  interactRange: 1.5
-  interactionUI: {fileID: 0}
-  levelLoader: {fileID: 0}
-  transitionTime: 1
 --- !u!114 &4778942412304763656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 4667188376248004373}
-  transitionTime: 10
+  transitionTime: 1.417
 --- !u!1 &7807303356514932897
 GameObject:
   m_ObjectHideFlags: 0
