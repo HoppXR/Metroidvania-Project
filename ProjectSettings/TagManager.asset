@@ -11,6 +11,7 @@ TagManager:
   - Boss3
   - MyWeapon
   - Boss2
+  - Boss4
   layers:
   - Default
   - TransparentFX

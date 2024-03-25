@@ -22,6 +22,8 @@ public class BossHealthIoko : MonoBehaviour
     private bool finalGambitExecuted = false;
 
     [SerializeField] public GameObject enablePortal;
+    [SerializeField] public GameObject deathDialogue;
+    [SerializeField] public GameObject bossBarrier;
 
     void Start()
     {
@@ -84,6 +86,8 @@ public class BossHealthIoko : MonoBehaviour
     {
         healthBar.SetActive(false);
         enablePortal.SetActive(true);
+        deathDialogue.SetActive(true);
+        bossBarrier.SetActive(false);
 
         _enemyAI.enabled = false;
         _iokoAttack.enabled = false;

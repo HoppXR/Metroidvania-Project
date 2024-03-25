@@ -24,7 +24,6 @@ public class LatismaAI : MonoBehaviour
     [SerializeField] private float attackDelay = 2f;
     private float lastEnterTime = 0f;
     private float triggerEnterTime = 0f;
-    [SerializeField] private float attackRange = 1.5f;
     [SerializeField] int damage = 10;
     private NPC _npc;
 
