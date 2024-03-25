@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -9,6 +10,10 @@ public class UIManager : MonoBehaviour
     private DataPersistenceManager _saveData;
     
     public GameObject deathScreenCanvas;
+    
+    [Header("First Selected")]
+    [SerializeField] private GameObject retry;
+    [SerializeField] private GameObject mainMenu;
 
     private void Start()
     {
@@ -19,12 +24,16 @@ public class UIManager : MonoBehaviour
     
     public void MainMenu()
     {
+        EventSystem.current.SetSelectedGameObject(null);
+        
         SceneManager.LoadScene("MainMenu");
     }
     
     public void EnableGameOverMenu()
     {
         deathScreenCanvas.SetActive(true);
+        
+        EventSystem.current.SetSelectedGameObject(retry);
     }
 
     public void RetryLevel()
@@ -34,6 +43,8 @@ public class UIManager : MonoBehaviour
         _saveData.LoadGame();
         
         deathScreenCanvas.SetActive(false);
+        
+        EventSystem.current.SetSelectedGameObject(null);
     }
     
     private void OnEnable()
