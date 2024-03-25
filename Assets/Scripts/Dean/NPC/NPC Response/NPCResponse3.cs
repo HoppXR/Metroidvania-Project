@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class NPCResponse3 : MonoBehaviour
 {
     [SerializeField] private bool stopMovement;
+    [SerializeField] private bool destroyAfterDialogue; 
 
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -70,6 +71,10 @@ public class NPCResponse3 : MonoBehaviour
             if (PlayerResponse4 != null && PlayerResponse4.gameObject.activeInHierarchy && PlayerResponse4.enabled)
             {
                 PlayerResponse4.StartResponse();
+            }
+            if (destroyAfterDialogue)
+            {
+                Destroy(gameObject); 
             }
         }
     }

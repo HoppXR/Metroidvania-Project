@@ -1423,12 +1423,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopMovement: 1
+  destroyAfterDialogue: 1
   dialoguePanel: {fileID: 2011209399}
   dialogueText: {fileID: 1351292514}
   dialogue:
   - 'HAHAHA! '
   - Fine then.
   - Are you ready for it?
+  - HEEHEEHEEHAAHAA!!
   contButtonAnimator: {fileID: 205323507}
   wordSpeed: 0.03
   typingSound: {fileID: 99295241}
@@ -1492,11 +1494,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopMovement: 1
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
+  dialoguePanel: {fileID: 414273119}
+  dialogueText: {fileID: 31409345}
   dialogue:
   - Like I said, I don't work for YOU.
-  contButtonAnimator: {fileID: 0}
+  contButtonAnimator: {fileID: 229202295}
   wordSpeed: 0.03
   typingSound: {fileID: 99295241}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
@@ -11432,7 +11434,7 @@ Transform:
   m_GameObject: {fileID: 1347765613}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.97, y: -18.92, z: -0.1577387}
+  m_LocalPosition: {x: 1.97, y: -21.8, z: -0.1577387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
