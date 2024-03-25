@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class DoorScript : MonoBehaviour
@@ -30,7 +31,7 @@ public class DoorScript : MonoBehaviour
     {
         if (playerDetected && _canTransition)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)
             {
                 StartCoroutine(Transition());
             }
