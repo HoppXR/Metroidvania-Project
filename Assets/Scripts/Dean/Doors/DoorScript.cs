@@ -9,22 +9,26 @@ public class DoorScript : MonoBehaviour
     [SerializeField] GameObject keyTxt;
     [SerializeField] Image fadeImage;
     private float fadeDuration = 1.0f;
-    private float teleportDelay = 1.5f;
+    private float teleportDelay = 1.0f;
 
     bool playerDetected;
     GameObject playerGO;
+
+    private bool _canTransition;
 
     // Start is called before the first frame update
     void Start()
     {
         playerDetected = false;
         fadeImage.gameObject.SetActive(false);
+
+        _canTransition = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerDetected)
+        if (playerDetected && _canTransition)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -35,6 +39,8 @@ public class DoorScript : MonoBehaviour
 
     IEnumerator Transition()
     {
+        _canTransition = false;
+        
         fadeImage.gameObject.SetActive(true);
         fadeImage.color = new Color(0, 0, 0, 0); // Start with transparent
 
@@ -64,6 +70,8 @@ public class DoorScript : MonoBehaviour
         }
 
         fadeImage.gameObject.SetActive(false);
+
+        _canTransition = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
