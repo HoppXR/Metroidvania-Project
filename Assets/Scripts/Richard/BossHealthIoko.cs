@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BossHealthIoko : MonoBehaviour
 {
+    private Animator _animator;
     private Rigidbody2D _rb;
     private IokoAI _enemyAI;
     private IokoAttack _iokoAttack;
@@ -27,6 +28,7 @@ public class BossHealthIoko : MonoBehaviour
 
     void Start()
     {
+        _animator = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         _enemyAI = GetComponent<IokoAI>();
         _iokoAttack = GetComponent<IokoAttack>();
@@ -39,6 +41,19 @@ public class BossHealthIoko : MonoBehaviour
         if (healthSlider.value != easeHealthSlider.value)
         {
             easeHealthSlider.value = Mathf.Lerp(easeHealthSlider.value, _currentHealth, lerpSpeed);
+        }
+        
+        HandleAnimation();
+    }
+    
+    private void HandleAnimation()
+    {
+        _animator.SetFloat("Horizontal", _rb.velocity.x);
+        _animator.SetFloat("Speed", _rb.velocity.sqrMagnitude);
+        
+        if (_rb.velocity.x >= 1 || _rb.velocity.x >= -1 || _rb.velocity.y >= 1 || _rb.velocity.y >= -1)
+        {
+            _animator.SetFloat("LastHorizontal", _rb.velocity.x);
         }
     }
 
@@ -66,8 +81,6 @@ public class BossHealthIoko : MonoBehaviour
 
         // Updates Health bar UI
         healthSlider.value = _currentHealth;
-
-        // TODO: Play hurt animation
 
         Instantiate(blood, transform.position, Quaternion.identity);
 

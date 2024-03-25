@@ -56,7 +56,6 @@ public class BossHealthLastima : MonoBehaviour
         if (_rb.velocity.x >= 1 || _rb.velocity.x >= -1 || _rb.velocity.y >= 1 || _rb.velocity.y >= -1)
         {
             _animator.SetFloat("LastHorizontal", _rb.velocity.x);
-            _animator.SetFloat("LastVertical", _rb.velocity.y);
         }
     }
 
