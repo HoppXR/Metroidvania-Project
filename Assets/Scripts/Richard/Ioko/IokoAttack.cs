@@ -121,7 +121,7 @@ public class IokoAttack : MonoBehaviour
         yield return new WaitForSeconds(1f);
     }
     
-    void FinalGambit()
+    public void FinalGambit()
     {
         boss.position = bossTeleportLocation;
         if (rb != null)

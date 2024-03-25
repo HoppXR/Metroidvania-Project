@@ -8,7 +8,7 @@ public class BossHealthIoko : MonoBehaviour
     private Rigidbody2D _rb;
     private IokoAI _enemyAI;
     private IokoAttack _iokoAttack;
-    
+
     private float _currentHealth;
     [SerializeField] private float maxHealth;
     [SerializeField] private GameObject blood;
@@ -19,7 +19,8 @@ public class BossHealthIoko : MonoBehaviour
     private float lerpSpeed = 0.05f;
 
     private bool chase = false;
-    
+    private bool finalGambitExecuted = false;
+
     [SerializeField] public GameObject enablePortal;
 
     void Start()
@@ -27,10 +28,10 @@ public class BossHealthIoko : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _enemyAI = GetComponent<IokoAI>();
         _iokoAttack = GetComponent<IokoAttack>();
-        
+
         _currentHealth = maxHealth;
     }
-    
+
     private void Update()
     {
         if (healthSlider.value != easeHealthSlider.value)
@@ -42,7 +43,7 @@ public class BossHealthIoko : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthBar.SetActive(true);
-        
+
         if (!chase)
         {
             _enemyAI.enabled = true;
@@ -50,9 +51,8 @@ public class BossHealthIoko : MonoBehaviour
             _enemyAI.canMove = true;
             _iokoAttack.enabled = true;
             chase = true;
-            
         }
-        
+
         if (_currentHealth >= damage)
         {
             _currentHealth -= damage;
@@ -64,14 +64,19 @@ public class BossHealthIoko : MonoBehaviour
 
         // Updates Health bar UI
         healthSlider.value = _currentHealth;
-        
+
         // TODO: Play hurt animation
-        
+
         Instantiate(blood, transform.position, Quaternion.identity);
 
         if (_currentHealth <= 0)
         {
             Die();
+        }
+        else if (_currentHealth <= 25 && !finalGambitExecuted)
+        {
+            _iokoAttack.FinalGambit();
+            finalGambitExecuted = true;
         }
     }
 
@@ -79,17 +84,17 @@ public class BossHealthIoko : MonoBehaviour
     {
         healthBar.SetActive(false);
         enablePortal.SetActive(true);
-        
+
         _enemyAI.enabled = false;
         _iokoAttack.enabled = false;
         Destroy(gameObject);
 
         // Play die animation
-    
+
         Collider2D collider = GetComponent<Collider2D>();
         if (collider != null)
             collider.enabled = false;
-        
+
         enabled = false;
     }
 }

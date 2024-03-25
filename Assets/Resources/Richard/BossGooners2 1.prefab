@@ -327,7 +327,7 @@ MonoBehaviour:
   speed: 700
   nextWaypointDistance: 1.7
   rb: {fileID: 703237865565111549}
-  attackDelay: 2
+  attackDelay: 1
   attackRange: 1
   damage: 10
 --- !u!50 &703237865565111549

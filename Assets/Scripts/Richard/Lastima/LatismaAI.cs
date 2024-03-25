@@ -8,8 +8,6 @@ public class LatismaAI : MonoBehaviour
     [HideInInspector] public bool canMove;
     
     public BoxCollider2D detectionCollider;
-    public GameObject attackHitbox;
-    public CircleCollider2D textCollider;
     private Transform player;
     public float speed = 1000f;
     public float nextWaypointDistance = 1f;
@@ -47,7 +45,7 @@ public class LatismaAI : MonoBehaviour
             return;
         }
 
-        if (detectionCollider == null || attackHitbox == null)
+        if (detectionCollider == null)
         {
             return;
         }
@@ -150,11 +148,6 @@ public class LatismaAI : MonoBehaviour
         canMove = true;
         
         detectionCollider.enabled = true;
-
-        if (textCollider != null)
-        {
-            textCollider.enabled = false;
-        }
 
         if (_npc != null)
         {
