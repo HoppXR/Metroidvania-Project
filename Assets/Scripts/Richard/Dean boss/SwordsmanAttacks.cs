@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SwordsmanAttacks : MonoBehaviour
 {
+    private Animator _animator;
+    
     public GameObject attackHitbox;
     public GameObject bigHitBoxAttackIndicator;
     public GameObject bigHitBoxAttackHitbox;
-    
-
 
     public Transform boss;
     private Transform player;
@@ -22,8 +22,6 @@ public class SwordsmanAttacks : MonoBehaviour
     [SerializeField] private float dashSpeed;
     [SerializeField] private float smallDashDuration;
     [SerializeField] private float smallDashSpeed;
-
-
     [SerializeField] private float swordProjectileSpeed;
 
 
@@ -31,6 +29,7 @@ public class SwordsmanAttacks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
         StartCoroutine(RandomAttackRoutine());
@@ -38,7 +37,7 @@ public class SwordsmanAttacks : MonoBehaviour
     
     private IEnumerator RandomAttackRoutine()
     {
-        while (true)
+        while (!BossHealthATERALBUS.isDead)
         {
             yield return new WaitForSeconds(1.2f);
 
@@ -87,6 +86,9 @@ public class SwordsmanAttacks : MonoBehaviour
 
     public IEnumerator DoubleSlash() //lunge forward a bit and attack x2
     {
+        if (BossHealthATERALBUS.isDead)
+            yield return null;
+        
         StartCoroutine(SmallLunge());
         yield return new WaitForSeconds(0.2f);
         Attacking();
@@ -98,6 +100,9 @@ public class SwordsmanAttacks : MonoBehaviour
 
     IEnumerator SlashThenRanged() // Slash then throw (sword projectile x2)
     {
+        if (BossHealthATERALBUS.isDead)
+            yield return null;
+        
         Attacking();
         yield return new WaitForSeconds(0.5f);
         ShootSword();
@@ -109,6 +114,9 @@ public class SwordsmanAttacks : MonoBehaviour
 
     IEnumerator TripleDashAttack(GameObject parent) //Dashes like eye of chthulu and release a attack at the end x3
     {
+        if (BossHealthATERALBUS.isDead)
+            yield return null;
+        
         StartCoroutine(Dash());
         yield return new WaitForSeconds(0.2f);
         bigHitBoxAttackIndicator.SetActive(true);
@@ -140,6 +148,9 @@ public class SwordsmanAttacks : MonoBehaviour
 
 private IEnumerator SmallLunge()
     {
+        if (BossHealthATERALBUS.isDead)
+            yield return null;
+        
         if (player != null)
         {
             Vector2 directionToPlayer = (player.position - transform.position).normalized;
@@ -154,6 +165,9 @@ private IEnumerator SmallLunge()
 
     private IEnumerator Dash()
     {
+        if (BossHealthATERALBUS.isDead)
+            yield return null;
+        
         if (player != null)
         {
             Vector2 directionToPlayer = (player.position - transform.position).normalized;
@@ -167,6 +181,9 @@ private IEnumerator SmallLunge()
     }
     private IEnumerator SmallDash()
     {
+        if (BossHealthATERALBUS.isDead)
+            yield return null;
+        
         if (player != null)
         {
             Vector2 directionToPlayer = (player.position - transform.position).normalized;
@@ -184,6 +201,9 @@ private IEnumerator SmallLunge()
 
     public void ShootSword()
     {
+        if (BossHealthATERALBUS.isDead)
+            return;
+        
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         if (player != null)
@@ -200,6 +220,9 @@ private IEnumerator SmallLunge()
     
     IEnumerator StompAttack ()
     {
+        if (BossHealthATERALBUS.isDead)
+            yield return null;
+        
         bigHitBoxAttackIndicator.SetActive(true);
         yield return new WaitForSeconds(2f);
         bigHitBoxAttackIndicator.SetActive(false);
@@ -210,6 +233,11 @@ private IEnumerator SmallLunge()
 
     void Attacking()
     {
+        if (BossHealthATERALBUS.isDead)
+            return;
+        
+        _animator.SetTrigger("Attack");
+        
         attackHitbox.SetActive(true);
         if (player != null)
         {
@@ -228,6 +256,11 @@ private IEnumerator SmallLunge()
 
     void BigHitBoxAttack()
     {
+        if (BossHealthATERALBUS.isDead)
+            return;
+        
+        _animator.SetTrigger("Attack");
+        
         bigHitBoxAttackHitbox.SetActive(true);
         StartCoroutine(DeactivateBigHitBoxAttack());
     }

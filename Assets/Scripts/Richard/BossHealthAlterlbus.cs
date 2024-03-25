@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BossHealthATERALBUS : MonoBehaviour
 {
+    private Animator _animator;
     private Rigidbody2D _rb;
     private EnemyAIATERALBUS _ATERALBUSAI;
     private SwordsmanAttacks _swordsManAttacks;
@@ -21,13 +22,18 @@ public class BossHealthATERALBUS : MonoBehaviour
 
     private bool chase = false;
 
+    public static bool isDead;
+
     [SerializeField] public GameObject enablePortal;
 
     void Start()
     {
+        _animator = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         _ATERALBUSAI = GetComponent<EnemyAIATERALBUS>();
         _swordsManAttacks = GetComponent<SwordsmanAttacks>();
+
+        isDead = false;
         _currentHealth = maxHealth;
     }
     
@@ -36,6 +42,21 @@ public class BossHealthATERALBUS : MonoBehaviour
         if (healthSlider.value != easeHealthSlider.value)
         {
             easeHealthSlider.value = Mathf.Lerp(easeHealthSlider.value, _currentHealth, lerpSpeed);
+        }
+        
+        HandleAnimation();
+    }
+    
+    private void HandleAnimation()
+    {
+        _animator.SetFloat("Horizontal", _rb.velocity.x);
+        _animator.SetFloat("Vertical", _rb.velocity.y);
+        _animator.SetFloat("Speed", _rb.velocity.sqrMagnitude);
+        
+        if (_rb.velocity.x >= 1 || _rb.velocity.x >= -1 || _rb.velocity.y >= 1 || _rb.velocity.y >= -1)
+        {
+            _animator.SetFloat("LastHorizontal", _rb.velocity.x);
+            _animator.SetFloat("LastVertical", _rb.velocity.y);
         }
     }
 
@@ -80,10 +101,13 @@ public class BossHealthATERALBUS : MonoBehaviour
         enablePortal.SetActive(true);
         _ATERALBUSAI.enabled = false;
         _swordsManAttacks.enabled = false;
-        Destroy(gameObject);
 
-        // Play die animation
+        _animator.SetTrigger("Death");
+        
+        isDead = true;
     
+        Destroy(gameObject, 3f);
+        
         Collider2D collider = GetComponent<Collider2D>();
         if (collider != null)
             collider.enabled = false;
