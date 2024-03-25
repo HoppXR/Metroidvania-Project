@@ -33,7 +33,7 @@ public class PirateAttacks : MonoBehaviour
     }
     private IEnumerator RandomAttackRoutine()
     {
-        while (true)
+        while (!BossHealthLastima.isDead)
         {
             yield return new WaitForSeconds(7f);
 
@@ -59,6 +59,9 @@ public class PirateAttacks : MonoBehaviour
     
     void SpawnSummonShip()
     {
+        if (BossHealthLastima.isDead)
+            return;
+        
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         Vector2 spawnPosition = new Vector2(Random.Range(-30, 30), 193);
@@ -93,6 +96,9 @@ public class PirateAttacks : MonoBehaviour
     
     void GoonsAttack()
     {
+        if (BossHealthLastima.isDead)
+            return;
+        
         boss.position = teleportDestination;
         
         Rigidbody2D bossRb = boss.GetComponent<Rigidbody2D>();

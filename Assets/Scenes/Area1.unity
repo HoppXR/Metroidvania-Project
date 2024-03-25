@@ -21218,7 +21218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1215755343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21257,7 +21257,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 17.25, y: 26.9375}
+    oldSize: {x: 38.125, y: 38.125}
     newSize: {x: 5.3199997, y: 11.221777}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -21389,7 +21389,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 17.25, y: 26.9375}
+    oldSize: {x: 38.125, y: 38.125}
     newSize: {x: 5.3199997, y: 11.221777}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -21526,7 +21526,6 @@ MonoBehaviour:
   rb: {fileID: 1215755350}
   pirateAttacks: {fileID: 1215755347}
   attackDelay: 5
-  attackRange: 1.5
   damage: 10
 --- !u!1 &1230143863
 GameObject:
@@ -31904,7 +31903,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

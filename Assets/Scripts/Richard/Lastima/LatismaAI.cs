@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -66,7 +67,7 @@ public class LatismaAI : MonoBehaviour
             currentWaypoint = 0;
         }
     }
-    
+
     void FixedUpdate()
     {
         if (path == null)
