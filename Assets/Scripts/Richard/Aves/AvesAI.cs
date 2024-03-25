@@ -8,8 +8,6 @@ public class AvesAI : MonoBehaviour
     [HideInInspector] public bool canMove;
     
     public BoxCollider2D detectionCollider;
-    public GameObject attackHitbox;
-    public CircleCollider2D textCollider;
     private Transform player;
     public float speed = 1000f;
     public float nextWaypointDistance = 1f;
@@ -25,8 +23,6 @@ public class AvesAI : MonoBehaviour
     [SerializeField] private float attackDelay = 2f;
     private float lastEnterTime = 0f;
     private float triggerEnterTime = 0f;
-    [SerializeField] private float attackRange = 1.5f;
-    [SerializeField] int damage = 10;
     private NPC _npc;
     public AvesAttack avesAttack;
 
@@ -47,7 +43,7 @@ public class AvesAI : MonoBehaviour
             return;
         }
 
-        if (detectionCollider == null || attackHitbox == null)
+        if (detectionCollider == null)
         {
             return;
         }
@@ -150,12 +146,7 @@ public class AvesAI : MonoBehaviour
         canMove = true;
         
         detectionCollider.enabled = true;
-
-        if (textCollider != null)
-        {
-            textCollider.enabled = false;
-        }
-
+        
         if (_npc != null)
         {
             _npc.enabled = false;
