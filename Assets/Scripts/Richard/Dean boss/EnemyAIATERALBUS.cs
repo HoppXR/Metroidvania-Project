@@ -19,14 +19,11 @@ public class EnemyAIATERALBUS : MonoBehaviour
 
     
     public BoxCollider2D detectionCollider;
-    public GameObject attackHitbox;
-    public CircleCollider2D textCollider;
     private bool isAttacking = false;
     private bool colliderActivated = false;
     [SerializeField] private float attackDelay = 2f;
     private float lastEnterTime = 0f;
     private float triggerEnterTime = 0f;
-    [SerializeField] private float attackRange = 1.5f;
     [SerializeField] int damage = 10;
     private NPC _npc;
     public SwordsmanAttacks swordsmanAttacks;
@@ -48,7 +45,7 @@ public class EnemyAIATERALBUS : MonoBehaviour
             return;
         }
 
-        if (detectionCollider == null || attackHitbox == null)
+        if (detectionCollider == null)
         {
             return;
         }
@@ -151,11 +148,6 @@ public class EnemyAIATERALBUS : MonoBehaviour
         canMove = true;
         
         detectionCollider.enabled = true;
-
-        if (textCollider != null)
-        {
-            textCollider.enabled = false;
-        }
 
         if (_npc != null)
         {
