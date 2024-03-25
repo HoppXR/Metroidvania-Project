@@ -9,8 +9,8 @@ public class PlayerCombat : MonoBehaviour
     public static PlayerCombat Instance;
     private PlayerMovement _player;
     
-    public bool isAttacking = false;
-    public bool canAttack;
+    [HideInInspector] public bool isAttacking = false;
+    [HideInInspector] public bool canAttack;
 
     private void Awake()
     {

@@ -8,8 +8,8 @@ public class DoorScript : MonoBehaviour
     [SerializeField] Transform posToGo;
     [SerializeField] GameObject keyTxt;
     [SerializeField] Image fadeImage;
-    [SerializeField] float fadeDuration = 1.0f;
-    [SerializeField] float teleportDelay = 2.0f;
+    private float fadeDuration = 1.0f;
+    private float teleportDelay = 1.5f;
 
     bool playerDetected;
     GameObject playerGO;
@@ -45,13 +45,15 @@ public class DoorScript : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-
-        yield return new WaitForSeconds(teleportDelay);
+        
+        fadeImage.color = new Color(0,0,0,255);
 
         Vector3 startPos = playerGO.transform.position;
         Vector3 targetPos = posToGo.position;
 
         playerGO.transform.position = targetPos;
+        
+        yield return new WaitForSeconds(teleportDelay);
 
         elapsedTime = 0;
         while (elapsedTime < fadeDuration)
