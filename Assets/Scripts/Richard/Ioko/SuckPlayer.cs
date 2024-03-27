@@ -49,7 +49,7 @@ public class SuckPlayer : MonoBehaviour
     {
         if (iokoAttack != null)
         {
-            iokoAttack.TeleportBossBack();
+            iokoAttack.BlackHoleDestroyed();
         }
         else
         {

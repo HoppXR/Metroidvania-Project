@@ -13944,7 +13944,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.47375298, y: 0}
+  m_Offset: {x: 0.47375488, y: 22.074783}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13954,7 +13954,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 70.69025, y: 1}
+  m_Size: {x: 70.69025, y: 42.41867}
   m_EdgeRadius: 0
 --- !u!1 &642714873
 GameObject:
@@ -18064,7 +18064,8 @@ MonoBehaviour:
   blackHole: {fileID: 8673082398525552735, guid: 2b431b2287a8036478548ba8622655d6, type: 3}
   blackHoleSpawnLocation: {x: 15.4, y: 305.9, z: 0}
   bossTeleportLocation: {x: -83.7, y: 201.1, z: 0}
-  bossReturnTeleportLocation: {x: -13.52, y: 293.47, z: 0}
+  bossReturnTeleportLocation: {x: -13.1, y: 288.8, z: 0}
+  blackHoleCount: 0
 --- !u!114 &836483242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21302,6 +21303,7 @@ MonoBehaviour:
   typingSound: {fileID: 1006164066}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
+  dialogueCollider: {fileID: 0}
   skipButton: {fileID: 0}
 --- !u!212 &1006164069
 SpriteRenderer:
@@ -31330,6 +31332,7 @@ MonoBehaviour:
   typingSound: {fileID: 1591825971}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
+  dialogueCollider: {fileID: 0}
   skipButton: {fileID: 0}
 --- !u!61 &1591825973
 BoxCollider2D:
@@ -36325,6 +36328,7 @@ MonoBehaviour:
   typingSound: {fileID: 1859912207}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
+  dialogueCollider: {fileID: 0}
   skipButton: {fileID: 0}
 --- !u!212 &1859912210
 SpriteRenderer:

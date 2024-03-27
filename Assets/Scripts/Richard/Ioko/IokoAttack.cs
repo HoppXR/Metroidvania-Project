@@ -21,7 +21,7 @@ public class IokoAttack : MonoBehaviour
     public Vector3 blackHoleSpawnLocation;
     public Vector3 bossTeleportLocation;
     public Vector3 bossReturnTeleportLocation;
-    private int blackHoleCount;
+    public int blackHoleCount;
     
     void Start()
     {
@@ -124,17 +124,29 @@ public class IokoAttack : MonoBehaviour
     public void FinalGambit()
     {
         boss.position = bossTeleportLocation;
-        if (rb != null)
-        {
-            
-        }
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         GameObject suck = Instantiate(blackHole, blackHoleSpawnLocation, Quaternion.identity);
         Destroy(suck, 10);
+        SuckPlayer BlackHole = suck.GetComponent<SuckPlayer>();
+        BlackHole.iokoAttack = this;
+        blackHoleCount++;
     }
 
-    public void TeleportBossBack()
+    public void CheckHoleState()
     {
-        Debug.Log("TP Back Called");
-        boss.position = bossReturnTeleportLocation;
+        if (boss != null && blackHoleCount <= 0)
+        {
+            if (rb != null)
+            { 
+                boss.position = bossReturnTeleportLocation;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            }
+        }
+    }
+
+    public void BlackHoleDestroyed()
+    {
+        blackHoleCount--;
+        CheckHoleState();
     }
 }

@@ -25415,7 +25415,7 @@ MonoBehaviour:
   - {fileID: 2114712292}
   - {fileID: 792652993}
   - {fileID: 1071927243}
-  teleportDestination: {x: -251.74, y: 17.66, z: 0}
+  teleportDestination: {x: -255.6, y: -16.8, z: 0}
   returnDestination: {x: -235.09, y: -7.42, z: 0}
   Gooners: {fileID: 3201583190578022258, guid: fc9d8b7ede248b848a3d058f5dc28f5b, type: 3}
   minX: -241.7

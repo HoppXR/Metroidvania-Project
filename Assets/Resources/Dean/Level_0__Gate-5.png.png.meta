@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Level_0__Gate-5.png_0: 2122613918625676347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

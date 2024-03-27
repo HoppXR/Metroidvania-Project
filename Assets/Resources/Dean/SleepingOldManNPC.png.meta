@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SleepingOldManNPC_0: -3712345976070343070
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
