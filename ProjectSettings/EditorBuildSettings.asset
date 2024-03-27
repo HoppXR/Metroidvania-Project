@@ -29,5 +29,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PortalRoom4.unity
     guid: cc8e09c0b62236e4cb887d976d1a98cf
+  - enabled: 1
+    path: Assets/Scenes/DMMS1.unity
+    guid: c3ea4bdac3b1fb7428385b85a4b1798d
+  - enabled: 1
+    path: Assets/Scenes/DMMS2.unity
+    guid: 24a66d04e3e561449820a96526c53054
+  - enabled: 1
+    path: Assets/Scenes/DMMS3.unity
+    guid: c00506e67e7ff83459814972cc58095c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
