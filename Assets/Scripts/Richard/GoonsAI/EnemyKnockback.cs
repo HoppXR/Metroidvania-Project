@@ -20,8 +20,7 @@ public class EnemyKnockback : MonoBehaviour
         {
             Vector2 difference = transform.position - other.transform.position;
             transform.position = new Vector2(transform.position.x + difference.x * _force * (Time.deltaTime * 0.5f), transform.position.y + difference.y * _force * (Time.deltaTime * 0.5f));
-
-            StartCoroutine(Knockback());
+            if (_enemy !=null) StartCoroutine(Knockback());
         }
     }
 
