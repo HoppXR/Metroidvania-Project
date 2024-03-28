@@ -25511,7 +25511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1211835611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27277,18 +27277,6 @@ PrefabInstance:
       value: 9.375
       objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1815
-      objectReference: {fileID: 0}
-    - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1815
-      objectReference: {fileID: 0}
-    - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1815
-      objectReference: {fileID: 0}
-    - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -27340,17 +27328,9 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 9.375
       objectReference: {fileID: 0}
-    - target: {fileID: 6507312719302657470, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8691196509243121146, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 898c8288f0d393a44a016fb5d8c824dd, type: 2}
     m_RemovedComponents:
     - {fileID: 0}
-    - {fileID: 148103565391138082, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
