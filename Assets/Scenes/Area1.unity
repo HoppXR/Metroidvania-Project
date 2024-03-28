@@ -5075,7 +5075,7 @@ Transform:
   m_GameObject: {fileID: 288598550}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.8009987, y: 157.71489, z: 0.0534}
+  m_LocalPosition: {x: 7.8009987, y: 157.71489, z: 10}
   m_LocalScale: {x: 0.75689024, y: 0.75689024, z: 0.75689024}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5292,11 +5292,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8732714820778687070, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
       propertyPath: 'dialogue.Array.data[0]'
-      value: Sometimes, I stare endless into the water.
+      value: Sometimes, I stare endlessly into the water.
       objectReference: {fileID: 0}
     - target: {fileID: 8732714820778687070, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
       propertyPath: 'dialogue.Array.data[1]'
-      value: I wonder, would life have been better if I was just dead?
+      value: I wonder, would life have been?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12606,8 +12606,8 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1015529709}
   dialogueText: {fileID: 826527451}
   dialogue:
-  - i can understand killing someone for a bounty.
-  - Can that organization put a worhwhile bounty on my head?
+  - I can understand killing someone for a bounty.
+  - Can that organization put a worthwhile bounty on my head?
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 0
   particleEffect: {fileID: 276194354013034377, guid: 99ddfd8bccaa4e34aa8173c722e18598, type: 3}
@@ -12754,8 +12754,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 572704344}
   dialogueText: {fileID: 254829628}
   dialogue:
-  - Step forward then.
-  - Will you prove worthy?
+  - Step forward then and prove worthy.
   contButtonAnimator: {fileID: 434539159}
   wordSpeed: 0.03
   typingSound: {fileID: 622577219}
@@ -17219,7 +17218,7 @@ Transform:
   m_GameObject: {fileID: 835933867}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.12, y: -12.56, z: 4}
+  m_LocalPosition: {x: 1.12, y: -12.56, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20964,7 +20963,6 @@ GameObject:
   - component: {fileID: 1027474708}
   - component: {fileID: 1027474710}
   - component: {fileID: 1027474709}
-  - component: {fileID: 1027474711}
   m_Layer: 6
   m_Name: Border (54)
   m_TagString: Untagged
@@ -21085,18 +21083,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1027474711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027474707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34ab54a30e603c46824cf2d58d941ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1034993087
 GameObject:
   m_ObjectHideFlags: 0
@@ -23777,7 +23763,7 @@ Transform:
   m_GameObject: {fileID: 1140538904}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -255.77275, y: -16.981014, z: -4}
+  m_LocalPosition: {x: -255.77275, y: -16.981014, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34124,7 +34110,6 @@ GameObject:
   - component: {fileID: 1673543283}
   - component: {fileID: 1673543285}
   - component: {fileID: 1673543284}
-  - component: {fileID: 1673543286}
   m_Layer: 6
   m_Name: Border (48)
   m_TagString: Untagged
@@ -34245,18 +34230,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1673543286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673543282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34ab54a30e603c46824cf2d58d941ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1675588518
 GameObject:
   m_ObjectHideFlags: 0
@@ -40545,7 +40518,7 @@ Transform:
   m_GameObject: {fileID: 2076731425}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.6537062, w: 0.75674844}
-  m_LocalPosition: {x: -30.44, y: 25.77, z: -4}
+  m_LocalPosition: {x: -29.279509, y: 27.53947, z: -4}
   m_LocalScale: {x: 0.99116004, y: 0.99116004, z: 0.99116}
   m_ConstrainProportionsScale: 0
   m_Children: []
