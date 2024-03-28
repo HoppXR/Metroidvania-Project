@@ -18169,7 +18169,7 @@ MonoBehaviour:
   rb: {fileID: 836483240}
   SpinAttackIndicators: {fileID: 6057701450251142935, guid: 340399f66959ef94c88e3fc0673b6d82, type: 3}
   spinAttackHitbox: {fileID: 109008257}
-  cardProjectile: {fileID: 8425810690259999285, guid: 248b7330beb98ad4b954a007656083fb, type: 3}
+  cardProjectile: {fileID: 7741730810567457097, guid: 2df76cb613d57d54d93232b7ca1cbf9b, type: 3}
   frontRNGIndicators: {fileID: 1279177969}
   frontRNGHitbox: {fileID: 673823995}
   blackHole: {fileID: 8673082398525552735, guid: 2b431b2287a8036478548ba8622655d6, type: 3}
