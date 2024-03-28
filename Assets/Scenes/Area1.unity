@@ -3530,7 +3530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -5232,7 +5232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302629316599155696, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2302629316599155696, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
       propertyPath: attackRange
@@ -6567,7 +6567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -10223,7 +10223,7 @@ PrefabInstance:
       objectReference: {fileID: 1309207479}
     - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: attackRange
@@ -10332,7 +10332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -11345,7 +11345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -11456,7 +11456,7 @@ PrefabInstance:
       objectReference: {fileID: 1349941992}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackRange
@@ -12180,7 +12180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -16455,7 +16455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -22888,7 +22888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -25825,7 +25825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f1ce57a014c6844a4c4c261f845658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 300
   blood: {fileID: 276194354013034377, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
   healthBar: {fileID: 696778920}
   healthSlider: {fileID: 696778919}
@@ -26264,7 +26264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -29842,7 +29842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -31040,7 +31040,7 @@ PrefabInstance:
       objectReference: {fileID: 1107374860}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackRange
@@ -31527,7 +31527,7 @@ PrefabInstance:
       objectReference: {fileID: 1751108249}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackRange
@@ -32015,7 +32015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -33739,7 +33739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -38195,7 +38195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -38281,7 +38281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -38494,7 +38494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -39662,7 +39662,7 @@ PrefabInstance:
       objectReference: {fileID: 586143549}
     - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8697789957720131456, guid: a5ad6da95b8f77446bb11aeadeb7d26b, type: 3}
       propertyPath: attackRange
@@ -39993,7 +39993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 890351981357569823, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 890351981357569823, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
       propertyPath: attackRange
@@ -41821,7 +41821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302629316599155696, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2302629316599155696, guid: cf0806ad0332fcf4584554fa57243a40, type: 3}
       propertyPath: attackRange
@@ -41934,7 +41934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 890351981357569823, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 890351981357569823, guid: 93e439a3485275c49ae6bad0463426e2, type: 3}
       propertyPath: attackRange
@@ -42157,7 +42157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2114500184086354125, guid: 6db17e60bb83776459e7a9225f36858a, type: 3}
       propertyPath: attackRange
@@ -42254,7 +42254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5525610529859921259, guid: a5a28455912f87c4e88e8938bdccd646, type: 3}
       propertyPath: attackRange
@@ -42347,7 +42347,7 @@ PrefabInstance:
       objectReference: {fileID: 1889966560}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackDelay
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5950717831624766394, guid: 3c12adaf7e2d4954a949a80615c78428, type: 3}
       propertyPath: attackRange
