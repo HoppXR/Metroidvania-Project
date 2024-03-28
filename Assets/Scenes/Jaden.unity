@@ -1341,6 +1341,14 @@ PrefabInstance:
       propertyPath: lungeForce
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 8691196509243121146, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8691196509243121146, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
