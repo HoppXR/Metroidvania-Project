@@ -1286,6 +1286,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397492857}
   m_CullTransparentMesh: 1
+--- !u!1001 &407047775
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -288503927478571320, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005845955652242712, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_Size.x
+      value: 8.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005845955652242712, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_Size.y
+      value: 8.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7449436154233447515, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.556488
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.625407
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610018613285915284, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634376816595917015, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_Name
+      value: Aves Asol passive
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634376816595917015, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
 --- !u!1 &423570860
 GameObject:
   m_ObjectHideFlags: 0
@@ -7073,7 +7154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f304bbfbc25bf4fa0025db726382a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
+  healthBarSlider: {fileID: 0}
+  healthBarColor: {fileID: 0}
 --- !u!114 &1685148164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7852,6 +7934,7 @@ MonoBehaviour:
   blackHoleSpawnLocation: {x: 10.7, y: -5.6, z: 0}
   bossTeleportLocation: {x: -26.7, y: 13.9, z: 0}
   bossReturnTeleportLocation: {x: -3.29, y: 0.22, z: 0}
+  blackHoleCount: 0
 --- !u!61 &1808666358
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8009,14 +8092,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 0
   detectionCollider: {fileID: 1808666364}
-  attackHitbox: {fileID: 800976949}
-  textCollider: {fileID: 0}
   speed: 1000
   nextWaypointDistance: 1
   rb: {fileID: 0}
   attackDelay: 2
-  attackRange: 1.5
-  damage: 10
+  avesAttack: {fileID: 0}
 --- !u!114 &1808666363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9756,3 +9836,4 @@ SceneRoots:
   - {fileID: 773487250}
   - {fileID: 278737737}
   - {fileID: 1808666361}
+  - {fileID: 407047775}

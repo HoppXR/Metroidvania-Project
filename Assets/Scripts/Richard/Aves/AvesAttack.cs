@@ -11,7 +11,6 @@ public class AvesAttack : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject pulsarObject1;
     public GameObject pulsarObject2;
-    public GameObject pulsarObject3;
     [SerializeField] private float spinActiveTime = 8f;
     
     public GameObject flameBreathIndicatorL;
@@ -134,7 +133,6 @@ public class AvesAttack : MonoBehaviour
     {
         pulsarObject1.SetActive(true);
         pulsarObject2.SetActive(true);
-        pulsarObject3.SetActive(true);
         
         Invoke("DisablePulsarAttack", spinActiveTime);
     }
@@ -143,7 +141,6 @@ public class AvesAttack : MonoBehaviour
     {
         pulsarObject1.SetActive(false);
         pulsarObject2.SetActive(false);
-        pulsarObject3.SetActive(false);
     }
     
     

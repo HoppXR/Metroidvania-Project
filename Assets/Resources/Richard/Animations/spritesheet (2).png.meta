@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: e46819579c4b655439ded4cd7c74ad64
+guid: d96c16ff07fa2184c9824aef972f21cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4796688461307999266
-    second: AvesMonsterIdleAnim-ezgif.com-gif-maker_0
+      213: 585489585357299884
+    second: spritesheet (2)_0
   - first:
-      213: 2941527550800860060
-    second: AvesMonsterIdleAnim-ezgif.com-gif-maker_1
+      213: 3213048799308102398
+    second: spritesheet (2)_1
   - first:
-      213: 6408938637564597182
-    second: AvesMonsterIdleAnim-ezgif.com-gif-maker_2
+      213: 4619062684799962818
+    second: spritesheet (2)_2
   - first:
-      213: 1215288875683935902
-    second: AvesMonsterIdleAnim-ezgif.com-gif-maker_3
+      213: -7543266853627613897
+    second: spritesheet (2)_3
   - first:
-      213: 7169985156590864776
-    second: AvesMonsterIdleAnim-ezgif.com-gif-maker_4
+      213: 7642487444960770648
+    second: spritesheet (2)_4
   - first:
-      213: -9024306087971657641
-    second: AvesMonsterIdleAnim-ezgif.com-gif-maker_5
+      213: -8314218504887557038
+    second: spritesheet (2)_5
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -87,10 +87,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AvesMonsterIdleAnim-ezgif.com-gif-maker_0
+      name: spritesheet (2)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1760
-        width: 1920
-        height: 1760
+        y: 802
+        width: 802
+        height: 802
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edb8585224dbe6db0800000000000000
-      internalID: -4796688461307999266
+      spriteID: ca0a9e20da3102800800000000000000
+      internalID: 585489585357299884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AvesMonsterIdleAnim-ezgif.com-gif-maker_1
+      name: spritesheet (2)_1
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 1760
-        width: 1920
-        height: 1760
+        x: 802
+        y: 802
+        width: 802
+        height: 802
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,83 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c93928af8b762d820800000000000000
-      internalID: 2941527550800860060
+      spriteID: efa31c80cda079c20800000000000000
+      internalID: 3213048799308102398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AvesMonsterIdleAnim-ezgif.com-gif-maker_2
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 1760
-        width: 1920
-        height: 1760
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eb3505f1cbf11f850800000000000000
-      internalID: 6408938637564597182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AvesMonsterIdleAnim-ezgif.com-gif-maker_3
-      rect:
-        serializedVersion: 2
-        x: 5760
-        y: 1760
-        width: 1920
-        height: 1760
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e96ff962bc29dd010800000000000000
-      internalID: 1215288875683935902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AvesMonsterIdleAnim-ezgif.com-gif-maker_4
-      rect:
-        serializedVersion: 2
-        x: 7680
-        y: 1760
-        width: 1920
-        height: 1760
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8890c6ff287e08360800000000000000
-      internalID: 7169985156590864776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AvesMonsterIdleAnim-ezgif.com-gif-maker_5
+      name: spritesheet (2)_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1760
+        width: 802
+        height: 802
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,8 +169,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 758ed020d6933c280800000000000000
-      internalID: -9024306087971657641
+      spriteID: 2ce83caf9053a1040800000000000000
+      internalID: 4619062684799962818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet (2)_3
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 0
+        width: 802
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d2c8733cee05790800000000000000
+      internalID: -7543266853627613897
       vertices: []
       indices: 
       edges: []
@@ -241,7 +199,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 665006f00cba7ed4a828f94f5af29754
+    spriteID: 0ead78b08b6de2a40928be99bf4d523d
     internalID: 0
     vertices: []
     indices: 
@@ -249,12 +207,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AvesMonsterIdleAnim-ezgif.com-gif-maker_0: -4796688461307999266
-      AvesMonsterIdleAnim-ezgif.com-gif-maker_1: 2941527550800860060
-      AvesMonsterIdleAnim-ezgif.com-gif-maker_2: 6408938637564597182
-      AvesMonsterIdleAnim-ezgif.com-gif-maker_3: 1215288875683935902
-      AvesMonsterIdleAnim-ezgif.com-gif-maker_4: 7169985156590864776
-      AvesMonsterIdleAnim-ezgif.com-gif-maker_5: -9024306087971657641
+      spritesheet (2)_0: 585489585357299884
+      spritesheet (2)_1: 3213048799308102398
+      spritesheet (2)_2: 4619062684799962818
+      spritesheet (2)_3: -7543266853627613897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

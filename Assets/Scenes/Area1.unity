@@ -25651,7 +25651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c61181efe9fe7e499026118df991ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GhostShip: {fileID: 960081051808529015, guid: 7420c744b87e0aa41a37935a512eff05, type: 3}
+  GhostShip: {fileID: 4111746110266905870, guid: 2841cf7065e848b49ab8b5c9a95833f1, type: 3}
   travelSpeed: 15
   boss: {fileID: 1215755353}
   SpinAttackIndicators: {fileID: 5081972645505437784, guid: e57844d7651c03243991c12f2754612b, type: 3}
