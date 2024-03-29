@@ -13018,6 +13018,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8610018613285915284, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8634376816595917015, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
       propertyPath: m_Name
       value: Aves Asol passive (2)
@@ -16971,6 +16975,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8610018613285915284, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8634376816595917015, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
       propertyPath: m_Name
       value: Aves Asol passive
@@ -18807,6 +18815,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8423600931999171719, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610018613285915284, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8634376816595917015, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
