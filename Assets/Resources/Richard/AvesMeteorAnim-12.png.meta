@@ -1,0 +1,544 @@
+fileFormatVersion: 2
+guid: 46e8a0de592fda64aaba37eb4916d1db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 765153300823454307
+    second: AvesMeteorAnim-12_0
+  - first:
+      213: 4580226027670970414
+    second: AvesMeteorAnim-12_1
+  - first:
+      213: 1774890575241671085
+    second: AvesMeteorAnim-12_2
+  - first:
+      213: 3523906318509834546
+    second: AvesMeteorAnim-12_3
+  - first:
+      213: -3123783513052654813
+    second: AvesMeteorAnim-12_4
+  - first:
+      213: -1975581549143941786
+    second: AvesMeteorAnim-12_5
+  - first:
+      213: -2642381809292789885
+    second: AvesMeteorAnim-12_6
+  - first:
+      213: -721337429321633205
+    second: AvesMeteorAnim-12_7
+  - first:
+      213: -217694533473737413
+    second: AvesMeteorAnim-12_8
+  - first:
+      213: 5621535478120130397
+    second: AvesMeteorAnim-12_9
+  - first:
+      213: -7293620689087627071
+    second: AvesMeteorAnim-12_10
+  - first:
+      213: -8004469069436399171
+    second: AvesMeteorAnim-12_11
+  - first:
+      213: 4395220572321174672
+    second: AvesMeteorAnim-12_12
+  - first:
+      213: -1524789276882077706
+    second: AvesMeteorAnim-12_13
+  - first:
+      213: 8892401357334197498
+    second: AvesMeteorAnim-12_14
+  - first:
+      213: -3618945088223936918
+    second: AvesMeteorAnim-12_15
+  - first:
+      213: 8381909072234976460
+    second: AvesMeteorAnim-12_16
+  - first:
+      213: 5093332665272608860
+    second: AvesMeteorAnim-12_17
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_0
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1079
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362bc468fde5e9a00800000000000000
+      internalID: 765153300823454307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_1
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 927
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20a35a1e4b309f30800000000000000
+      internalID: 4580226027670970414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_2
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 975
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1f77c039da1a810800000000000000
+      internalID: 1774890575241671085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_3
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 927
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2318880502e67e030800000000000000
+      internalID: 3523906318509834546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_4
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 375
+        width: 466
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3235645027716a4d0800000000000000
+      internalID: -3123783513052654813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_5
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 767
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d95725c035594e0800000000000000
+      internalID: -1975581549143941786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_6
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 767
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38736209ebf545bd0800000000000000
+      internalID: -2642381809292789885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_7
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 615
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42371a0e6b4df5f0800000000000000
+      internalID: -721337429321633205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 503
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35e0c6a9f79afcf0800000000000000
+      internalID: -217694533473737413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_9
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 455
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d572b91bbb4b30e40800000000000000
+      internalID: 5621535478120130397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_10
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 383
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c00e7460aad7ca90800000000000000
+      internalID: -7293620689087627071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_11
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 327
+        width: 50
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db154a47ac96ae090800000000000000
+      internalID: -8004469069436399171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_12
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 335
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09451bad2d5fefc30800000000000000
+      internalID: 4395220572321174672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_13
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 327
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f77e1a3b3cd6dae0800000000000000
+      internalID: -1524789276882077706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_14
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 263
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af43b18abe7286b70800000000000000
+      internalID: 8892401357334197498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_15
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 215
+        width: 50
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e74c2cd9ce6cdc0800000000000000
+      internalID: -3618945088223936918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_16
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 231
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4903654e5825470800000000000000
+      internalID: 8381909072234976460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-12_17
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 167
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58a77cc2172fa640800000000000000
+      internalID: 5093332665272608860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

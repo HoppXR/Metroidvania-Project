@@ -1,0 +1,592 @@
+fileFormatVersion: 2
+guid: 1b7e39987a48a374b8f95879b5652fcf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 137724119804669110
+    second: AvesMeteorAnim-9_0
+  - first:
+      213: 8317012160322210412
+    second: AvesMeteorAnim-9_1
+  - first:
+      213: -6406767041091051388
+    second: AvesMeteorAnim-9_2
+  - first:
+      213: 2176934436576100079
+    second: AvesMeteorAnim-9_3
+  - first:
+      213: 9073575551137427913
+    second: AvesMeteorAnim-9_4
+  - first:
+      213: 5593681104926712401
+    second: AvesMeteorAnim-9_5
+  - first:
+      213: 4943949244999237558
+    second: AvesMeteorAnim-9_6
+  - first:
+      213: 5206150964691281217
+    second: AvesMeteorAnim-9_7
+  - first:
+      213: 6718471205437766783
+    second: AvesMeteorAnim-9_8
+  - first:
+      213: -8980244024982673024
+    second: AvesMeteorAnim-9_9
+  - first:
+      213: -2007385177265094408
+    second: AvesMeteorAnim-9_10
+  - first:
+      213: 4837266275120277138
+    second: AvesMeteorAnim-9_11
+  - first:
+      213: 3042540176614271815
+    second: AvesMeteorAnim-9_12
+  - first:
+      213: 6701310065823278648
+    second: AvesMeteorAnim-9_13
+  - first:
+      213: -7343872253191152702
+    second: AvesMeteorAnim-9_14
+  - first:
+      213: 4987376492040699614
+    second: AvesMeteorAnim-9_15
+  - first:
+      213: -8288052623465157664
+    second: AvesMeteorAnim-9_16
+  - first:
+      213: -6501667668549052912
+    second: AvesMeteorAnim-9_17
+  - first:
+      213: 7915941025057951315
+    second: AvesMeteorAnim-9_18
+  - first:
+      213: 8681356305025231115
+    second: AvesMeteorAnim-9_19
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_0
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 1031
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bce5f57b5b49e100800000000000000
+      internalID: 137724119804669110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 983
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a0c909e76fb6370800000000000000
+      internalID: 8317012160322210412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_2
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 959
+        width: 74
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480661512579617a0800000000000000
+      internalID: -6406767041091051388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 951
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feefe6f0656063e10800000000000000
+      internalID: 2176934436576100079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_4
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 935
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c13730d3e0dbed70800000000000000
+      internalID: 9073575551137427913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_5
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 839
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152a8fd045fb0ad40800000000000000
+      internalID: 5593681104926712401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_6
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 839
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf7db7e4af6c9440800000000000000
+      internalID: 4943949244999237558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_7
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 351
+        width: 434
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1452b7118b6ff3840800000000000000
+      internalID: 5206150964691281217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_8
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 711
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cfec127fdcc3d50800000000000000
+      internalID: 6718471205437766783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_9
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 719
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089659e73a3cf5380800000000000000
+      internalID: -8980244024982673024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_10
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 575
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0cabd11d55424e0800000000000000
+      internalID: -2007385177265094408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_11
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 375
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296658c5c0c612340800000000000000
+      internalID: 4837266275120277138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_12
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 311
+        width: 50
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ba2f9ab26493a20800000000000000
+      internalID: 3042540176614271815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_13
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 303
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8366523fff5dffc50800000000000000
+      internalID: 6701310065823278648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_14
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 279
+        width: 50
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb91b06813551a90800000000000000
+      internalID: -7343872253191152702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_15
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 335
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede3839ce78b63540800000000000000
+      internalID: 4987376492040699614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_16
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 231
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb6d9a0d0ceafc80800000000000000
+      internalID: -8288052623465157664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_17
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 255
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016dd78e3bf65c5a0800000000000000
+      internalID: -6501667668549052912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_18
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 255
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e458dfb621bdd60800000000000000
+      internalID: 7915941025057951315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AvesMeteorAnim-9_19
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 167
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0960a9409f5a7870800000000000000
+      internalID: 8681356305025231115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
