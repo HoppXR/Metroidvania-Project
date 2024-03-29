@@ -14633,7 +14633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 673823998}
   - component: {fileID: 673823997}
-  - component: {fileID: 673823996}
+  - component: {fileID: 673823999}
   m_Layer: 7
   m_Name: Dice Attack Collider
   m_TagString: Untagged
@@ -14641,19 +14641,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &673823996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673823995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87442fdd460f42148bbd77167598949c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 0f00000014000000190000001e0000002300000028000000
 --- !u!58 &673823997
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14688,8 +14675,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.4177084, y: 0.088846214}
-  m_Radius: 9.612456
+  m_Offset: {x: -0.41770744, y: -5.631782}
+  m_Radius: 15.333082
 --- !u!4 &673823998
 Transform:
   m_ObjectHideFlags: 0
@@ -14705,6 +14692,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 836483238}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &673823999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673823995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b748447e2aeac14bbc54542b78406e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &673898950
 GameObject:
   m_ObjectHideFlags: 0
@@ -18252,6 +18251,7 @@ MonoBehaviour:
   cardProjectile: {fileID: 7741730810567457097, guid: 2df76cb613d57d54d93232b7ca1cbf9b, type: 3}
   frontRNGIndicators: {fileID: 1279177969}
   frontRNGHitbox: {fileID: 673823995}
+  ranDamage: 0
   blackHole: {fileID: 8673082398525552735, guid: 2b431b2287a8036478548ba8622655d6, type: 3}
   blackHoleSpawnLocation: {x: 15.4, y: 305.9, z: 0}
   bossTeleportLocation: {x: -83.7, y: 201.1, z: 0}
@@ -18271,7 +18271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 0
   detectionCollider: {fileID: 836483245}
-  speed: 200
+  speed: 300
   nextWaypointDistance: 1
   rb: {fileID: 836483240}
   attackDelay: 5
@@ -26172,8 +26172,8 @@ Transform:
   m_GameObject: {fileID: 1279177969}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -13.8, z: 0}
-  m_LocalScale: {x: 24.26985, y: 16.963453, z: 3.1340115}
+  m_LocalPosition: {x: 0.374, y: -19.196, z: 0}
+  m_LocalScale: {x: 30.571438, y: 31.07889, z: 3.1340115}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 836483238}

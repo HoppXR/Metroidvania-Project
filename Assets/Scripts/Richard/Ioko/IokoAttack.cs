@@ -15,6 +15,7 @@ public class IokoAttack : MonoBehaviour
     
     public GameObject frontRNGIndicators;
     public GameObject frontRNGHitbox;
+    public int ranDamage;
     
     
     public GameObject blackHole;
@@ -22,6 +23,7 @@ public class IokoAttack : MonoBehaviour
     public Vector3 bossTeleportLocation;
     public Vector3 bossReturnTeleportLocation;
     public int blackHoleCount;
+    
     
     void Start()
     {
@@ -112,6 +114,39 @@ public class IokoAttack : MonoBehaviour
 
     IEnumerator DieDice()
     {
+        int randomIndex = Random.Range(0, 6);
+        int randomDamage = randomIndex;
+        if (randomDamage == 0)
+        {
+            //dice roll 1 animation
+            ranDamage = 3;
+        }
+        if (randomDamage == 1)
+        {
+            //dice roll 2 animation
+            ranDamage = 6;
+        }
+        if (randomDamage == 2)
+        {
+            //dice roll 3 animation
+            ranDamage = 9;
+        }
+        if (randomDamage == 3)
+        {
+            //dice roll 4 animation
+            ranDamage = 12;
+        }
+        if (randomDamage == 4)
+        {
+            //dice roll 5 animation
+            ranDamage = 15;
+        }
+        if (randomDamage == 5)
+        {
+            //dice roll 6 animation
+            ranDamage = 18;
+        }
+        
         frontRNGIndicators.SetActive(true);
         yield return new WaitForSeconds(3f);
         frontRNGIndicators.SetActive(false);
