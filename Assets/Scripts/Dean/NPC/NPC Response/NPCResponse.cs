@@ -8,6 +8,7 @@ public class NPCResponse : MonoBehaviour
 {
     [SerializeField] private bool stopMovement;
     [SerializeField] private bool destroyOnDialogueEnd;
+    [SerializeField] private bool disableTriggerAfterDialogue;
 
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -75,9 +76,14 @@ public class NPCResponse : MonoBehaviour
             }
         }
 
-        if (destroyOnDialogueEnd) 
+        if (destroyOnDialogueEnd)
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
+        }
+
+        if (disableTriggerAfterDialogue)
+        {
+            GetComponent<Collider2D>().enabled = false;
         }
     }
 

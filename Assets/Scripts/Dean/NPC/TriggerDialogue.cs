@@ -13,6 +13,7 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private float wordSpeed = 0.05f;
     [SerializeField] private bool shouldDestroyAfterDialogue = false;
     [SerializeField] private GameObject particleEffect;
+    [SerializeField] private bool disableTriggerAfterDialogue = false; 
 
     private int index;
     private bool isTyping;
@@ -23,15 +24,9 @@ public class TriggerDialogue : MonoBehaviour
     public AudioSource typingSound;
     public AudioClip typingClip;
     public PlayerDialogue playerDialogue;
-    public Collider2D dialogueCollider;
-
-    public Button skipButton;
-
     private void Start()
     {
         _thePlayer = FindFirstObjectByType<PlayerMovement>();
-
-        skipButton.onClick.AddListener(SkipDialogue);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -68,23 +63,6 @@ public class TriggerDialogue : MonoBehaviour
         }
     }
 
-    private void SkipDialogue()
-    {
-        index = dialogue.Length - 1;
-        NextLine();
-
-        if (playerDialogue != null)
-        {
-            playerDialogue.enabled = false;
-        }
-
-        if (dialogueCollider != null)
-        {
-            dialogueCollider.enabled = false;
-        }
-    }
-
-
     public void NextLine()
     {
         if (isTyping)
@@ -119,6 +97,10 @@ public class TriggerDialogue : MonoBehaviour
                 Destroy(gameObject);
             }
 
+            if (disableTriggerAfterDialogue)
+            {
+                GetComponent<Collider2D>().enabled = false;
+            }
         }
     }
 

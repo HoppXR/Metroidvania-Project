@@ -7705,7 +7705,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.764151, g: 0.72534525, b: 0.15619433, a: 0}
+  m_BackGroundColor: {r: 0.38823533, g: 0.3803922, b: 0.38823533, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -7730,7 +7730,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.875
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8867,12 +8867,6 @@ GameObject:
   - component: {fileID: 1086457511}
   - component: {fileID: 1086457501}
   - component: {fileID: 1086457504}
-  - component: {fileID: 1086457505}
-  - component: {fileID: 1086457506}
-  - component: {fileID: 1086457507}
-  - component: {fileID: 1086457508}
-  - component: {fileID: 1086457509}
-  - component: {fileID: 1086457510}
   - component: {fileID: 1086457498}
   - component: {fileID: 1086457503}
   - component: {fileID: 1086457512}
@@ -9013,7 +9007,6 @@ MonoBehaviour:
   dialogueText: {fileID: 494056172}
   dialogue:
   - Right, thanks.
-  - Why did Ioko talk ill of YOU specifically this time?
   contButtonAnimator: {fileID: 1356900709}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
@@ -9131,155 +9124,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopMovement: 1
   destroyOnDialogueEnd: 0
+  disableTriggerAfterDialogue: 1
   dialoguePanel: {fileID: 1931379005}
   dialogueText: {fileID: 633956301}
   dialogue:
-  - Oh, she's not too fond of me.
-  - Tried to ask me to make her some FIREPOWER.
-  - I declined, and she tried to bite my head off.
+  - ..Anyway get to the next task! Chop chop!
   contButtonAnimator: {fileID: 569217892}
   wordSpeed: 0.03
   typingSound: {fileID: 1086457498}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
-  playerResponse: {fileID: 1086457505}
---- !u!114 &1086457505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086457494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c3cedf6a6a7a13458398967a1e77ff6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopMovement: 1
-  dialoguePanel: {fileID: 715525224}
-  dialogueText: {fileID: 474592358}
-  dialogue:
-  - Why did you say fire like that.
-  contButtonAnimator: {fileID: 354660351}
-  wordSpeed: 0.03
-  typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
-  NPCResponse2: {fileID: 1086457506}
---- !u!114 &1086457506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086457494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 732d211f06159344b9d08698baf7b604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopMovement: 1
-  dialoguePanel: {fileID: 1444581195}
-  dialogueText: {fileID: 720156411}
-  dialogue:
-  - ..
-  contButtonAnimator: {fileID: 692901618}
-  wordSpeed: 0.03
-  typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
-  boxCollider2D: {fileID: 0}
-  PlayerResponse2: {fileID: 1086457507}
---- !u!114 &1086457507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086457494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6691a8f682d158942a1c62c5ccefa4a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopMovement: 1
-  dialoguePanel: {fileID: 414273119}
-  dialogueText: {fileID: 31409345}
-  dialogue:
-  - ..
-  contButtonAnimator: {fileID: 229202295}
-  wordSpeed: 0.03
-  typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
-  NPCResponse3: {fileID: 1086457508}
---- !u!114 &1086457508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086457494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c8646a006e87584a8876961b3ba7df8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopMovement: 1
-  destroyAfterDialogue: 0
-  dialoguePanel: {fileID: 955301447}
-  dialogueText: {fileID: 398991070}
-  dialogue:
-  - Who's next? Ateralbus..?
-  - Oh.. being honest, he's incredibly difficult.
-  - You might have a hard time against him.
-  contButtonAnimator: {fileID: 93507813}
-  wordSpeed: 0.03
-  typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
-  PlayerResponse4: {fileID: 1086457509}
---- !u!114 &1086457509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086457494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca8216ed7383e414e8b73787ad5c6578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopMovement: 1
-  dialoguePanel: {fileID: 1410552620}
-  dialogueText: {fileID: 1380261368}
-  dialogue:
-  - What's so special about him?
-  contButtonAnimator: {fileID: 1719453935}
-  wordSpeed: 0.03
-  typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
-  NPCResponse4: {fileID: 1086457510}
---- !u!114 &1086457510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086457494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c25263fd46988294a909a08788409317, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopMovement: 1
-  dialoguePanel: {fileID: 2109956125}
-  dialogueText: {fileID: 1518556483}
-  dialogue:
-  - He's.. completely deranged.
-  - Do your best. Do not listen to the echoes of that place.
-  - Best of luck.
-  contButtonAnimator: {fileID: 16408054}
-  wordSpeed: 0.03
-  typingSound: {fileID: 1086457498}
-  typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
-  triggerCollider: {fileID: 1086457503}
+  playerResponse: {fileID: 0}
 --- !u!114 &1086457511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9298,16 +9152,14 @@ MonoBehaviour:
   dialogue:
   - Look at you!
   - Took her down like it was NOTHING!
-  - You're a born natural! I'm so proud!
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 0
   particleEffect: {fileID: 0}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 1976107231}
   typingSound: {fileID: 1086457498}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 1086457501}
-  dialogueCollider: {fileID: 1086457503}
-  skipButton: {fileID: 1370151047}
 --- !u!95 &1086457512
 Animator:
   serializedVersion: 7
@@ -9660,13 +9512,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112971661}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.08988514, w: 0.9959521}
   m_LocalPosition: {x: 3.13, y: -19.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.314}
 --- !u!1 &1148626350
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class NPCResponse2 : MonoBehaviour
 {
     [SerializeField] private bool stopMovement;
+    [SerializeField] private bool destroyAfterDialogue;
 
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
@@ -21,7 +22,7 @@ public class NPCResponse2 : MonoBehaviour
     public AudioSource typingSound;
     public AudioClip typingClip;
 
-    public BoxCollider2D boxCollider2D; // Reference to Box Collider 2D component
+    public BoxCollider2D boxCollider2D;
 
     private PlayerMovement _thePlayer;
     public PlayerResponse2 PlayerResponse2;
@@ -73,6 +74,11 @@ public class NPCResponse2 : MonoBehaviour
             {
                 PlayerResponse2.StartResponse();
             }
+
+            if (destroyAfterDialogue)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -91,7 +97,7 @@ public class NPCResponse2 : MonoBehaviour
 
         typingCoroutine = null;
 
-        if (boxCollider2D != null) // Disable Box Collider 2D if it exists
+        if (boxCollider2D != null)
         {
             boxCollider2D.enabled = false;
         }

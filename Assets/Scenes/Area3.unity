@@ -913,12 +913,11 @@ MonoBehaviour:
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 758578071}
   typingSound: {fileID: 28975405}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
-  dialogueCollider: {fileID: 0}
-  skipButton: {fileID: 0}
 --- !u!95 &28975408
 Animator:
   serializedVersion: 7
@@ -1381,12 +1380,11 @@ MonoBehaviour:
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 276194354013034377, guid: 99ddfd8bccaa4e34aa8173c722e18598, type: 3}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 84185692}
   typingSound: {fileID: 55542616}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
-  dialogueCollider: {fileID: 0}
-  skipButton: {fileID: 0}
 --- !u!61 &55542618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5774,12 +5772,11 @@ MonoBehaviour:
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 1270287565}
   typingSound: {fileID: 696111847}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
-  dialogueCollider: {fileID: 0}
-  skipButton: {fileID: 0}
 --- !u!212 &696111852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6561,12 +6558,11 @@ MonoBehaviour:
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 276194354013034377, guid: 99ddfd8bccaa4e34aa8173c722e18598, type: 3}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 963344729}
   typingSound: {fileID: 757807948}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
-  dialogueCollider: {fileID: 0}
-  skipButton: {fileID: 0}
 --- !u!61 &757807950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10332,12 +10328,11 @@ MonoBehaviour:
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 1445837989}
   typingSound: {fileID: 1269892049}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
-  dialogueCollider: {fileID: 0}
-  skipButton: {fileID: 0}
 --- !u!1 &1270287562
 GameObject:
   m_ObjectHideFlags: 0
@@ -11484,12 +11479,11 @@ MonoBehaviour:
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 8104452054883810373}
   typingSound: {fileID: 1335425310}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
-  dialogueCollider: {fileID: 0}
-  skipButton: {fileID: 0}
 --- !u!61 &1335425312
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14419,7 +14413,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.74584
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -15794,12 +15788,11 @@ MonoBehaviour:
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 276194354013034377, guid: 99ddfd8bccaa4e34aa8173c722e18598, type: 3}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 187244723}
   typingSound: {fileID: 1672082269}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
-  dialogueCollider: {fileID: 0}
-  skipButton: {fileID: 0}
 --- !u!212 &1672082272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19555,12 +19548,11 @@ MonoBehaviour:
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 1828403874}
   typingSound: {fileID: 1937412045}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
-  dialogueCollider: {fileID: 0}
-  skipButton: {fileID: 0}
 --- !u!4 &1947643896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
@@ -19952,12 +19944,11 @@ MonoBehaviour:
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 276194354013034377, guid: 99ddfd8bccaa4e34aa8173c722e18598, type: 3}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 224168649}
   typingSound: {fileID: 1979806553}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
-  dialogueCollider: {fileID: 0}
-  skipButton: {fileID: 0}
 --- !u!61 &1979806555
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20582,7 +20573,7 @@ Transform:
   m_GameObject: {fileID: 2071343041}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.969997, y: -34.659996, z: 0}
+  m_LocalPosition: {x: -36.32, y: -34.879997, z: 0}
   m_LocalScale: {x: 1.2284319, y: 1.2284319, z: 1.2284319}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21272,12 +21263,11 @@ MonoBehaviour:
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 767946915}
   typingSound: {fileID: 2090375240}
   typingClip: {fileID: 8300000, guid: c3f6a4d202408a942b3bedc80f790aab, type: 3}
   playerDialogue: {fileID: 0}
-  dialogueCollider: {fileID: 0}
-  skipButton: {fileID: 0}
 --- !u!1 &2103276448
 GameObject:
   m_ObjectHideFlags: 0
