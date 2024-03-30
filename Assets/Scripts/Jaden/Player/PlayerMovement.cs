@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("PlayerDamage"))
+        if (collision.collider.CompareTag("Enemy"))
         {
             Vector2 collisionNormal = collision.contacts[0].normal;
             _forceToApply += collisionNormal * knockback;

@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 5464729873202339431}
   - component: {fileID: 6507312719302657470}
   - component: {fileID: 5669465626601048961}
-  - component: {fileID: 3056683815524447384}
+  - component: {fileID: 7053730107592944386}
   - component: {fileID: 8335498072949834462}
   - component: {fileID: 4633788077054007704}
   - component: {fileID: 2697768646301698341}
@@ -577,8 +577,8 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 10.726982, y: 13.051399}
   m_EdgeRadius: 0
---- !u!70 &3056683815524447384
-CapsuleCollider2D:
+--- !u!58 &7053730107592944386
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -611,9 +611,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.053911917, y: 0.026320022}
-  m_Size: {x: 5.7484446, y: 9.888921}
-  m_Direction: 0
+  m_Offset: {x: 0, y: -1.7904528}
+  m_Radius: 3.2095473
 --- !u!50 &8335498072949834462
 Rigidbody2D:
   serializedVersion: 4
@@ -655,7 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2515250196529354146}
   moveSpeed: 12
-  knockback: 10
+  knockback: 20
   forceDamping: 0.5
   dashSpeed: 25
   dashDuration: 0.15
