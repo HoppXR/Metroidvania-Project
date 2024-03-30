@@ -196,25 +196,27 @@ private IEnumerator SmallLunge()
 
     }
     
-    
-
-
     public void ShootSword()
     {
         if (BossHealthATERALBUS.isDead)
             return;
-        
+    
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         if (player != null)
         {
-
             GameObject sword = Instantiate(swordProjectile, transform.position, Quaternion.identity);
+        
+            // Calculate direction and rotation
             Vector3 directionToPlayer = (player.transform.position - sword.transform.position).normalized;
+            Quaternion rotation = Quaternion.LookRotation(Vector3.forward, directionToPlayer);
+        
+            sword.transform.rotation = rotation;
+
             Rigidbody2D bulletRb = sword.GetComponent<Rigidbody2D>();
             bulletRb.velocity = directionToPlayer * swordProjectileSpeed;
+        
             Destroy(sword, 10f);
-
         }
     }
     
