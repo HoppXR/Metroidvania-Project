@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         _canDash = false;
         _isDashing = true;
 
-        //Play dash animation
+        animator.SetTrigger("Dash");
         
         _rb.velocity = new Vector2(_moveVector.x * dashSpeed, _moveVector.y * dashSpeed);
         yield return new WaitForSeconds(dashDuration);
