@@ -31,7 +31,10 @@ public class CollisionDialogue : MonoBehaviour
     {
         _thePlayer = FindFirstObjectByType<PlayerMovement>();
 
-        skipButton.onClick.AddListener(SkipDialogue);
+        if (skipButton != null)
+        {
+            skipButton.onClick.AddListener(SkipDialogue);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -62,9 +65,12 @@ public class CollisionDialogue : MonoBehaviour
 
     private void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Space) || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) && dialoguePanel.activeInHierarchy && !isTyping)
+        if (dialoguePanel != null)
         {
-            NextLine();
+            if ((Input.GetKeyDown(KeyCode.Space) || Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame) && dialoguePanel.activeInHierarchy && !isTyping)
+            {
+                NextLine();
+            }
         }
     }
 
