@@ -82,6 +82,8 @@ public class GrapplingHook : MonoBehaviour
 
     IEnumerator Grapple() 
     {
+        _thePlayer.animator.SetTrigger("Grapple");
+        
         float t = 0;
         float time = 5;
 
@@ -122,6 +124,9 @@ public class GrapplingHook : MonoBehaviour
         {
             _aimDirection = Camera.main.ScreenToWorldPoint(_aim) - transform.position;
         }
+        
+        _thePlayer.animator.SetFloat("GrapplePosX", _aimDirection.x);
+        _thePlayer.animator.SetFloat("GrapplePosY", _aimDirection.y);
     }
     
     public void OnDeviceChange(PlayerInput pi)
