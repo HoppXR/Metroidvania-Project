@@ -51,14 +51,10 @@ public class EnemyAI : MonoBehaviour
         _animator = GetComponent<Animator>();
         
         if (player == null)
-        {
             return;
-        }
 
-        if (detectionCollider == null || attackHitbox == null)
-        {
+        if (detectionCollider == null || attackHitbox == null || textCollider == null)
             return;
-        }
 
         InvokeRepeating("UpdatePath", 0f, 0.1f);
     }
@@ -116,9 +112,7 @@ public class EnemyAI : MonoBehaviour
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
         
         if (distance < nextWaypointDistance)
-        {
             currentWaypoint++;
-        }
     }
     
     private void OnTriggerEnter2D(Collider2D other)
@@ -133,9 +127,7 @@ public class EnemyAI : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player") && Time.time - lastEnterTime >= attackDelay && !isAttacking)
-        {
             ActivateAttack();
-        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -145,9 +137,7 @@ public class EnemyAI : MonoBehaviour
             canMove = true;
             colliderActivated = false;
             if (isAttacking)
-            {
                 StartCoroutine(DeactivateAttack());
-            }
         }
     }
 
@@ -183,14 +173,10 @@ public class EnemyAI : MonoBehaviour
         detectionCollider.enabled = true;
 
         if (textCollider != null)
-        {
             textCollider.enabled = false;
-        }
 
         if (_npc != null)
-        {
             _npc.enabled = false;
-        }
     }
     
     void OnDisable()
@@ -201,16 +187,12 @@ public class EnemyAI : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
-        {
             rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY |RigidbodyConstraints2D.FreezeRotation;
-        }
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
-        {
             rb.constraints &= ~(RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY);
-        }
     }
 }
