@@ -12,6 +12,10 @@ TagManager:
   - MyWeapon
   - Boss2
   - Boss4
+  - Spawnpoint
+  - Hole
+  - CollisionTag
+  - BackgroundMusic
   layers:
   - Default
   - TransparentFX
