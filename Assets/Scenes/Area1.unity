@@ -22127,7 +22127,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.0751407, y: -0.22133195}
+  m_Offset: {x: 1.0751407, y: -0.55504537}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -22137,7 +22137,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.1214423, y: 4.016076}
+  m_Size: {x: 3.1214423, y: 8.18586}
   m_EdgeRadius: 0
 --- !u!212 &1091177348
 SpriteRenderer:
@@ -24285,7 +24285,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.09178436, y: 0}
+  m_Offset: {x: 0.22982669, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -24295,7 +24295,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.0100315, y: 2.49}
+  m_Size: {x: 8.45912, y: 2.49}
   m_EdgeRadius: 0
 --- !u!212 &1144421130
 SpriteRenderer:
@@ -27552,11 +27552,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -205.38
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -115.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5464729873202339431, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33382,7 +33382,7 @@ GameObject:
   - component: {fileID: 1600901418}
   - component: {fileID: 1600901420}
   - component: {fileID: 1600901419}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Border (78)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36908,7 +36908,7 @@ GameObject:
   - component: {fileID: 1824939211}
   - component: {fileID: 1824939213}
   - component: {fileID: 1824939212}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Border (76)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
