@@ -105,7 +105,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     public void PlayerDash()
     {
-        if (_canDash)
+        if (_canDash && _moveVector != Vector2.zero)
         {
             StartCoroutine(Dash());
         }

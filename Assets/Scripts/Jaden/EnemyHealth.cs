@@ -84,7 +84,8 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
-        _enemyAI.enabled = false;
+        if (_enemyAI != null)
+            _enemyAI.enabled = false;
         Destroy(gameObject);
 
         // Play die animation

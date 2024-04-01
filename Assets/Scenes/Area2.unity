@@ -20512,7 +20512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &836483237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20559,7 +20559,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.6, y: 9.71}
+  m_Size: {x: 28.125, y: 36.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -20764,7 +20764,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5263505, y: 0.42844513}
     oldSize: {x: 28.125, y: 36.25}
-    newSize: {x: 7.6, y: 9.71}
+    newSize: {x: 28.125, y: 36.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -20810,7 +20810,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5263505, y: 0.42844513}
     oldSize: {x: 28.125, y: 36.25}
-    newSize: {x: 7.6, y: 9.71}
+    newSize: {x: 28.125, y: 36.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

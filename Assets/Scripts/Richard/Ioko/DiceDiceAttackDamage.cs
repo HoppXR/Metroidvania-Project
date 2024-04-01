@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DiceDiceAttackDamage : MonoBehaviour
 {
-
     private IokoAttack _iokoAttack;
+    
     void Start()
     {
         _iokoAttack = GetComponent<IokoAttack>();

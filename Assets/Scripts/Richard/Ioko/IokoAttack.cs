@@ -124,36 +124,45 @@ public class IokoAttack : MonoBehaviour
         if (randomDamage == 0)
         {
             //dice roll 1 animation
+            _animator.SetFloat("DiceRoll", 1);
             ranDamage = 3;
         }
         if (randomDamage == 1)
         {
             //dice roll 2 animation
+            _animator.SetFloat("DiceRoll", 2);
             ranDamage = 6;
         }
         if (randomDamage == 2)
         {
             //dice roll 3 animation
+            _animator.SetFloat("DiceRoll", 3);
             ranDamage = 9;
         }
         if (randomDamage == 3)
         {
             //dice roll 4 animation
+            _animator.SetFloat("DiceRoll", 4);
             ranDamage = 12;
         }
         if (randomDamage == 4)
         {
             //dice roll 5 animation
+            _animator.SetFloat("DiceRoll", 5);
             ranDamage = 15;
         }
         if (randomDamage == 5)
         {
             //dice roll 6 animation
+            _animator.SetFloat("DiceRoll", 6);
             ranDamage = 18;
         }
         
+        _animator.SetTrigger("DiceAttack");
+        yield return new WaitForSeconds(2f);
+        
         frontRNGIndicators.SetActive(true);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(3.1f);
         frontRNGIndicators.SetActive(false);
         frontRNGHitbox.SetActive(true);
         yield return new WaitForSeconds(2f);
