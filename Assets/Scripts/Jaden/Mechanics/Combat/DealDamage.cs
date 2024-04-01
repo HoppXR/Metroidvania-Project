@@ -21,8 +21,8 @@ public class DealDamage : MonoBehaviour
         {
             var bHealth = other.gameObject.GetComponent<BossHealthLastima>();
             bHealth.TakeDamage(damage);
-            
         }
+        
         if (other.CompareTag("Boss2"))
         {
             var bHealth = other.gameObject.GetComponent<BossHealthAves>();
@@ -34,6 +34,7 @@ public class DealDamage : MonoBehaviour
             var bHealth = other.gameObject.GetComponent<BossHealthATERALBUS>();
             bHealth.TakeDamage(damage);
         }
+        
         if (other.CompareTag("Boss4"))
         {
             var bHealth = other.gameObject.GetComponent<BossHealthIoko>();

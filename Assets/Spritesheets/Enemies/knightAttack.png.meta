@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: febff9429d37ac54089a04405fe68428
+guid: a9105a3c3e4d32749899e85816add68b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5951709709991932060
-    second: Ateralbus Portrait Animated_0
+      213: -3540143967292176705
+    second: knightAttack_0
+  - first:
+      213: 2460102673517920881
+    second: knightAttack_1
+  - first:
+      213: -359662919647266958
+    second: knightAttack_2
+  - first:
+      213: 1304508061801817249
+    second: knightAttack_3
+  - first:
+      213: -2530906999329564130
+    second: knightAttack_4
+  - first:
+      213: 7994889870014659904
+    second: knightAttack_5
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,10 +87,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,148 +113,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ateralbus Portrait Animated_0
+      name: knightAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1710
+        width: 362
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6cec771d1eedec0800000000000000
+      internalID: -3540143967292176705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knightAttack_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1368
+        width: 362
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172460ee85a042220800000000000000
+      internalID: 2460102673517920881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knightAttack_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1026
+        width: 362
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2777b8bea78320bf0800000000000000
+      internalID: -359662919647266958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knightAttack_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 684
+        width: 362
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4a45eab2b8a1210800000000000000
+      internalID: 1304508061801817249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knightAttack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 362
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a59615e7960ecd0800000000000000
+      internalID: -2530906999329564130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knightAttack_5
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1022
-        height: 1024
+        width: 362
+        height: 342
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 21103ab83f981f443a8b8bdf452cbcb9
-      internalID: 986107770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_1
-      rect:
-        serializedVersion: 2
-        x: 1022
-        y: 0
-        width: 1022
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 394160267655f204993ebfd9c63bd171
-      internalID: 154929881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_2
-      rect:
-        serializedVersion: 2
-        x: 2049
-        y: 0
-        width: 1022
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca4aff26f8e96804c8aedf4963dc23e6
-      internalID: -1031152535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_3
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 1022
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3d631404d4fb524897c0805b3b8302e
-      internalID: -968901764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_4
-      rect:
-        serializedVersion: 2
-        x: 4096
-        y: 0
-        width: 1023
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28f80b6b9bc1fdb459f5fdad7c2027a4
-      internalID: 942327917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_5
-      rect:
-        serializedVersion: 2
-        x: 5110
-        y: 0
-        width: 1022
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3add4633b6530954bb24f889aaca2ade
-      internalID: 738827889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_6
-      rect:
-        serializedVersion: 2
-        x: 6132
-        y: 0
-        width: 1022
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 550fcb232acec4d469d138498fab8cfc
-      internalID: 1127602613
+      spriteID: 04db7906afd83fe60800000000000000
+      internalID: 7994889870014659904
       vertices: []
       indices: 
       edges: []
@@ -247,7 +241,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cc2322a29c89c9640a2b14f271af1825
+    spriteID: e09824b6409b49e4cac205c9d935801b
     internalID: 0
     vertices: []
     indices: 
@@ -255,13 +249,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ateralbus Portrait Animated_0: 986107770
-      Ateralbus Portrait Animated_1: 154929881
-      Ateralbus Portrait Animated_2: -1031152535
-      Ateralbus Portrait Animated_3: -968901764
-      Ateralbus Portrait Animated_4: 942327917
-      Ateralbus Portrait Animated_5: 738827889
-      Ateralbus Portrait Animated_6: 1127602613
+      knightAttack_0: -3540143967292176705
+      knightAttack_1: 2460102673517920881
+      knightAttack_2: -359662919647266958
+      knightAttack_3: 1304508061801817249
+      knightAttack_4: -2530906999329564130
+      knightAttack_5: 7994889870014659904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

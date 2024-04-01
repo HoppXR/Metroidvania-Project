@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: febff9429d37ac54089a04405fe68428
+guid: 68415854e9acf74409e8c48490c72121
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5951709709991932060
-    second: Ateralbus Portrait Animated_0
+      213: 5403909882504477484
+    second: knightIdle_0
+  - first:
+      213: -8798524462652380381
+    second: knightIdle_1
+  - first:
+      213: 2386994020559815037
+    second: knightIdle_2
+  - first:
+      213: 4544468342793767080
+    second: knightIdle_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,10 +81,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,148 +107,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ateralbus Portrait Animated_0
+      name: knightIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 966
+        width: 322
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bf6e0386b8efa40800000000000000
+      internalID: 5403909882504477484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knightIdle_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 644
+        width: 322
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b25082e9c55e580800000000000000
+      internalID: -8798524462652380381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knightIdle_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 322
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7103743a6e402120800000000000000
+      internalID: 2386994020559815037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knightIdle_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1022
-        height: 1024
+        width: 322
+        height: 322
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 21103ab83f981f443a8b8bdf452cbcb9
-      internalID: 986107770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_1
-      rect:
-        serializedVersion: 2
-        x: 1022
-        y: 0
-        width: 1022
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 394160267655f204993ebfd9c63bd171
-      internalID: 154929881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_2
-      rect:
-        serializedVersion: 2
-        x: 2049
-        y: 0
-        width: 1022
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca4aff26f8e96804c8aedf4963dc23e6
-      internalID: -1031152535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_3
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 1022
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3d631404d4fb524897c0805b3b8302e
-      internalID: -968901764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_4
-      rect:
-        serializedVersion: 2
-        x: 4096
-        y: 0
-        width: 1023
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28f80b6b9bc1fdb459f5fdad7c2027a4
-      internalID: 942327917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_5
-      rect:
-        serializedVersion: 2
-        x: 5110
-        y: 0
-        width: 1022
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3add4633b6530954bb24f889aaca2ade
-      internalID: 738827889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ateralbus Portrait Animated_6
-      rect:
-        serializedVersion: 2
-        x: 6132
-        y: 0
-        width: 1022
-        height: 1024
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 550fcb232acec4d469d138498fab8cfc
-      internalID: 1127602613
+      spriteID: 8a80b3151e1311f30800000000000000
+      internalID: 4544468342793767080
       vertices: []
       indices: 
       edges: []
@@ -247,7 +193,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cc2322a29c89c9640a2b14f271af1825
+    spriteID: c5f91ab2f5604894296a86af614abf36
     internalID: 0
     vertices: []
     indices: 
@@ -255,13 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ateralbus Portrait Animated_0: 986107770
-      Ateralbus Portrait Animated_1: 154929881
-      Ateralbus Portrait Animated_2: -1031152535
-      Ateralbus Portrait Animated_3: -968901764
-      Ateralbus Portrait Animated_4: 942327917
-      Ateralbus Portrait Animated_5: 738827889
-      Ateralbus Portrait Animated_6: 1127602613
+      knightIdle_0: 5403909882504477484
+      knightIdle_1: -8798524462652380381
+      knightIdle_2: 2386994020559815037
+      knightIdle_3: 4544468342793767080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
