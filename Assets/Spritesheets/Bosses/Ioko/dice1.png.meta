@@ -1,0 +1,1333 @@
+fileFormatVersion: 2
+guid: 1ba80f093daa6b245afd5c99cd9e8683
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4796394016262144139
+    second: dice1_0
+  - first:
+      213: 8535677381364239518
+    second: dice1_1
+  - first:
+      213: -3979204029314592246
+    second: dice1_2
+  - first:
+      213: -5543635795539603946
+    second: dice1_3
+  - first:
+      213: -6288566328264793243
+    second: dice1_4
+  - first:
+      213: -9081441564844449287
+    second: dice1_5
+  - first:
+      213: 2461416996905849147
+    second: dice1_6
+  - first:
+      213: -7577838931682311298
+    second: dice1_7
+  - first:
+      213: -7354782095517392874
+    second: dice1_8
+  - first:
+      213: 798139622143675405
+    second: dice1_9
+  - first:
+      213: -7842143958404241761
+    second: dice1_10
+  - first:
+      213: 4838942904321810893
+    second: dice1_11
+  - first:
+      213: 5945161285822883748
+    second: dice1_12
+  - first:
+      213: -3662238246220253518
+    second: dice1_13
+  - first:
+      213: -5327771063274842283
+    second: dice1_14
+  - first:
+      213: -2472572676685437330
+    second: dice1_15
+  - first:
+      213: -4589358957825869808
+    second: dice1_16
+  - first:
+      213: -3737761367296334194
+    second: dice1_17
+  - first:
+      213: -10285569697333229
+    second: dice1_18
+  - first:
+      213: 7603949692858972865
+    second: dice1_19
+  - first:
+      213: 1092593764745619644
+    second: dice1_20
+  - first:
+      213: 6024120653523070460
+    second: dice1_21
+  - first:
+      213: 8410960021130751905
+    second: dice1_22
+  - first:
+      213: -5992057085670055619
+    second: dice1_23
+  - first:
+      213: -8452350552335490126
+    second: dice1_24
+  - first:
+      213: -6039238473681733552
+    second: dice1_25
+  - first:
+      213: -1919183109057730444
+    second: dice1_26
+  - first:
+      213: -593279438229742718
+    second: dice1_27
+  - first:
+      213: 2645880155985819283
+    second: dice1_28
+  - first:
+      213: -5742653699586236691
+    second: dice1_29
+  - first:
+      213: 43336155879301819
+    second: dice1_30
+  - first:
+      213: 5494414994555184711
+    second: dice1_31
+  - first:
+      213: -6376683607129840467
+    second: dice1_32
+  - first:
+      213: -2004323912783241418
+    second: dice1_33
+  - first:
+      213: 3269113916786141888
+    second: dice1_34
+  - first:
+      213: 8864975780479314591
+    second: dice1_35
+  - first:
+      213: 3718435541662959143
+    second: dice1_36
+  - first:
+      213: 1723094927745696248
+    second: dice1_37
+  - first:
+      213: -634944582118000886
+    second: dice1_38
+  - first:
+      213: 6018509874023266742
+    second: dice1_39
+  - first:
+      213: -1616091920872683317
+    second: dice1_40
+  - first:
+      213: 7051043625630050069
+    second: dice1_41
+  - first:
+      213: -3060313198933637214
+    second: dice1_42
+  - first:
+      213: -1446809350472123035
+    second: dice1_43
+  - first:
+      213: -7013719467371976491
+    second: dice1_44
+  - first:
+      213: -8586376259866957272
+    second: dice1_45
+  - first:
+      213: 4082505564340090811
+    second: dice1_46
+  - first:
+      213: -7572235813498588432
+    second: dice1_47
+  - first:
+      213: -8716117327821977185
+    second: dice1_48
+  - first:
+      213: 4801363538672456003
+    second: dice1_49
+  - first:
+      213: -3942832862574645511
+    second: dice1_50
+  - first:
+      213: 146867493151519429
+    second: dice1_51
+  - first:
+      213: -7399975977812791242
+    second: dice1_52
+  - first:
+      213: 1225307420761259259
+    second: dice1_53
+  - first:
+      213: -3130765942312462746
+    second: dice1_54
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dice1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10010
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c7cf5de5a5afc4f9864f3ca9a1f39f
+      internalID: 1361212482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_1
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 10010
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583117bd1c0f84249a4d9e1b24055087
+      internalID: -1280878889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_2
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 10010
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebe11636890c5041b57edc985208521
+      internalID: 1574778010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_3
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 10010
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b48c2267650d047a0f5832ed83ac77
+      internalID: -661056069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_4
+      rect:
+        serializedVersion: 2
+        x: 6008
+        y: 10010
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd67c298c389c304db1dc1d75c62bdeb
+      internalID: 1512547395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_5
+      rect:
+        serializedVersion: 2
+        x: 7510
+        y: 10010
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff844ed5abd33c44288abd0297ca5d02
+      internalID: 1493957170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_6
+      rect:
+        serializedVersion: 2
+        x: 9012
+        y: 10010
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c892d19782c474dab122517bda2479
+      internalID: 1871484058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_7
+      rect:
+        serializedVersion: 2
+        x: 10514
+        y: 10010
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86a26aaa6ce9444e800e20c9eaadf3d
+      internalID: -855285017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8008
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66824d74bb791b8449e21db2f48ac97e
+      internalID: 1733867534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_9
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 8008
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f36d83b8df4f6d4fa53d564b202d07f
+      internalID: 1202913427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_10
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 8008
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40f1ffdcba20f8469b40039da3b175d
+      internalID: -1173395252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_11
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 8008
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1880c6664725c72459646df6677d8d22
+      internalID: -1642793466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_12
+      rect:
+        serializedVersion: 2
+        x: 6008
+        y: 8008
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af22c720b13b334391a8e4c6609e9a9
+      internalID: -1954832895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_13
+      rect:
+        serializedVersion: 2
+        x: 7510
+        y: 8008
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a47bf161b802c49936fe1dd39cab6b
+      internalID: 659053419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_14
+      rect:
+        serializedVersion: 2
+        x: 9012
+        y: 8008
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5684791307bdfc46a614b50814b926f
+      internalID: 915292710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_15
+      rect:
+        serializedVersion: 2
+        x: 10514
+        y: 8008
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d40a7ecace5e34aab119ebc259eb51
+      internalID: -1039051315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6006
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a7751a935a7064bb0de69fbd6bd3d4
+      internalID: -2131859856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_17
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 6006
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e88a37ca608e934d9d305c6cbf2f6fc
+      internalID: 1151158787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_18
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 6006
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9a6d47a51965f439c122bc9f4c8931
+      internalID: -1209503459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_19
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 6006
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee1fbdb048477c4982b6966f0486b69
+      internalID: -789514319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_20
+      rect:
+        serializedVersion: 2
+        x: 6008
+        y: 6006
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b6e1259929f064aa7c53411ce11daf
+      internalID: 1070678525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_21
+      rect:
+        serializedVersion: 2
+        x: 7510
+        y: 6006
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cdb2ea66702014a82f1bbeeab4f20a
+      internalID: -1886564521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_22
+      rect:
+        serializedVersion: 2
+        x: 9012
+        y: 6006
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c51a1aeb671cd4686c10ad2d21abc4
+      internalID: -1396237272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_23
+      rect:
+        serializedVersion: 2
+        x: 10514
+        y: 6006
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9dc0b6f51f16b42af6bfb970e78485
+      internalID: -928911780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4004
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec86192a82a0f04691929bb3755f9b9
+      internalID: 1764617025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_25
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 4004
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504860741c63e66488b014a6f041cf62
+      internalID: 261298407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_26
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 4004
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890cf89a72c52a948bc17bc813f31f13
+      internalID: 547357854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_27
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 4004
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a532025c78b96f478e99eadea4e656f
+      internalID: -546850180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_28
+      rect:
+        serializedVersion: 2
+        x: 6008
+        y: 4004
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0535551a364a36142a545d1db3a7be8a
+      internalID: -1080276534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_29
+      rect:
+        serializedVersion: 2
+        x: 7510
+        y: 4004
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e34399545cc0b4eaf13904e2b8de3d
+      internalID: -477179400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_30
+      rect:
+        serializedVersion: 2
+        x: 9012
+        y: 4004
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65ee03712393a54683dc45b93cf18cb
+      internalID: -11415537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_31
+      rect:
+        serializedVersion: 2
+        x: 10514
+        y: 4004
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d09728fa74924459567fbfd00505eb
+      internalID: -72774328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2002
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935eecd9d526cd841ba18e3b5911cf50
+      internalID: -1978887104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_33
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 2002
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b234e5cb86e516498c3a18b3d3987d8
+      internalID: 159062833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_34
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 2002
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f763388ca3eff1e43b9fd85e1ac583cb
+      internalID: -1710397457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_35
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 2002
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34cd09eceb1f67142b77c2de96114d44
+      internalID: 810869666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_36
+      rect:
+        serializedVersion: 2
+        x: 6008
+        y: 2002
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e61abfd97a7dde4c84f101433c19929
+      internalID: -1283936626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_37
+      rect:
+        serializedVersion: 2
+        x: 7510
+        y: 2002
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d2e0507ca036e4c9837c21749e8d6d
+      internalID: -1465062620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_38
+      rect:
+        serializedVersion: 2
+        x: 9012
+        y: 2002
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404d9d1f9a155e6428d0289ffe07fcd4
+      internalID: -1617123120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_39
+      rect:
+        serializedVersion: 2
+        x: 10514
+        y: 2002
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c597f19562736e4d8954a6cb7ba8b95
+      internalID: -63003202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82db27edba9f0274d884f113f3f59617
+      internalID: -859038723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_41
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 0
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8721a5f996dbee64bacd0d66e783d43d
+      internalID: -425899808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_42
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 0
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380b30d5bbbdee74fa269c6773486abe
+      internalID: -324961584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_43
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 0
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0602930c8dad694b802bdcba165f837
+      internalID: -1490876296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_44
+      rect:
+        serializedVersion: 2
+        x: 6008
+        y: 0
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08065827d7d8d74383e4ac4cb9ac56c
+      internalID: 908136989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_45
+      rect:
+        serializedVersion: 2
+        x: 7510
+        y: 0
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2858a879c4cf11e4fa17f2b501e58a7a
+      internalID: -1412212435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_46
+      rect:
+        serializedVersion: 2
+        x: 9012
+        y: 0
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79b9bf545c920d4c802cb396af45f34
+      internalID: -2113181208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dice1_47
+      rect:
+        serializedVersion: 2
+        x: 10514
+        y: 0
+        width: 1502
+        height: 2002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66c313bd8b8f1644a1a43c21a4ce3e1
+      internalID: 1614769950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 030b616a4605bf442aee9d6e0762f61b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      dice1_0: 1361212482
+      dice1_1: -1280878889
+      dice1_10: -1173395252
+      dice1_11: -1642793466
+      dice1_12: -1954832895
+      dice1_13: 659053419
+      dice1_14: 915292710
+      dice1_15: -1039051315
+      dice1_16: -2131859856
+      dice1_17: 1151158787
+      dice1_18: -1209503459
+      dice1_19: -789514319
+      dice1_2: 1574778010
+      dice1_20: 1070678525
+      dice1_21: -1886564521
+      dice1_22: -1396237272
+      dice1_23: -928911780
+      dice1_24: 1764617025
+      dice1_25: 261298407
+      dice1_26: 547357854
+      dice1_27: -546850180
+      dice1_28: -1080276534
+      dice1_29: -477179400
+      dice1_3: -661056069
+      dice1_30: -11415537
+      dice1_31: -72774328
+      dice1_32: -1978887104
+      dice1_33: 159062833
+      dice1_34: -1710397457
+      dice1_35: 810869666
+      dice1_36: -1283936626
+      dice1_37: -1465062620
+      dice1_38: -1617123120
+      dice1_39: -63003202
+      dice1_4: 1512547395
+      dice1_40: -859038723
+      dice1_41: -425899808
+      dice1_42: -324961584
+      dice1_43: -1490876296
+      dice1_44: 908136989
+      dice1_45: -1412212435
+      dice1_46: -2113181208
+      dice1_47: 1614769950
+      dice1_5: 1493957170
+      dice1_6: 1871484058
+      dice1_7: -855285017
+      dice1_8: 1733867534
+      dice1_9: 1202913427
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
