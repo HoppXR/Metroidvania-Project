@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class IokoAttack : MonoBehaviour
 {
+    private Animator _animator;
     public Transform boss;
     private Transform player;
     public Rigidbody2D rb;
@@ -27,6 +28,7 @@ public class IokoAttack : MonoBehaviour
     
     void Start()
     {
+        _animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
         StartCoroutine(RandomAttackRoutine());
@@ -100,6 +102,9 @@ public class IokoAttack : MonoBehaviour
 
             if (player != null)
             {
+                _animator.SetTrigger("CardThrow");
+                yield return new WaitForSeconds(2.2f);
+                
                 GameObject card = Instantiate(cardProjectile, transform.position, Quaternion.identity);
                 Vector3 directionToPlayer = (player.transform.position - card.transform.position).normalized;
                 Rigidbody2D cardRb = card.GetComponent<Rigidbody2D>();

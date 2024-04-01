@@ -1,0 +1,815 @@
+fileFormatVersion: 2
+guid: d46c2e587ffd83e4e960592ca19d9849
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7836539906197901332
+    second: Ioko_Card_throw1_0
+  - first:
+      213: -1169294144639602938
+    second: Ioko_Card_throw1_1
+  - first:
+      213: -5659243223510204253
+    second: Ioko_Card_throw1_2
+  - first:
+      213: 7811560421496269507
+    second: Ioko_Card_throw1_3
+  - first:
+      213: 7270058664300602511
+    second: Ioko_Card_throw1_4
+  - first:
+      213: 2334904847647342766
+    second: Ioko_Card_throw1_5
+  - first:
+      213: -1442887788714431346
+    second: Ioko_Card_throw1_6
+  - first:
+      213: -3386413036845201682
+    second: Ioko_Card_throw1_7
+  - first:
+      213: 6106190705207736820
+    second: Ioko_Card_throw1_8
+  - first:
+      213: -5798224641922694746
+    second: Ioko_Card_throw1_9
+  - first:
+      213: 7501569855945754112
+    second: Ioko_Card_throw1_10
+  - first:
+      213: 2367232055752383631
+    second: Ioko_Card_throw1_11
+  - first:
+      213: -8906760782473462666
+    second: Ioko_Card_throw1_12
+  - first:
+      213: -6710122591706740268
+    second: Ioko_Card_throw1_13
+  - first:
+      213: 3398080663963234744
+    second: Ioko_Card_throw1_14
+  - first:
+      213: 9167820101416889249
+    second: Ioko_Card_throw1_15
+  - first:
+      213: 1571562751570509570
+    second: Ioko_Card_throw1_16
+  - first:
+      213: 2938430767225142913
+    second: Ioko_Card_throw1_17
+  - first:
+      213: 3899123375305086729
+    second: Ioko_Card_throw1_18
+  - first:
+      213: 2183131922576072905
+    second: Ioko_Card_throw1_19
+  - first:
+      213: 1950360796271017957
+    second: Ioko_Card_throw1_20
+  - first:
+      213: -5375272116759384855
+    second: Ioko_Card_throw1_21
+  - first:
+      213: -7696062648462411265
+    second: Ioko_Card_throw1_22
+  - first:
+      213: -8616454695608225675
+    second: Ioko_Card_throw1_23
+  - first:
+      213: -1339036218784316386
+    second: Ioko_Card_throw1_24
+  - first:
+      213: -717118402209609965
+    second: Ioko_Card_throw1_25
+  - first:
+      213: -8494323343994592588
+    second: Ioko_Card_throw1_26
+  - first:
+      213: 143223965423533023
+    second: Ioko_Card_throw1_27
+  - first:
+      213: 4585899078653042815
+    second: Ioko_Card_throw1_28
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefa6ee99740f3390800000000000000
+      internalID: -7836539906197901332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_1
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fefceab25d5cfe0800000000000000
+      internalID: -1169294144639602938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_2
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a0432da5445671b0800000000000000
+      internalID: -5659243223510204253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_3
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca29c0e0dc386c60800000000000000
+      internalID: 7811560421496269507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_4
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8463e536df64e460800000000000000
+      internalID: 7270058664300602511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_5
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea08b5c869f376020800000000000000
+      internalID: 2334904847647342766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c6dee6335d9fbe0800000000000000
+      internalID: -1442887788714431346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee60714f84b0101d0800000000000000
+      internalID: -3386413036845201682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_8
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9f2ba281c8db450800000000000000
+      internalID: 6106190705207736820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_9
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a108429861988fa0800000000000000
+      internalID: -5798224641922694746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_10
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006cc69f90eea1860800000000000000
+      internalID: 7501569855945754112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_11
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8cd90833091ad020800000000000000
+      internalID: 2367232055752383631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67cf9452244d46480800000000000000
+      internalID: -8906760782473462666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_13
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d90ff9fd0bd0e2a0800000000000000
+      internalID: -6710122591706740268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_14
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1f6ad2c58682f20800000000000000
+      internalID: 3398080663963234744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_15
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aba3ad1fc3aa3f70800000000000000
+      internalID: 9167820101416889249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_16
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f789dfeff4fc510800000000000000
+      internalID: 1571562751570509570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_17
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e788dd63767c820800000000000000
+      internalID: 2938430767225142913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9075b782d087c1630800000000000000
+      internalID: 3899123375305086729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c066f6baea0c4e10800000000000000
+      internalID: 2183131922576072905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_20
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eff49d8fc2111b10800000000000000
+      internalID: 1950360796271017957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_21
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ecae7d3d723765b0800000000000000
+      internalID: -5375272116759384855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_22
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9fe35fbc7123590800000000000000
+      internalID: -7696062648462411265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_23
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57076053b143c6880800000000000000
+      internalID: -8616454695608225675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e148afd47a9ca6de0800000000000000
+      internalID: -1339036218784316386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_25
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3178666dc984c06f0800000000000000
+      internalID: -717118402209609965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_26
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2e4e96ce91e1a80800000000000000
+      internalID: -8494323343994592588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Card_throw1_27
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb746e0075dcf100800000000000000
+      internalID: 143223965423533023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5722ab075cc840548b641c79bfa51f06
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Ioko_Card_throw1_0: -7836539906197901332
+      Ioko_Card_throw1_1: -1169294144639602938
+      Ioko_Card_throw1_10: 7501569855945754112
+      Ioko_Card_throw1_11: 2367232055752383631
+      Ioko_Card_throw1_12: -8906760782473462666
+      Ioko_Card_throw1_13: -6710122591706740268
+      Ioko_Card_throw1_14: 3398080663963234744
+      Ioko_Card_throw1_15: 9167820101416889249
+      Ioko_Card_throw1_16: 1571562751570509570
+      Ioko_Card_throw1_17: 2938430767225142913
+      Ioko_Card_throw1_18: 3899123375305086729
+      Ioko_Card_throw1_19: 2183131922576072905
+      Ioko_Card_throw1_2: -5659243223510204253
+      Ioko_Card_throw1_20: 1950360796271017957
+      Ioko_Card_throw1_21: -5375272116759384855
+      Ioko_Card_throw1_22: -7696062648462411265
+      Ioko_Card_throw1_23: -8616454695608225675
+      Ioko_Card_throw1_24: -1339036218784316386
+      Ioko_Card_throw1_25: -717118402209609965
+      Ioko_Card_throw1_26: -8494323343994592588
+      Ioko_Card_throw1_27: 143223965423533023
+      Ioko_Card_throw1_3: 7811560421496269507
+      Ioko_Card_throw1_4: 7270058664300602511
+      Ioko_Card_throw1_5: 2334904847647342766
+      Ioko_Card_throw1_6: -1442887788714431346
+      Ioko_Card_throw1_7: -3386413036845201682
+      Ioko_Card_throw1_8: 6106190705207736820
+      Ioko_Card_throw1_9: -5798224641922694746
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

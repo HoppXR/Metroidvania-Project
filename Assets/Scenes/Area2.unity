@@ -20512,7 +20512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &836483237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20762,8 +20762,8 @@ BoxCollider2D:
   m_Offset: {x: 0.5122566, y: -0.36149216}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5263505, y: 0.42844513}
-    oldSize: {x: 28.125, y: 36.25}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 23.8125, y: 30.375}
     newSize: {x: 7.6, y: 9.71}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -20808,8 +20808,8 @@ BoxCollider2D:
   m_Offset: {x: 0.39288712, y: -0.49281597}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5263505, y: 0.42844513}
-    oldSize: {x: 28.125, y: 36.25}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 23.8125, y: 30.375}
     newSize: {x: 7.6, y: 9.71}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
