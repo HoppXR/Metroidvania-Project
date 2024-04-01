@@ -24,7 +24,7 @@ public class PirateAttacks : MonoBehaviour
     [SerializeField] float maxX = 14f;
     [SerializeField] float minY = 160f;
     [SerializeField] float maxY = 176f;
-
+    
     void Start()
     {
         _animator = GetComponent<Animator>();
