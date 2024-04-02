@@ -5,7 +5,7 @@ using UnityEngine.InputSystem.DualShock;
 
 public class AvesAttack : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Animator _animator;
     public Transform boss;
     private Transform player;
     public Rigidbody2D rb;
@@ -30,6 +30,7 @@ public class AvesAttack : MonoBehaviour
     
     void Start()
     {
+        _animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("Player")?.transform;
         StartCoroutine(RandomAttackRoutine());
@@ -86,9 +87,11 @@ public class AvesAttack : MonoBehaviour
 
     void FireBreath()
     {
+        _animator.SetBool("attacking", true);
+        
         Vector3 playerDirection = player.position - boss.position;
         float position = Vector3.Dot(playerDirection, boss.right);
-
+        
         if (position > 0) // Player is on the right side
         {
             StartCoroutine(FlameBreathR());
@@ -97,7 +100,6 @@ public class AvesAttack : MonoBehaviour
         {
             StartCoroutine(FlameBreathL());
         }
-        
     }
 
     IEnumerator MeteorAttack()
@@ -148,7 +150,11 @@ public class AvesAttack : MonoBehaviour
     IEnumerator FlameBreathL()
     {
         flameBreathIndicatorL.SetActive(true);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
+        
+        _animator.SetTrigger("fireAttack");
+        yield return new WaitForSeconds(0.6f);
+        
         flameBreathIndicatorL.SetActive(false);
         flameBreathAttackL.SetActive(true);
         StartCoroutine(DeactivateFlameBreathL());
@@ -156,13 +162,18 @@ public class AvesAttack : MonoBehaviour
 
     private IEnumerator DeactivateFlameBreathL()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.1f);
         flameBreathAttackL.SetActive(false);
+        _animator.SetBool("attacking", false);
     }
     IEnumerator FlameBreathR()
     {
         flameBreathIndicatorR.SetActive(true);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
+        
+        _animator.SetTrigger("fireAttack");
+        yield return new WaitForSeconds(0.6f);
+        
         flameBreathIndicatorR.SetActive(false);
         flameBreathAttackR.SetActive(true);
         StartCoroutine(DeactivateFlameBreathR());
@@ -170,8 +181,9 @@ public class AvesAttack : MonoBehaviour
 
     private IEnumerator DeactivateFlameBreathR()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.1f);
         flameBreathAttackR.SetActive(false);
+        _animator.SetBool("attacking", false);
     }
     
     private IEnumerator SmallLunge()

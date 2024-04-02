@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class BossHealthAves : MonoBehaviour
 {
+    private Animator _animator;
     private Rigidbody2D _rb;
     private AvesAI _enemyAI;
     private AvesAttack _avesAttack;
-
     
     private float _currentHealth;
     [SerializeField] private float maxHealth;
@@ -19,10 +19,9 @@ public class BossHealthAves : MonoBehaviour
     [SerializeField] private Slider easeHealthSlider;
     private float lerpSpeed = 0.05f;
 
-    private bool chase = false;
-
     void Start()
     {
+        _animator = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         _enemyAI = GetComponent<AvesAI>();
         _avesAttack = GetComponent<AvesAttack>();
@@ -41,29 +40,19 @@ public class BossHealthAves : MonoBehaviour
     {
         healthBar.SetActive(true);
         
-        if (!chase)
-        {
-            _enemyAI.enabled = true;
-            _avesAttack.enabled = true;
-            _enemyAI.rb.constraints &= ~(RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY);
-            _enemyAI.canMove = true;
-            chase = true;
-            
-        }
-        
         if (_currentHealth >= damage)
         {
             _currentHealth -= damage;
+            _animator.SetTrigger("hurt");
         }
         else if (_currentHealth <= damage)
         {
             _currentHealth = 0;
+            _animator.SetBool("dead", true);
         }
 
         // Updates Health bar UI
         healthSlider.value = _currentHealth;
-        
-        // TODO: Play hurt animation
         
         Instantiate(blood, transform.position, Quaternion.identity);
 
@@ -79,9 +68,9 @@ public class BossHealthAves : MonoBehaviour
         
         _enemyAI.enabled = false;
         _avesAttack.enabled = false;
-        Destroy(gameObject);
-
-        // Play die animation
+        Destroy(gameObject, 2f);
+        
+        _animator.SetTrigger("death");
     
         Collider2D collider = GetComponent<Collider2D>();
         if (collider != null)

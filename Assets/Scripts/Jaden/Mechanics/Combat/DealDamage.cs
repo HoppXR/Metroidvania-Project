@@ -19,26 +19,26 @@ public class DealDamage : MonoBehaviour
 
         if (other.CompareTag("Boss"))
         {
-            var bHealth = other.gameObject.GetComponent<BossHealthLastima>();
-            bHealth.TakeDamage(damage);
+            var lHealth = other.gameObject.GetComponent<BossHealthLastima>();
+            lHealth.TakeDamage(damage);
         }
         
         if (other.CompareTag("Boss2"))
         {
-            var bHealth = other.gameObject.GetComponent<BossHealthAves>();
-            bHealth.TakeDamage(damage);
+            var aHealth = other.gameObject.GetComponent<BossHealthAves>();
+            aHealth.TakeDamage(damage);
         }
         
         if (other.CompareTag("Boss3"))
         {
-            var bHealth = other.gameObject.GetComponent<BossHealthATERALBUS>();
-            bHealth.TakeDamage(damage);
+            var tHealth = other.gameObject.GetComponent<BossHealthATERALBUS>();
+            tHealth.TakeDamage(damage);
         }
         
         if (other.CompareTag("Boss4"))
         {
-            var bHealth = other.gameObject.GetComponent<BossHealthIoko>();
-            bHealth.TakeDamage(damage);
+            var iHealth = other.gameObject.GetComponent<BossHealthIoko>();
+            iHealth.TakeDamage(damage);
         }
     }
 }

@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 6c9cc7ffc9e6ec6439a942b12d7db717
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4957282313441613677
+    second: fire attack_0
+  - first:
+      213: -6545913273182948364
+    second: fire attack_1
+  - first:
+      213: -5106450645760379489
+    second: fire attack_2
+  - first:
+      213: 6302074841156802066
+    second: fire attack_3
+  - first:
+      213: 2168901817103110020
+    second: fire attack_4
+  - first:
+      213: -6504385229571171518
+    second: fire attack_5
+  - first:
+      213: -2659036008423647415
+    second: fire attack_6
+  - first:
+      213: 1416204074791721249
+    second: fire attack_7
+  - first:
+      213: -2671146417262906463
+    second: fire attack_8
+  - first:
+      213: -732286658905957641
+    second: fire attack_9
+  - first:
+      213: 774428497481572697
+    second: fire attack_10
+  - first:
+      213: -2415811501210979555
+    second: fire attack_11
+  - first:
+      213: 7741367710684958777
+    second: fire attack_12
+  - first:
+      213: 5580125822737185031
+    second: fire attack_13
+  - first:
+      213: 4768954317595987894
+    second: fire attack_14
+  - first:
+      213: 4904408273509136699
+    second: fire attack_15
+  - first:
+      213: -2554373282831603131
+    second: fire attack_16
+  - first:
+      213: -6360936928706212301
+    second: fire attack_17
+  - first:
+      213: -2997575885312601578
+    second: fire attack_18
+  - first:
+      213: -4769789178669790825
+    second: fire attack_19
+  - first:
+      213: -552307211510593042
+    second: fire attack_20
+  - first:
+      213: -479922894476407098
+    second: fire attack_21
+  - first:
+      213: -7888281467125859034
+    second: fire attack_22
+  - first:
+      213: 4985333672576102033
+    second: fire attack_23
+  - first:
+      213: -7521566264937129045
+    second: fire attack_24
+  - first:
+      213: 5244692754632528821
+    second: fire attack_25
+  - first:
+      213: -5614327400271926947
+    second: fire attack_26
+  - first:
+      213: 83764121926894305
+    second: fire attack_27
+  - first:
+      213: 6628156787664577578
+    second: fire attack_28
+  - first:
+      213: -949189027188846980
+    second: fire attack_29
+  - first:
+      213: 2075710153342141656
+    second: fire attack_30
+  - first:
+      213: -6588963770166821072
+    second: fire attack_31
+  - first:
+      213: -1791136866480301641
+    second: fire attack_32
+  - first:
+      213: -6617670428779492627
+    second: fire attack_33
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fire attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7048
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d679300dffdcbc440800000000000000
+      internalID: 4957282313441613677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_1
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 7048
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f37a6d4f8e3825a0800000000000000
+      internalID: -6545913273182948364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_2
+      rect:
+        serializedVersion: 2
+        x: 4996
+        y: 7048
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95736c513e3229b0800000000000000
+      internalID: -5106450645760379489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_3
+      rect:
+        serializedVersion: 2
+        x: 7494
+        y: 7048
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216d31f9da7757750800000000000000
+      internalID: 6302074841156802066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5286
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f412916bc791e10800000000000000
+      internalID: 2168901817103110020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_5
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 5286
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bdc1d6818cbb5a0800000000000000
+      internalID: -6504385229571171518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_6
+      rect:
+        serializedVersion: 2
+        x: 4996
+        y: 5286
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9479fe8a6d4391bd0800000000000000
+      internalID: -2659036008423647415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_7
+      rect:
+        serializedVersion: 2
+        x: 7494
+        y: 5286
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129db674a1e57a310800000000000000
+      internalID: 1416204074791721249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3524
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3bcff5c7e2eead0800000000000000
+      internalID: -2671146417262906463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_9
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 3524
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa172ed92566d5f0800000000000000
+      internalID: -732286658905957641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_10
+      rect:
+        serializedVersion: 2
+        x: 4996
+        y: 3524
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95124588d925fba00800000000000000
+      internalID: 774428497481572697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_11
+      rect:
+        serializedVersion: 2
+        x: 7494
+        y: 3524
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13340a3d30597ed0800000000000000
+      internalID: -2415811501210979555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1762
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9305e07daecde6b60800000000000000
+      internalID: 7741367710684958777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_13
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 1762
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709fb3afed6907d40800000000000000
+      internalID: 5580125822737185031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_14
+      rect:
+        serializedVersion: 2
+        x: 4996
+        y: 1762
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bfcf525faabe2240800000000000000
+      internalID: 4768954317595987894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39bfff0755ff0440800000000000000
+      internalID: 4904408273509136699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_16
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 0
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ae21d680b0d8cd0800000000000000
+      internalID: -2554373282831603131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire attack_17
+      rect:
+        serializedVersion: 2
+        x: 4996
+        y: 0
+        width: 2498
+        height: 1762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e4dc5a09969b7a0800000000000000
+      internalID: -6360936928706212301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fd579cd42884d9248a03f7ceb38d2878
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fire attack_0: 4957282313441613677
+      fire attack_1: -6545913273182948364
+      fire attack_10: 774428497481572697
+      fire attack_11: -2415811501210979555
+      fire attack_12: 7741367710684958777
+      fire attack_13: 5580125822737185031
+      fire attack_14: 4768954317595987894
+      fire attack_15: 4904408273509136699
+      fire attack_16: -2554373282831603131
+      fire attack_17: -6360936928706212301
+      fire attack_2: -5106450645760379489
+      fire attack_3: 6302074841156802066
+      fire attack_4: 2168901817103110020
+      fire attack_5: -6504385229571171518
+      fire attack_6: -2659036008423647415
+      fire attack_7: 1416204074791721249
+      fire attack_8: -2671146417262906463
+      fire attack_9: -732286658905957641
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
