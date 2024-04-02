@@ -34,6 +34,9 @@ public class BossHealthIoko : MonoBehaviour
         _iokoAttack = GetComponent<IokoAttack>();
 
         _currentHealth = maxHealth;
+        
+        healthSlider.maxValue = maxHealth;
+        easeHealthSlider.maxValue = maxHealth;
     }
 
     private void Update()

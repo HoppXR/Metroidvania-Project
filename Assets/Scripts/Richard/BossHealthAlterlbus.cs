@@ -35,6 +35,9 @@ public class BossHealthATERALBUS : MonoBehaviour
 
         isDead = false;
         _currentHealth = maxHealth;
+        
+        healthSlider.maxValue = maxHealth;
+        easeHealthSlider.maxValue = maxHealth;
     }
     
     private void Update()

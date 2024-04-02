@@ -26,6 +26,9 @@ public class BossHealthAves : MonoBehaviour
         _enemyAI = GetComponent<AvesAI>();
         _avesAttack = GetComponent<AvesAttack>();
         _currentHealth = maxHealth;
+        
+        healthSlider.maxValue = maxHealth;
+        easeHealthSlider.maxValue = maxHealth;
     }
     
     private void Update()

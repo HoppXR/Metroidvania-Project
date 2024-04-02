@@ -34,6 +34,9 @@ public class BossHealthLastima : MonoBehaviour
 
         isDead = false;
         _currentHealth = maxHealth;
+
+        healthSlider.maxValue = maxHealth;
+        easeHealthSlider.maxValue = maxHealth;
     }
     
     private void Update()
@@ -63,16 +66,6 @@ public class BossHealthLastima : MonoBehaviour
     {
         healthBar.SetActive(true);
         
-        if (!chase)
-        {
-            _enemyAI.enabled = true;
-            _enemyAI.rb.constraints &= ~(RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY);
-            _enemyAI.canMove = true;
-            _pirateAttacks.enabled = true;
-            chase = true;
-            
-        }
-        
         if (_currentHealth >= damage)
         {
             _currentHealth -= damage;
@@ -81,6 +74,8 @@ public class BossHealthLastima : MonoBehaviour
         {
             _currentHealth = 0;
         }
+        
+        Debug.Log(_currentHealth);
 
         // Updates Health bar UI
         healthSlider.value = _currentHealth;
@@ -96,6 +91,7 @@ public class BossHealthLastima : MonoBehaviour
     private void Die()
     {
         healthBar.SetActive(false);
+        
         enablePortal.SetActive(true);
         _enemyAI.enabled = false;
         _pirateAttacks.enabled = false;
