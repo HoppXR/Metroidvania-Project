@@ -18,6 +18,9 @@ public class BossHealthAves : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private Slider easeHealthSlider;
     private float lerpSpeed = 0.05f;
+    
+    public GameObject pulsarObject1;
+    public GameObject pulsarObject2;
 
     void Start()
     {
@@ -68,9 +71,11 @@ public class BossHealthAves : MonoBehaviour
     private void Die()
     {
         healthBar.SetActive(false);
-        
+        pulsarObject1.SetActive(false);
+        pulsarObject2.SetActive(false);
         _enemyAI.enabled = false;
         _avesAttack.enabled = false;
+        
         Destroy(gameObject, 2f);
         
         _animator.SetTrigger("death");

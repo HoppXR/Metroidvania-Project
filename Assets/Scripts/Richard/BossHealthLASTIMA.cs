@@ -25,6 +25,10 @@ public class BossHealthLastima : MonoBehaviour
     
     [SerializeField] public GameObject enablePortal;
 
+    private bool goonSummon1;
+    private bool goonSummon2;
+    private bool goonSummon3;
+
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -73,6 +77,21 @@ public class BossHealthLastima : MonoBehaviour
         else if (_currentHealth <= damage)
         {
             _currentHealth = 0;
+        }
+        else if (_currentHealth <= 150 && !goonSummon1)
+        {
+            _pirateAttacks.GoonsAttack();
+            goonSummon1 = true;
+        }
+        else if (_currentHealth <= 80 && !goonSummon2)
+        {
+            _pirateAttacks.GoonsAttack();
+            goonSummon2 = true;
+        }
+        else if (_currentHealth <= 20 && !goonSummon3)
+        {
+            _pirateAttacks.GoonsAttack();
+            goonSummon3 = true;
         }
         
         Debug.Log(_currentHealth);

@@ -11486,6 +11486,8 @@ MonoBehaviour:
   healthBar: {fileID: 5321503}
   healthSlider: {fileID: 5321501}
   easeHealthSlider: {fileID: 5321502}
+  pulsarObject1: {fileID: 459019361}
+  pulsarObject2: {fileID: 2024208526}
 --- !u!114 &1086457515
 MonoBehaviour:
   m_ObjectHideFlags: 0

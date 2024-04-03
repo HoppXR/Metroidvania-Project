@@ -37,7 +37,7 @@ public class PirateAttacks : MonoBehaviour
         {
             yield return new WaitForSeconds(7f);
 
-            int randomNumber = Random.Range(1, 10);
+            int randomNumber = Random.Range(1, 9);
 
             if (randomNumber >= 2 && randomNumber <= 4)
             {
@@ -46,13 +46,9 @@ public class PirateAttacks : MonoBehaviour
                     BossCannonAttack.ShootCannon();
                 }
             }
-            else if (randomNumber >= 5 && randomNumber <= 8)
+            else
             {
                 SpawnSummonShip();
-            }
-            else // randomNumber is 9
-            {
-                GoonsAttack();
             }
         }
     }
@@ -95,7 +91,7 @@ public class PirateAttacks : MonoBehaviour
     }
     
     
-    void GoonsAttack()
+    public void GoonsAttack()
     {
         if (BossHealthLastima.isDead)
             return;
