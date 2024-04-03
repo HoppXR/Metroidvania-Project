@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ioko_Portrait-1_0: -5958117857482338211
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

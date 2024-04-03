@@ -205,6 +205,7 @@ private IEnumerator SmallLunge()
 
         if (player != null)
         {
+            FindObjectOfType<AudioManager>().Play("Project");
             GameObject sword = Instantiate(swordProjectile, transform.position, Quaternion.identity);
         
             // Calculate direction and rotation
@@ -239,7 +240,7 @@ private IEnumerator SmallLunge()
             return;
         
         _animator.SetTrigger("Attack");
-        
+        FindObjectOfType<AudioManager>().Play("Swing");
         attackHitbox.SetActive(true);
         if (player != null)
         {
@@ -262,7 +263,7 @@ private IEnumerator SmallLunge()
             return;
         
         _animator.SetTrigger("Attack");
-        
+        FindObjectOfType<AudioManager>().Stop("Swing");
         bigHitBoxAttackHitbox.SetActive(true);
         StartCoroutine(DeactivateBigHitBoxAttack());
     }
