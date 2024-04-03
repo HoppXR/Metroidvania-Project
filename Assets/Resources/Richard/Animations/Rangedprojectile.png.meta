@@ -200,11 +200,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Rangedprojectile_0: -6303788100735626181
-      Rangedprojectile_1: 1774081218753957484
-      Rangedprojectile_2: -6449887473969276572
-      Rangedprojectile_3: -4847401376353187495
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
