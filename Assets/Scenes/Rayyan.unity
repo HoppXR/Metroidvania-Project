@@ -228,7 +228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &603716279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -313,7 +313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &637379079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,7 +380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &923195943
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -464,7 +464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1242586110
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -548,7 +548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1296202776
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -632,7 +632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1644562801
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -712,6 +712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sprint particles
       objectReference: {fileID: 0}
+    - target: {fileID: 2652135197575338787, guid: 4fea7707a20135143a61be36451a2c7a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4758580041375175722, guid: 4fea7707a20135143a61be36451a2c7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.76
@@ -768,6 +772,10 @@ PrefabInstance:
     - target: {fileID: 3428095353766928526, guid: 94355ede650aed641b73ab86a161b2bc, type: 3}
       propertyPath: m_Name
       value: fire particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 3428095353766928526, guid: 94355ede650aed641b73ab86a161b2bc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4113333937182538230, guid: 94355ede650aed641b73ab86a161b2bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -866,6 +874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: smoke particles
       objectReference: {fileID: 0}
+    - target: {fileID: 4606927163456184482, guid: dcc72575809a1e04ead416ba748698e9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7093370805770402230, guid: dcc72575809a1e04ead416ba748698e9, type: 3}
       propertyPath: startDelay.scalar
       value: 1
@@ -875,6 +887,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcc72575809a1e04ead416ba748698e9, type: 3}
+--- !u!1001 &6482440685785648907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5287078605441303693, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.71081465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287078605441303693, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.32203227
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287078605441303693, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.19088182
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287078605441303693, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287078605441303693, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287078605441303693, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287078605441303693, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287078605441303693, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287078605441303693, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287078605441303693, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764570624892959039, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_Name
+      value: vortex particles + target
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
 --- !u!1001 &7426454504555765545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -886,6 +955,10 @@ PrefabInstance:
     - target: {fileID: 276194354013034377, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
       propertyPath: m_Name
       value: blood particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 276194354013034377, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5770773941366794607, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -943,6 +1016,10 @@ PrefabInstance:
     - target: {fileID: 6088888506581351955, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088888506581351955, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8059224694992600379, guid: 3787bf3c23ed3b7438c9ecc40a390a45, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1005,3 +1082,4 @@ SceneRoots:
   - {fileID: 3388373920542998527}
   - {fileID: 8457952221327972784}
   - {fileID: 637379081}
+  - {fileID: 6482440685785648907}
