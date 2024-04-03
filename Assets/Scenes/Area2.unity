@@ -20758,7 +20758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30448f56af6e2c3438486e2e23b5a600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
+  maxHealth: 225
   blood: {fileID: 276194354013034377, guid: 1abe018eea98dea488819b02ec28337f, type: 3}
   healthBar: {fileID: 694085309}
   healthSlider: {fileID: 694085307}
