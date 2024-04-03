@@ -88,7 +88,7 @@ public class AvesAttack : MonoBehaviour
     void FireBreath()
     {
         _animator.SetBool("attacking", true);
-        
+        FindObjectOfType<AudioManager>().Play("Rumble");
         Vector3 playerDirection = player.position - boss.position;
         float position = Vector3.Dot(playerDirection, boss.right);
         
@@ -133,6 +133,7 @@ public class AvesAttack : MonoBehaviour
 
     void PulsarAttack()
     {
+        FindObjectOfType<AudioManager>().Play("Asol");
         pulsarObject1.SetActive(true);
         pulsarObject2.SetActive(true);
         
@@ -143,6 +144,7 @@ public class AvesAttack : MonoBehaviour
     {
         pulsarObject1.SetActive(false);
         pulsarObject2.SetActive(false);
+        FindObjectOfType<AudioManager>().Stop("Asol");
     }
     
     
