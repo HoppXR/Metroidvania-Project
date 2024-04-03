@@ -18640,6 +18640,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 9b3fc6ca641dd9f499a4d7843cde8b8d, type: 3}
+    name: AvesDash
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1911187468
 Transform:
   m_ObjectHideFlags: 0

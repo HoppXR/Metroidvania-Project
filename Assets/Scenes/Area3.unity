@@ -7573,6 +7573,18 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: c06b6528433b4a440b417cd07a1ed821, type: 3}
+    name: Stomp
+    volume: 1
+    pitch: 0.59
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 9f58232ee0aef9b44817e7ef6d352700, type: 3}
+    name: Dash
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &852814033
 Transform:
   m_ObjectHideFlags: 0
