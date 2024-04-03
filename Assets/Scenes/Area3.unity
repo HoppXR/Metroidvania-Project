@@ -3517,7 +3517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &426030680
 Transform:
   m_ObjectHideFlags: 0
@@ -3642,7 +3642,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Save (E)
+  m_text: Save (A)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2654407da2fd97a42bc672f94191004e, type: 2}
   m_sharedMaterial: {fileID: 2332949673970090902, guid: 2654407da2fd97a42bc672f94191004e, type: 2}
@@ -3652,7 +3652,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9990,7 +9990,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter (E)
+  m_text: Enter (A)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2654407da2fd97a42bc672f94191004e, type: 2}
   m_sharedMaterial: {fileID: 2332949673970090902, guid: 2654407da2fd97a42bc672f94191004e, type: 2}
@@ -10000,7 +10000,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10111,7 +10111,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 056b4d4265065e74abdfd75973c0325d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d9144441f271355489ca066b90f3caa7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.192
   m_Pitch: 1
@@ -10209,7 +10209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ff6e543741da849b83ab915e6d7f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomBackgroundMusic: {fileID: 8300000, guid: 8c3608c1b47b566459a1b571668c194c, type: 3}
+  roomBackgroundMusic: {fileID: 8300000, guid: 8caebd77c9e93134ab22782f334256f9, type: 3}
 --- !u!61 &1248831429
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11510,7 +11510,7 @@ RectTransform:
   m_GameObject: {fileID: 1315119018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4596, y: 1.4596, z: 1.4596}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 503722408}

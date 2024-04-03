@@ -43,7 +43,7 @@ public class DoorScript : MonoBehaviour
         _canTransition = false;
         
         fadeImage.gameObject.SetActive(true);
-        fadeImage.color = new Color(0, 0, 0, 0); // Start with transparent
+        fadeImage.color = new Color(0, 0, 0, 0); 
 
         float elapsedTime = 0;
         while (elapsedTime < fadeDuration)
