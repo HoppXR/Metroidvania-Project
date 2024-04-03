@@ -25,6 +25,8 @@ public class BossHealthIoko : MonoBehaviour
     [SerializeField] public GameObject enablePortal;
     [SerializeField] public GameObject deathDialogue;
     [SerializeField] public GameObject bossBarrier;
+    [SerializeField] private GameObject specialEffectObject;
+    private bool specialEffectActivated = false;
 
     void Start()
     {
@@ -86,6 +88,14 @@ public class BossHealthIoko : MonoBehaviour
         healthSlider.value = _currentHealth;
 
         Instantiate(blood, transform.position, Quaternion.identity);
+
+
+        if (_currentHealth <= maxHealth * 0.5f && !specialEffectActivated)
+        {
+            specialEffectObject.SetActive(true);
+            specialEffectActivated = true;
+            Destroy(specialEffectObject, 1f);
+        }
 
         if (_currentHealth <= 0)
         {
