@@ -38,5 +38,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DMMS3.unity
     guid: c00506e67e7ff83459814972cc58095c
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 1b7067e8f4ca1124c97150d5ebd4a09c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
