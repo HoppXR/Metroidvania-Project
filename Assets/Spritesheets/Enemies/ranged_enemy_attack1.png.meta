@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 419f8d85217a9df44b46138b57b6137d
+guid: 3ceb49982d320cc42aa07b2bef991cc0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6176339136050568474
-    second: Card_projectiles_0
+      213: 6800693120051469238
+    second: ranged_enemy_attack1_0
   - first:
-      213: -4839110719673910978
-    second: Card_projectiles_1
+      213: -3870321821501379997
+    second: ranged_enemy_attack1_1
   - first:
-      213: 4629419554248453109
-    second: Card_projectiles_2
+      213: -4240359787802045618
+    second: ranged_enemy_attack1_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Card_projectiles_0
+      name: ranged_enemy_attack1_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 369
-        width: 202
-        height: 222
+        x: 0
+        y: 640
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e2ec57874c394aa0800000000000000
-      internalID: -6176339136050568474
+      spriteID: 6bb5c1f6c5ae06e50800000000000000
+      internalID: 6800693120051469238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Card_projectiles_1
+      name: ranged_enemy_attack1_1
       rect:
         serializedVersion: 2
-        x: 379
-        y: 369
-        width: 202
-        height: 222
+        x: 320
+        y: 640
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e393d0d607608dcb0800000000000000
-      internalID: -4839110719673910978
+      spriteID: 36aa7f62fcad94ac0800000000000000
+      internalID: -3870321821501379997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Card_projectiles_2
+      name: ranged_enemy_attack1_2
       rect:
         serializedVersion: 2
-        x: 59
-        y: 49
-        width: 202
-        height: 222
+        x: 640
+        y: 640
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +160,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fbe93f8e800f3040800000000000000
-      internalID: 4629419554248453109
+      spriteID: e4355384d373725c0800000000000000
+      internalID: -4240359787802045618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_enemy_attack1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff410ce6270df142824d59e5dd9fa59
+      internalID: -832676807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_enemy_attack1_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722ad544b08af7f42aae8c51f1339d11
+      internalID: 2005980149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_enemy_attack1_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cd5e0d5294d4d43814623c4d39642c
+      internalID: 1211286707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_enemy_attack1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bab667525d11d047a79838eff096db4
+      internalID: 1492359468
       vertices: []
       indices: 
       edges: []
@@ -169,7 +253,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0e5b83105859b5143a4202422f3b919c
     internalID: 0
     vertices: []
     indices: 
@@ -177,9 +261,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Card_projectiles_0: -6176339136050568474
-      Card_projectiles_1: -4839110719673910978
-      Card_projectiles_2: 4629419554248453109
+      ranged_enemy_attack1_0: 6800693120051469238
+      ranged_enemy_attack1_1: -3870321821501379997
+      ranged_enemy_attack1_2: -4240359787802045618
+      ranged_enemy_attack1_3: -832676807
+      ranged_enemy_attack1_4: 2005980149
+      ranged_enemy_attack1_5: 1211286707
+      ranged_enemy_attack1_6: 1492359468
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

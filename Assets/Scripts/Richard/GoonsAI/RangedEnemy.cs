@@ -1,7 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class RangedEnemy : MonoBehaviour
 {
+    private Animator _animator;
+    
     public float range = 5f;
     public float fireRate = 1f;
     public GameObject projectilePrefab;
@@ -13,7 +16,8 @@ public class RangedEnemy : MonoBehaviour
 
     void Start()
     {
-
+        _animator = GetComponent<Animator>();
+        
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
@@ -25,15 +29,18 @@ public class RangedEnemy : MonoBehaviour
             {
                 if (Time.time >= nextFireTime)
                 {
-                    FireProjectile();
+                    StartCoroutine(FireProjectile());
                     nextFireTime = Time.time + 1f / fireRate;
                 }
             }
         }
     }
 
-    void FireProjectile()
+    IEnumerator FireProjectile()
     {
+        _animator.SetTrigger("Attack");
+        yield return new WaitForSeconds(0.85f);
+        
         GameObject projectileObject = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = projectileObject.GetComponent<Rigidbody2D>();
         if (rb != null)
