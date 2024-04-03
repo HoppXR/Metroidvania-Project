@@ -14181,7 +14181,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a734880b13243d447b9b7985a208ba72, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 336e5a235575b2841af4ef7f75b17999, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.506
   m_Pitch: 1
@@ -14340,7 +14340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ff6e543741da849b83ab915e6d7f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomBackgroundMusic: {fileID: 8300000, guid: 8c3608c1b47b566459a1b571668c194c, type: 3}
+  roomBackgroundMusic: {fileID: 8300000, guid: 41505f4d01e455341b6f719db8709261, type: 3}
 --- !u!1001 &574722935
 PrefabInstance:
   m_ObjectHideFlags: 0
