@@ -8825,8 +8825,8 @@ Transform:
   m_GameObject: {fileID: 459274811}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.16, y: -5.49, z: 0}
-  m_LocalScale: {x: 40.170883, y: 3.2027, z: 1}
+  m_LocalPosition: {x: -1.16, y: -6.7896, z: 0}
+  m_LocalScale: {x: 40.170883, y: 0.60348445, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1001501773}
@@ -8989,7 +8989,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1012321629}
   dialogueText: {fileID: 2001046455}
   dialogue:
-  - Try to use your grapple onto these guys with Right Click!
+  - Be flamboyant! Press 'B' to dash and the right bumper to grapple onto an enemy!
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 276194354013034377, guid: 99ddfd8bccaa4e34aa8173c722e18598, type: 3}
@@ -18466,10 +18466,8 @@ MonoBehaviour:
   dialoguePanel: {fileID: 311708645}
   dialogueText: {fileID: 267510345}
   dialogue:
-  - 'Heads up! '
-  - You're going to run into BAD guys.
-  - They will try to KILL you.
-  - Left Click to retaliate!
+  - Hold up.. do you know what you're doing?
+  - You're about to be attacked! Press 'X' to fight back!
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 276194354013034377, guid: 99ddfd8bccaa4e34aa8173c722e18598, type: 3}
@@ -18539,8 +18537,8 @@ Transform:
   m_GameObject: {fileID: 849734740}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.08, y: 2.28, z: 0}
-  m_LocalScale: {x: 40.170883, y: 3.2027, z: 1}
+  m_LocalPosition: {x: -1.14, y: 3.1945, z: 0}
+  m_LocalScale: {x: 40.170883, y: 1.3048065, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1001501773}
@@ -20129,8 +20127,8 @@ Transform:
   m_GameObject: {fileID: 902239524}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.23, y: -8.27, z: 0}
-  m_LocalScale: {x: 40.170883, y: 3.2027, z: 1}
+  m_LocalPosition: {x: -1.23, y: -7.4416, z: 0}
+  m_LocalScale: {x: 40.170883, y: 1.5459433, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 507617853}
@@ -28693,7 +28691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2697768646301698341, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: grappleMask.m_Bits
-      value: 320
+      value: 448
       objectReference: {fileID: 0}
     - target: {fileID: 2844896284579443137, guid: 38b81e6e176b468459f38d1b1441fdf0, type: 3}
       propertyPath: m_TagString
@@ -42904,7 +42902,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 7208210530539703328, guid: 61f5ba59b1adfa6409bde789f9213764, type: 3}
-  m_Color: {r: 0.6032978, g: 1, b: 0.49685526, a: 1}
+  m_Color: {r: 0.6132076, g: 0.4399337, b: 0.32781532, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

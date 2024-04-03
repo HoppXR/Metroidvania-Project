@@ -2828,7 +2828,7 @@ GameObject:
   - component: {fileID: 109008260}
   - component: {fileID: 109008259}
   - component: {fileID: 109008258}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Spin Attack Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3331,15 +3331,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6055912385276486915, guid: 0a6e4cc7dfbda04498afe0a71c90170e, type: 3}
       propertyPath: m_Color.b
-      value: 0.8000001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6055912385276486915, guid: 0a6e4cc7dfbda04498afe0a71c90170e, type: 3}
       propertyPath: m_Color.g
-      value: 0.35686275
+      value: 0.47798735
       objectReference: {fileID: 0}
     - target: {fileID: 6055912385276486915, guid: 0a6e4cc7dfbda04498afe0a71c90170e, type: 3}
       propertyPath: m_Color.r
-      value: 0.5686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7843989611963333997, guid: 0a6e4cc7dfbda04498afe0a71c90170e, type: 3}
       propertyPath: m_Name
@@ -16474,7 +16474,7 @@ GameObject:
   - component: {fileID: 673823998}
   - component: {fileID: 673823997}
   - component: {fileID: 673823999}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Dice Attack Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20654,7 +20654,7 @@ GameObject:
   - component: {fileID: 836483240}
   - component: {fileID: 836483246}
   - component: {fileID: 836483245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ioko
   m_TagString: Boss4
   m_Icon: {fileID: 0}
@@ -28474,7 +28474,6 @@ GameObject:
   - component: {fileID: 1210964135}
   - component: {fileID: 1210964138}
   - component: {fileID: 1210964137}
-  - component: {fileID: 1210964136}
   m_Layer: 7
   m_Name: IokoPortraitSprite
   m_TagString: Untagged
@@ -28491,38 +28490,16 @@ RectTransform:
   m_GameObject: {fileID: 1210964134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 11.807653, y: 11.807653, z: 11.807653}
+  m_LocalScale: {x: 7.4244165, y: 7.4244165, z: 7.4244165}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2078620983}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -413.11636, y: -212.63376}
+  m_AnchoredPosition: {x: -413.11636, y: 199.36624}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1210964136
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210964134}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b719ebbb2bdd9064e9d4ae82d6d8047a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1210964137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28543,9 +28520,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5586721822783416312, guid: c8278ea10d01f4e47ae274433b94eb57, type: 3}
+  m_Sprite: {fileID: -5958117857482338211, guid: fc568873f7f7add4fb4220c5cb9e49a9, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -29380,7 +29357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1279177971}
   - component: {fileID: 1279177970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dice Attack Indicators
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35579,8 +35556,8 @@ MonoBehaviour:
   dialoguePanel: {fileID: 2078620982}
   dialogueText: {fileID: 102586972}
   dialogue:
-  - Ho ho ho!
-  - You think you can try and defeat me!
+  - Ha Ha Haaaa.. You're the one smashing through my castle huh?
+  - Huh.. that's funny, I thought you'd be taller.
   - Let's put that to the test.
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
@@ -42234,15 +42211,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6055912385276486915, guid: 0a6e4cc7dfbda04498afe0a71c90170e, type: 3}
       propertyPath: m_Color.b
-      value: 0.8000001
+      value: 0.9173937
       objectReference: {fileID: 0}
     - target: {fileID: 6055912385276486915, guid: 0a6e4cc7dfbda04498afe0a71c90170e, type: 3}
       propertyPath: m_Color.g
-      value: 0.35686275
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6055912385276486915, guid: 0a6e4cc7dfbda04498afe0a71c90170e, type: 3}
       propertyPath: m_Color.r
-      value: 0.5686275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7843989611963333997, guid: 0a6e4cc7dfbda04498afe0a71c90170e, type: 3}
       propertyPath: m_Name

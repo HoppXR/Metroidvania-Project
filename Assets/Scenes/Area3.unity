@@ -1136,6 +1136,10 @@ PrefabInstance:
       value: SwordsManAttackIndicator
       objectReference: {fileID: 0}
     - target: {fileID: 1615244091796044760, guid: 44db575cb98ca9f40bc9c46ab97b6db1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615244091796044760, guid: 44db575cb98ca9f40bc9c46ab97b6db1, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -4173,7 +4177,7 @@ GameObject:
   - component: {fileID: 475561294}
   - component: {fileID: 475561293}
   - component: {fileID: 475561292}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: BigHitBoxAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5249,7 +5253,7 @@ GameObject:
   - component: {fileID: 604758212}
   - component: {fileID: 604758214}
   - component: {fileID: 604758213}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9254,7 +9258,7 @@ Transform:
   m_GameObject: {fileID: 1136598829}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.660004, y: 58.000004, z: 0}
+  m_LocalPosition: {x: 39.660004, y: 58.000004, z: 8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16435,7 +16439,7 @@ GameObject:
   - component: {fileID: 1676128558}
   - component: {fileID: 1676128563}
   - component: {fileID: 1676128564}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Aterlbus
   m_TagString: Boss3
   m_Icon: {fileID: 0}
