@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: b5af506cf5dc562439f1cdf07f9e4d0f
   - enabled: 1
-    path: Assets/Scenes/PortalRoom.unity
-    guid: 0f206e212c428d34aa513a20bfc65ebd
-  - enabled: 1
     path: Assets/Scenes/IntroScene.unity
     guid: 983f2af6821f53e4b9b95cc6adef13ab
+  - enabled: 1
+    path: Assets/Scenes/PortalRoom.unity
+    guid: 0f206e212c428d34aa513a20bfc65ebd
   - enabled: 1
     path: Assets/Scenes/Area1.unity
     guid: 2cda990e2423bbf4892e6590ba056729

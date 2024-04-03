@@ -202,12 +202,12 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     public void SlowDown()
     {
-        moveSpeed *= 0.5f;
+        moveSpeed *= 0.2f;
     }
 
     public void SpeedUp()
     {
-        moveSpeed *= 2;
+        moveSpeed *= 5;
     }
 
     public void CanMoveFalse()
