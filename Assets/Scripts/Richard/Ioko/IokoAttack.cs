@@ -99,7 +99,7 @@ public class IokoAttack : MonoBehaviour
         {
             int randomIndex = Random.Range(0, myArray.Length);
             int randomSpeed = myArray[randomIndex];
-
+            FindObjectOfType<AudioManager>().Play("Card");
             if (player != null)
             {
                 _animator.SetTrigger("CardThrow");
@@ -159,6 +159,7 @@ public class IokoAttack : MonoBehaviour
         }
         
         _animator.SetTrigger("DiceAttack");
+        FindObjectOfType<AudioManager>().Play("Dice");
         yield return new WaitForSeconds(2f);
         
         frontRNGIndicators.SetActive(true);

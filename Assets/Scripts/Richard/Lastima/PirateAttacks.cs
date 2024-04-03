@@ -61,6 +61,7 @@ public class PirateAttacks : MonoBehaviour
     {
         if (BossHealthLastima.isDead)
             return;
+        FindObjectOfType<AudioManager>().Play("Ghostship");
         
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
@@ -98,7 +99,7 @@ public class PirateAttacks : MonoBehaviour
     {
         if (BossHealthLastima.isDead)
             return;
-        
+        FindObjectOfType<AudioManager>().Play("Goonsattack");
         boss.position = teleportDestination;
         
         Rigidbody2D bossRb = boss.GetComponent<Rigidbody2D>();
