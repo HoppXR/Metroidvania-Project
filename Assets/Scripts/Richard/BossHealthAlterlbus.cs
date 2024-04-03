@@ -19,7 +19,8 @@ public class BossHealthATERALBUS : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private Slider easeHealthSlider;
     private float lerpSpeed = 0.05f;
-
+    [SerializeField] private GameObject specialEffectObject;
+    private bool specialEffectActivated = false;
     private bool chase = false;
 
     public static bool isDead;
@@ -91,6 +92,13 @@ public class BossHealthATERALBUS : MonoBehaviour
         // TODO: Play hurt animation
         
         Instantiate(blood, transform.position, Quaternion.identity);
+
+        if (_currentHealth <= maxHealth * 0.5f && !specialEffectActivated)
+        {
+            specialEffectObject.SetActive(true);
+            specialEffectActivated = true;
+            Destroy(specialEffectObject, 1f);
+        }
 
         if (_currentHealth <= 0)
         {

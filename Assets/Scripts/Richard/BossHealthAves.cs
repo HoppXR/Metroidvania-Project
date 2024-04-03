@@ -18,7 +18,8 @@ public class BossHealthAves : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private Slider easeHealthSlider;
     private float lerpSpeed = 0.05f;
-    
+    [SerializeField] private GameObject specialEffectObject;
+    private bool specialEffectActivated = false;
     public GameObject pulsarObject1;
     public GameObject pulsarObject2;
 
@@ -55,6 +56,13 @@ public class BossHealthAves : MonoBehaviour
         {
             _currentHealth = 0;
             _animator.SetBool("dead", true);
+        }
+
+        if (_currentHealth <= maxHealth * 0.5f && !specialEffectActivated)
+        {
+            specialEffectObject.SetActive(true);
+            specialEffectActivated = true;
+            Destroy(specialEffectObject, 1f);
         }
 
         // Updates Health bar UI

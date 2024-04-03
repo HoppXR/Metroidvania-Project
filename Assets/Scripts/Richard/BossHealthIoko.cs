@@ -18,7 +18,8 @@ public class BossHealthIoko : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private Slider easeHealthSlider;
     private float lerpSpeed = 0.05f;
-
+    [SerializeField] private GameObject specialEffectObject;
+    private bool specialEffectActivated = false;
     private bool chase = false;
     private bool finalGambitExecuted = false;
 
@@ -86,6 +87,13 @@ public class BossHealthIoko : MonoBehaviour
         healthSlider.value = _currentHealth;
 
         Instantiate(blood, transform.position, Quaternion.identity);
+
+        if (_currentHealth <= maxHealth * 0.5f && !specialEffectActivated)
+        {
+            specialEffectObject.SetActive(true);
+            specialEffectActivated = true;
+            Destroy(specialEffectObject, 1f);
+        }
 
         if (_currentHealth <= 0)
         {
