@@ -1,0 +1,882 @@
+fileFormatVersion: 2
+guid: 403e842b38a7dc14495606e7f9ba0ed1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9104105430070025427
+    second: Ioko_Death_0
+  - first:
+      213: -739621144334791796
+    second: Ioko_Death_1
+  - first:
+      213: -1630232265707929296
+    second: Ioko_Death_2
+  - first:
+      213: 1623701492513936711
+    second: Ioko_Death_3
+  - first:
+      213: -9096703635688592954
+    second: Ioko_Death_4
+  - first:
+      213: -8434232387112377977
+    second: Ioko_Death_5
+  - first:
+      213: -3677775713123198932
+    second: Ioko_Death_6
+  - first:
+      213: -8419840725651756712
+    second: Ioko_Death_7
+  - first:
+      213: 255320454953056109
+    second: Ioko_Death_8
+  - first:
+      213: -8952261979731417041
+    second: Ioko_Death_9
+  - first:
+      213: -7751118382565972931
+    second: Ioko_Death_10
+  - first:
+      213: -5435204604487082879
+    second: Ioko_Death_11
+  - first:
+      213: 3387568747776806311
+    second: Ioko_Death_12
+  - first:
+      213: 5852320136108251428
+    second: Ioko_Death_13
+  - first:
+      213: -3514595643640161283
+    second: Ioko_Death_14
+  - first:
+      213: -5177220485649906200
+    second: Ioko_Death_15
+  - first:
+      213: -2344997939700461825
+    second: Ioko_Death_16
+  - first:
+      213: -3010355192758407971
+    second: Ioko_Death_17
+  - first:
+      213: 1186496418070032037
+    second: Ioko_Death_18
+  - first:
+      213: -2622580507152715102
+    second: Ioko_Death_19
+  - first:
+      213: 548865485828047422
+    second: Ioko_Death_20
+  - first:
+      213: 5745933951220479
+    second: Ioko_Death_21
+  - first:
+      213: -1601321572936026828
+    second: Ioko_Death_22
+  - first:
+      213: -4222674142949294332
+    second: Ioko_Death_23
+  - first:
+      213: -2021225187284070736
+    second: Ioko_Death_24
+  - first:
+      213: -800345845728334910
+    second: Ioko_Death_25
+  - first:
+      213: 451488889780419453
+    second: Ioko_Death_26
+  - first:
+      213: 3264891860153924025
+    second: Ioko_Death_27
+  - first:
+      213: 1816596074054726802
+    second: Ioko_Death_28
+  - first:
+      213: 3815994662151981348
+    second: Ioko_Death_29
+  - first:
+      213: -8030329763106376352
+    second: Ioko_Death_30
+  - first:
+      213: -113934699651213484
+    second: Ioko_Death_31
+  - first:
+      213: -4581892820898959963
+    second: Ioko_Death_32
+  - first:
+      213: -7843432256628606995
+    second: Ioko_Death_33
+  - first:
+      213: -4921849127194015083
+    second: Ioko_Death_34
+  - first:
+      213: -3852970076778485482
+    second: Ioko_Death_35
+  - first:
+      213: -2222086157422950739
+    second: Ioko_Death_36
+  - first:
+      213: 6488101522231602942
+    second: Ioko_Death_37
+  - first:
+      213: 6084441743575611255
+    second: Ioko_Death_38
+  - first:
+      213: -5283282595296556912
+    second: Ioko_Death_39
+  - first:
+      213: -3249687742126108637
+    second: Ioko_Death_40
+  - first:
+      213: -2197463388553010119
+    second: Ioko_Death_41
+  - first:
+      213: -4284298941190052165
+    second: Ioko_Death_42
+  - first:
+      213: -3465791545268228100
+    second: Ioko_Death_43
+  - first:
+      213: -8813645533582390004
+    second: Ioko_Death_44
+  - first:
+      213: 3383021794959277103
+    second: Ioko_Death_45
+  - first:
+      213: 954242709711974943
+    second: Ioko_Death_46
+  - first:
+      213: 5764232122872497258
+    second: Ioko_Death_47
+  - first:
+      213: 8205142505541660641
+    second: Ioko_Death_48
+  - first:
+      213: -4617500471630023460
+    second: Ioko_Death_49
+  - first:
+      213: -7239621076271475596
+    second: Ioko_Death_50
+  - first:
+      213: 437081112542985489
+    second: Ioko_Death_51
+  - first:
+      213: 2361918755654521250
+    second: Ioko_Death_52
+  - first:
+      213: -7474596473009393359
+    second: Ioko_Death_53
+  - first:
+      213: -8111947731770644995
+    second: Ioko_Death_54
+  - first:
+      213: -5822762865597935150
+    second: Ioko_Death_55
+  - first:
+      213: -6976824776611251336
+    second: Ioko_Death_56
+  - first:
+      213: -7572357768219869916
+    second: Ioko_Death_57
+  - first:
+      213: 4524445246671193166
+    second: Ioko_Death_58
+  - first:
+      213: -470095186137501450
+    second: Ioko_Death_59
+  - first:
+      213: -2780303144738479019
+    second: Ioko_Death_60
+  - first:
+      213: 7243126003227701025
+    second: Ioko_Death_61
+  - first:
+      213: -8137757168012139402
+    second: Ioko_Death_62
+  - first:
+      213: -1980163824177003528
+    second: Ioko_Death_63
+  - first:
+      213: -4548141856163297580
+    second: Ioko_Death_64
+  - first:
+      213: 400884944395648571
+    second: Ioko_Death_65
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ioko_Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc570d27a7485e70800000000000000
+      internalID: 9104105430070025427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_1
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b8e87ec765cb5f0800000000000000
+      internalID: -739621144334791796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_2
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031491544604069e0800000000000000
+      internalID: -1630232265707929296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_3
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745909a97eb888610800000000000000
+      internalID: 1623701492513936711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_4
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9e6cf5d3402c180800000000000000
+      internalID: -9096703635688592954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_5
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4640
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7816215945693fa80800000000000000
+      internalID: -8434232387112377977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c289bbf797ae5fcc0800000000000000
+      internalID: -3677775713123198932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859e8226877b62b80800000000000000
+      internalID: -8419840725651756712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_8
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d673e5dd9941b8300800000000000000
+      internalID: 255320454953056109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_9
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28afd9192d23c380800000000000000
+      internalID: -8952261979731417041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_10
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34a723f5ee7e6490800000000000000
+      internalID: -7751118382565972931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_11
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3480
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cdafb85364294b0800000000000000
+      internalID: -5435204604487082879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad8377f3df030f20800000000000000
+      internalID: 3387568747776806311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_13
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4291998282e973150800000000000000
+      internalID: 5852320136108251428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_14
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb51bb12e5a93fc0800000000000000
+      internalID: -3514595643640161283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_15
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e546fcf561d628b0800000000000000
+      internalID: -5177220485649906200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_16
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe81255cc4e47fd0800000000000000
+      internalID: -2344997939700461825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_17
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2320
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddce1e7d6e11936d0800000000000000
+      internalID: -3010355192758407971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae6656b438477010800000000000000
+      internalID: 1186496418070032037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a27c4c7ce8ba9bd0800000000000000
+      internalID: -2622580507152715102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_20
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32c0485046fd9700800000000000000
+      internalID: 548865485828047422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_21
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffab01085e9641000800000000000000
+      internalID: 5745933951220479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_22
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4357af97386f6c9e0800000000000000
+      internalID: -1601321572936026828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_23
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1160
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40fb74b5d3c0665c0800000000000000
+      internalID: -4222674142949294332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be4cdca66a23f3e0800000000000000
+      internalID: -2021225187284070736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ioko_Death_25
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 900
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb27e791b994e4f0800000000000000
+      internalID: -800345845728334910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d1b7ab06244800d4f8be96e155cf1bc6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Ioko_Death_0: 9104105430070025427
+      Ioko_Death_1: -739621144334791796
+      Ioko_Death_10: -7751118382565972931
+      Ioko_Death_11: -5435204604487082879
+      Ioko_Death_12: 3387568747776806311
+      Ioko_Death_13: 5852320136108251428
+      Ioko_Death_14: -3514595643640161283
+      Ioko_Death_15: -5177220485649906200
+      Ioko_Death_16: -2344997939700461825
+      Ioko_Death_17: -3010355192758407971
+      Ioko_Death_18: 1186496418070032037
+      Ioko_Death_19: -2622580507152715102
+      Ioko_Death_2: -1630232265707929296
+      Ioko_Death_20: 548865485828047422
+      Ioko_Death_21: 5745933951220479
+      Ioko_Death_22: -1601321572936026828
+      Ioko_Death_23: -4222674142949294332
+      Ioko_Death_24: -2021225187284070736
+      Ioko_Death_25: -800345845728334910
+      Ioko_Death_3: 1623701492513936711
+      Ioko_Death_4: -9096703635688592954
+      Ioko_Death_5: -8434232387112377977
+      Ioko_Death_6: -3677775713123198932
+      Ioko_Death_7: -8419840725651756712
+      Ioko_Death_8: 255320454953056109
+      Ioko_Death_9: -8952261979731417041
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

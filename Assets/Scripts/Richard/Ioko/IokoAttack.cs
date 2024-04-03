@@ -78,6 +78,9 @@ public class IokoAttack : MonoBehaviour
     
     public IEnumerator SpinAttackCoroutine(GameObject parent)
     {
+        _animator.SetTrigger("basicAttack");
+        yield return new WaitForSeconds(0.3f);
+        
         GameObject spinAttack = Instantiate(SpinAttackIndicators, boss.position, Quaternion.identity);
         spinAttack.transform.parent = parent.transform;
         Destroy(spinAttack, 3f);
@@ -173,6 +176,8 @@ public class IokoAttack : MonoBehaviour
     
     public void FinalGambit()
     {
+        _animator.SetTrigger("splitAttack");
+        
         boss.position = bossTeleportLocation;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         FindObjectOfType<AudioManager>().Play("Suck");

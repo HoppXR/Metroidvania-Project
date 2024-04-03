@@ -115,9 +115,8 @@ public class BossHealthIoko : MonoBehaviour
 
         _enemyAI.enabled = false;
         _iokoAttack.enabled = false;
-        Destroy(gameObject);
 
-        // Play die animation
+        _animator.SetTrigger("death");
 
         Collider2D collider = GetComponent<Collider2D>();
         if (collider != null)
