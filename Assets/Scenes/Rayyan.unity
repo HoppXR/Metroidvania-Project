@@ -887,6 +887,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcc72575809a1e04ead416ba748698e9, type: 3}
+--- !u!1001 &6134409787945733299
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 752836954471126982, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_Name
+      value: ghost death particle
+      objectReference: {fileID: 0}
+    - target: {fileID: 752836954471126982, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724783137455004193, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546388439652061109, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546388439652061109, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546388439652061109, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546388439652061109, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546388439652061109, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546388439652061109, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546388439652061109, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546388439652061109, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546388439652061109, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546388439652061109, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
 --- !u!1001 &6482440685785648907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -938,6 +1003,10 @@ PrefabInstance:
     - target: {fileID: 6764570624892959039, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
       propertyPath: m_Name
       value: vortex particles + target
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764570624892959039, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1083,3 +1152,4 @@ SceneRoots:
   - {fileID: 8457952221327972784}
   - {fileID: 637379081}
   - {fileID: 6482440685785648907}
+  - {fileID: 6134409787945733299}

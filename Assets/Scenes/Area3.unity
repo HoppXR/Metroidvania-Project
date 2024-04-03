@@ -912,7 +912,7 @@ MonoBehaviour:
   - He treated peasants like royalty..
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
-  particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  particleEffect: {fileID: 752836954471126982, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
   disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 758578071}
   typingSound: {fileID: 28975405}
@@ -6065,7 +6065,7 @@ MonoBehaviour:
   - ..tore everything apart.
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
-  particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  particleEffect: {fileID: 752836954471126982, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
   disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 1270287565}
   typingSound: {fileID: 696111847}
@@ -10651,7 +10651,7 @@ MonoBehaviour:
   - Do what you must.
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
-  particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  particleEffect: {fileID: 752836954471126982, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
   disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 1445837989}
   typingSound: {fileID: 1269892049}
@@ -11869,7 +11869,7 @@ MonoBehaviour:
   - A beloved king.
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
-  particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  particleEffect: {fileID: 752836954471126982, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
   disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 8104452054883810373}
   typingSound: {fileID: 1335425310}
@@ -20057,7 +20057,7 @@ MonoBehaviour:
   - Taken away from him.
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
-  particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  particleEffect: {fileID: 752836954471126982, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
   disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 1828403874}
   typingSound: {fileID: 1937412045}
@@ -21794,7 +21794,7 @@ MonoBehaviour:
   - Destroying what remained in the process.
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
-  particleEffect: {fileID: 7794328734832857946, guid: 418daa9159dcef4428b70810940e5c23, type: 3}
+  particleEffect: {fileID: 752836954471126982, guid: daacf68431ddc6a41a54564c19ff2c82, type: 3}
   disableTriggerAfterDialogue: 0
   contButtonAnimator: {fileID: 767946915}
   typingSound: {fileID: 2090375240}
