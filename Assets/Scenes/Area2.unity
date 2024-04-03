@@ -5266,7 +5266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 11
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 205081039}
   projectileSpeed: 5
 --- !u!1001 &206981859
@@ -6673,7 +6673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 11
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 293344524}
   projectileSpeed: 5
 --- !u!1 &294260040
@@ -10960,7 +10960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 11
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 435007750}
   projectileSpeed: 5
 --- !u!1 &440573522
@@ -17731,7 +17731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 10
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 717979051}
   projectileSpeed: 5
 --- !u!1 &718616262
@@ -20024,7 +20024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 13
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 798730319}
   projectileSpeed: 5
 --- !u!1001 &815179226
@@ -21209,7 +21209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 10
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 850037975}
   projectileSpeed: 5
 --- !u!1 &853126875
@@ -23599,7 +23599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 11
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 974659106}
   projectileSpeed: 5
 --- !u!1 &984531476
@@ -26593,7 +26593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 15
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 1110279032}
   projectileSpeed: 5
 --- !u!1 &1123222680
@@ -39476,7 +39476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 13
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 1801124416}
   projectileSpeed: 5
 --- !u!1 &1804754666
@@ -47742,7 +47742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 15
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 2121527960}
   projectileSpeed: 5
 --- !u!1 &2126466602 stripped
@@ -47769,7 +47769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 11
   fireRate: 0.5
-  projectilePrefab: {fileID: 7584177001108690506, guid: fa4a697ef0a8b5a4dae3c891ee41d03a, type: 3}
+  projectilePrefab: {fileID: 164438662283881247, guid: 42f345b188701b049a78d6da05947003, type: 3}
   firePoint: {fileID: 2126466603}
   projectileSpeed: 5
 --- !u!1001 &2132189771
