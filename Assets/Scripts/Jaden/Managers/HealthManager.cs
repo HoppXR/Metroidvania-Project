@@ -10,6 +10,8 @@ public class HealthManager
     private int _currentMaxHealth;
 
     public static event Action OnPlayerDeath;
+    public static event Action OnPlayerDamage;
+    public static event Action OnPlayerHeal;
 
     public int Health
     {
@@ -46,6 +48,8 @@ public class HealthManager
         if (_currentHealth <= 0)
             return;
         
+        OnPlayerDamage?.Invoke();
+        
         // Player dedge
         if (damageAmount >= _currentHealth)
         {
@@ -69,6 +73,8 @@ public class HealthManager
         
         if (_currentHealth < _currentMaxHealth)
         {
+            OnPlayerHeal?.Invoke();
+            
             _currentHealth += healAmount;
         }
 

@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 3647291023393723204}
   - component: {fileID: 3112502667496705613}
   - component: {fileID: 3343717000485712606}
+  - component: {fileID: 647285586458097680}
   m_Layer: 7
   m_Name: BossGooners2 1
   m_TagString: Enemy
@@ -542,6 +543,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pirateAttacks: {fileID: 0}
+--- !u!114 &647285586458097680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201583190578022258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60347891ce510ae488b0046657e6747e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 9edb4f292c4aab348bd0dd3700e5a89b, type: 2}
 --- !u!1 &5680032753526882944
 GameObject:
   m_ObjectHideFlags: 0

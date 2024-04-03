@@ -446,6 +446,7 @@ GameObject:
   - component: {fileID: 4273793284434948541}
   - component: {fileID: 1564390147731298071}
   - component: {fileID: 4769174165110271811}
+  - component: {fileID: 2490395068711246160}
   m_Layer: 7
   m_Name: PirateCaptainNPC1
   m_TagString: Enemy
@@ -907,6 +908,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038dba6c62f21bf4eb1e2107f5aa3105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2490395068711246160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306678237314911557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60347891ce510ae488b0046657e6747e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 9edb4f292c4aab348bd0dd3700e5a89b, type: 2}
 --- !u!1 &3604928109466151720
 GameObject:
   m_ObjectHideFlags: 0

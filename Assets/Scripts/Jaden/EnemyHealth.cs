@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour
     private Rigidbody2D _rb;
     private EnemyAI _enemyAI;
     private NPC _npc;
+    private DamageFlash _damageFlash;
     
     private float _currentHealth;
     [SerializeField] private float maxHealth;
@@ -24,11 +25,15 @@ public class EnemyHealth : MonoBehaviour
 
     void Start()
     {
+        _damageFlash = GetComponent<DamageFlash>();
         _rb = GetComponent<Rigidbody2D>();
         _enemyAI = GetComponent<EnemyAI>();
         _npc = GetComponent<NPC>();
         
         _currentHealth = maxHealth;
+        
+        healthSlider.maxValue = maxHealth;
+        easeHealthSlider.maxValue = maxHealth;
     }
 
     private void Update()
@@ -72,7 +77,7 @@ public class EnemyHealth : MonoBehaviour
         // Updates Health bar UI
         healthSlider.value = _currentHealth;
 
-        // TODO: Play hurt animation
+        _damageFlash.Flash(Color.red);
         
         Instantiate(blood, transform.position, Quaternion.identity);
 
@@ -93,6 +98,8 @@ public class EnemyHealth : MonoBehaviour
         Collider2D collider = GetComponent<Collider2D>();
         if (collider != null)
             collider.enabled = false;
+        
+        GameManager.gameManager._playerHealth.HealUnit(25);
         
         enabled = false;
     }

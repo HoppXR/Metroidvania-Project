@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     internal PlayerCombat Combat;
     internal GrapplingHook GrappleHook;
     internal InputReader Input;
+
+    private DamageFlash _damageFlash;
     private Rigidbody2D _rb;
     public Animator animator;
 
@@ -38,8 +40,9 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     private void Awake()
     {
-        GrappleHook = FindFirstObjectByType<GrapplingHook>();
-        Combat = FindFirstObjectByType<PlayerCombat>();
+        _damageFlash = GetComponent<DamageFlash>();
+        GrappleHook = GetComponent<GrapplingHook>();
+        Combat = GetComponent<PlayerCombat>();
         
         _rb = GetComponent<Rigidbody2D>();
         _colliders = GetComponents<Collider2D>();
@@ -145,13 +148,27 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     private void OnEnable()
     {
         HealthManager.OnPlayerDeath += PlayerDeath;
+        HealthManager.OnPlayerDamage += PlayerDamage;
+        HealthManager.OnPlayerHeal += PlayerHeal;
     }
 
     private void OnDisable()
     {
         HealthManager.OnPlayerDeath -= PlayerDeath;
+        HealthManager.OnPlayerDamage -= PlayerDamage;
+        HealthManager.OnPlayerHeal -= PlayerHeal;
     }
 
+    private void PlayerDamage()
+    {
+        _damageFlash.Flash(Color.red);
+    }
+
+    private void PlayerHeal()
+    {
+        _damageFlash.Flash(Color.green);
+    }
+    
     private void PlayerDeath()
     {
         CanMoveFalse();

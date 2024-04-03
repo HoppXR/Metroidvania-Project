@@ -115,6 +115,8 @@ public class BossHealthIoko : MonoBehaviour
         if (collider != null)
             collider.enabled = false;
 
+        GameManager.gameManager._playerHealth.HealUnit(100);
+        
         enabled = false;
     }
 }

@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 702779781540985485}
   - component: {fileID: 6281481466765658785}
   - component: {fileID: 4929611802353579198}
+  - component: {fileID: 3815680855860965888}
   m_Layer: 7
   m_Name: NPC
   m_TagString: Enemy
@@ -610,6 +611,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 10.454466, y: 11.896217}
   m_EdgeRadius: 0
+--- !u!114 &3815680855860965888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3208287175018656821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60347891ce510ae488b0046657e6747e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 9edb4f292c4aab348bd0dd3700e5a89b, type: 2}
 --- !u!1001 &6376214152966730593
 PrefabInstance:
   m_ObjectHideFlags: 0
