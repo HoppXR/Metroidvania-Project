@@ -175,6 +175,7 @@ public class IokoAttack : MonoBehaviour
     {
         boss.position = bossTeleportLocation;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+        FindObjectOfType<AudioManager>().Play("Suck");
         GameObject suck = Instantiate(blackHole, blackHoleSpawnLocation, Quaternion.identity);
         Destroy(suck, 10);
         SuckPlayer BlackHole = suck.GetComponent<SuckPlayer>();
