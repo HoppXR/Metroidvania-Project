@@ -101,7 +101,7 @@ public class BossHealthIoko : MonoBehaviour
         }
         else if (_currentHealth <= 25 && !finalGambitExecuted)
         {
-            _iokoAttack.FinalGambit();
+            _iokoAttack.StartFinalGambit();
             finalGambitExecuted = true;
         }
     }
@@ -117,6 +117,8 @@ public class BossHealthIoko : MonoBehaviour
         _iokoAttack.enabled = false;
 
         _animator.SetTrigger("death");
+        
+        Destroy(gameObject, 4.5f);
 
         Collider2D collider = GetComponent<Collider2D>();
         if (collider != null)

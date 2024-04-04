@@ -25,7 +25,6 @@ public class IokoAttack : MonoBehaviour
     public Vector3 bossReturnTeleportLocation;
     public int blackHoleCount;
     
-    
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -161,6 +160,7 @@ public class IokoAttack : MonoBehaviour
             ranDamage = 18;
         }
         
+        _animator.SetBool("diceAttacking", true);
         _animator.SetTrigger("DiceAttack");
         FindObjectOfType<AudioManager>().Play("Dice");
         yield return new WaitForSeconds(2f);
@@ -171,21 +171,34 @@ public class IokoAttack : MonoBehaviour
         frontRNGHitbox.SetActive(true);
         yield return new WaitForSeconds(2f);
         frontRNGHitbox.SetActive(false);
+        _animator.SetBool("diceAttacking", false);
         yield return new WaitForSeconds(1f);
     }
-    
-    public void FinalGambit()
+
+    public void StartFinalGambit()
     {
+        StartCoroutine(FinalGambit());
+    }
+    
+    IEnumerator FinalGambit()
+    {
+        _animator.SetBool("splitAttacking", true);
         _animator.SetTrigger("splitAttack");
+
+        yield return new WaitForSeconds(5.3f);
         
         boss.position = bossTeleportLocation;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         FindObjectOfType<AudioManager>().Play("Suck");
         GameObject suck = Instantiate(blackHole, blackHoleSpawnLocation, Quaternion.identity);
-        Destroy(suck, 10);
+        Destroy(suck, 4.5f);
         SuckPlayer BlackHole = suck.GetComponent<SuckPlayer>();
         BlackHole.iokoAttack = this;
         blackHoleCount++;
+
+        yield return new WaitForSeconds(4.5f);
+        
+        _animator.SetBool("splitAttacking", false);
     }
 
     public void CheckHoleState()
