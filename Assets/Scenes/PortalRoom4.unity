@@ -214,7 +214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7833313937284250960, guid: 5c674f7f979aa25458ff6f86d66c4885, type: 3}
       propertyPath: m_text
-      value: Aves the ____________
+      value: Aves the Renounced Secretary
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

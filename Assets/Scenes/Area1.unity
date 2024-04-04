@@ -13610,7 +13610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &619204071
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20782,7 +20782,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bee2b5d65ecca6242bdff8ea39b56d3a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8a33c6113418af749bea2c457996d65b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -20880,7 +20880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ff6e543741da849b83ab915e6d7f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomBackgroundMusic: {fileID: 8300000, guid: 8c3608c1b47b566459a1b571668c194c, type: 3}
+  roomBackgroundMusic: {fileID: 8300000, guid: 0c612ff245859294aac099d200e61e7d, type: 3}
 --- !u!61 &900543371
 BoxCollider2D:
   m_ObjectHideFlags: 0
