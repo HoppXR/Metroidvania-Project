@@ -1198,6 +1198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vortex particles + target
       objectReference: {fileID: 0}
+    - target: {fileID: 6764570624892959039, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8410071575641196263, guid: 446371ce9fbd97045bb0b432cfd4fadc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.7

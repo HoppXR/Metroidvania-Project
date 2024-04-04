@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.InputSystem;
 
 public class SaveObject : MonoBehaviour
 {
@@ -33,7 +35,7 @@ public class SaveObject : MonoBehaviour
             saveText.gameObject.SetActive(true);
             saveText.text = "Save (E)";
 
-            if (Input.GetKeyDown(interactionKey))
+            if (Input.GetKeyDown(interactionKey) || Gamepad.current.buttonSouth.wasPressedThisFrame)
             {
                 StartCoroutine(SaveGame());
             }
@@ -43,7 +45,7 @@ public class SaveObject : MonoBehaviour
             saveText.gameObject.SetActive(false);
         }
 
-        if (isSaving && Input.GetKeyDown(proceedKey))
+        if (isSaving && (Input.GetKeyDown(proceedKey) || Gamepad.current.buttonSouth.wasPressedThisFrame))
         {
             saveCanvas.SetActive(false);
             isSaving = false;
@@ -56,7 +58,7 @@ public class SaveObject : MonoBehaviour
         saveCanvas.SetActive(true);
         audioSource.PlayOneShot(saveSound);
 
-        yield return new WaitUntil(() => Input.GetKeyDown(proceedKey));
+        yield return new WaitUntil(() => Input.GetKeyDown(proceedKey) || Gamepad.current.buttonSouth.wasPressedThisFrame);
 
         saveCanvas.SetActive(false);
         isSaving = false;
