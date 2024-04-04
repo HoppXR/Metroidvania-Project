@@ -95,10 +95,9 @@ public class BossHealthAves : MonoBehaviour
         
         GameManager.gameManager._playerHealth.HealUnit(100);
         
-        enabled = false;
-
         StartCoroutine(LoadSceneAfterDelay("EndingScene", 3f));
-
+        
+        enabled = false;
     }
 
     IEnumerator LoadSceneAfterDelay(string sceneName, float delay)

@@ -117,3 +117,21 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: b2243a4623c15da42a805f618a6957fe, type: 3}
+    name: Asol
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: b454143068af90045b108b3c863375a0, type: 3}
+    name: Rumble
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 9b3fc6ca641dd9f499a4d7843cde8b8d, type: 3}
+    name: AvesDash
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
