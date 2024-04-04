@@ -45,6 +45,7 @@ public class PirateAttacks : MonoBehaviour
                 {
                     BossCannonAttack.ShootCannon();
                 }
+                FindObjectOfType<AudioManager>().Play("Cannon");
             }
             else
             {

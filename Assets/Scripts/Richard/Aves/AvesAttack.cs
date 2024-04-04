@@ -128,6 +128,7 @@ public class AvesAttack : MonoBehaviour
     {
         StartCoroutine(SmallLunge());
         yield return new WaitForSeconds(1f);
+        FindObjectOfType<AudioManager>().Play("AvesDash");
         StartCoroutine(Dash());
     }
 

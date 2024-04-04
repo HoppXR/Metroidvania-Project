@@ -167,7 +167,7 @@ private IEnumerator SmallLunge()
     {
         if (BossHealthATERALBUS.isDead)
             yield return null;
-        
+        FindObjectOfType<AudioManager>().Play("Dash");
         if (player != null)
         {
             Vector2 directionToPlayer = (player.position - transform.position).normalized;
@@ -183,7 +183,7 @@ private IEnumerator SmallLunge()
     {
         if (BossHealthATERALBUS.isDead)
             yield return null;
-        
+        FindObjectOfType<AudioManager>().Play("Dash");
         if (player != null)
         {
             Vector2 directionToPlayer = (player.position - transform.position).normalized;
@@ -225,7 +225,7 @@ private IEnumerator SmallLunge()
     {
         if (BossHealthATERALBUS.isDead)
             yield return null;
-        
+        FindObjectOfType<AudioManager>().Play("Stomp");
         bigHitBoxAttackIndicator.SetActive(true);
         yield return new WaitForSeconds(2f);
         bigHitBoxAttackIndicator.SetActive(false);
