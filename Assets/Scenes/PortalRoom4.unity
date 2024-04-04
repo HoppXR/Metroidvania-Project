@@ -5510,7 +5510,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1e3a9e5a99b9fb04786a1a11fc1c265e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6cbfa9b1eb498954ba2d8e28c74ef343, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.29
   m_Pitch: 1
@@ -5669,7 +5669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ff6e543741da849b83ab915e6d7f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomBackgroundMusic: {fileID: 8300000, guid: 8c3608c1b47b566459a1b571668c194c, type: 3}
+  roomBackgroundMusic: {fileID: 8300000, guid: 8835d18797ead9e46b17c478d8712800, type: 3}
 --- !u!1 &459019361 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8634376816595917015, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
