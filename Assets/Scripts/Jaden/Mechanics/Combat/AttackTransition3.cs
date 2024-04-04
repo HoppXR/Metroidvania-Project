@@ -9,6 +9,7 @@ public class AttackTransition3 : StateMachineBehaviour
     {
         if (PlayerCombat.Instance.isAttacking)
         {
+            FindObjectOfType<AudioManager>().Play("PlayerAttack");
             PlayerCombat.Instance.animator.SetTrigger("Attack1");
         }
     }

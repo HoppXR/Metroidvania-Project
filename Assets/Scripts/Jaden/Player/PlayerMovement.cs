@@ -119,6 +119,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         _canDash = false;
         _isDashing = true;
 
+        FindObjectOfType<AudioManager>().Play("PlayerDash");
         animator.SetTrigger("Dash");
         
         _rb.velocity = new Vector2(_moveVector.x * dashSpeed, _moveVector.y * dashSpeed);

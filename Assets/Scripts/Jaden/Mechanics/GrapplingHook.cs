@@ -82,6 +82,7 @@ public class GrapplingHook : MonoBehaviour
 
     IEnumerator Grapple() 
     {
+        FindObjectOfType<AudioManager>().Play("PlayerGrapple");
         _thePlayer.animator.SetTrigger("Grapple");
         
         float t = 0;
