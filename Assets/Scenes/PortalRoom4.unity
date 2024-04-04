@@ -217,6 +217,10 @@ PrefabInstance:
       value: Aves the Renounced Secretary
       objectReference: {fileID: 0}
     - target: {fileID: 7833313937284250960, guid: 5c674f7f979aa25458ff6f86d66c4885, type: 3}
+      propertyPath: m_fontColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833313937284250960, guid: 5c674f7f979aa25458ff6f86d66c4885, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -442,7 +446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 21006366}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pillars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -792,7 +796,7 @@ GameObject:
   - component: {fileID: 50533423}
   - component: {fileID: 50533425}
   - component: {fileID: 50533424}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2346,7 +2350,7 @@ GameObject:
   - component: {fileID: 182438830}
   - component: {fileID: 182438829}
   - component: {fileID: 182438828}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: FlameAttackR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2535,7 +2539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205934915}
   - component: {fileID: 205934914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FlameAttackIndicatorR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6210,7 +6214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 555930443}
   - component: {fileID: 555930442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FlameAttackIndicatorL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7248,7 +7252,7 @@ GameObject:
   - component: {fileID: 645351105}
   - component: {fileID: 645351107}
   - component: {fileID: 645351106}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7889,7 +7893,7 @@ GameObject:
   - component: {fileID: 695320562}
   - component: {fileID: 695320564}
   - component: {fileID: 695320563}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10085,7 +10089,7 @@ GameObject:
   - component: {fileID: 940105905}
   - component: {fileID: 940105907}
   - component: {fileID: 940105906}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10647,7 +10651,7 @@ GameObject:
   - component: {fileID: 971388027}
   - component: {fileID: 971388029}
   - component: {fileID: 971388028}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11418,7 +11422,7 @@ GameObject:
   - component: {fileID: 1047331358}
   - component: {fileID: 1047331360}
   - component: {fileID: 1047331359}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11699,7 +11703,7 @@ GameObject:
   - component: {fileID: 1086457514}
   - component: {fileID: 1086457519}
   - component: {fileID: 1086457518}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Aves
   m_TagString: Boss2
   m_Icon: {fileID: 0}
@@ -12123,7 +12127,7 @@ GameObject:
   - component: {fileID: 1092577281}
   - component: {fileID: 1092577283}
   - component: {fileID: 1092577282}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12631,7 +12635,7 @@ GameObject:
   - component: {fileID: 1188981652}
   - component: {fileID: 1188981654}
   - component: {fileID: 1188981653}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17956,6 +17960,10 @@ PrefabInstance:
       value: Aves Asol passive
       objectReference: {fileID: 0}
     - target: {fileID: 8634376816595917015, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634376816595917015, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -18413,7 +18421,7 @@ GameObject:
   - component: {fileID: 1788037999}
   - component: {fileID: 1788038001}
   - component: {fileID: 1788038000}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18857,7 +18865,7 @@ GameObject:
   - component: {fileID: 1854019958}
   - component: {fileID: 1854019960}
   - component: {fileID: 1854019959}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18988,7 +18996,7 @@ GameObject:
   - component: {fileID: 1875754613}
   - component: {fileID: 1875754615}
   - component: {fileID: 1875754614}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19228,7 +19236,7 @@ GameObject:
   - component: {fileID: 1905548696}
   - component: {fileID: 1905548695}
   - component: {fileID: 1905548694}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DashCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19383,7 +19391,7 @@ GameObject:
   - component: {fileID: 1921601659}
   - component: {fileID: 1921601658}
   - component: {fileID: 1921601657}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: FlameAttackL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20320,6 +20328,10 @@ PrefabInstance:
       value: Aves Asol passive (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8634376816595917015, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634376816595917015, guid: 30649ead5abcdfe44a445b16e0980077, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -21085,7 +21097,7 @@ GameObject:
   - component: {fileID: 2045159874}
   - component: {fileID: 2045159876}
   - component: {fileID: 2045159875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21216,7 +21228,7 @@ GameObject:
   - component: {fileID: 2049614622}
   - component: {fileID: 2049614624}
   - component: {fileID: 2049614623}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22512,7 +22524,7 @@ GameObject:
   - component: {fileID: 2142231590}
   - component: {fileID: 2142231592}
   - component: {fileID: 2142231591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level_0__Gate-6.png_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
