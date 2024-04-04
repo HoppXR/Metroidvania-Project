@@ -18066,7 +18066,7 @@ GameObject:
   - component: {fileID: 809721010}
   - component: {fileID: 809721012}
   - component: {fileID: 809721011}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Border (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23150,7 +23150,7 @@ GameObject:
   - component: {fileID: 1034993088}
   - component: {fileID: 1034993090}
   - component: {fileID: 1034993089}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Border (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
