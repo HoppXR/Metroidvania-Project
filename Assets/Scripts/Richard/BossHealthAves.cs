@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class BossHealthAves : MonoBehaviour
 {
+    private LevelLoader _levelLoader;
     private Animator _animator;
     private Rigidbody2D _rb;
     private AvesAI _enemyAI;
@@ -26,6 +27,7 @@ public class BossHealthAves : MonoBehaviour
 
     void Start()
     {
+        _levelLoader = FindFirstObjectByType<LevelLoader>();
         _animator = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         _enemyAI = GetComponent<AvesAI>();
@@ -95,12 +97,6 @@ public class BossHealthAves : MonoBehaviour
         
         GameManager.gameManager._playerHealth.HealUnit(100);
         
-        StartCoroutine(LoadSceneAfterDelay("EndingScene", 3f));
-    }
-
-    IEnumerator LoadSceneAfterDelay(string sceneName, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(sceneName);
+        _levelLoader.LoadNextLevel();
     }
 }
