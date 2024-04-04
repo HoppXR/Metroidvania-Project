@@ -9356,7 +9356,8 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1012321629}
   dialogueText: {fileID: 2001046455}
   dialogue:
-  - Be flamboyant! Press 'B' to dash and the right bumper to grapple onto an enemy!
+  - "Be flamboyant! Press '\u2573' to dash and the right bumper to grapple onto an
+    enemy!"
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 276194354013034377, guid: 99ddfd8bccaa4e34aa8173c722e18598, type: 3}
@@ -19295,7 +19296,7 @@ MonoBehaviour:
   dialogueText: {fileID: 267510345}
   dialogue:
   - Hold up.. do you know what you're doing?
-  - You're about to be attacked! Press 'X' to fight back!
+  - "You're about to be attacked! Press '\u25A1' to fight back!"
   wordSpeed: 0.03
   shouldDestroyAfterDialogue: 1
   particleEffect: {fileID: 276194354013034377, guid: 99ddfd8bccaa4e34aa8173c722e18598, type: 3}
